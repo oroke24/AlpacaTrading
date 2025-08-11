@@ -18,6 +18,23 @@ class CryptoBot:
     def print_symbols(self):
         for symbol in self.symbolList: 
             print(
-                symbol
+                symbol['symbol']
             )
         
+    def print_symbols_and_price(self):
+        for symbol in self.symbolList: 
+            percentageChange = round(symbol['price_change_percentage_24h'], 2)
+            currentPrice = round(symbol['current_price'], 3)
+            print(
+                symbol['symbol'] + ", $" + str(currentPrice) + ", " + str(percentageChange) + "%"
+            )
+
+    def print_symbols_and_price_by_amount(self, amount):
+        for symbol in self.symbolList: 
+            if(amount <= 0): break
+            percentageChange = round(symbol['price_change_percentage_24h'], 2)
+            currentPrice = round(symbol['current_price'], 3)
+            print(
+                symbol['symbol'] + ", $" + str(currentPrice) + ", " + str(percentageChange) + "%"
+            )
+            amount -= 1

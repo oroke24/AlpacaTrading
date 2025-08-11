@@ -31,11 +31,36 @@ def apply_trailing_stop(symbol, qty=1, trail_percent=1.0):
     )
     paperTradingClient.submit_order(order_data=trailing_stop)
 
-def place_market_order(symbol, qty=1, side=OrderSide.BUY):
+def place_market_order_with_trailing_percentage(symbol, qty=1, trail_percent=1.0):
     order = MarketOrderRequest(
         symbol=symbol, 
         qty=qty,
-        side=side,
+        side=OrderSide.BUY,
         time_in_force=TimeInForce.GTC
     )
-    return paperTradingClient.submit_order
+
+    buy_order = paperTradingClient.submit_order(order_data=order)
+    print(f"Buy order submitted. ID: {buy_order.id}")
+
+    print(f"Waiting for buy order to full...")
+    filled = False
+    while not filled:
+        order_status = paperTradingClient.get_order_by_id(buy_order.id)
+        if order_status.status == "filled":
+            filled = True
+        else:
+            time.sleep(1)
+    print("Buy order filled.")
+
+    trailing_stop_order = TrailingStopOrderRequest(
+        symbol = symbol,
+        qty = qty,
+        side=OrderSide.SELL,
+        trail_percent=str(trail_percent),
+        time_in_force = TimeInForce.GTC
+    )
+
+    sell_order = paperTradingClient.submit_order(order_data=trailing_stop_order)
+    print(f"Trailing stop sell order submitted. ID: {sell_order.id}")
+
+
