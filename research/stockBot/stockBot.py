@@ -1,60 +1,120 @@
+import requests
+import config
 import yfinance as yf
+from data.symbolBot import SymbolBot
 from datetime import datetime, timedelta
 
 class StockBot:
 
     def __init__(self):
+        self.symbolBot = SymbolBot()
+        self.stockList = []
+        self.movers = []
+        self.CheapUpTrenders =[]
+        self.CheapDownTrenders = []
+        self.ExpensiveUpTrenders =[]
+        self.ExpensiveDownTrenders = []
         pass
 
-    def fill_stock_data_from_yfinance(self, list):
+    
+    def fill_list(self):
+        self.stockList = self.quick_fill()
+        print("stock list found:")
+        for item in self.stockList:
+            print(f"Item: {item}")
+
+
+    def quick_fill(self):
+        tickers = self.symbolBot.stocks_full_list()
+        return tickers
+    
+    def fill_stock_data_from_yfinance(self, tickers):
         today = datetime.now()
-        yesterday = today - timedelta(1)
         lastWeek = today - timedelta(7)
         results = []
 
-        for ticker in list:
+        # === Pull all history at once ===
+        all_history = yf.download(tickers, group_by='ticker', threads=True)
+
+        for ticker in all_history:
             try:
-                data = yf.Ticker(ticker)
-            
-                history = data.history(start=lastWeek, end=today)
+                # print(f"{all_history[ticker]}")
+                '''
+                # yfinance returns different formats if 1 ticker vs many
+                if len(tickers) > 1:
+                    history = all_history[ticker]
+                else:
+                    history = all_history
+
                 if history.empty:
                     continue
-            
+
                 latestVolume = int(history['Volume'].iloc[-1] or 0)
 
                 if len(history) >= 2:
                     prevClose = round(history['Close'].iloc[-2], 2)
                     latestClose = round(history['Close'].iloc[-1], 2)
-                    priceChangePercentage = round(((latestClose - prevClose) / prevClose)*100, 2)
+                    priceChangePercentage = round(((latestClose - prevClose) / prevClose) * 100, 2)
                 else:
                     prevClose = 0
                     latestClose = 0
                     priceChangePercentage = 0
 
-                shares_df = data.get_shares_full(start=lastWeek, end=today)
+                # Still need individual calls for shares (no batch method for this in yfinance)
+                shares_df = yf.Ticker(ticker).get_shares_full(start=lastWeek, end=today)
                 if shares_df is None or shares_df.empty:
                     print(f"No share count data for {ticker}")
-                shareCount = int(shares_df.iloc[-1] or 0)
+                    continue
 
+                shareCount = int(shares_df.iloc[-1] or 0)
                 if shareCount == 0:
                     print(f"Share count is 0 for {ticker}")
                     continue
-            
-                volumeChange = round(float((latestVolume/shareCount)*100), 2) # rounded 2 decimal places
+
+                volumeChange = round(float((latestVolume / shareCount) * 100), 2)
 
                 results.append({
                     'ticker': ticker,
                     'volume': latestVolume,
-                    'shares': shareCount,
-                    'volumeChange': volumeChange,
+                    # 'shares': shareCount,
+                    # 'volumeChange': volumeChange,
                     'prevClose': prevClose,
                     'latestClose': latestClose,
                     'priceChangePercentage': priceChangePercentage
                 })
+                '''
+                results.append(all_history[ticker].tail())
 
             except Exception as e:
                 print(f"Error retrieving data for {ticker}: {e}")
                 continue
 
-        return results
+        self.stockList = results
+        # return results
+    
+    def getMovers(self):
+        url = "https://data.alpaca.markets/v1beta1/screener/stocks/movers?top=50"
+        headers = {"accept": "application/json",
+                   "APCA-API-KEY-ID": config.ALPACA_API_KEY,
+                   "APCA-API-SECRET-KEY": config.ALPACA_SECRET_KEY}
+        response = requests.get(url, headers=headers)
+        # print(response.text)
+        data = response.json()
+        '''
+        for item in response:
+            print(item)
+        '''
+        for mover_type in ["gainers", "losers"]:
+            # print(f"\n---{mover_type.upper()} ---")
+
+            for item in data[mover_type]:
+                # print(f"Symbol: {item['symbol']}, Price: {item['price']}, Change: {item['percent_change']}%")
+                self.movers.append(item)
+
+    def listStocks(self, list=["empty List.."], limit = 100):
+        index = 0
+        for stock in list:
+            if(index == limit): break
+            index += 1
+            print(f"{stock}")
 

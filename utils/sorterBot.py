@@ -8,11 +8,23 @@ class SorterBot:
     def sort_by_priceChange(self, list):
         return sorted(list, key=lambda s: s['priceChangePercentage'], reverse=True)
 
+    def sort_stock_by_upward_percent_change(self, list):
+        return sorted(list, key=lambda s: s['percent_change'], reverse=True)
+
+    def sort_stock_by_downward_percent_change(self, list):
+        return sorted(list, key=lambda s: s['percent_change'], reverse=False)
+
     def sort_by_price_change_percentage_24h(self, list):
         return sorted(list, key=lambda s: s['price_change_percentage_24h'], reverse=True)
 
-    def sort_price_low_to_high(self, list):
+    def sort_latest_close_low_to_high(self, list):
         return sorted(list, key=lambda s: s['latestClose'], reverse=False)
+        
+    def sort_price_low_to_high(self, list):
+        return sorted(list, key=lambda s: s['price'], reverse=False)
+
+    def sort_price_high_to_low(self, list):
+        return sorted(list, key=lambda s: s['price'], reverse=True)
 
     def sort_current_price_low_to_high(self, list):
         return sorted(list, key=lambda s: s['current_price'], reverse=False)
@@ -29,10 +41,10 @@ class SorterBot:
     def double_placers(self, list1, list2):
         newList = []
         for index, i in enumerate(list1):
-            if index > 5: break 
+            if index > 25: break 
             for index, j in enumerate(list2):
-                if index > 5: break
-                if i['ticker'] == j['ticker']: newList.append(i)
+                if index > 25: break
+                if i['symbol'] == j['symbol']: newList.append(i)
 
         if newList.count == 0: newList.append("No double placers")
 

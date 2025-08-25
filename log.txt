@@ -1,0 +1,30 @@
+==== Run Started: 2025-08-12 14:05:02 ====
+pump, $0.004, 16.74%
+jasmy, $0.019, 12.62%
+hash, $0.03, 11.44%
+ada, $0.85, 8.61%
+algo, $0.275, 7.78%
+grt, $0.102, 7.52%
+jup, $0.536, 7.12%
+pepe, $0.0, 7.01%
+arb, $0.477, 6.75%
+kas, $0.098, 6.74%
+gala, $0.018, 6.53%
+wif, $0.995, 6.48%
+pyth, $0.13, 6.4%
+xtz, $0.875, 6.13%
+Error fetching {"buying_power":"3.61","code":40310000,"cost_basis":"4.91","message":"insufficient buying power"}.. 
+Error fetching {"code":42210000,"message":"asset \"JASMY\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"HASH\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"ADA\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"ALGO\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"GRT\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"JUP\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"PEPE\" not found"}.. 
+Error fetching {"buying_power":"3.61","code":40310000,"cost_basis":"29.69","message":"insufficient buying power"}.. 
+Error fetching {"code":42210000,"message":"asset \"KAS\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"GALA\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"WIF\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"PYTH\" not found"}.. 
+Error fetching {"code":42210000,"message":"asset \"XTZ\" not found"}.. 
+==== Run End ====

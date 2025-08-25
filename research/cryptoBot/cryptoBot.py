@@ -1,4 +1,5 @@
-import requests
+# import requests
+# from research.stockBot import stockBot
 from data.symbolBot import SymbolBot
 from data.fallbackCrypto import fallback_crypto
 from datetime import datetime, timedelta
@@ -8,6 +9,9 @@ class CryptoBot:
         self.base_url = "https://api.coingecko.com/api/v3"
         self.symbolBot = SymbolBot()
         self.symbolList = []
+
+    def load_stocks(self):
+        self.stockList 
 
     def load_symbols_from_symbolBot(self):
         self.symbolList = self.symbolBot.crypto_full_list()

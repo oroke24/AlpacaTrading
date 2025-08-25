@@ -1,28 +1,98 @@
+import asyncio
 from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
 from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
-from order.marketBuy import place_market_order_with_trailing_percentage
+from order.marketBuy import place_market_order_with_trailing_percentage, place_trailing_stops
+from auth.connectClient import paperTradingClient
+from datetime import datetime
 
-symbolBot = SymbolBot()
-stockBot = StockBot()
-cryptoBot = CryptoBot()
-printerBot = PrinterBot()
-sorterBot = SorterBot()
-trendingStocks = []
+def main():
 
+    print(f"==== Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
 
-cryptoBot.load_symbols_from_symbolBot()
+    stockBot = StockBot()
+    sorterBot = SorterBot()
+    '''
+    symbolBot = SymbolBot()
+    cryptoBot = CryptoBot()
+    printerBot = PrinterBot()
+    trendingStocks = []
+    '''
 
-list1 = sorterBot.sort_by_price_change_percentage_24h(cryptoBot.symbolList)
-list2 = sorterBot.sort_current_price_low_to_high(cryptoBot.symbolList)
+    # --- StockBot Research and Trade Portion
+    print(f"--- STOCK PORTION ---")
 
-cryptoBot.symbolList = sorterBot.crypto_double_placers(list1, list2)
-cryptoBot.print_symbols_and_price()
+    stockBot.getMovers()
+    listUptrend = sorterBot.sort_stock_by_upward_percent_change(stockBot.movers)
+    listDowntrend = sorterBot.sort_stock_by_downward_percent_change(stockBot.movers)
 
-for cryptoInfo in cryptoBot.symbolList:
-    try:
-        place_market_order_with_trailing_percentage(cryptoInfo["symbol"].upper(), 1, 2)
-    except Exception as e:
-        print(f"Error fetching {e}.. ")
+    listLowToHigh = sorterBot.sort_price_low_to_high(stockBot.movers)
+    listHighToLow = sorterBot.sort_price_high_to_low(stockBot.movers)
+
+    stockBot.CheapUpTrenders = sorterBot.double_placers(listUptrend, listLowToHigh)
+    stockBot.CheapDownTrenders = sorterBot.double_placers(listDowntrend, listLowToHigh)
+
+    stockBot.ExpensiveUpTrenders = sorterBot.double_placers(listUptrend, listHighToLow)
+    stockBot.ExpensiveDownTrenders = sorterBot.double_placers(listDowntrend, listHighToLow)
+
+    #Testing Area (last edit 08/19/2025)
+
+    print("cheap up trenders")
+    stockBot.listStocks(stockBot.CheapUpTrenders, 10)
+    print("cheap down trenders")
+    stockBot.listStocks(stockBot.CheapDownTrenders, 10)
+    print("expensive up trenders")
+    stockBot.listStocks(stockBot.ExpensiveUpTrenders)
+    print("expensive down trenders")
+    stockBot.listStocks(stockBot.ExpensiveDownTrenders)
+
+    '''
+    print("Expensive trenders")
+    stockBot.listStocks(listHighToLow, 10)
+    print("Original Movers")
+    stockBot.listStocks(stockBot.movers, 10)
+
+    stockBot.listStocks(list3)
+    print("Double Placers")
+    stockBot.listStocks(stockBot.stockList)
+
+    #End Testing Area -------------------
+
+    # First, check yesterdays buys (if any) and place according sell positions
+    place_trailing_stops()
+    # Second, place buy orders for today
+    for stockInfo in stockBot.stockList:
+        try:
+            stockSymbol = stockInfo["symbol"].upper()
+            place_market_order_with_trailing_percentage(stockSymbol, 1)
+        except Exception as e:
+            print(f"Error fetching {e}...")
+    # --- END StockBot Research and Trade Portion
+    '''
+
+    # --- CrypoBot Research and Trade Portion
+    '''
+    print(f"--- CRYPTO PORTION ---")
+    cryptoBot.load_symbols_from_symbolBot()
+
+    list1 = sorterBot.sort_by_price_change_percentage_24h(cryptoBot.symbolList)
+    list2 = sorterBot.sort_current_price_low_to_high(cryptoBot.symbolList)
+
+    cryptoBot.symbolList = sorterBot.crypto_double_placers(list1, list2)
+    cryptoBot.print_symbols_and_price()
+
+    for cryptoInfo in cryptoBot.symbolList:
+        try:
+            cryptoSymbol = cryptoInfo["symbol"].upper() + "/USD"
+            place_market_order_with_trailing_percentage(cryptoSymbol, 1, 2)
+        except Exception as e:
+            print(f"Error fetching {e}.. ")
+
+    '''
+    # --- END CrypoBot Research and Trade Portion
+    print(f"==== Run End ====")
+
+if __name__ == "__main__":
+    main()
