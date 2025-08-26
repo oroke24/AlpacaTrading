@@ -4,7 +4,7 @@ from research.stockBot.stockBot import StockBot
 from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
-from order.marketBuy import place_market_order_with_trailing_percentage, place_trailing_stops
+from order.marketBuy import place_market_order_and_save_to_file, place_trailing_stops
 from auth.connectClient import paperTradingClient
 from datetime import datetime
 
@@ -18,7 +18,6 @@ def main():
     symbolBot = SymbolBot()
     cryptoBot = CryptoBot()
     printerBot = PrinterBot()
-    trendingStocks = []
     '''
 
     # --- StockBot Research and Trade Portion
@@ -39,6 +38,7 @@ def main():
 
     #Testing Area (last edit 08/19/2025)
 
+    '''
     print("cheap up trenders")
     stockBot.listStocks(stockBot.CheapUpTrenders, 10)
     print("cheap down trenders")
@@ -48,7 +48,6 @@ def main():
     print("expensive down trenders")
     stockBot.listStocks(stockBot.ExpensiveDownTrenders)
 
-    '''
     print("Expensive trenders")
     stockBot.listStocks(listHighToLow, 10)
     print("Original Movers")
@@ -58,19 +57,28 @@ def main():
     print("Double Placers")
     stockBot.listStocks(stockBot.stockList)
 
+    '''
     #End Testing Area -------------------
 
     # First, check yesterdays buys (if any) and place according sell positions
     place_trailing_stops()
-    # Second, place buy orders for today
-    for stockInfo in stockBot.stockList:
+
+    # Then, place buy orders for today
+    # We'll do the top 5 biggest cheap gainers
+    for stockInfo in stockBot.CheapUpTrenders[:5]:
         try:
             stockSymbol = stockInfo["symbol"].upper()
-            place_market_order_with_trailing_percentage(stockSymbol, 1)
+            place_market_order_and_save_to_file(stockSymbol, 1)
+        except Exception as e:
+            print(f"Error fetching {e}...")
+    # And then we'll do the top 5 biggest losers
+    for stockInfo in stockBot.CheapDownTrenders[:5]:
+        try:
+            stockSymbol = stockInfo["symbol"].upper()
+            place_market_order_and_save_to_file(stockSymbol, 1)
         except Exception as e:
             print(f"Error fetching {e}...")
     # --- END StockBot Research and Trade Portion
-    '''
 
     # --- CrypoBot Research and Trade Portion
     '''
