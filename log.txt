@@ -28,3 +28,103 @@ Error fetching {"code":42210000,"message":"asset \"WIF\" not found"}..
 Error fetching {"code":42210000,"message":"asset \"PYTH\" not found"}.. 
 Error fetching {"code":42210000,"message":"asset \"XTZ\" not found"}.. 
 ==== Run End ====
+==== Run Started: 2025-08-27 10:44:02 ====
+--- STOCK PORTION ---
+Failed to submit trailing stop for XBPEW: {"code":40310000,"message":"account is not allowed to short"}
+Trailing stop sell for GIBOW submitted. ID: 344f5aa7-9c35-4a2a-9871-0c9e97241817
+Trailing stop sell for COCHW submitted. ID: cdb70165-da4e-4c3d-8b6b-785578e3b896
+Trailing stop sell for HUBCZ submitted. ID: 6db4c768-3774-4e73-9028-6c05e39971d4
+Trailing stop sell for HYMCL submitted. ID: abfa0432-f573-40f1-b17f-2dc480ff91f4
+Trailing stop sell for PXSAW submitted. ID: 98288a76-4359-4412-905b-3d20e8456348
+Trailing stop sell for IROHW submitted. ID: c114fb9e-11fe-4318-ab92-1c4753fac5f1
+Trailing stop sell for ASBPW submitted. ID: 9d8c0941-16cd-4317-b67d-ec570a5ef43b
+Trailing stop sell for BFLY.WS submitted. ID: 1d1cece4-462b-4f8a-a49a-4adcb2b85385
+latest price for MNTSW: 0.04, so I'm buying 20
+Buy order submitted. ID: 69b4b5ae-bb35-4ab6-93d3-28e1b8bd668a
+Waiting for MNTSW buy order to fill...
+Saved positions for MNTSW, will attach trailing stop tomorrow.
+latest price for AUUDW: 0.0242, so I'm buying 20
+Buy order submitted. ID: 4a3eee9c-7dd7-4811-b12f-0b6e79c0ee22
+Waiting for AUUDW buy order to fill...
+Saved positions for AUUDW, will attach trailing stop tomorrow.
+latest price for BCGWW: 0.0546, so I'm buying 10
+Buy order submitted. ID: c6afcf44-25ba-4e92-9475-78e2eac4aa73
+Waiting for BCGWW buy order to fill...
+Saved positions for BCGWW, will attach trailing stop tomorrow.
+latest price for PXSAW: 0.0129, so I'm buying 20
+Error fetching {"code":40310100,"message":"trade denied due to pattern day trading protection"}...
+latest price for MAPSW: 0.0249, so I'm buying 20
+Buy order submitted. ID: be3a0694-8080-4382-af06-dd231f2d0349
+Waiting for MAPSW buy order to fill...
+Saved positions for MAPSW, will attach trailing stop tomorrow.
+latest price for GIPRW: 0.2602, so I'm buying 5
+Buy order submitted. ID: d1f68de4-1572-46a4-9bc9-5323cace4579
+Waiting for GIPRW buy order to fill...
+Saved positions for GIPRW, will attach trailing stop tomorrow.
+latest price for LSBPW: 0.03, so I'm buying 20
+Buy order submitted. ID: ed6045dd-f41a-4a92-b9cd-e09f4ca24787
+Waiting for LSBPW buy order to fill...
+Saved positions for LSBPW, will attach trailing stop tomorrow.
+latest price for GIBOW: 0.05, so I'm buying 10
+Error fetching {"code":40310100,"message":"trade denied due to pattern day trading protection"}...
+latest price for PBMWW: 0.0291, so I'm buying 20
+Buy order submitted. ID: e1bd043e-491f-4400-889b-42c5404d04dc
+Waiting for PBMWW buy order to fill...
+Saved positions for PBMWW, will attach trailing stop tomorrow.
+latest price for BENFW: 0.0134, so I'm buying 20
+Buy order submitted. ID: 5f2bf848-d147-4e38-b847-ae32b87d0125
+Waiting for BENFW buy order to fill...
+Saved positions for BENFW, will attach trailing stop tomorrow.
+==== Run End ====
+==== Run Started: 2025-08-28 14:04:03 ====
+--- STOCK PORTION ---
+Failed to submit trailing stop for XBPEW: {"code":40310000,"message":"account is not allowed to short"}
+Trailing stop sell for MNTSW submitted. ID: 7df47536-e3f8-49f8-8349-db50c300ff9d
+Trailing stop sell for AUUDW submitted. ID: 2809e5c7-c570-4810-b26b-fa531be3ed92
+Trailing stop sell for BCGWW submitted. ID: 33aed424-e4f5-4b5a-9fd1-a08ab151e416
+Trailing stop sell for MAPSW submitted. ID: c106526b-9e7e-44d5-b6f6-c3cce59570b8
+Trailing stop sell for GIPRW submitted. ID: 5d59c215-3b0b-4ffc-878a-cef2d5bd53bb
+Trailing stop sell for LSBPW submitted. ID: 8ab26a6a-ba08-4865-b5eb-befa1ea372f0
+Trailing stop sell for PBMWW submitted. ID: 6e577ac4-febb-4ee4-acd1-673658221a8d
+Trailing stop sell for BENFW submitted. ID: 704acfe7-2331-42c6-b81b-bb3be2fc1aa6
+latest price for CYCUW: 0.0305, so I'm buying 20
+Buy order submitted. ID: b0c7d434-5fa0-4306-a346-065a6d0cedb2
+Waiting for CYCUW buy order to fill...
+time limit exceeded, buy order for CYCUW not filled..
+latest price for HUBCZ: 0.0275, so I'm buying 20
+Buy order submitted. ID: bbf7d97d-b4df-42a8-a164-7652bf1c3134
+Waiting for HUBCZ buy order to fill...
+time limit exceeded, buy order for HUBCZ not filled..
+latest price for BARK.WS: 0.1, so I'm buying 5
+Buy order submitted. ID: 33f05648-732c-4c8b-ae9f-0c2228d7cb26
+Waiting for BARK.WS buy order to fill...
+time limit exceeded, buy order for BARK.WS not filled..
+latest price for SWAGW: 0.1519, so I'm buying 5
+Buy order submitted. ID: 529d4f79-9546-464c-924e-934954af66b9
+Waiting for SWAGW buy order to fill...
+time limit exceeded, buy order for SWAGW not filled..
+latest price for CAPTW: 0.0391, so I'm buying 20
+Buy order submitted. ID: 7cc1d4d5-f38e-476d-bfc5-bb8095577fb3
+Waiting for CAPTW buy order to fill...
+time limit exceeded, buy order for CAPTW not filled..
+latest price for APLMW: 0.0309, so I'm buying 20
+Buy order submitted. ID: 9df244a0-e06f-4b3b-ad88-f4ae60285d72
+Waiting for APLMW buy order to fill...
+time limit exceeded, buy order for APLMW not filled..
+latest price for SRZNW: 0.0179, so I'm buying 20
+Buy order submitted. ID: 4188e840-9e6b-40cb-b687-254ae21318d4
+Waiting for SRZNW buy order to fill...
+time limit exceeded, buy order for SRZNW not filled..
+latest price for CURIW: 0.0225, so I'm buying 20
+Buy order submitted. ID: c3ab992c-889e-4882-96f1-25dd4819d89e
+Waiting for CURIW buy order to fill...
+time limit exceeded, buy order for CURIW not filled..
+latest price for OSRHW: 0.0482, so I'm buying 20
+Buy order submitted. ID: 6f67f650-1ad0-4cf8-8c2c-84ba23f9d784
+Waiting for OSRHW buy order to fill...
+time limit exceeded, buy order for OSRHW not filled..
+latest price for PSFE.WS: 0.0395, so I'm buying 20
+Buy order submitted. ID: 65ca4c9d-4efa-4920-ab11-125c282e8248
+Waiting for PSFE.WS buy order to fill...
+time limit exceeded, buy order for PSFE.WS not filled..
+==== Run End ====

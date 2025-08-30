@@ -8,11 +8,122 @@ import json
 
 SAVE_FILE = "open_positions.json"
 
+
+def place_market_order_and_save_to_file(symbol, qty=1, min_price=.05, max_price=20.00):
+
+    # --- check price to see how many we should order ---
+    latest_quote = dataClient.get_stock_latest_trade(StockLatestTradeRequest(symbol_or_symbols=symbol))
+    current_price = latest_quote[symbol].price
+
+    #base case, don't order any stocks under .05 
+    if(current_price < min_price):
+        print(f"{current_price} is under {min_price}. Skipping {symbol}") 
+        return
+    if(current_price > max_price):
+        print(f"{current_price} is over {max_price}. Skipping {symbol}") 
+        return
+    elif(current_price < .10): qty = 10
+    elif(current_price < .50): qty = 5
+    elif(current_price < 1): qty = 3
+    elif(current_price < 2): qty = 2
+
+    print(f"latest price for {symbol}: {current_price}, so I'm buying {qty}")
+
+    # --- Make order ---
+    order = MarketOrderRequest(
+        symbol=symbol, 
+        qty=qty,
+        side=OrderSide.BUY,
+        time_in_force=TimeInForce.GTC
+    )
+
+    # --- Submit order and wait ---
+    buy_order = liveTradingClient.submit_order(order_data=order)
+    print(f"Buy order submitted. ID: {buy_order.id}")
+
+    print(f"Waiting for {symbol} buy order to fill...")
+    filled = False
+    timeLimit = 15
+    while not filled:
+        order_status = liveTradingClient.get_order_by_id(buy_order.id)
+        if order_status.status in ["filled", "partially_filled", "accepted"]:
+            print(f"order status: {order_status.status}")
+            filled = True
+        elif order_status.status in ["cancelled", "rejected", "done_for_day"]:
+            print(f"Order for {symbol} did not fill, status: {order_status.status}")
+            break
+        timeLimit -= 1
+        if timeLimit <= 0:
+            if order_status.status:
+                print(f"Cancelling stuck order for {symbol}, status: {order_status.status}")
+                liveTradingClient.cancel_order_by_id(buy_order.id)
+            else:
+                print(f"Time limit exceeded, buy order for {symbol} not filled..")
+            break
+        time.sleep(1)
+    # if filled, save this position to JSON file for tomorrows run
+
+    if (filled): 
+        pos_data = {"symbol": symbol, "qty": qty}
+        if os.path.exists(SAVE_FILE):
+            with open(SAVE_FILE, "r") as f:
+                positions = json.load(f)
+        else:
+            positions = []
+        positions.append(pos_data)
+        with open(SAVE_FILE, "w") as f:
+            json.dump(positions, f, indent=2)
+        print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
+
+
+def place_trailing_stops_from_local_file(trail_percent=8.0):
+    if not os.path.exists(SAVE_FILE):
+        print("No saved positions from yesterday.")
+        return
+
+    with open(SAVE_FILE, "r") as f:
+        positions = json.load(f)
+
+    remaining_positions = []
+    for pos in positions:
+        symbol = pos["symbol"]
+        qty = pos["qty"]
+
+        try:
+            trailing_stop_order = TrailingStopOrderRequest(
+                symbol=symbol,
+                qty=qty,
+                side=OrderSide.SELL,
+                trail_percent=float(trail_percent),
+                time_in_force=TimeInForce.GTC
+            )
+
+            sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
+            print(f"Trailing stop sell for {symbol} submitted. ID: {sell_order.id}")
+
+        except Exception as e:
+            print(f"Failed to submit trailing stop for {symbol}: {e}")
+            remaining_positions.append(pos)
+
+    # Only clear positions that succeeded
+    if remaining_positions:
+        with open(SAVE_FILE, "w") as f:
+            json.dump(remaining_positions, f, indent=2)
+    else:
+        os.remove(SAVE_FILE)
+
+
+
+'''
+# ----- OLD FUNCTIONS -----
 def place_trailing_stop_buy(symbol, qty=1, trail_percent=5):
     # --- check price to see how many we should order ---
     latest_quote = dataClient.get_stock_latest_trade(StockLatestTradeRequest(symbol_or_symbols=symbol))
     current_price = latest_quote[symbol].price
-    if(current_price < .05): qty = 20
+    #base case, don't order any stocks under .05 
+    if(current_price < .05):
+        print(f"{current_price} is too low to trust. Skipping {symbol}") 
+        return
     elif(current_price < .10): qty = 10
     elif(current_price < .50): qty = 5
     elif(current_price < 1): qty = 2
@@ -57,100 +168,6 @@ def place_trailing_stop_buy(symbol, qty=1, trail_percent=5):
             json.dump(positions, f, indent=2)
         print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
 
-def place_market_order_and_save_to_file(symbol, qty=1):
-
-    # --- check price to see how many we should order ---
-    latest_quote = dataClient.get_stock_latest_trade(StockLatestTradeRequest(symbol_or_symbols=symbol))
-    current_price = latest_quote[symbol].price
-
-    if(current_price < .05): qty = 20
-    elif(current_price < .10): qty = 10
-    elif(current_price < .50): qty = 5
-    elif(current_price < 1): qty = 2
-
-    print(f"latest price for {symbol}: {current_price}, so I'm buying {qty}")
-
-    # --- Make order ---
-    order = MarketOrderRequest(
-        symbol=symbol, 
-        qty=qty,
-        side=OrderSide.BUY,
-        time_in_force=TimeInForce.GTC
-    )
-
-    # --- Submit order and wait ---
-    buy_order = liveTradingClient.submit_order(order_data=order)
-    print(f"Buy order submitted. ID: {buy_order.id}")
-
-    print(f"Waiting for {symbol} buy order to fill...")
-    filled = False
-    timeLimit = 15
-    while not filled:
-        order_status = liveTradingClient.get_order_by_id(buy_order.id)
-        if order_status.status == "filled":
-            filled = True
-        if timeLimit <= 0:
-            # filled = False
-            print(f"time limit exceeded, buy order for {symbol} not filled..")
-            break
-        else:
-            time.sleep(1)
-            timeLimit -= 1
-    # if filled, save this position to JSON file for tomorrows run
-
-    if (filled): 
-        pos_data = {"symbol": symbol, "qty": qty}
-        if os.path.exists(SAVE_FILE):
-            with open(SAVE_FILE, "r") as f:
-                positions = json.load(f)
-        else:
-            positions = []
-        positions.append(pos_data)
-        with open(SAVE_FILE, "w") as f:
-            json.dump(positions, f, indent=2)
-        print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
-
-
-def place_trailing_stops(trail_percent=8.0):
-    if not os.path.exists(SAVE_FILE):
-        print("No saved positions from yesterday.")
-        return
-
-    with open(SAVE_FILE, "r") as f:
-        positions = json.load(f)
-
-    remaining_positions = []
-    for pos in positions:
-        symbol = pos["symbol"]
-        qty = pos["qty"]
-
-        try:
-            trailing_stop_order = TrailingStopOrderRequest(
-                symbol=symbol,
-                qty=qty,
-                side=OrderSide.SELL,
-                trail_percent=float(trail_percent),
-                time_in_force=TimeInForce.GTC
-            )
-
-            sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
-            print(f"Trailing stop sell for {symbol} submitted. ID: {sell_order.id}")
-
-        except Exception as e:
-            print(f"Failed to submit trailing stop for {symbol}: {e}")
-            remaining_positions.append(pos)
-
-    # Only clear positions that succeeded
-    if remaining_positions:
-        with open(SAVE_FILE, "w") as f:
-            json.dump(remaining_positions, f, indent=2)
-    else:
-        os.remove(SAVE_FILE)
-
-
-
-'''
-# ----- OLD FUNCTIONS -----
 def place_market_order_with_trailing_percentage(symbol, qty=1, trail_percent=1.0):
     order = MarketOrderRequest(
         symbol=symbol, 

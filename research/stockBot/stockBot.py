@@ -109,9 +109,9 @@ class StockBot:
 
             for item in data[mover_type]:
                 # print(f"Symbol: {item['symbol']}, Price: {item['price']}, Change: {item['percent_change']}%")
-                self.movers.append(item)
+                if(item['price'] > 1.0): self.movers.append(item)
 
-    def listStocks(self, list=["empty List.."], limit = 100):
+    def listStocks(self, list=["empty List.."], limit = 200):
         index = 0
         for stock in list:
             if(index == limit): break

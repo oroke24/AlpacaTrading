@@ -1,38 +1,22 @@
 [
   {
-    "symbol": "XBPEW",
+    "symbol": "WLDSW",
     "qty": 2
   },
   {
-    "symbol": "GIBOW",
-    "qty": 10
+    "symbol": "SLNHP",
+    "qty": 1
   },
   {
-    "symbol": "COCHW",
-    "qty": 20
+    "symbol": "SOS",
+    "qty": 2
   },
   {
-    "symbol": "HUBCZ",
-    "qty": 20
+    "symbol": "CWD",
+    "qty": 1
   },
   {
-    "symbol": "HYMCL",
-    "qty": 20
-  },
-  {
-    "symbol": "PXSAW",
-    "qty": 20
-  },
-  {
-    "symbol": "IROHW",
-    "qty": 10
-  },
-  {
-    "symbol": "ASBPW",
-    "qty": 10
-  },
-  {
-    "symbol": "BFLY.WS",
-    "qty": 10
+    "symbol": "MOBBW",
+    "qty": 1
   }
 ]

@@ -1,3 +1,9 @@
+import yfinance as yf
+from auth.connectClient import dataClient
+from alpaca.data import StockBarsRequest
+from alpaca.data.timeframe import TimeFrame
+
+
 class SorterBot:
     def __init__(self):
         pass
@@ -47,7 +53,6 @@ class SorterBot:
                 if i['symbol'] == j['symbol']: newList.append(i)
 
         if newList.count == 0: newList.append("No double placers")
-
         return newList
         
     def crypto_double_placers(self, list1, list2):
@@ -60,7 +65,32 @@ class SorterBot:
                     newList.append(i)
 
         if newList.count == 0: newList.append("No double placers")
-
         return newList
+
+    def passes_volume_filter(self, symbol, min_volume=500_000):
+        try:
+            print(f"Checking {symbol}...")
+
+            request_params = StockBarsRequest(symbol_or_symbols=symbol, timeframe=TimeFrame.Day)
+            barset = dataClient.get_stock_bars(request_params)
+            print(barset)
+            '''
+            avg_volume = sum([bar.volume for bar in barset])
+        
+            print(f"{symbol} avg volume: {avg_volume:.0f}")
+            return avg_volume >= min_volume
+            '''
+        except Exception as e:
+            print(f"Could not fetch volume for {symbol}: {e}")
+            return False
+    
+    def remove_low_volume_symbols(self, list, min_volume=500_000):
+        new_list = []
+        for symbol in list:
+            if(not self.passes_volume_filter(symbol['symbol'], min_volume)):
+                new_list.append(symbol)
+            else:
+                print(f"Removed {symbol} (low volume)")
+        return new_list
 
         
