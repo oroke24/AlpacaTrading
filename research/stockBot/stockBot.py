@@ -15,7 +15,6 @@ class StockBot:
         self.ExpensiveUpTrenders =[]
         self.ExpensiveDownTrenders = []
         pass
-
     
     def fill_list(self):
         self.stockList = self.quick_fill()
@@ -23,82 +22,10 @@ class StockBot:
         for item in self.stockList:
             print(f"Item: {item}")
 
-
     def quick_fill(self):
         tickers = self.symbolBot.stocks_full_list()
         return tickers
 
-    def filter_high_market_caps(self, stocks, cap_min=100_000_000, pe_max=30, pb_max=4, ps_max=4):
-        print("hello from high cap filter")
-        filtered_stocks = []
-        for stock in stocks:
-            symbol = stock['symbol']
-            percent_change = stock['percent_change']
-            price = stock['price']
-
-            try:
-                ticker = yf.Ticker(symbol)
-                info = ticker.info or {}
-
-                market_cap = info.get('marketCap')
-                trailing_pe = info.get('trailingPE')
-                price_to_book = info.get('priceToBook')
-                price_to_sales = info.get('priceToSalesTrailing12Months') or info.get('priceToSales')
-
-                if (market_cap is None or market_cap < cap_min):
-                    # print(f"{symbol}: Market Cap too low or unavailable ({market_cap}).  Skipping.")
-                    continue
-
-                if (trailing_pe is not None and trailing_pe <= pe_max):
-                    if(price_to_book is not None and price_to_book <= pb_max):
-                        filtered_stocks.append({
-                            'symbol' : symbol,
-                            'price' : price,
-                            'percent_change' : percent_change,
-                            'market_cap': market_cap,
-                            'pe_ratio': float(trailing_pe),
-                            'pb_ratio' : float(price_to_book)
-                            
-                        })
-                        #print(f"{symbol}: Passed P/E and P/B filters.  MCap: ${float(market_cap):,.2f}, P/E: {float(trailing_pe):.2f}, P/B: {float(price_to_book):.2f} - Added to list")
-                        continue
-                    else:
-                        #print(f"{symbol}: P/B too high(over {pb_max}). P/B: {price_to_book}")
-                        continue
-                
-                elif(price_to_sales is not None and price_to_sales <= ps_max):
-                    if(price_to_book is not None and price_to_book <= pb_max):
-                        filtered_stocks.append({
-                            'symbol' : symbol,
-                            'price' : price,
-                            'percent_change' : percent_change,
-                            'market_cap': market_cap,
-                            'ps_ratio': float(price_to_sales),
-                            'pb_ratio' : float(price_to_book)
-                        })
-                        #print(f"{symbol}: Passed P/S and P/B filters. Added to list.")
-                        continue
-                    else:
-                        #print(f"{symbol}: P/B too high(over {pb_max}). P/B: {price_to_book}")
-                        continue
-                
-                '''
-                else:
-                    print(f"{symbol}: Did not pass all filters")
-                    if market_cap is None or market_cap < cap_min:
-                        print(f"  - Market cap is unavailable or too low: {market_cap}")
-                    if trailing_pe is None or trailing_pe > pe_max:
-                        print(f"  - P/E is unavailable or too high: {trailing_pe}")
-                    if price_to_sales is None or price_to_sales > ps_max:
-                        print(f"  -P/S is unavailable or too high: {price_to_sales}")
-                    if price_to_book is None or price_to_book > pb_max:
-                        print(f"  - P/B is unavailable or too high: {price_to_book}")
-                '''
-
-            except Exception as e:
-                print(f"Error processing {symbol}: {e}")
-        return filtered_stocks
-    
     def fill_stock_data_from_yfinance(self, tickers):
         today = datetime.now()
         lastWeek = today - timedelta(7)
@@ -187,14 +114,37 @@ class StockBot:
         for stock in list:
             if(index == limit): break
             index += 1
-            print(f"{stock}")
+
+            symbol = self.format_number(stock['symbol'])
+            price = self.format_number(stock['price'])
+            percent_change = self.format_number(stock['percent_change'])
+
+            if 'pb_ratio' in stock:
+                pb_ratio = self.format_number(stock['pb_ratio'])
+            else:
+                pb_ratio = "n/a"
+
+            if 'market_cap' in stock:
+                market_cap = self.format_number(stock['market_cap'])
+            else:
+                market_cap = "n/a"
+
+            if 'float_rotation' in stock:
+                float_rotation = self.format_number(stock['float_rotation'])
+            else:
+                float_rotation = "n/a"
+
+
+            print(f"{symbol}, ${price}, {percent_change}% -- pb_ratio: {pb_ratio}, mCap: {market_cap}, float_rotation: {float_rotation or 0}")
     
-    def format_mcap(value):
+    def format_number(self, value):
         if value is None:
             return "N/A"
-        if value >= 1_000_000_000:
-            return f"${value / 1_000_000_000:.1f}B"
-        elif value >= 1_000_000:
-            return f"${value / 1_000_000:.1f}M"
-        else:
-            return f"${value:,}"
+        try:
+            if value >= 1_000_000_000:
+                return f"{value / 1_000_000_000:.2f}B"
+            if value >= 1_000_000:
+                return f"{value / 1_000_000:.2f}M"
+            return f"{float(value):,.2f}"
+        except (ValueError, TypeError):
+            return str(value) #return as string if not a valid number

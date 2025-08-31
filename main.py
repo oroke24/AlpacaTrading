@@ -1,9 +1,9 @@
-import asyncio
 from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
 from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
+from utils.filterBot import FilterBot
 from order.marketBuy import place_market_order_and_save_to_file, place_trailing_stops_from_local_file
 from auth.connectClient import paperTradingClient
 from datetime import datetime
@@ -12,6 +12,47 @@ def main():
 
     print(f"==== Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
 
+    # Initialize bots 
+    filterBot = FilterBot()
+    stockBot = StockBot()
+    sorterBot = SorterBot()
+
+    # --- StockBot Research and Trade Portion
+    print(f"--- STOCK PORTION ---")
+
+    # First, grab symbols worth looking at
+    stockBot.getMovers()
+
+    # Before buying, check yesterdays buys (if any) and place according sell positions
+    place_trailing_stops_from_local_file()
+
+    # Then, filter best stocks to buy, if any.
+    high_caps = filterBot.filter_high_market_caps(stockBot.movers)
+    print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
+    share_floats = filterBot.filter_shares_and_float(high_caps)
+    print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
+
+    stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
+    print(f"Stocks worth buying are:")
+    stockBot.listStocks(stocksToBuy)
+
+    # Then, place orders
+    for stockInfo in high_caps:
+        try:
+            stockSymbol = stockInfo["symbol"].upper()
+            place_market_order_and_save_to_file(stockSymbol, 1)
+        except Exception as e:
+            print(f"Error fetching {e}...")
+    # --- END StockBot Research and Trade Portion
+    print(f"==== Run End ====")
+
+
+# ========== TESTING AREA ========== TESTING AREA =========== TESTING AREA ===========
+def testing():
+
+    print(f"==== Test Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
+
+    filterBot = FilterBot()
     stockBot = StockBot()
     sorterBot = SorterBot()
     '''
@@ -73,9 +114,15 @@ def main():
     # place_trailing_stops_from_local_file()
 
     # Then, place buy orders for today
-    high_caps = stockBot.filter_high_market_caps(stockBot.movers)
-    print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed.")
+    high_caps = filterBot.filter_high_market_caps(stockBot.movers)
+    print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
     stockBot.listStocks(high_caps)
+    share_floats = filterBot.filter_shares_and_float(high_caps)
+    print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
+
+    stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
+    print(f"Stocks worth buying are:")
+    stockBot.listStocks(stocksToBuy)
 
     '''
     # This gets the top 5 biggest cheap gainers
@@ -92,7 +139,6 @@ def main():
             place_market_order_and_save_to_file(stockSymbol, 1)
         except Exception as e:
             print(f"Error fetching {e}...")
-    '''
 
     for stockInfo in high_caps:
         try:
@@ -101,6 +147,7 @@ def main():
         except Exception as e:
             print(f"Error fetching {e}...")
 
+    '''
     # --- END StockBot Research and Trade Portion
     '''
     # --- CrypoBot Research and Trade Portion
@@ -122,7 +169,8 @@ def main():
 
     # --- END CrypoBot Research and Trade Portion
     '''
-    print(f"==== Run End ====")
+    print(f"==== Test Run End ====")
 
 if __name__ == "__main__":
     main()
+    #testing()
