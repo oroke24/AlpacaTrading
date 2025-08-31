@@ -25,7 +25,6 @@ def main():
 
     stockBot.getMovers()
 
-
     '''
     print(f"all movers ({len(stockBot.movers)})")
     stockBot.listStocks(stockBot.movers)
@@ -71,7 +70,7 @@ def main():
     #End Testing Area -------------------
 
     # First, check yesterdays buys (if any) and place according sell positions
-    place_trailing_stops_from_local_file()
+    # place_trailing_stops_from_local_file()
 
     # Then, place buy orders for today
     high_caps = stockBot.filter_high_market_caps(stockBot.movers)
@@ -101,6 +100,7 @@ def main():
             place_market_order_and_save_to_file(stockSymbol, 1)
         except Exception as e:
             print(f"Error fetching {e}...")
+
     # --- END StockBot Research and Trade Portion
     '''
     # --- CrypoBot Research and Trade Portion

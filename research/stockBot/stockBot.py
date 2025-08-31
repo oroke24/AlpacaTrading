@@ -28,7 +28,7 @@ class StockBot:
         tickers = self.symbolBot.stocks_full_list()
         return tickers
 
-    def filter_high_market_caps(self, stocks, cap_min=100_000_000, pe_max=20, pb_max=3, ps_max=4):
+    def filter_high_market_caps(self, stocks, cap_min=100_000_000, pe_max=30, pb_max=4, ps_max=4):
         print("hello from high cap filter")
         filtered_stocks = []
         for stock in stocks:
