@@ -115,7 +115,7 @@ class StockBot:
             if(index == limit): break
             index += 1
 
-            symbol = self.format_number(stock['symbol'])
+            symbol = stock['symbol']
             price = self.format_number(stock['price'])
             percent_change = self.format_number(stock['percent_change'])
 

@@ -1,5 +1,6 @@
 from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
+from research.aiBot.openAiBot import OpenAiBot
 from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
@@ -16,6 +17,7 @@ def main():
     filterBot = FilterBot()
     stockBot = StockBot()
     sorterBot = SorterBot()
+    openAiBot = OpenAiBot()
 
     # --- StockBot Research and Trade Portion
     print(f"--- STOCK PORTION ---")
@@ -36,8 +38,12 @@ def main():
     print(f"Stocks worth buying are:")
     stockBot.listStocks(stocksToBuy)
 
+    openAi_opinion = openAiBot.studyStocks(stocksToBuy)
+    print(f"openAi's Stock list:")
+    stockBot.listStocks(openAi_opinion)
+
     # Then, place orders
-    for stockInfo in high_caps:
+    for stockInfo in openAi_opinion:
         try:
             stockSymbol = stockInfo["symbol"].upper()
             place_market_order_and_save_to_file(stockSymbol, 1)
@@ -55,6 +61,8 @@ def testing():
     filterBot = FilterBot()
     stockBot = StockBot()
     sorterBot = SorterBot()
+    openAiBot = OpenAiBot()
+    
     '''
     cryptoBot = CryptoBot()
     symbolBot = SymbolBot()
@@ -107,11 +115,11 @@ def testing():
     print("Double Placers")
     stockBot.listStocks(stockBot.stockList)
 
-    '''
     #End Testing Area -------------------
 
     # First, check yesterdays buys (if any) and place according sell positions
     # place_trailing_stops_from_local_file()
+    '''
 
     # Then, place buy orders for today
     high_caps = filterBot.filter_high_market_caps(stockBot.movers)
@@ -124,6 +132,17 @@ def testing():
     print(f"Stocks worth buying are:")
     stockBot.listStocks(stocksToBuy)
 
+    openAi_opinion = openAiBot.studyStocks(stocksToBuy)
+    print(f"openAi's Stock list:")
+    stockBot.listStocks(openAi_opinion)
+    '''
+    for stock in openAi_opinion:
+        print(
+            f"{stock['symbol']}, ${stock['price']}, {stock['percent_change']}% "
+            f"-- pb_ratio: {stock['pb_ratio']}, mCap: {stock['market_cap']}, float_rotation: {stock['float_rotation']}"
+        )
+
+    '''
     '''
     # This gets the top 5 biggest cheap gainers
     for stockInfo in stockBot.CheapUpTrenders[:5]:
