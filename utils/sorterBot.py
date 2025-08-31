@@ -42,14 +42,30 @@ class SorterBot:
     def sort_by_volume(self, list):
         # Sort descending by 'volume' if present, else 0
         return sorted(list, key=lambda s: s.get('volume', 0), reverse=True)
+    
+    def get_positives(self, list):
+        #Return a list of symbols only containing the negative percent change 
+        new_list = []
+        for symbol in list:
+            if(symbol['percent_change'] >= 0):
+                new_list.append(symbol)
+        return new_list
+
+    def get_negatives(self, list):
+        #Return a list of symbols only containing the negative percent change 
+        new_list = []
+        for symbol in list:
+            if(symbol['percent_change'] < 0):
+                new_list.append(symbol)
+        return new_list
 
 
     def double_placers(self, list1, list2):
         newList = []
         for index, i in enumerate(list1):
-            if index > 25: break 
+            if index > 10: break 
             for index, j in enumerate(list2):
-                if index > 25: break
+                if index > 10: break
                 if i['symbol'] == j['symbol']: newList.append(i)
 
         if newList.count == 0: newList.append("No double placers")
