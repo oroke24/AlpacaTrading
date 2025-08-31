@@ -34,12 +34,12 @@ def main():
     share_floats = filterBot.filter_shares_and_float(high_caps)
     print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
 
+    print("Stocks worth buying are:")
     stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
-    print(f"Stocks worth buying are:")
     stockBot.listStocks(stocksToBuy)
 
+    print("openAi's Stock list:")
     openAi_opinion = openAiBot.studyStocks(stocksToBuy)
-    print(f"openAi's Stock list:")
     stockBot.listStocks(openAi_opinion)
 
     # Then, place orders
