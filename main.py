@@ -138,7 +138,7 @@ def testing():
 
     #print(f"buying power - 10 = {float(live_account.buying_power) - 10:.2f}")
 
-    # Then, place buy orders for today
+    #Then, place buy orders for today
 
     high_caps = filterBot.filter_high_market_caps(stockBot.movers)
     print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
@@ -150,23 +150,25 @@ def testing():
     print(f"Stocks worth buying are:")
     stockBot.listStocks(stocksToBuy)
 
+    '''
     for stock in stocksToBuy:
         pos_size = calculate_position_size(buying_power, stock['price'])
         print(f"Buying {pos_size} of {stock['symbol']}")
-
-
     '''
+
+
 
     openAi_opinion = openAiBot.studyStocks(stocksToBuy)
     print(f"openAi's Stock list:")
     stockBot.listStocks(openAi_opinion)
     for stock in openAi_opinion:
+        pos_size = calculate_position_size(buying_power, stock['price'])
         print(
             f"{stock['symbol']}, ${stock['price']}, {stock['percent_change']}% "
             f"-- pb_ratio: {stock['pb_ratio']}, mCap: {stock['market_cap']}, float_rotation: {stock['float_rotation']}"
         )
+        print(f"Buying {pos_size} of {stock['symbol']}")
 
-    '''
     '''
     # This gets the top 5 biggest cheap gainers
     for stockInfo in stockBot.CheapUpTrenders[:5]:

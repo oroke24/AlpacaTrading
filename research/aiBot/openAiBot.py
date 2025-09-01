@@ -9,14 +9,14 @@ class OpenAiBot:
             aiClient = OpenAI()
             responseToPrint = aiClient.responses.create(
                 model = "gpt-5",
-                input = f"Do a study on the recent performance of these stocks and in less than 200 words, mention which to remove, keep, and why (feel free to add 1 or 2 that my filters may have missed, but only if your over 90% sure about it): {stocks}."
+                input = f"Do a study on the recent performance of these stocks (including a brief news check of the symbol and company) and in around 200 words, mention which to remove, keep, and why (feel free to add 1 or 2 that my filters may have missed, but only if your over 90% sure about it): {stocks}."
             )
             print(responseToPrint.output_text)
 
             responseToReturn = aiClient.responses.create(
                 model = "gpt-5",
                 input=f"""
-                    Analyze these stocks: {stocks}.
+                    Analyze these stocks (include a brief news check of the symbol): {stocks}.
                     Select only the ones worth buying if they will be traded tomorrow with a trailing stop loss of 8%.
                     Return ONLY valid JSON — an array of objects, each with the same keys as provided.
                     - Do not add explanations, markdown, or notes.
