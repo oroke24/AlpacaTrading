@@ -90,7 +90,7 @@ class StockBot:
         self.stockList = results
         # return results
     
-    def getMovers(self, min_price=.10, max_price=20):
+    def getMovers(self, max_price=20, min_price=.10):
         url = "https://data.alpaca.markets/v1beta1/screener/stocks/movers?top=50"
         headers = {"accept": "application/json",
                    "APCA-API-KEY-ID": config.ALPACA_API_KEY,

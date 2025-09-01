@@ -5,13 +5,21 @@ from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
 from utils.filterBot import FilterBot
-from order.marketBuy import place_market_order_and_save_to_file, place_trailing_stops_from_local_file
-from auth.connectClient import paperTradingClient
+from order.marketBuy import place_market_order_and_save_to_file, place_trailing_stops_from_local_file, calculate_position_size
+from auth.connectClient import paperTradingClient, liveTradingClient
 from datetime import datetime
 
 def main():
 
     print(f"==== Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
+
+    live_account = liveTradingClient.get_account()
+    buying_power = float(live_account.buying_power)
+    day_trades = int(live_account.daytrade_count)
+
+    if(day_trades >= 3):
+        print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
+        return
 
     # Initialize bots 
     filterBot = FilterBot()
@@ -23,7 +31,7 @@ def main():
     print(f"--- STOCK PORTION ---")
 
     # First, grab symbols worth looking at
-    stockBot.getMovers()
+    stockBot.getMovers(buying_power)
 
     # Before buying, check yesterdays buys (if any) and place according sell positions
     place_trailing_stops_from_local_file()
@@ -40,15 +48,19 @@ def main():
 
     print("openAi's Stock list:")
     openAi_opinion = openAiBot.studyStocks(stocksToBuy)
-    stockBot.listStocks(openAi_opinion)
+    if not openAi_opinion:
+        print("No AI approved stocks for today, rolling on without it")
+        openAi_opinion = stocksToBuy
+    else:
+        stockBot.listStocks(openAi_opinion)
 
     # Then, place orders
     for stockInfo in openAi_opinion:
         try:
             stockSymbol = stockInfo["symbol"].upper()
-            place_market_order_and_save_to_file(stockSymbol, 1)
+            place_market_order_and_save_to_file(stockSymbol)
         except Exception as e:
-            print(f"Error fetching {e}...")
+            print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion
     print(f"==== Run End ====")
 
@@ -121,7 +133,13 @@ def testing():
     # place_trailing_stops_from_local_file()
     '''
 
+    live_account = liveTradingClient.get_account()
+    buying_power = float(live_account.buying_power)
+
+    #print(f"buying power - 10 = {float(live_account.buying_power) - 10:.2f}")
+
     # Then, place buy orders for today
+
     high_caps = filterBot.filter_high_market_caps(stockBot.movers)
     print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
     stockBot.listStocks(high_caps)
@@ -132,10 +150,16 @@ def testing():
     print(f"Stocks worth buying are:")
     stockBot.listStocks(stocksToBuy)
 
+    for stock in stocksToBuy:
+        pos_size = calculate_position_size(buying_power, stock['price'])
+        print(f"Buying {pos_size} of {stock['symbol']}")
+
+
+    '''
+
     openAi_opinion = openAiBot.studyStocks(stocksToBuy)
     print(f"openAi's Stock list:")
     stockBot.listStocks(openAi_opinion)
-    '''
     for stock in openAi_opinion:
         print(
             f"{stock['symbol']}, ${stock['price']}, {stock['percent_change']}% "

@@ -9,24 +9,27 @@ import json
 SAVE_FILE = "open_positions.json"
 
 
-def place_market_order_and_save_to_file(symbol, qty=1, min_price=.05, max_price=20.00):
+def place_market_order_and_save_to_file(symbol, qty=1):
 
-    # --- check price to see how many we should order ---
+    # --- get buying power ---
+    buying_power = float(liveTradingClient.get_account().buying_power)
+
+    # --- get share price ---
     latest_quote = dataClient.get_stock_latest_trade(StockLatestTradeRequest(symbol_or_symbols=symbol))
     current_price = latest_quote[symbol].price
 
-    #base case, don't order any stocks under .05 
-    if(current_price < min_price):
-        print(f"{current_price} is under {min_price}. Skipping {symbol}") 
-        return
-    if(current_price > max_price):
-        print(f"{current_price} is over {max_price}. Skipping {symbol}") 
-        return
-    elif(current_price < .10): qty = 10
-    elif(current_price < .50): qty = 5
-    elif(current_price < 1): qty = 3
-    elif(current_price < 2): qty = 2
+    # --- check price to see how many we should order ---
+    qty = calculate_position_size(buying_power, current_price)
 
+    if current_price >= buying_power:
+        print(f"Skipping {symbol}: current price ({current_price}) exceeds buying power ({buying_power})")
+        return
+    
+    if qty == 0:
+        print(f"Skipping {symbol}: {current_price}, too risky.")
+        return
+
+    
     print(f"latest price for {symbol}: {current_price}, so I'm buying {qty}")
 
     # --- Make order ---
@@ -46,7 +49,7 @@ def place_market_order_and_save_to_file(symbol, qty=1, min_price=.05, max_price=
     timeLimit = 15
     while not filled:
         order_status = liveTradingClient.get_order_by_id(buy_order.id)
-        if order_status.status in ["filled", "partially_filled", "accepted"]:
+        if order_status.status in ["filled"]:
             print(f"order status: {order_status.status}")
             filled = True
         elif order_status.status in ["cancelled", "rejected", "done_for_day"]:
@@ -54,7 +57,7 @@ def place_market_order_and_save_to_file(symbol, qty=1, min_price=.05, max_price=
             break
         timeLimit -= 1
         if timeLimit <= 0:
-            if order_status.status:
+            if order_status.status in ["accepted", "partially_filled"]:
                 print(f"Cancelling stuck order for {symbol}, status: {order_status.status}")
                 liveTradingClient.cancel_order_by_id(buy_order.id)
             else:
@@ -112,6 +115,17 @@ def place_trailing_stops_from_local_file(trail_percent=8.0):
     else:
         os.remove(SAVE_FILE)
 
+def calculate_position_size(buying_power, share_price, stop_pct=0.08, risk_pct=0.05):
+    try:
+        risk_amount = buying_power * risk_pct
+        stop_distance = share_price * stop_pct
+        shares_to_buy = int(risk_amount // stop_distance)
+        #print(f"buying_power: {buying_power}, risk_amount: {risk_amount}, share_price: {share_price}, stop_distance: {stop_distance} -- shares_to_buy: {shares_to_buy}")
+        return shares_to_buy if shares_to_buy > 0 else 0
+
+    except Exception as e:
+        print(f"Error calculating position size: {e}")
+        return 1
 
 
 '''

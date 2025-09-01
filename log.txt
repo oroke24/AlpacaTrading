@@ -128,3 +128,40 @@ Buy order submitted. ID: 65ca4c9d-4efa-4920-ab11-125c282e8248
 Waiting for PSFE.WS buy order to fill...
 time limit exceeded, buy order for PSFE.WS not filled..
 ==== Run End ====
+HTTP Error 404: 
+HTTP Error 404: 
+==== Run Started: 2025-09-01 10:41:02 ====
+--- STOCK PORTION ---
+No saved positions from yesterday.
+Error processing MOBBW: '<=' not supported between instances of 'str' and 'int'
+Screened 57 => 3 passed market cap and price filter.
+Out of the 3, 3 passed share and float filter.
+Stocks worth buying are:
+GMHS, $1.90, 68.14% -- pb_ratio: 3.24, mCap: 101.25M, float_rotation: 12.96
+WOOF, $3.99, 23.53% -- pb_ratio: 0.98, mCap: 1.12B, float_rotation: 0.26
+NEO, $8.78, 21.78% -- pb_ratio: 1.32, mCap: 1.13B, float_rotation: 0.08
+openAi's Stock list:
+My take based on the metrics you provided (price action, P/B, market cap, float rotation):
+
+- Remove: GMHS — +68% spike with very high float rotation (~13) and microcap size (~$101M) points to speculative churn. P/B >3 with that volatility raises dilution/mean‑reversion risk.
+
+- Keep: WOOF — Value support near book (P/B ~0.98) and low float rotation (~0.26) suggest less froth. Recent +23% bounce with $1.1B cap gives better liquidity and potential turnaround asymmetry; monitor margins/leverage.
+
+- Keep: NEO — Constructive momentum (+21.8%) with reasonable P/B (~1.32) and very low float rotation (~0.08) implies accumulation rather than a blow‑off. $1.13B cap provides sturdier footing than microcaps.
+
+No additions: I’m not >90% confident on other names without your exact filters and live data.
+
+Risk note: For WOOF/NEO, consider staggered exits or stops to protect gains; for GMHS, avoid averaging up after a parabolic move.
+WOOF, $3.99, 23.53% -- pb_ratio: 0.98, mCap: 1.12B, float_rotation: 0.26
+NEO, $8.78, 21.78% -- pb_ratio: 1.32, mCap: 1.13B, float_rotation: 0.08
+latest price for WOOF: 4.0, so I'm buying 1
+Buy order submitted. ID: ded54439-d5d4-4e6f-b82d-5a4dc11ce734
+Waiting for WOOF buy order to fill...
+order status: OrderStatus.ACCEPTED
+Saved positions for WOOF, will attach trailing stop tomorrow.
+latest price for NEO: 8.77, so I'm buying 1
+Buy order submitted. ID: 9131e668-4468-4052-8f4f-54172c13ca5e
+Waiting for NEO buy order to fill...
+order status: OrderStatus.ACCEPTED
+Saved positions for NEO, will attach trailing stop tomorrow.
+==== Run End ====
