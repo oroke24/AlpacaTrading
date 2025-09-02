@@ -87,8 +87,9 @@ def testing():
     print(f"--- STOCK PORTION ---")
 
     stockBot.getMovers()
-    stockBot.listStocks(stockBot.movers)
-    print(f"{len(stockBot.movers)}")
+    stockBot.getMostActiveVolume()
+    #stockBot.listStocks(stockBot.movers)
+    #print(f"{len(stockBot.movers)}")
 
     '''
     print(f"all movers ({len(stockBot.movers)})")
@@ -221,5 +222,5 @@ def testing():
     print(f"==== Test Run End ====")
 
 if __name__ == "__main__":
-    #main()
-    testing()
+    main()
+    #testing()

@@ -112,22 +112,30 @@ class StockBot:
         except (requests.RequestException, ValueError, KeyError) as e:
             print(f"Error fetching movers: {e}")
 
-        '''
+    def getMostActiveVolume(self, max_price=20, min_price=.10):
+        headers = {"accept": "application/json",
+                   "APCA-API-KEY-ID": config.ALPACA_API_KEY,
+                   "APCA-API-SECRET-KEY": config.ALPACA_SECRET_KEY}
         try:
             existing_symbols = {m['symbol'] for m in self.movers}
+            print(f"existing_symbols:")
+            self.listStocks(existing_symbols)
             url2 = "https://data.alpaca.markets/v1beta1/screener/stocks/most-actives?top=100"
             response2 = requests.get(url2, headers=headers)
             active_data = response2.json()
             most_actives = active_data.get('most_actives', active_data) if isinstance(active_data, dict) else active_data
             print(f"length of most_actives: {len(most_actives)}")
 
+            print(f"most_active_volume:")
+            self.listStocks(existing_symbols)
+
             for item in most_actives:
                 symbol = item.get('symbol')
                 price = item.get('price', 0)
                 if symbol not in existing_symbols : self.movers.append(item)
+            
         except (requests.RequestException, ValueError, KeyError) as e:
             print(f"Error fetching most actives: {e}")
-        '''
 
 
     def listStocks(self, list=["empty List.."], limit = 200):
