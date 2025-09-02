@@ -49,7 +49,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
     time_interval = 2 #seconds
     while not filled:
         order_status = liveTradingClient.get_order_by_id(buy_order.id)
-        if order_status.status in ["filled"]:
+        if order_status.status in ["filled", "new"]:
             print(f"order status: {order_status.status}")
             filled = True
         elif order_status.status in ["cancelled", "rejected", "done_for_day"]:
