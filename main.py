@@ -1,3 +1,4 @@
+import sys
 from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
 from research.aiBot.openAiBot import OpenAiBot
@@ -9,7 +10,14 @@ from order.marketBuy import place_market_order_and_save_to_file, place_trailing_
 from auth.connectClient import paperTradingClient, liveTradingClient
 from datetime import datetime
 
+
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == 'sell': 
+        # Before buying, check yesterdays buys (if any) and place according sell positions
+        print("Selling yesterdays positions.")
+        place_trailing_stops_from_local_file()
+        return
+
 
     print(f"==== Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
 
@@ -33,8 +41,6 @@ def main():
     # First, grab symbols worth looking at
     stockBot.getMovers(buying_power)
 
-    # Before buying, check yesterdays buys (if any) and place according sell positions
-    place_trailing_stops_from_local_file()
 
     # Then, filter best stocks to buy, if any.
     high_caps = filterBot.filter_high_market_caps(stockBot.movers)
