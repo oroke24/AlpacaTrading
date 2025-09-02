@@ -2,6 +2,7 @@ import sys
 from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
 from research.aiBot.openAiBot import OpenAiBot
+from research.newsBot.newsBot import get_latest_news
 from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
@@ -13,14 +14,18 @@ from datetime import datetime
 
 def main():
     
+    print("\n\n")
     if len(sys.argv) > 1 and sys.argv[1] == 'sell': 
+        print(f"==================== Selling Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
         # Before buying, check yesterdays buys (if any) and place according sell positions
         print("Selling yesterdays positions.")
         place_trailing_stops_from_local_file()
+        print(f"========================= Run End =========================")
+        print("\n\n")
         return
 
 
-    print(f"==== Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
+    print(f"==================== Buying Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
 
     live_account = liveTradingClient.get_account()
     buying_power = float(live_account.buying_power)
@@ -44,25 +49,27 @@ def main():
 
 
     # Then, filter best stocks to buy, if any.
-    high_caps = filterBot.filter_high_market_caps(stockBot.movers)
+    high_caps = filterBot.filter_high_market_caps(stockBot.movers[:-10])
     print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
     share_floats = filterBot.filter_shares_and_float(high_caps)
     print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
 
     print("Stocks worth buying are:")
     stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
+    for stock in stocksToBuy:
+        latest_news = get_latest_news(stock["symbol"])
+        stock["headline"] = latest_news["headline"]
+        stock["summary"] = latest_news["summary"]
     stockBot.listStocks(stocksToBuy)
 
     print("openAi's Stock list:")
     openAi_opinion = openAiBot.studyStocks(stocksToBuy, buying_power)
-    print(f"==== Run End ====")
     print("=======   PLACING BUY ORDERS   =======")
     if not openAi_opinion:
         print("No AI approved stocks for today, rolling on without it")
         openAi_opinion = stocksToBuy
     else:
         stockBot.listStocks(openAi_opinion)
-
     # Then, place orders
     for stockInfo in openAi_opinion:
         try:
@@ -72,6 +79,8 @@ def main():
             print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion
 
+    print(f"========================= Run End =========================")
+    print("\n\n")
 # ========== TESTING AREA ========== TESTING AREA =========== TESTING AREA ===========
 def testing():
 
@@ -92,11 +101,18 @@ def testing():
     print(f"--- STOCK PORTION ---")
 
     stockBot.getMovers()
-    stockBot.getMostActiveVolume()
+    #stockBot.getMostActiveVolume()
     #stockBot.listStocks(stockBot.movers)
     #print(f"{len(stockBot.movers)}")
 
     '''
+    stock = stockBot.movers[0]
+    latest_news = get_latest_news(stock["symbol"])
+    print(f"latest_news: {latest_news}")
+    stock["headline"] = latest_news['headline']
+    stock["summary"] = latest_news['summary']
+    print(stock)
+
     print(f"all movers ({len(stockBot.movers)})")
     stockBot.listStocks(stockBot.movers)
 

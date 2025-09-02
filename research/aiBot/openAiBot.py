@@ -20,7 +20,7 @@ class OpenAiBot:
                     Select only the ones worth buying if they will be traded tomorrow with a trailing stop loss of 8%.
                     Return ONLY valid JSON — an array of objects, each with the same keys as provided.
                     (feel free to add 1 or 2 that my filters may have missed, but only if your over 90% sure about it 
-                    and price is under {buying_power}, only required field is 'symbol', rest can be 0 or n/a)
+                    and price is under {buying_power}, only required fields are 'symbol' and 'price', the rest can be filled with 0 or n/a)
                     - Do not add explanations, markdown, or notes.
                     - Use double quotes around all keys and string values.
                     If none qualify, return [].

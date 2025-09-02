@@ -91,6 +91,8 @@ class StockBot:
         # return results
     
     def getMovers(self, max_price=20, min_price=.10):
+        #print("Inside getMovers()")
+
         headers = {"accept": "application/json",
                    "APCA-API-KEY-ID": config.ALPACA_API_KEY,
                    "APCA-API-SECRET-KEY": config.ALPACA_SECRET_KEY}
@@ -147,6 +149,8 @@ class StockBot:
             symbol = stock['symbol']
             price = self.format_number(stock['price'])
             percent_change = self.format_number(stock['percent_change'])
+            headline = stock['headline'] or 0
+            summary = stock['summary'] or 0
 
             if 'pb_ratio' in stock:
                 pb_ratio = self.format_number(stock['pb_ratio'])
@@ -164,7 +168,9 @@ class StockBot:
                 float_rotation = "n/a"
 
 
-            print(f"{symbol}, ${price}, {percent_change}% -- pb_ratio: {pb_ratio}, mCap: {market_cap}, float_rotation: {float_rotation or 0}")
+            print(f"{symbol}, ${price}, {percent_change}% -- pb_ratio: {pb_ratio}, mCap: {market_cap}, float_rotation: {float_rotation or 0}\n"
+                  "headline: {headline}\n" 
+                  "summary: {summary}")
     
     def format_number(self, value):
         if value is None:
