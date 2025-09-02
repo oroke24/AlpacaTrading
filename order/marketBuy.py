@@ -18,13 +18,13 @@ def place_market_order_and_save_to_file(symbol, qty=1):
     latest_quote = dataClient.get_stock_latest_trade(StockLatestTradeRequest(symbol_or_symbols=symbol))
     current_price = latest_quote[symbol].price
 
-    # --- check price to see how many we should order ---
-    qty = calculate_position_size(buying_power, current_price)
-
+    # --- check price to see how many we should order, if any ---
     if current_price >= buying_power:
         print(f"Skipping {symbol}: current price ({current_price}) exceeds buying power ({buying_power})")
         return
     
+    qty = calculate_position_size(buying_power, current_price)
+
     if qty == 0:
         print(f"Skipping {symbol}: {current_price}, too risky.")
         return
