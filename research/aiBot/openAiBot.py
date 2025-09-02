@@ -4,12 +4,12 @@ import json
 class OpenAiBot:
     def __init__(self):
         pass
-    def studyStocks(self, stocks):
+    def studyStocks(self, stocks, buying_power=10):
         try:
             aiClient = OpenAI()
             responseToPrint = aiClient.responses.create(
                 model = "gpt-5",
-                input = f"Do a study on the recent performance of these stocks (including a brief news check of the symbol and company) and in around 200 words, mention which to remove, keep, and why (feel free to add 1 or 2 that my filters may have missed, but only if your over 90% sure about it): {stocks}."
+                input = f"Do a study on the recent performance of these stocks (including a brief news check of the symbol and company) and in around 200 words, mention which to remove, keep, and why (feel free to add 1 or 2 that my filters may have missed, but only if your over 90% sure about it and price is under {buying_power}): {stocks}."
             )
             print(responseToPrint.output_text)
 
@@ -19,6 +19,8 @@ class OpenAiBot:
                     Analyze these stocks (include a brief news check of the symbol): {stocks}.
                     Select only the ones worth buying if they will be traded tomorrow with a trailing stop loss of 8%.
                     Return ONLY valid JSON — an array of objects, each with the same keys as provided.
+                    (feel free to add 1 or 2 that my filters may have missed, but only if your over 90% sure about it 
+                    and price is under {buying_power}, only required field is 'symbol', rest can be 0 or n/a)
                     - Do not add explanations, markdown, or notes.
                     - Use double quotes around all keys and string values.
                     If none qualify, return [].

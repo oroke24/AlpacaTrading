@@ -12,6 +12,7 @@ from datetime import datetime
 
 
 def main():
+    
     if len(sys.argv) > 1 and sys.argv[1] == 'sell': 
         # Before buying, check yesterdays buys (if any) and place according sell positions
         print("Selling yesterdays positions.")
@@ -53,8 +54,8 @@ def main():
     stockBot.listStocks(stocksToBuy)
 
     print("openAi's Stock list:")
-    openAi_opinion = openAiBot.studyStocks(stocksToBuy)
-
+    openAi_opinion = openAiBot.studyStocks(stocksToBuy, buying_power)
+    print(f"==== Run End ====")
     print("=======   PLACING BUY ORDERS   =======")
     if not openAi_opinion:
         print("No AI approved stocks for today, rolling on without it")
@@ -70,8 +71,6 @@ def main():
         except Exception as e:
             print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion
-    print(f"==== Run End ====")
-
 
 # ========== TESTING AREA ========== TESTING AREA =========== TESTING AREA ===========
 def testing():
