@@ -8,7 +8,6 @@ import json
 
 SAVE_FILE = "open_positions.json"
 
-
 def place_market_order_and_save_to_file(symbol, qty=1):
 
     # --- get buying power ---
@@ -46,7 +45,8 @@ def place_market_order_and_save_to_file(symbol, qty=1):
 
     print(f"Waiting for {symbol} buy order to fill...")
     filled = False
-    timeLimit = 15
+    timeLimit = 16
+    time_interval = 2 #seconds
     while not filled:
         order_status = liveTradingClient.get_order_by_id(buy_order.id)
         if order_status.status in ["filled"]:
@@ -55,7 +55,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
         elif order_status.status in ["cancelled", "rejected", "done_for_day"]:
             print(f"Order for {symbol} did not fill, status: {order_status.status}")
             break
-        timeLimit -= 1
+        timeLimit -= time_interval
         if timeLimit <= 0:
             if order_status.status in ["accepted", "partially_filled"]:
                 print(f"Cancelling stuck order for {symbol}, status: {order_status.status}")
@@ -63,7 +63,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
             else:
                 print(f"Time limit exceeded, buy order for {symbol} not filled..")
             break
-        time.sleep(1)
+        time.sleep(time_interval)
     # if filled, save this position to JSON file for tomorrows run
 
     if (filled): 
