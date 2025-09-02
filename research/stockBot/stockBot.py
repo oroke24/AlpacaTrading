@@ -91,23 +91,44 @@ class StockBot:
         # return results
     
     def getMovers(self, max_price=20, min_price=.10):
-        url = "https://data.alpaca.markets/v1beta1/screener/stocks/movers?top=50"
         headers = {"accept": "application/json",
                    "APCA-API-KEY-ID": config.ALPACA_API_KEY,
                    "APCA-API-SECRET-KEY": config.ALPACA_SECRET_KEY}
-        response = requests.get(url, headers=headers)
-        # print(response.text)
-        data = response.json()
-        '''
-        for item in response:
-            print(item)
-        '''
-        for mover_type in ["gainers", "losers"]:
-            # print(f"\n---{mover_type.upper()} ---")
+        try:
+            url = "https://data.alpaca.markets/v1beta1/screener/stocks/movers?top=50"
+            response = requests.get(url, headers=headers)
+            # print(response.text)
+            data = response.json()
+            '''
+            for item in response:
+                print(item)
+            '''
+            for mover_type in ["gainers", "losers"]:
+                # print(f"\n---{mover_type.upper()} ---")
+                for item in data.get(mover_type,[]):
+                    # print(f"Symbol: {item['symbol']}, Price: {item['price']}, Change: {item['percent_change']}%")
+                    price = item.get('price', 0) or 0
+                    if(min_price < price < max_price): self.movers.append(item)
+        except (requests.RequestException, ValueError, KeyError) as e:
+            print(f"Error fetching movers: {e}")
 
-            for item in data[mover_type]:
-                # print(f"Symbol: {item['symbol']}, Price: {item['price']}, Change: {item['percent_change']}%")
-                if(min_price < item['price'] < max_price): self.movers.append(item)
+        '''
+        try:
+            existing_symbols = {m['symbol'] for m in self.movers}
+            url2 = "https://data.alpaca.markets/v1beta1/screener/stocks/most-actives?top=100"
+            response2 = requests.get(url2, headers=headers)
+            active_data = response2.json()
+            most_actives = active_data.get('most_actives', active_data) if isinstance(active_data, dict) else active_data
+            print(f"length of most_actives: {len(most_actives)}")
+
+            for item in most_actives:
+                symbol = item.get('symbol')
+                price = item.get('price', 0)
+                if symbol not in existing_symbols : self.movers.append(item)
+        except (requests.RequestException, ValueError, KeyError) as e:
+            print(f"Error fetching most actives: {e}")
+        '''
+
 
     def listStocks(self, list=["empty List.."], limit = 200):
         index = 0
@@ -148,3 +169,43 @@ class StockBot:
             return f"{float(value):,.2f}"
         except (ValueError, TypeError):
             return str(value) #return as string if not a valid number
+
+'''
+
+    def getTopMovers(self, max_price=20, min_price=0.10, top_n=50):
+        if not hasattr(self, 'movers'):
+            self.movers = []
+
+        headers = {
+            "accept": "application/json",
+            "APCA-API-KEY-ID": config.ALPACA_API_KEY,
+            "APCA-API-SECRET-KEY": config.ALPACA_SECRET_KEY
+        }
+
+        # 1️⃣ Fetch movers
+        url_movers = "https://data.alpaca.markets/v1beta1/screener/stocks/movers?top=50"
+        movers_response = requests.get(url_movers, headers=headers)
+        movers_data = movers_response.json()
+
+        movers_list = []
+        for mover_type in ["gainers", "losers"]:
+            for item in movers_data.get(mover_type, []):
+                price = item.get('price', 0)
+                #print(f"{item.get('symbol')}")
+                if min_price < price < max_price:
+                    movers_list.append(item)
+
+        # 2️⃣ Fetch most-actives
+        url_active = "https://data.alpaca.markets/v1beta1/screener/stocks/most-actives"
+        active_response = requests.get(url_active, headers=headers)
+        active_data = active_response.json()
+        most_actives = active_data.get('most_actives', active_data) if isinstance(active_data, dict) else active_data
+        active_symbols = {item['symbol'] for item in most_actives}
+
+        # 3️⃣ Merge: keep movers that are also in most-actives
+        top_stocks = [item for item in movers_list if item['symbol'] in active_symbols]
+
+        # Optionally: limit to top_n
+        self.movers = top_stocks[:top_n]
+        #return self.movers
+    '''

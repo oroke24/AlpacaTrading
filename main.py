@@ -48,6 +48,8 @@ def main():
 
     print("openAi's Stock list:")
     openAi_opinion = openAiBot.studyStocks(stocksToBuy)
+
+    print("=======   PLACING BUY ORDERS   =======")
     if not openAi_opinion:
         print("No AI approved stocks for today, rolling on without it")
         openAi_opinion = stocksToBuy
@@ -85,6 +87,8 @@ def testing():
     print(f"--- STOCK PORTION ---")
 
     stockBot.getMovers()
+    stockBot.listStocks(stockBot.movers)
+    print(f"{len(stockBot.movers)}")
 
     '''
     print(f"all movers ({len(stockBot.movers)})")
@@ -133,6 +137,7 @@ def testing():
     # place_trailing_stops_from_local_file()
     '''
 
+    '''
     live_account = liveTradingClient.get_account()
     buying_power = float(live_account.buying_power)
 
@@ -150,7 +155,6 @@ def testing():
     print(f"Stocks worth buying are:")
     stockBot.listStocks(stocksToBuy)
 
-    '''
     for stock in stocksToBuy:
         pos_size = calculate_position_size(buying_power, stock['price'])
         print(f"Buying {pos_size} of {stock['symbol']}")
@@ -158,6 +162,7 @@ def testing():
 
 
 
+    '''
     openAi_opinion = openAiBot.studyStocks(stocksToBuy)
     print(f"openAi's Stock list:")
     stockBot.listStocks(openAi_opinion)
@@ -169,7 +174,6 @@ def testing():
         )
         print(f"Buying {pos_size} of {stock['symbol']}")
 
-    '''
     # This gets the top 5 biggest cheap gainers
     for stockInfo in stockBot.CheapUpTrenders[:5]:
         try:
@@ -217,5 +221,5 @@ def testing():
     print(f"==== Test Run End ====")
 
 if __name__ == "__main__":
-    main()
-    #testing()
+    #main()
+    testing()
