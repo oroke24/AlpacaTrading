@@ -49,7 +49,7 @@ def main():
 
 
     # Then, filter best stocks to buy, if any.
-    high_caps = filterBot.filter_high_market_caps(stockBot.movers[:-10])
+    high_caps = filterBot.filter_high_market_caps(stockBot.movers)
     print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
     share_floats = filterBot.filter_shares_and_float(high_caps)
     print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
@@ -70,6 +70,7 @@ def main():
         openAi_opinion = stocksToBuy
     else:
         stockBot.listStocks(openAi_opinion)
+    '''
     # Then, place orders
     for stockInfo in openAi_opinion:
         try:
@@ -78,6 +79,7 @@ def main():
         except Exception as e:
             print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion
+    '''
 
     print(f"========================= Run End =========================")
     print("\n\n")
