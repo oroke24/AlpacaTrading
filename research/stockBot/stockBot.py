@@ -169,8 +169,8 @@ class StockBot:
 
 
             print(f"{symbol}, ${price}, {percent_change}% -- pb_ratio: {pb_ratio}, mCap: {market_cap}, float_rotation: {float_rotation or 0}\n"
-                  "headline: {headline}\n" 
-                  "summary: {summary}")
+                  f"headline: {headline}\n" 
+                  f"summary: {summary}")
     
     def format_number(self, value):
         if value is None:
