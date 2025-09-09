@@ -7,28 +7,47 @@ class OpenAiBot:
     def studyStocks(self, stocks, buying_power=10):
         try:
             aiClient = OpenAI()
-            responseToPrint = aiClient.responses.create(
-                model = "gpt-5",
-                input = f"Do a study on the recent performance of these stocks (including a brief news check of the symbol and company) and in around 200 words, mention which to remove, keep, and why (feel free to add 1 or 2 that my filters may have missed, but only if your over 90% sure about it and price is under {buying_power}): {stocks}."
-            )
-            print(responseToPrint.output_text)
 
-            responseToReturn = aiClient.responses.create(
-                model = "gpt-5",
+            response = aiClient.responses.create(
+                model="gpt-5",
                 input=f"""
-                    Analyze these stocks (include a brief news check of the symbol): {stocks}.
-                    Select only the ones worth buying if they will be traded tomorrow with a trailing stop loss of 8%.
-                    Return ONLY valid JSON — an array of objects, each with the same keys as provided.
-                    (feel free to add 1 or 2 that my filters may have missed, but only if your over 90% sure about it 
-                    and price is under {buying_power}, only required fields are 'symbol' and 'price', the rest can be filled with 0 or n/a)
-                    - Do not add explanations, markdown, or notes.
-                    - Use double quotes around all keys and string values.
-                    If none qualify, return [].
-                    """
+                    Analyze the recent performance of these stocks (with price and percent_change included): {stocks}.
+                    In around 200 words, explain which stocks to keep or remove and why. 
+                    Include up to 1–2 additional stocks you think are strong buys if you are >90% sure and under {buying_power}.
+
+                    Then, based on that reasoning, return ONLY valid JSON (on a new line):
+                    - Array of objects with at least "symbol", "price", "percent_change"
+                    - Other fields can be 0 or "n/a"
+                    - Only include stocks worth buying with a trailing stop of 4-8%
+                    - Use double quotes for all keys and string values
+                    - Do not include explanations, markdown, or notes outside the JSON
+                    - If none qualify, return []
+
+                    Format strictly as:
+                    EXPLANATION:
+                    <your explanation here>
+
+                    JSON:
+                    <your json here>
+                """
             )
-            text = responseToReturn.output_text
-            stock_data = json.loads(text)
+
+            text = response.output_text
+
+            # Split explanation and JSON
+            if "JSON:" in text:
+                explanation, json_str = text.split("JSON:", 1)
+            else:
+                explanation, json_str = text, "[]"
+
+            # Print AI explanation
+            explanation = explanation.replace("EXPLANATION:", "").strip()
+            print(explanation)
+
+            # Parse JSON to final list
+            stock_data = json.loads(json_str.strip())
             return stock_data
+
         except Exception as e:
             print(f"Error talking to AI: {e}... Returning original list of stocks")
             return stocks

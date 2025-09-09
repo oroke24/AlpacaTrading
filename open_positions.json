@@ -1,14 +1,18 @@
 [
   {
-    "symbol": "SITC",
+    "symbol": "BITF",
+    "qty": 13
+  },
+  {
+    "symbol": "BIOX",
+    "qty": 5
+  },
+  {
+    "symbol": "LDI",
     "qty": 1
   },
   {
-    "symbol": "MUX",
-    "qty": 1
-  },
-  {
-    "symbol": "WOOF",
-    "qty": 3
+    "symbol": "BITF",
+    "qty": 2
   }
 ]

@@ -2,9 +2,7 @@ import config
 
 from alpaca.data.historical import NewsClient
 from alpaca.trading.client import TradingClient
-from alpaca.trading.client import TradingClient
 from alpaca.data.historical import StockHistoricalDataClient
-
 
 newsClient = NewsClient(config.ALPACA_API_KEY, config.ALPACA_SECRET_KEY)
 dataClient = StockHistoricalDataClient(config.ALPACA_API_KEY, config.ALPACA_SECRET_KEY)

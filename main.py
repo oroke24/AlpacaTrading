@@ -14,17 +14,18 @@ from datetime import datetime
 
 def main():
     
-    print("\n\n")
+    print("\n")
     if len(sys.argv) > 1 and sys.argv[1] == 'sell': 
         print(f"==================== Selling Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
         # Before buying, check yesterdays buys (if any) and place according sell positions
         print("Selling yesterdays positions.")
         place_trailing_stops_from_local_file()
         print(f"========================= Run End =========================")
-        print("\n\n")
+        print("\n")
         return
 
 
+    print("\n")
     print(f"==================== Buying Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
 
     live_account = liveTradingClient.get_account()
@@ -46,11 +47,12 @@ def main():
 
     # First, grab symbols worth looking at
     stockBot.getMovers(buying_power)
+    stockBot.getMostActiveVolume(buying_power)
 
 
     # Then, filter best stocks to buy, if any.
-    high_caps = filterBot.filter_high_market_caps(stockBot.movers)
-    print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
+    high_caps = filterBot.filter_high_market_caps(stockBot.stockList) #change to stockBot.movers if any issues arise
+    print(f"Screened {len(stockBot.stockList)} => {len(high_caps)} passed market cap and price filter.")
     share_floats = filterBot.filter_shares_and_float(high_caps)
     print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
 
@@ -61,17 +63,19 @@ def main():
         stock["headline"] = latest_news["headline"]
         stock["summary"] = latest_news["summary"]
     stockBot.listStocks(stocksToBuy)
+    stocksLoadedInfo = stockBot.populate_stockList(stocksToBuy)
 
     print("openAi's Stock list:")
-    openAi_opinion = openAiBot.studyStocks(stocksToBuy, buying_power)
-    print("=======   PLACING BUY ORDERS   =======")
+    openAi_opinion = openAiBot.studyStocks(stocksLoadedInfo, buying_power)
+    print("\n=======   PLACING BUY ORDERS   =======")
     if not openAi_opinion:
         print("No AI approved stocks for today, rolling on without it")
-        openAi_opinion = stocksToBuy
+        openAi_opinion = stocksToBuy[:2] #if ai fails just pull top two choices
     else:
         stockBot.listStocks(openAi_opinion)
-    '''
     # Then, place orders
+
+    '''
     for stockInfo in openAi_opinion:
         try:
             stockSymbol = stockInfo["symbol"].upper()
@@ -80,9 +84,8 @@ def main():
             print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion
     '''
-
     print(f"========================= Run End =========================")
-    print("\n\n")
+    print("\n")
 # ========== TESTING AREA ========== TESTING AREA =========== TESTING AREA ===========
 def testing():
 
@@ -103,7 +106,22 @@ def testing():
     print(f"--- STOCK PORTION ---")
 
     stockBot.getMovers()
-    #stockBot.getMostActiveVolume()
+    stockBot.getMostActiveVolume()
+    #list1 = stockBot.populate_stockList(stockBot.stockList)
+    high_caps = filterBot.filter_high_market_caps(stockBot.stockList)
+    print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
+    share_floats = filterBot.filter_shares_and_float(high_caps)
+    print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
+    print("Stocks worth buying are:")
+    stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
+    for stock in stocksToBuy:
+        latest_news = get_latest_news(stock["symbol"])
+        stock["headline"] = latest_news["headline"]
+        stock["summary"] = latest_news["summary"]
+    stockBot.listStocks(stocksToBuy)
+    #for symbol in stockBot.stockList:
+    #    print(f"sym: {symbol['symbol']}, price: {symbol['price']}, %change: {symbol['percent_change']}")
+    #stockBot.listStocks(list1[:7])
     #stockBot.listStocks(stockBot.movers)
     #print(f"{len(stockBot.movers)}")
 

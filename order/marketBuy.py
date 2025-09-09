@@ -79,7 +79,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
         print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
 
 
-def place_trailing_stops_from_local_file(trail_percent=8.0):
+def place_trailing_stops_from_local_file(trail_percent=5.0):
     if not os.path.exists(SAVE_FILE):
         print("No saved positions from yesterday.")
         return
@@ -115,17 +115,23 @@ def place_trailing_stops_from_local_file(trail_percent=8.0):
     else:
         os.remove(SAVE_FILE)
 
-def calculate_position_size(buying_power, share_price, stop_pct=0.08, risk_pct=0.05):
+def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.5):
     try:
-        risk_amount = buying_power * risk_pct
+        # Only allocate a fraction of buying power
+        effective_bp = buying_power * bp_fraction
+
+        risk_amount = effective_bp * risk_pct
         stop_distance = share_price * stop_pct
-        shares_to_buy = int(risk_amount // stop_distance)
-        #print(f"buying_power: {buying_power}, risk_amount: {risk_amount}, share_price: {share_price}, stop_distance: {stop_distance} -- shares_to_buy: {shares_to_buy}")
+
+        shares_risk = int(risk_amount // stop_distance) if stop_distance > 0 else 0
+        shares_affordable = int(effective_bp // share_price)
+
+        shares_to_buy = min(shares_risk, shares_affordable)
         return shares_to_buy if shares_to_buy > 0 else 0
 
     except Exception as e:
         print(f"Error calculating position size: {e}")
-        return 1
+        return 0
 
 
 '''
