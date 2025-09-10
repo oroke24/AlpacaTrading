@@ -1,7 +1,7 @@
 [
   {
     "symbol": "BITF",
-    "qty": 13
+    "qty": 15
   },
   {
     "symbol": "BIOX",
@@ -10,9 +10,5 @@
   {
     "symbol": "LDI",
     "qty": 1
-  },
-  {
-    "symbol": "BITF",
-    "qty": 2
   }
 ]

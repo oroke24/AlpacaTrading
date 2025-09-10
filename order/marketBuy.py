@@ -79,7 +79,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
         print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
 
 
-def place_trailing_stops_from_local_file(trail_percent=5.0):
+def place_trailing_stops_from_local_file(trail_percent=6.0):
     if not os.path.exists(SAVE_FILE):
         print("No saved positions from yesterday.")
         return
