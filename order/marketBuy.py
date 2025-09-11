@@ -2,6 +2,9 @@ from alpaca.data.requests import StockLatestTradeRequest
 from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest 
 from alpaca.trading.enums import OrderSide, TimeInForce, PositionSide
 from auth.connectClient import paperTradingClient, liveTradingClient, dataClient
+import yfinance as yf
+import numpy as np
+import pandas as pd
 import time
 import os
 import json
@@ -79,7 +82,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
         print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
 
 
-def place_trailing_stops_from_local_file(trail_percent=6.0):
+def place_trailing_stops_from_local_file(trail_percent=4.5):
     if not os.path.exists(SAVE_FILE):
         print("No saved positions from yesterday.")
         return
@@ -91,6 +94,7 @@ def place_trailing_stops_from_local_file(trail_percent=6.0):
     for pos in positions:
         symbol = pos["symbol"]
         qty = pos["qty"]
+        trail_percent = get_atr(symbol, default_pct=trail_percent)
 
         try:
             trailing_stop_order = TrailingStopOrderRequest(
@@ -102,7 +106,7 @@ def place_trailing_stops_from_local_file(trail_percent=6.0):
             )
 
             sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
-            print(f"Trailing stop sell for {symbol} submitted. ID: {sell_order.id}")
+            print(f"Trailing stop sell for {symbol} with a trail percent of {trail_percent} submitted. ID: {sell_order.id}\n")
 
         except Exception as e:
             print(f"Failed to submit trailing stop for {symbol}: {e}")
@@ -115,7 +119,7 @@ def place_trailing_stops_from_local_file(trail_percent=6.0):
     else:
         os.remove(SAVE_FILE)
 
-def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.5):
+def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.75):
     try:
         # Only allocate a fraction of buying power
         effective_bp = buying_power * bp_fraction
@@ -132,6 +136,45 @@ def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0
     except Exception as e:
         print(f"Error calculating position size: {e}")
         return 0
+    
+
+def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=12):
+    """
+    Returns a safe trailing stop % for Alpaca orders.
+    
+    - Calculates ATR as % of price
+    - Falls back to default if ATR can't be calculated
+    - Clamps the result between min_pct and max_pct
+    """
+    trail_percent = default_pct  # start with fallback
+    
+    try:
+        df = yf.download(symbol, period="3mo", auto_adjust=True)
+        if len(df) > period:
+            df['H-L'] = df['High'] - df['Low']
+            df['H-PC'] = abs(df['High'] - df['Close'].shift(1))
+            df['L-PC'] = abs(df['Low'] - df['Close'].shift(1))
+            df['TR'] = df[['H-L','H-PC','L-PC']].max(axis=1)
+            df['ATR'] = df['TR'].rolling(window=period).mean()
+            
+            latest_atr = df['ATR'].iloc[-1].item()   # force scalar
+            price = df['Close'].iloc[-1].item()      # force scalar
+
+            if not np.isnan(latest_atr) and price > 0:
+                trail_percent = (latest_atr / price) * 100
+
+            # Debug info
+            print(f"[{symbol}] Price={price:.2f}, ATR={latest_atr:.4f}, Raw%={(latest_atr/price)*100:.2f}")
+
+    except Exception as e:
+        print(f"ATR calculation failed for {symbol}, using default {default_pct}%: {e}")
+    
+    # Clamp between min and max
+    trail_percent = max(min_pct, min(max_pct, trail_percent))
+    print(f"[{symbol}] Final trail % = {trail_percent:.2f}")
+    
+    return trail_percent
+
 
 
 '''

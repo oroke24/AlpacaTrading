@@ -75,7 +75,6 @@ def main():
         stockBot.listStocks(openAi_opinion)
     # Then, place orders
 
-    '''
     for stockInfo in openAi_opinion:
         try:
             stockSymbol = stockInfo["symbol"].upper()
@@ -83,6 +82,7 @@ def main():
         except Exception as e:
             print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion
+    '''
     '''
     print(f"========================= Run End =========================")
     print("\n")

@@ -433,3 +433,502 @@ Error fetching FCEL {"buying_power":"44.06","code":40310000,"cost_basis":"51.51"
 ========================= Run End =========================
 
 
+
+
+==================== Selling Process Started: 2025-09-10 06:40:02 ====================
+Selling yesterdays positions.
+Trailing stop sell for BITF submitted. ID: 1e656e10-b52b-4f5f-ac34-7f3c8e6bb916
+Trailing stop sell for BIOX submitted. ID: b59c0fa9-0420-44cf-a71f-f6d702e87c9f
+Trailing stop sell for LDI submitted. ID: ced23d6a-3651-4df7-bf9e-442a24fe3419
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$BKSY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-10 07:10:03 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 139 => 13 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 13, 7 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CPOP: list index out of range
+News fetch failed for BITF: list index out of range
+News fetch failed for BTBT: list index out of range
+Holley Performance Brands Launches Secondary Offering Of 14M Shares By Selling Stockholder
+BTIG Initiates Coverage On I-MAB with Buy Rating, Announces Price Target of $7
+News fetch failed for CLSK: list index out of range
+News fetch failed for MARA: list index out of range
+CPOP, $1.56, 15.56% -- pb_ratio: 0.81, mCap: 120.02M, float_rotation: 0.87
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $1.85, 15.31% -- pb_ratio: 1.55, mCap: 1.02B, float_rotation: 0.07
+headline: 0
+summary: 0
+other_info: n/a
+BTBT, $2.93, 4.81% -- pb_ratio: 1.34, mCap: 943.41M, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+HLLY, $3.05, -16.80% -- pb_ratio: 0.82, mCap: 367.52M, float_rotation: 0.01
+headline: Holley Performance Brands Launches Secondary Offering Of 14M Shares By Selling Stockholder
+summary: 0
+other_info: n/a
+IMAB, $3.42, -25.65% -- pb_ratio: 1.40, mCap: 274.38M, float_rotation: 0.02
+headline: BTIG Initiates Coverage On I-MAB with Buy Rating, Announces Price Target of $7
+summary: 0
+other_info: n/a
+CLSK, $10.03, 3.40% -- pb_ratio: 1.31, mCap: 2.82B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $16.09, 0.72% -- pb_ratio: 1.22, mCap: 5.96B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+- Keep/Buy BITF: Strong 15.3% move with 10-day volume above 3-month average suggests accumulation. Price is well above both the 50-day ($1.20) and 200-day ($1.26) averages, indicating a momentum uptrend. Balance sheet shows meaningful liquidity (cash/STI ~$147M + other STI ~$87M). Use a 6% trailing stop to manage miner volatility.
+- Speculative Buy BTBT: Up 4.8%; trading above the 200-day ($2.87) but just below the 50-day ($3.02). Reclaim of 50-day could accelerate. Adequate cash (~$98M). Position smaller with a 5% trailing stop given less convincing momentum than BITF.
+- Avoid CPOP: Illiquid microcap spike (+15.6%) with very low cash and weak balance sheet—high fade risk.
+- Avoid HLLY: -16.8% on secondary offering; heavy leverage and negative tangible book; wait for offering to clear and a base.
+- Avoid IMAB: -25.7% gap despite analyst initiation; biotech event risk high—wait for stabilization above key MAs.
+- Hold/Watch CLSK, MARA: Quality miners but not compelling entries today versus BITF risk/reward; consider on pullbacks or MA strength.
+- No additional sub-$5.89 names meet a >90% conviction threshold today.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $1.85, 15.31% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+BTBT, $2.93, 4.81% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-09-10 07:37:02 ====================
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+
+
+
+
+==================== Buying Process Started: 2025-09-10 07:39:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 142 => 12 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: EEM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 12, 6 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for BITF: list index out of range
+News fetch failed for BTBT: list index out of range
+BTIG Initiates Coverage On I-MAB with Buy Rating, Announces Price Target of $7
+News fetch failed for CLSK: list index out of range
+News fetch failed for MARA: list index out of range
+CAN, $0.74, 4.92% -- pb_ratio: 1.08, mCap: 349.31M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $1.77, 10.94% -- pb_ratio: 1.49, mCap: 980.86M, float_rotation: 0.09
+headline: 0
+summary: 0
+other_info: n/a
+BTBT, $2.99, 6.96% -- pb_ratio: 1.36, mCap: 962.69M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+IMAB, $3.40, -25.98% -- pb_ratio: 1.41, mCap: 277.65M, float_rotation: 0.02
+headline: BTIG Initiates Coverage On I-MAB with Buy Rating, Announces Price Target of $7
+summary: 0
+other_info: n/a
+CLSK, $10.19, 5.02% -- pb_ratio: 1.33, mCap: 2.86B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $16.33, 2.22% -- pb_ratio: 1.24, mCap: 6.05B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Most names here are crypto miners; momentum and volume are your best near-term signals. Keep/add BITF: it’s breaking out above both the 50- and 200-day averages (1.20/1.26) on rising 10-day volume versus 3-month, with the strongest daily move (+10.9%). BTBT also trends above its 200-day (2.87) and near the 50-day (3.02), with constructive +7% day and reasonable valuation (P/B ~1.36); it’s a lower-priced way to ride the same theme. CLSK shows solid momentum (+5%), sits near long-term support (200-day ~10.10), and carries a strong liquidity profile (>$550M cash/STI), offering a higher-quality miner exposure. MARA is more volatile, but it remains above long-term averages with improving breadth; debt is high, so use a tighter trailing stop.
+
+Remove/avoid CAN despite today’s bounce: it’s under $1, below its 200-day (1.21), with weaker recent volume versus 3-month—elevated delisting/reverse-split risk. Avoid IMAB after a -26% gap-down; despite a Buy initiation, the tape signals event risk and poor near-term sentiment.
+
+Use 4–8% trailing stops to respect volatility: ~6–7% for miners, ~5% for MARA given leverage. No additional sub-$9.35 “>90% conviction” picks are added today.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $1.77, 10.94% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+BTBT, $2.99, 6.96% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+CLSK, $10.19, 5.02% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+MARA, $16.33, 2.22% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+latest price for BITF: 1.77, so I'm buying 3
+Buy order submitted. ID: 6c5e1a35-395a-4b23-bef1-e8508ad2a622
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+latest price for BTBT: 3.0, so I'm buying 1
+Buy order submitted. ID: 22102e09-073b-44f9-81b1-c25b1a799694
+Waiting for BTBT buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTBT, will attach trailing stop tomorrow.
+Skipping CLSK: current price (10.175) exceeds buying power (1.01)
+Skipping MARA: current price (16.33) exceeds buying power (1.01)
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-09-10 08:03:02 ====================
+Selling yesterdays positions.
+Trailing stop sell for BITF submitted. ID: 9a2ea1b4-bce5-47f4-bebe-59533dd422a7
+Trailing stop sell for BTBT submitted. ID: b0082a02-c9c3-4d79-b5f6-84db9d4376d5
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-10 08:07:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 155 => 16 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: XLF, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: EEM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 16, 6 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for BITF: list index out of range
+News fetch failed for BTBT: list index out of range
+BTIG Initiates Coverage On I-MAB with Buy Rating, Announces Price Target of $7
+News fetch failed for MARA: list index out of range
+Reported Earlier, Rapport Therapeutics Prices $250M Public Offering Of 9,615,385 Shares Of Common Stock At $26 Per Share
+CAN, $0.75, 5.07% -- pb_ratio: 1.08, mCap: 349.83M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $1.77, 10.62% -- pb_ratio: 1.49, mCap: 978.05M, float_rotation: 0.11
+headline: 0
+summary: 0
+other_info: n/a
+BTBT, $2.99, 6.92% -- pb_ratio: 1.36, mCap: 962.37M, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: n/a
+IMAB, $3.42, -25.68% -- pb_ratio: 1.42, mCap: 278.87M, float_rotation: 0.03
+headline: BTIG Initiates Coverage On I-MAB with Buy Rating, Announces Price Target of $7
+summary: 0
+other_info: n/a
+MARA, $16.39, 2.53% -- pb_ratio: 1.24, mCap: 6.07B, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: n/a
+RAPP, $22.64, -19.23% -- pb_ratio: 3.13, mCap: 823.76M, float_rotation: 0.24
+headline: Reported Earlier, Rapport Therapeutics Prices $250M Public Offering Of 9,615,385 Shares Of Common Stock At $26 Per Share
+summary: 0
+other_info: n/a
+openAi's Stock list:
+- Keep BITF: Strong momentum (price above 50D and 200D averages: 1.20/1.26 vs 1.77), rising 10-day volume vs 3-month average, solid liquidity (cash and ST investments ~ $147M vs debt ~$23M), and reasonable P/B (~1.5). Trailing stop 7% to respect volatility.
+- Keep BTBT: Above 200D (2.87) and near 50D (3.02), positive day and improving participation. Balance sheet is healthy (cash ~$95M vs debt ~$14M) with modest P/B (~1.36). Trailing stop 6%.
+- Keep MARA: Sector leader with scale; price near key moving averages (around 16.6), positive day, and high liquidity (~$392M cash). While leverage is higher, TBV is strong and beta to BTC can drive upside. Trailing stop 6%.
+- Remove CAN: Sub-$1 penny with persistent downtrend (below 200D), risk of volatility/delisting outweighs P/B value.
+- Remove IMAB: -25% day on headline; biotech event risk high despite cash; wait for stabilization.
+- Remove RAPP: Large secondary at $26 created supply overhang; price below offer suggests weak sponsorship near term—avoid until post-deal price action stabilizes.
+No >90% conviction additional buys under 27.19 today; none added.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $1.77, 10.62% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+BTBT, $2.99, 6.92% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+MARA, $16.39, 2.53% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+latest price for BITF: 1.76, so I'm buying 11
+Buy order submitted. ID: 75c1b7be-f708-4949-b509-aae7bf0c4962
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+latest price for BTBT: 2.99, so I'm buying 1
+Buy order submitted. ID: 8e51e53c-227a-420a-a177-ef316bf735d0
+Waiting for BTBT buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTBT, will attach trailing stop tomorrow.
+Skipping MARA: current price (16.325) exceeds buying power (4.76)
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$UWMC.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-10 08:21:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 132 => 13 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: XLF, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 13, 5 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for BITF: list index out of range
+News fetch failed for BTBT: list index out of range
+BTIG Initiates Coverage On I-MAB with Buy Rating, Announces Price Target of $7
+News fetch failed for MARA: list index out of range
+CAN, $0.74, 4.79% -- pb_ratio: 1.08, mCap: 348.89M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $1.74, 8.75% -- pb_ratio: 1.46, mCap: 961.52M, float_rotation: 0.12
+headline: 0
+summary: 0
+other_info: n/a
+BTBT, $2.97, 6.06% -- pb_ratio: 1.35, mCap: 954.66M, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: n/a
+IMAB, $3.46, -24.78% -- pb_ratio: 1.44, mCap: 283.34M, float_rotation: 0.03
+headline: BTIG Initiates Coverage On I-MAB with Buy Rating, Announces Price Target of $7
+summary: 0
+other_info: n/a
+MARA, $16.28, 1.88% -- pb_ratio: 1.23, mCap: 6.03B, float_rotation: 0.06
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+- Keep/Buy BITF (1.74, +8.75%): Best momentum setup. Price is above both 50D (1.20) and 200D (1.26) with rising 10D volume vs 3M, and strong float rotation—signals accumulation. Reasonable P/B (1.46). Use a tight trailing stop due to crypto beta.
+- Keep/Buy BTBT (2.97, +6.06%): Price above 200D (2.87) and reclaiming 50D (3.02). Momentum improving, though 10D volume lags 3M; position smaller than BITF. P/B 1.35 keeps valuation in check.
+- Hold/Avoid adding MARA (16.28, +1.88%): Price near 50D/200D with heavy net debt; momentum is tepid versus peers. Prefer miners with better relative strength (BITF).
+- Remove CAN (0.74, +4.79%): Under 200D (1.21) with weak recent volume and minimal float rotation—bounce risk without confirmation.
+- Remove IMAB (3.46, -24.78%): Large drawdown despite positive coverage; biotech event risk and soft recent volume—avoid until base forms.
+No additional sub-$4.76 tickers meet a >90% conviction threshold beyond BITF/BTBT from this list.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $1.74, 8.75% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+BTBT, $2.97, 6.06% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+latest price for BITF: 1.745, so I'm buying 2
+Buy order submitted. ID: abf5c4b1-8a95-4acc-8d75-bd503bb65e98
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+Skipping BTBT: current price (2.965) exceeds buying power (1.27)
+========================= Run End =========================
+
+
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:151: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="3mo")
+[*********************100%***********************]  1 of 1 completed
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:151: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="3mo")
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-09-11 06:40:03 ====================
+Selling yesterdays positions.
+ATR calculation failed for BITF, using default 4.5%: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+Trailing stop sell for BITF with a trail percent of 4.5 submitted. ID: af782669-d0d6-4006-ae70-95eab6e5c501
+ATR calculation failed for BTBT, using default 4.5%: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+Trailing stop sell for BTBT with a trail percent of 4.5 submitted. ID: a969568e-0d29-4c1d-bcdb-6d14b88fce3b
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$IAUX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$PL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$RFL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$AMPX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$RIV.RTWI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-11 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 149 => 21 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: TLT, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 21, 9 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for BITF: list index out of range
+News fetch failed for HIVE: list index out of range
+BTIG Reiterates Neutral on loanDepotto Neutral
+Alliance Entertainment Q4 EPS $0.11 Beats $0.05 Estimate, Sales $227.800M Miss $238.789M Estimate
+News fetch failed for ACHR: list index out of range
+Vivek Ramaswamy's Strive To Board The Bitcoin Treasury Company With $1.5 Billion Raise
+News fetch failed for DOW: list index out of range
+News fetch failed for CNC: list index out of range
+CAN, $0.78, 3.98% -- pb_ratio: 1.14, mCap: 367.32M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $1.99, 8.15% -- pb_ratio: 1.68, mCap: 1.11B, float_rotation: 0.08
+headline: 0
+summary: 0
+other_info: n/a
+HIVE, $3.48, 9.94% -- pb_ratio: 1.27, mCap: 800.16M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+LDI, $4.17, 18.95% -- pb_ratio: 3.13, mCap: 1.35B, float_rotation: 0.12
+headline: BTIG Reiterates Neutral on loanDepotto Neutral
+summary: 0
+other_info: n/a
+AENT, $6.07, -12.91% -- pb_ratio: 3.17, mCap: 308.68M, float_rotation: 0.01
+headline: Alliance Entertainment Q4 EPS $0.11 Beats $0.05 Estimate, Sales $227.800M Miss $238.789M Estimate
+summary: 0
+other_info: n/a
+ACHR, $8.60, 4.12% -- pb_ratio: 3.27, mCap: 5.54B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $15.93, 0.25% -- pb_ratio: 1.21, mCap: 5.91B, float_rotation: 0.02
+headline: Vivek Ramaswamy's Strive To Board The Bitcoin Treasury Company With $1.5 Billion Raise
+summary: Asset Entities Inc. (NASDAQ:ASST) on Wednesday announced it has approved the company&#39;s merger with Vivek Ramaswamy
+other_info: n/a
+DOW, $24.75, 3.84% -- pb_ratio: 1.02, mCap: 17.54B, float_rotation: 0.01
+headline: 0
+summary: 0
+other_info: n/a
+CNC, $34.96, 11.87% -- pb_ratio: 0.63, mCap: 17.17B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+- Keep/Buy: BITF and HIVE—both reclaimed and are holding above 50/200-day averages with rising volume and reasonable P/B (1.7 and 1.3). Strong crypto beta gives upside if BTC strength persists; use wider trailing stops due to volatility. CNC—value plus momentum: large-cap payer with P/B ~0.63, big cash/short-term investments, and a decisive break above the 50-DMA suggests a trend reversal; stop tighter than miners.
+- Remove/Pass: CAN—sub-$1, below 200-DMA, microcap risk. LDI—huge squeeze (+19%) but leverage is heavy (net debt ~$3.9B) and negative tangible equity; fragile rally. AENT—illiquid microcap, post-earnings gap down and low cash; poor risk/reward. ACHR—below 50/200-DMAs; story equity with deteriorating momentum. MARA—below 50/200-DMAs; prefer stronger crypto momentum (BITF/HIVE). DOW—cyclical chemical name below 200-DMA; setup is mixed.
+- No additional “>90% sure” sub-11.63 picks today.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $1.99, 8.15% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+HIVE, $3.48, 9.94% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+CNC, $34.96, 11.87% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+latest price for BITF: 2.015, so I'm buying 4
+Buy order submitted. ID: 420bbe19-99c0-4df0-abc6-744c1a180bf2
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+Skipping HIVE: 3.49, too risky.
+Skipping CNC: current price (34.92) exceeds buying power (3.54)
+========================= Run End =========================
+
+
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:184: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="3mo")
+[*********************100%***********************]  1 of 1 completed
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:193: FutureWarning: Calling float on a single element Series is deprecated and will raise a TypeError in the future. Use float(ser.iloc[0]) instead
+  price = float(df['Close'].iloc[-1])      # force scalar
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:184: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="3mo")
+[*********************100%***********************]  1 of 1 completed
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:193: FutureWarning: Calling float on a single element Series is deprecated and will raise a TypeError in the future. Use float(ser.iloc[0]) instead
+  price = float(df['Close'].iloc[-1])      # force scalar
+
+
+==================== Selling Process Started: 2025-09-11 07:23:03 ====================
+Selling yesterdays positions.
+ATR calculation failed for BITF, using default 4.5%: name 'np' is not defined
+[BITF] Final trail % = 4.50
+
+Trailing stop sell for BITF with a trail percent of 4.5 submitted. ID: 86b27a72-4d24-43c0-a229-10a71af45488
+ATR calculation failed for BTBT, using default 4.5%: name 'np' is not defined
+[BTBT] Final trail % = 4.50
+
+Trailing stop sell for BTBT with a trail percent of 4.5 submitted. ID: d2fdf230-2dba-4b3c-86e0-047953b946ca
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-09-11 07:28:02 ====================
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:185: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="3mo")
+[*********************100%***********************]  1 of 1 completed
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:194: FutureWarning: Calling float on a single element Series is deprecated and will raise a TypeError in the future. Use float(ser.iloc[0]) instead
+  price = float(df['Close'].iloc[-1])      # force scalar
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:185: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="3mo")
+[*********************100%***********************]  1 of 1 completed
+/home/orokejamie/vsCode/AlpacaTrading/order/marketBuy.py:194: FutureWarning: Calling float on a single element Series is deprecated and will raise a TypeError in the future. Use float(ser.iloc[0]) instead
+  price = float(df['Close'].iloc[-1])      # force scalar
+
+
+==================== Selling Process Started: 2025-09-11 07:34:03 ====================
+Selling yesterdays positions.
+[BITF] Price=2.07, ATR=0.1314, Raw%=6.35
+[BITF] Final trail % = 6.35
+
+Trailing stop sell for BITF with a trail percent of 6.347059507107497 submitted. ID: 9a56d61f-287e-4190-be5e-da14260b9d4f
+[BTBT] Price=3.03, ATR=0.1742, Raw%=5.75
+[BTBT] Final trail % = 5.75
+
+Trailing stop sell for BTBT with a trail percent of 5.749599694256589 submitted. ID: 3bfd0042-7b8f-40fe-a3bf-f80c245c1969
+========================= Run End =========================
+
+
