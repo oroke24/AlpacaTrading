@@ -104,7 +104,7 @@ def testing():
 
     # --- StockBot Research and Trade Portion
     print(f"--- STOCK PORTION ---")
-
+    '''
     stockBot.getMovers()
     stockBot.getMostActiveVolume()
     #list1 = stockBot.populate_stockList(stockBot.stockList)
@@ -119,6 +119,7 @@ def testing():
         stock["headline"] = latest_news["headline"]
         stock["summary"] = latest_news["summary"]
     stockBot.listStocks(stocksToBuy)
+    '''
     #for symbol in stockBot.stockList:
     #    print(f"sym: {symbol['symbol']}, price: {symbol['price']}, %change: {symbol['percent_change']}")
     #stockBot.listStocks(list1[:7])

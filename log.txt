@@ -932,3 +932,187 @@ Trailing stop sell for BTBT with a trail percent of 5.749599694256589 submitted.
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BITF']: DNSError('Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+
+==================== Selling Process Started: 2025-09-12 06:40:02 ====================
+Selling yesterdays positions.
+[BITF] Final trail % = 4.50
+Failed to submit trailing stop for BITF: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f267d3a7250>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+========================= Run End =========================
+
+
+
+
+
+
+==================== Buying Process Started: 2025-09-12 07:10:02 ====================
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fef7f66a950>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fef7f66a950>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 266, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 31, in main
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fef7f66a950>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-09-19 06:40:03 ====================
+Selling yesterdays positions.
+[CLSK] Price=13.39, ATR=0.7137, Raw%=5.33
+[CLSK] Final trail % = 5.33
+Trailing stop sell for CLSK with a trail percent of 5.330203949448812 submitted. ID: 73f6ee20-e8e8-465c-8a1b-e85ba33aa5b2
+
+[BITF] Price=3.08, ATR=0.2704, Raw%=8.78
+[BITF] Final trail % = 8.78
+Trailing stop sell for BITF with a trail percent of 8.777829730027888 submitted. ID: f7595248-3aff-40b6-9f6d-cdacfa021e3f
+
+[BTE] Price=2.44, ATR=0.1143, Raw%=4.68
+[BTE] Final trail % = 4.68
+Trailing stop sell for BTE with a trail percent of 4.683840360395079 submitted. ID: e81bccc1-3274-437b-a07b-a56093de4741
+
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$LGL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$EMO.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SIMAW: possibly delisted; no price data found  (period=5d)
+
+
+
+
+==================== Buying Process Started: 2025-09-19 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 129 => 17 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: XLF, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 17, 5 passed share and float filter.
+Stocks worth buying are:
+Cardlytics (CDLX) Stock Soars Over 50% On AmEx News And Citron Tweet
+10 Information Technology Stocks Whale Activity In Today's Session
+News fetch failed for LDI: list index out of range
+Options Corner: A High-Stakes Sentiment Battle Could Send SoundHound AI Ripping Higher
+10 Information Technology Stocks Whale Activity In Today's Session
+CDLX, $3.04, 3.94% -- pb_ratio: 2.74, mCap: 161.57M, float_rotation: 0.44
+headline: Cardlytics (CDLX) Stock Soars Over 50% On AmEx News And Citron Tweet
+summary: Shares of advertising-platform Cardlytics are surging Thursday morning. The surge followed a bullish Citron Research tweet linking Cardlytics to the American Express Platinum card refresh.
+other_info: n/a
+BITF, $3.23, 7.44% -- pb_ratio: 2.72, mCap: 1.79B, float_rotation: 0.05
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: n/a
+LDI, $3.84, -6.46% -- pb_ratio: 2.94, mCap: 1.27B, float_rotation: 0.07
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $13.94, 3.72% -- pb_ratio: 1.82, mCap: 3.92B, float_rotation: 0.04
+headline: Options Corner: A High-Stakes Sentiment Battle Could Send SoundHound AI Ripping Higher
+summary: Although SoundHound AI has attracted bearish interest, SOUN stock has just flashed a bullish signal, possibly implying explosive upside.
+other_info: n/a
+MARA, $18.57, -0.05% -- pb_ratio: 1.40, mCap: 6.88B, float_rotation: 0.03
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: n/a
+openAi's Stock list:
+CDLX: Momentum is news-driven (AmEx/Citron), but fundamentals are fragile: negative tangible book, sizable debt and small-cap volatility with very high recent rotation. Good for traders, not for a risk-aware buy-and-hold. Remove.
+
+LDI: Rate-sensitive mortgage originator with heavy leverage (total debt >$4.3B), negative tangible book, and today’s drawdown on elevated volume. The risk/reward isn’t compelling at this PB and leverage. Remove.
+
+MARA: Sector leader but carries meaningful net debt (~$2.05B). While PB is lowest of the group, balance sheet risk is nontrivial versus peers. Prefer to wait for de-risking or better entry. Watch, not a buy now.
+
+BITF: Strong momentum (10-day volume >> 3-month), modest debt, solid liquidity (cash/STI ~ $147M + $87M), and improving trend near 52-week highs. Among miners, its balance sheet quality and price action look best. Keep/Buy with a tight trailing stop.
+
+CLSK: Healthy cash and short-term investments (~$554M), reasonable valuation (PB ~1.8), and sustained uptrend above 50/200-day averages. Operational execution and liquidity make it a higher-quality miner pick. Keep/Buy with a tight trailing stop.
+
+No additional sub-$1.77 “>90% conviction” ideas today that meet the constraint and our confidence threshold.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $3.23, 7.44% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+CLSK, $13.94, 3.72% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+Skipping BITF: current price (3.245) exceeds buying power (1.77)
+Skipping CLSK: current price (13.97) exceeds buying power (1.77)
+========================= Run End =========================
+
+

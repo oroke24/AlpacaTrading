@@ -171,9 +171,11 @@ def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=12):
     
     # Clamp between min and max
     trail_percent = max(min_pct, min(max_pct, trail_percent))
-    print(f"[{symbol}] Final trail % = {trail_percent:.2f}")
+    rounded_trail_percent = round(trail_percent, 2)
+    print(f"[{symbol}] Final trail % = {rounded_trail_percent}")
     
-    return trail_percent
+    
+    return rounded_trail_percent
 
 
 
