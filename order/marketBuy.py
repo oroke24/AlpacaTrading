@@ -211,7 +211,7 @@ def worth_selling_now(symbol, percent_target=3.5):
         except Exception as e:
             print(f"Could not cancel existion orders for {symbol}: {e}")
         
-        print(f"Selling {qty} shares of {position.symbol} (Target hit)")
+        print(f"Selling {qty} shares of {position.symbol} (percent_gain: {percent_gain}, Threshold exceeded)")
         order = MarketOrderRequest(
             symbol=position.symbol,
             qty=qty,
