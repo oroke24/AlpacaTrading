@@ -95,6 +95,10 @@ def place_trailing_stops_from_local_file(trail_percent=4.5):
         symbol = pos["symbol"]
         qty = pos["qty"]
         trail_percent = get_atr(symbol, default_pct=trail_percent)
+        already_sold = worth_selling_now(symbol)
+
+        if already_sold:
+            continue
 
         try:
             trailing_stop_order = TrailingStopOrderRequest(
@@ -138,7 +142,7 @@ def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0
         return 0
     
 
-def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=12):
+def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
     """
     Returns a safe trailing stop % for Alpaca orders.
     
@@ -178,7 +182,44 @@ def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=12):
     return rounded_trail_percent
 
 
+def worth_selling_now(symbol, percent_target=3.5):
+    try:
+        position = liveTradingClient.get_open_position(symbol)
+    except Exception:
+        print(f"No open position found for {symbol}.  Skipping")
+        return False
+        
+    avg_entry = float(position.avg_entry_price)
+    current_price = float(position.current_price)
+    qty = float(position.qty)
 
+    if qty <= 0:
+        print(f"Skipping sell for {symbol}: Position qty is {qty}")
+        return False
+
+    percent_gain = ((current_price - avg_entry) / avg_entry) * 100
+    print(f"{symbol}: {percent_gain:.2f}% gain")
+
+    if percent_gain >= percent_target:
+        try:
+            open_orders = liveTradingClient.get_orders(status="open")
+            for order in open_orders:
+                if order.symbol == symbol:
+                    print(f"Canceling existion order for {symbol}: {order.id}")
+                    liveTradingClient.cancel_order(order.id)
+        except Exception as e:
+            print(f"Could not cancel existion orders for {symbol}: {e}")
+        
+        print(f"Selling {qty} shares of {position.symbol} (Target hit)")
+        order = MarketOrderRequest(
+            symbol=position.symbol,
+            qty=qty,
+            side=OrderSide.SELL,
+            time_in_force = TimeInForce.DAY
+        )
+        liveTradingClient.submit_order(order)
+        return True
+    return False
 '''
 # ----- OLD FUNCTIONS -----
 def place_trailing_stop_buy(symbol, qty=1, trail_percent=5):

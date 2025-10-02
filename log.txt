@@ -1116,3 +1116,845 @@ Skipping CLSK: current price (13.97) exceeds buying power (1.77)
 ========================= Run End =========================
 
 
+
+
+==================== Selling Process Started: 2025-09-22 06:40:03 ====================
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$RFL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$BKKT.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$UTF.RTWI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$EMO.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-22 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 151 => 20 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 20, 11 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for CDLX: list index out of range
+News fetch failed for BTBT: list index out of range
+News fetch failed for BITF: list index out of range
+News fetch failed for CSAN: list index out of range
+News fetch failed for HOUS: list index out of range
+News fetch failed for AG: list index out of range
+News fetch failed for WRD: list index out of range
+News fetch failed for BKKT: list index out of range
+News fetch failed for CLSK: list index out of range
+News fetch failed for MARA: list index out of range
+CAN, $0.75, -4.25% -- pb_ratio: 1.08, mCap: 349.78M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+CDLX, $2.15, -11.32% -- pb_ratio: 1.98, mCap: 116.85M, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: n/a
+BTBT, $3.04, -2.25% -- pb_ratio: 1.38, mCap: 977.16M, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $3.06, -1.61% -- pb_ratio: 2.57, mCap: 1.69B, float_rotation: 0.06
+headline: 0
+summary: 0
+other_info: n/a
+CSAN, $4.44, -21.55% -- pb_ratio: 1.15, mCap: 2.16B, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+HOUS, $11.16, 57.85% -- pb_ratio: 0.82, mCap: 1.25B, float_rotation: 0.10
+headline: 0
+summary: 0
+other_info: n/a
+AG, $11.48, 7.69% -- pb_ratio: 2.24, mCap: 5.62B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+WRD, $12.02, 3.85% -- pb_ratio: 0.56, mCap: 3.42B, float_rotation: 0.01
+headline: 0
+summary: 0
+other_info: n/a
+BKKT, $13.15, 25.92% -- pb_ratio: 2.60, mCap: 209.37M, float_rotation: 0.59
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $13.23, -3.08% -- pb_ratio: 1.73, mCap: 3.72B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $17.75, -2.82% -- pb_ratio: 1.34, mCap: 6.58B, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Keep crypto miners with momentum and constructive positioning above key averages: BITF, CLSK, MARA, and BTBT. They trade above (or near) 50/200-day averages, have improving liquidity, and benefit from sector beta; use wider trailing stops due to volatility. AG (silver miner) shows strong trend confirmation (price > 50/200D, rising volume) with manageable debt and cash; it’s a quality metals beta play. WRD screens compelling on value (P/B ~0.56), very strong liquidity (large cash/ST investments), and a reclaim of the 200D—risk/reward favors accumulation with a tighter stop.
+
+Remove/avoid: CAN (sub-$1, below 200D, deteriorating trend; cyclical ASIC exposure), CDLX (negative tangible book, high net debt, breakdown day with heavy volume), CSAN (very high leverage, -21% gap below MAs), HOUS (+58% spike against heavy net debt; prone to mean reversion and data inconsistencies), BKKT (thin float, extreme rotation/squeeze behavior; poor risk control post-spike). No additional off-list “>90% sure” buys under 17.96.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $3.06, -1.61% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+AG, $11.48, 7.69% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+WRD, $12.02, 3.85% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+CLSK, $13.23, -3.08% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+MARA, $17.75, -2.82% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+BTBT, $3.04, -2.25% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+latest price for BITF: 3.04, so I'm buying 4
+Buy order submitted. ID: 468d567f-f774-4b65-a50a-aa784c169342
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+Skipping AG: current price (11.395) exceeds buying power (5.77)
+Skipping WRD: current price (12.005) exceeds buying power (5.77)
+Skipping CLSK: current price (13.25) exceeds buying power (5.77)
+Skipping MARA: current price (17.71) exceeds buying power (5.77)
+latest price for BTBT: 3.04, so I'm buying 1
+Buy order submitted. ID: 3d8f9f7c-9a8e-4acc-87f0-41a1ad616ffb
+Waiting for BTBT buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTBT, will attach trailing stop tomorrow.
+========================= Run End =========================
+
+
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BITF']: DNSError('Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BTBT']: DNSError('Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+
+==================== Selling Process Started: 2025-09-23 06:40:02 ====================
+Selling yesterdays positions.
+[BITF] Final trail % = 4.5
+Failed to submit trailing stop for BITF: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fce6a1b9d50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+[BTBT] Final trail % = 4.5
+Failed to submit trailing stop for BTBT: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fce6a189ed0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+========================= Run End =========================
+
+
+
+
+
+
+==================== Buying Process Started: 2025-09-23 07:10:02 ====================
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fdff5e6a5d0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fdff5e6a5d0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 267, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 31, in main
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fdff5e6a5d0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-09-25 06:40:02 ====================
+Selling yesterdays positions.
+[BITF] Price=2.55, ATR=0.3492, Raw%=13.69
+[BITF] Final trail % = 12
+Trailing stop sell for BITF with a trail percent of 12 submitted. ID: 10ef0c9b-81fb-4850-b2bf-c45f8ccc8b9a
+
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$AMBI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$PSQH.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-25 07:10:03 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 154 => 22 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 22, 12 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+12 Communication Services Stocks Moving In Wednesday's Intraday Session
+News fetch failed for BITF: list index out of range
+FINRA Probes Pre-Deal Trading Tied To Douglas Elliman's Shelved Anywhere Bid: Report
+Reported Earlier, Transocean Prices Upsized Public Offering Of 125M Shares At $3.05 Per Share, Gross Proceeds Approximately $381.25M
+HIVE Digital Stock Rises 5% After Hours As Company Captures 2% Of Bitcoin Mining Network, Boosts Efficiency Outlook
+Reported Earlier, PepGen Prices $100M Public Offering Of 31,250,000 Shares Of Common Stock At $3.20 Per Share
+News fetch failed for AMPY: list index out of range
+Abermarle Shares Are Trading Higher Wednesday: What's Going On?
+If Deal Terminates, Integral Ad Science Holding To Pay Delaware Corp Termination Fee Of $52.5M; If Delaware Corp Terminates Deal, Co. To Receive Termination Fee Of $100M
+5 'Crypto Treasury Stocks' Ready To Surge Even Higher
+5 'Crypto Treasury Stocks' Ready To Surge Even Higher
+CAN, $0.82, -6.72% -- pb_ratio: 1.19, mCap: 386.04M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+CPOP, $1.43, -0.00% -- pb_ratio: 0.74, mCap: 110.02M, float_rotation: 1.71
+headline: 12 Communication Services Stocks Moving In Wednesday's Intraday Session
+summary:  
+other_info: n/a
+BITF, $2.62, -5.59% -- pb_ratio: 2.20, mCap: 1.45B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+DOUG, $3.14, 12.31% -- pb_ratio: 2.03, mCap: 279.37M, float_rotation: 0.01
+headline: FINRA Probes Pre-Deal Trading Tied To Douglas Elliman's Shelved Anywhere Bid: Report
+summary:  
+other_info: n/a
+RIG, $3.15, -13.60% -- pb_ratio: 0.30, mCap: 2.96B, float_rotation: 0.11
+headline: Reported Earlier, Transocean Prices Upsized Public Offering Of 125M Shares At $3.05 Per Share, Gross Proceeds Approximately $381.25M
+summary: 0
+other_info: n/a
+HIVE, $3.72, -12.64% -- pb_ratio: 1.36, mCap: 861.58M, float_rotation: 0.04
+headline: HIVE Digital Stock Rises 5% After Hours As Company Captures 2% Of Bitcoin Mining Network, Boosts Efficiency Outlook
+summary: HIVE Digital Technologies Ltd. (NASDAQ:HIVE) shares rallied after Wednesday’s market close after the data center reported that it had reached 2% of global Bitcoin (CRYPTO: BTC) mining capacity.
+other_info: n/a
+PEPG, $5.39, 102.64% -- pb_ratio: 2.48, mCap: 176.20M, float_rotation: 5.35
+headline: Reported Earlier, PepGen Prices $100M Public Offering Of 31,250,000 Shares Of Common Stock At $3.20 Per Share
+summary: 0
+other_info: n/a
+AMPY, $6.04, 25.94% -- pb_ratio: 0.58, mCap: 240.77M, float_rotation: 0.10
+headline: 0
+summary: 0
+other_info: n/a
+LAC, $6.83, 13.64% -- pb_ratio: 2.47, mCap: 1.65B, float_rotation: 0.45
+headline: Abermarle Shares Are Trading Higher Wednesday: What's Going On?
+summary: Shares of Albemarle Corporation (NYSE:ALB) are trading higher Wednesday alongside several other lithium stocks after Lithium Americas Corp. (NYSE:LAC) surged on reports that the Trump administration is seeking an equity stake in the company.
+other_info: n/a
+IAS, $10.19, 0.05% -- pb_ratio: 1.57, mCap: 1.69B, float_rotation: 0.12
+headline: If Deal Terminates, Integral Ad Science Holding To Pay Delaware Corp Termination Fee Of $52.5M; If Delaware Corp Terminates Deal, Co. To Receive Termination Fee Of $100M
+summary: 0
+other_info: n/a
+CLSK, $14.12, -2.92% -- pb_ratio: 1.85, mCap: 3.97B, float_rotation: 0.04
+headline: 5 'Crypto Treasury Stocks' Ready To Surge Even Higher
+summary: These so-called &#34;crypto treasury stocks&#34; and some smaller companies have begun accumulating Ethereum and Solana.
+other_info: n/a
+MARA, $16.73, -6.01% -- pb_ratio: 1.27, mCap: 6.20B, float_rotation: 0.04
+headline: 5 'Crypto Treasury Stocks' Ready To Surge Even Higher
+summary: These so-called &#34;crypto treasury stocks&#34; and some smaller companies have begun accumulating Ethereum and Solana.
+other_info: n/a
+openAi's Stock list:
+Keep/accumulate the crypto infrastructure leaders with stronger balance sheets and clear uptrends: BITF and CLSK. Both trade above their 50/200-day averages with strong volume; BITF has modest debt and cash on hand, while CLSK holds substantial liquidity, offering better risk-adjusted exposure than peers. Use 5–7% trailing stops to respect volatility.
+
+Trim/avoid MARA despite scale; leverage is notably higher, which magnifies drawdowns versus BITF/CLSK. HIVE is improving operationally, but today’s large draw and headline-driven moves argue for waiting on a higher-low setup before adding.
+
+LAC broke out on strategic-interest headlines and trades above key moving averages; lithium sentiment tailwinds support a starter position, but keep risk tight given policy/news risk.
+
+IAS shows a constructive trend above its moving averages, and the merger framework/termination-fee structure offers some downside guard; it’s a steadier add with a tight stop.
+
+Avoid/exit CAN and CPOP (low quality, high churn), DOUG and PEPG (event-driven spikes prone to retracement), RIG (dilution overhang plus heavy leverage), and AMPY (extended after a one-day surge). No additional >90% conviction sub-37.21 names to add today.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $2.62, -5.59% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+CLSK, $14.12, -2.92% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+LAC, $6.83, 13.64% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+IAS, $10.19, 0.05% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+latest price for BITF: 2.62, so I'm buying 10
+Buy order submitted. ID: c6890f2f-50ec-4f8a-b153-6d682f7c7e4b
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+Skipping CLSK: current price (14.12) exceeds buying power (10.91)
+latest price for LAC: 6.92, so I'm buying 1
+Buy order submitted. ID: 3d58ad21-46f8-4b84-8fe4-e526233d663a
+Waiting for LAC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for LAC, will attach trailing stop tomorrow.
+Skipping IAS: current price (10.18) exceeds buying power (3.98)
+========================= Run End =========================
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-09-26 06:40:03 ====================
+Selling yesterdays positions.
+[BITF] Price=2.56, ATR=0.3546, Raw%=13.84
+[BITF] Final trail % = 12
+Trailing stop sell for BITF with a trail percent of 12 submitted. ID: 9e220b7b-08a5-484f-99b8-7168e78b7f66
+
+[LAC] Price=7.23, ATR=0.4968, Raw%=6.87
+[LAC] Final trail % = 6.87
+Trailing stop sell for LAC with a trail percent of 6.87 submitted. ID: 6ad3f61c-c08b-4c61-8715-2da982abac67
+
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$RFL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-26 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 156 => 25 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 25, 8 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for BITF: list index out of range
+Cardlytics Stock Surges 5% After Hours As Citron Research Spotlights Wells Fargo Partnership
+12 Consumer Staples Stocks Moving In Thursday's After-Market Session
+Stifel Maintains Buy on PepGen, Raises Price Target to $12
+Trump Never Expected This—His Most-Hated Stocks Are Crushing Nvidia, Gold Miners
+First Majestic Silver Corp Files For Mixed Shelf; Size Not Disclosed
+CleanSpark Shares Are Moving Lower: What Investors Should Know
+Bitcoin, Ethereum, XRP Plunge Taking Crypto-Linked Stocks Down
+BITF, $2.55, -4.49% -- pb_ratio: 2.15, mCap: 1.41B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+CDLX, $2.76, 15.92% -- pb_ratio: 2.47, mCap: 145.85M, float_rotation: 0.07
+headline: Cardlytics Stock Surges 5% After Hours As Citron Research Spotlights Wells Fargo Partnership
+summary: Cardlytics Inc. (NASDAQ: CDLX) saw its stock fall 9.85% during regular trading on Thursday. However, the stock rebounded in after-hours trading, climbing 5.04% to $2.50 following positive remarks from analysts.
+other_info: n/a
+HFFG, $2.84, -15.98% -- pb_ratio: 0.63, mCap: 156.23M, float_rotation: 0.00
+headline: 12 Consumer Staples Stocks Moving In Thursday's After-Market Session
+summary: Gainers
+
+Amaze Holdings (AMEX:AMZE) shares rose 15.8% to $3.6 during Thursday&#39;s after-market session. The market value of their outstanding shares is at $17.8 million. 
+Safety Shot (NASDAQ: SHOT) shares increased by 8.47% to $0.27.
+other_info: n/a
+PEPG, $4.98, -15.31% -- pb_ratio: 2.28, mCap: 161.87M, float_rotation: 0.16
+headline: Stifel Maintains Buy on PepGen, Raises Price Target to $12
+summary: 0
+other_info: n/a
+LAC, $6.82, -11.67% -- pb_ratio: 2.47, mCap: 1.65B, float_rotation: 0.16
+headline: Trump Never Expected This—His Most-Hated Stocks Are Crushing Nvidia, Gold Miners
+summary: President Donald Trump has never hidden his antipathy for clean energy, solar and wind investments, but what&#39;s happening in U.S. markets since April is delivering results that few, even his fiercest critics, saw coming.
+other_info: n/a
+AG, $12.35, 5.48% -- pb_ratio: 2.41, mCap: 6.05B, float_rotation: 0.01
+headline: First Majestic Silver Corp Files For Mixed Shelf; Size Not Disclosed
+summary: 0
+other_info: n/a
+CLSK, $12.49, -8.63% -- pb_ratio: 1.64, mCap: 3.51B, float_rotation: 0.05
+headline: CleanSpark Shares Are Moving Lower: What Investors Should Know
+summary: CleanSpark Inc (NASDAQ: CLSK) shares are declining on Thursday. The company announced a new $100 million Bitcoin (CRYPTO: BTC)-backed credit facility with Two Prime.
+other_info: n/a
+MARA, $15.95, -1.21% -- pb_ratio: 1.21, mCap: 5.91B, float_rotation: 0.02
+headline: Bitcoin, Ethereum, XRP Plunge Taking Crypto-Linked Stocks Down
+summary: Crypto-linked stocks tumbled Thursday as Bitcoin (CRYPTO: BTC), Ethereum (CRYPTO: ETH) and XRP (CRYPTO: XRP) extended their declines, putting 
+other_info: n/a
+openAi's Stock list:
+- Keep/Buy BITF: Pullback with Bitcoin weakness, but balance sheet is solid (low debt, good liquidity) and price still above 50/200D averages. Attractive risk/reward among miners. Use tight stop.
+- Keep/Buy LAC: Significant cash vs modest debt, leverage to lithium upcycle, and still below recent highs. Volatility is high; position with a disciplined stop.
+- Buy PEPG selectively: Biotech with strong cash runway and limited liabilities; recent selloff looks like an overreaction after a big run and a raised PT. Binary risk remains, so size small and use wider stop.
+- Avoid/Remove CDLX: Spike driven by headlines, but negative tangible book and high net debt make the rebound fragile.
+- Avoid/Remove HFFG: Cheap on P/B but leverage is high, liquidity thin; drawdown could extend.
+- Avoid for now MARA/CLSK: Crypto beta without clear near-term tailwind; MARA’s leverage and CLSK’s new credit facility increase risk into BTC volatility.
+- AG: Momentum strong with silver, but fresh shelf filing raises dilution risk; not a buy here.
+No additional sub-$10.72 picks meet a >90% conviction threshold today.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $2.55, -4.49% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+LAC, $6.82, -11.67% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+PEPG, $4.98, -15.31% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+latest price for BITF: 2.54, so I'm buying 3
+Buy order submitted. ID: 74a522f5-d3af-4d38-83fa-f0062c27ca58
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+Skipping LAC: current price (6.76) exceeds buying power (3.11)
+Skipping PEPG: current price (4.91) exceeds buying power (3.11)
+========================= Run End =========================
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-09-29 06:40:04 ====================
+Selling yesterdays positions.
+[BITF] Price=2.65, ATR=0.3446, Raw%=13.01
+[BITF] Final trail % = 12
+Trailing stop sell for BITF with a trail percent of 12 submitted. ID: 8282eea7-7bf2-498b-b3e5-d93af27b924e
+
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$FLYX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-29 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 132 => 24 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 24, 11 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for CGC: list index out of range
+News fetch failed for GRWG: list index out of range
+News fetch failed for BITF: list index out of range
+News fetch failed for CLLS: list index out of range
+News fetch failed for ZURA: list index out of range
+Reported Sunday, Larimar To Provide Nomlabofusp Program Update For Friedreich's Ataxia During Conference Call And Webcast On September 29
+News fetch failed for LAC: list index out of range
+Reported Sunday, MoonLake Phase 3 VELA Trials Show Sonelokimab Achieves Statistically Significant HiSCR75 Responses In Moderate To Severe Hidradenitis Suppurativa
+News fetch failed for CLSK: list index out of range
+News fetch failed for MARA: list index out of range
+CAN, $0.89, 11.69% -- pb_ratio: 1.29, mCap: 419.05M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+CGC, $1.54, 14.08% -- pb_ratio: 0.65, mCap: 524.16M, float_rotation: 0.13
+headline: 0
+summary: 0
+other_info: n/a
+GRWG, $2.00, 21.16% -- pb_ratio: 1.12, mCap: 119.54M, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $2.65, 4.94% -- pb_ratio: 2.23, mCap: 1.47B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+CLLS, $2.69, -19.94% -- pb_ratio: 2.00, mCap: 279.67M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+ZURA, $2.97, 23.19% -- pb_ratio: 1.46, mCap: 193.10M, float_rotation: 0.33
+headline: 0
+summary: 0
+other_info: n/a
+LRMR, $3.44, -33.23% -- pb_ratio: 1.84, mCap: 294.86M, float_rotation: 0.26
+headline: Reported Sunday, Larimar To Provide Nomlabofusp Program Update For Friedreich's Ataxia During Conference Call And Webcast On September 29
+summary: 0
+other_info: n/a
+LAC, $5.93, -5.40% -- pb_ratio: 2.15, mCap: 1.44B, float_rotation: 0.09
+headline: 0
+summary: 0
+other_info: n/a
+MLTX, $6.88, -88.89% -- pb_ratio: 1.23, mCap: 436.96M, float_rotation: 1.45
+headline: Reported Sunday, MoonLake Phase 3 VELA Trials Show Sonelokimab Achieves Statistically Significant HiSCR75 Responses In Moderate To Severe Hidradenitis Suppurativa
+summary: 0
+other_info: n/a
+CLSK, $14.01, 7.61% -- pb_ratio: 1.83, mCap: 3.94B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $16.96, 5.08% -- pb_ratio: 1.28, mCap: 6.28B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Momentum and positioning favor Bitcoin-exposed miners: BITF, CLSK, and MARA are trading above both 50- and 200-day averages with strong liquidity and rising volumes, supporting follow-through. Use 5–6% trailing stops to manage crypto volatility. Among sub-$3.11 names, GRWG has a clean breakout above both 50/200-day averages and improving trend; a 6–7% trailing stop is prudent. ZURA’s balance sheet is cash-rich with no debt and price now above key averages; despite high rotation, its downside is buffered by cash—use an 8% stop. CAN is a speculative add: price reclaimed the 50-day but remains below the 200-day; treat as a momentum catch-up with an 8% stop.
+
+Remove/avoid: MLTX (-89%) and LRMR (-33%) on trial/program risks and broken trends; CLLS (-20%) shows weakness and event risk; LAC is liquid and above long-term averages but today’s drawdown and commodity cyclicality reduce near-term edge; CGC’s pop occurs amid leverage and sector headwinds—better as a tactical trade than a buy-and-hold. No additional >90% conviction sub-$3.11 names to add today.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $2.65, 4.94% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+CLSK, $14.01, 7.61% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+MARA, $16.96, 5.08% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+GRWG, $2.00, 21.16% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+ZURA, $2.97, 23.19% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+CAN, $0.89, 11.69% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+Skipping BITF: 2.69, too risky.
+Skipping CLSK: current price (14.14) exceeds buying power (3.11)
+Skipping MARA: current price (17.17) exceeds buying power (3.11)
+latest price for GRWG: 1.985, so I'm buying 1
+Buy order submitted. ID: 538c100a-dde0-4973-8423-eb531d939c6c
+Waiting for GRWG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for GRWG, will attach trailing stop tomorrow.
+Skipping ZURA: current price (2.9) exceeds buying power (1.11)
+Skipping CAN: 0.9117, too risky.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-09-30 06:40:03 ====================
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$NUVB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SBXD.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-09-30 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 151 => 24 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 24, 12 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+'DOJ Requests Extension on Marijuana Rescheduling Case, But Decision Could Still Come Anytime'- The Marijuana Herald
+News fetch failed for BITF: list index out of range
+Bit Digital Prices Upsized $135M Convertible Notes Offering At 4% Due 2030 To Fund Ethereum PurchasesE
+News fetch failed for IMAB: list index out of range
+12 Health Care Stocks Moving In Monday's Intraday Session
+Lithium Americas (LAC) Stock Is Sliding Monday: What's Going On?
+Wolfspeed, Tilray, Robinhood, Etsy, And Moonlake Immunotherapeutics: Why These 5 Stocks Are On Investors' Radars Today
+Ambac Financial Group To Acquire ArmadaCare From SiriusPoint For $250M
+News fetch failed for AG: list index out of range
+10 Information Technology Stocks With Whale Alerts In Today's Session
+News fetch failed for MARA: list index out of range
+CAN, $0.94, 5.37% -- pb_ratio: 1.36, mCap: 419.50M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+CGC, $1.47, -9.11% -- pb_ratio: 0.62, mCap: 458.69M, float_rotation: 0.05
+headline: 'DOJ Requests Extension on Marijuana Rescheduling Case, But Decision Could Still Come Anytime'- The Marijuana Herald
+summary: 0
+other_info: n/a
+BITF, $2.80, -0.88% -- pb_ratio: 2.35, mCap: 1.54B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+BTBT, $2.89, -4.84% -- pb_ratio: 1.32, mCap: 929.87M, float_rotation: 0.06
+headline: Bit Digital Prices Upsized $135M Convertible Notes Offering At 4% Due 2030 To Fund Ethereum PurchasesE
+summary: 0
+other_info: n/a
+IMAB, $3.88, 13.45% -- pb_ratio: 1.61, mCap: 455.08M, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+ZURA, $3.94, 31.77% -- pb_ratio: 1.97, mCap: 260.07M, float_rotation: 0.09
+headline: 12 Health Care Stocks Moving In Monday's Intraday Session
+summary: Gainers
+
+cbdMD (AMEX:YCBD) shares rose 116.3% to $1.35 during Monday&#39;s regular session. The company&#39;s market cap stands at $5.5 million. 
+Zura Bio (NASDAQ: ZURA) stock moved upwards by 42.94% to $3.44. The company&#39;s market cap stands at $156.6 million.
+other_info: n/a
+LAC, $5.51, -3.58% -- pb_ratio: 2.00, mCap: 1.47B, float_rotation: 0.05
+headline: Lithium Americas (LAC) Stock Is Sliding Monday: What's Going On?
+summary: Shares of Lithium Americas Corp (NYSE: LAC) are falling sharply Monday afternoon, giving back a portion of last week&#39;s gains.
+other_info: n/a
+MLTX, $6.25, -2.34% -- pb_ratio: 1.12, mCap: 3.94B, float_rotation: 0.26
+headline: Wolfspeed, Tilray, Robinhood, Etsy, And Moonlake Immunotherapeutics: Why These 5 Stocks Are On Investors' Radars Today
+summary: U.S. stocks advanced today, with the Nasdaq climbing about 107 points, or 0.48%, to 22,591.15. The S&amp;P 500 added 0.26% to close at 6,661.21, while the Dow Jones Industrial Average edged up 0.15% to 46,316.07.
+
+
+
+These are the top stocks that gained the attention of retail traders and investors throughout the day.
+other_info: n/a
+AMBC, $8.07, -16.98% -- pb_ratio: 0.43, mCap: 373.30M, float_rotation: 0.01
+headline: Ambac Financial Group To Acquire ArmadaCare From SiriusPoint For $250M
+summary: 0
+other_info: n/a
+AG, $12.55, 1.25% -- pb_ratio: 2.45, mCap: 6.13B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $14.51, -2.63% -- pb_ratio: 1.90, mCap: 4.08B, float_rotation: 0.03
+headline: 10 Information Technology Stocks With Whale Alerts In Today's Session
+summary: This whale alert can help traders discover the next big trading opportunities.
+Whales are entities with large sums of money and we track their transactions here at Benzinga on our options activity scanner.
+other_info: n/a
+MARA, $18.26, -1.58% -- pb_ratio: 1.38, mCap: 6.76B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Keep crypto miners BITF, CLSK, and MARA. All trade above their 50/200-day averages with 10-day volume outpacing 3-month averages, signaling institutional accumulation; use 5–7% trailing stops given crypto volatility. Keep AG: silver momentum persists and shares sit well above 50/200-day averages; a 5% trailing stop fits a trending metals name. Keep LAC: still above key moving averages despite today’s pullback; momentum from last week remains intact—use ~6% trailing stop. IMAB shows improving trend (above 50/200DMA) with a solid cash position; biotech volatility warrants a wider 7–8% stop.
+
+Remove/avoid: CGC (regulatory overhang and -9% day), BTBT (convertible notes/dilution near 50DMA), AMBC (-17% on acquisition uncertainty), MLTX (capitulation far below long-term averages), ZURA (chase risk after +30% spike), and CAN (sub-$1, below 200DMA; speculative with higher downside risk). No additional sub-$49.23 names meet a >90% conviction threshold today.
+
+=======   PLACING BUY ORDERS   =======
+BITF, $2.80, -0.88% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+CLSK, $14.51, -2.63% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+MARA, $18.26, -1.58% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+AG, $12.55, 1.25% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+LAC, $5.51, -3.58% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+IMAB, $3.88, 13.45% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+latest price for BITF: 2.79, so I'm buying 13
+Buy order submitted. ID: c2c3f7cf-3eb3-47c3-b66f-6677331ad4ec
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+Skipping CLSK: current price (14.495) exceeds buying power (12.97)
+Skipping MARA: current price (18.27) exceeds buying power (12.97)
+Skipping AG: 12.565, too risky.
+latest price for LAC: 5.475, so I'm buying 1
+Buy order submitted. ID: eb5e4e2e-efb5-4f2a-b8d7-a1b4b6ef954c
+Waiting for LAC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for LAC, will attach trailing stop tomorrow.
+latest price for IMAB: 3.88, so I'm buying 1
+Buy order submitted. ID: 81259347-cd32-4f75-8169-c48e8825450c
+Waiting for IMAB buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for IMAB, will attach trailing stop tomorrow.
+========================= Run End =========================
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-01 06:40:03 ====================
+Selling yesterdays positions.
+[BITF] Price=2.87, ATR=0.3296, Raw%=11.48
+[BITF] Final trail % = 8
+Trailing stop sell for BITF with a trail percent of 8 submitted. ID: e8cd1bd3-c501-4036-bdcd-309eedcfc1b5
+
+[LAC] Price=6.86, ATR=0.7639, Raw%=11.13
+[LAC] Final trail % = 8
+Trailing stop sell for LAC with a trail percent of 8 submitted. ID: f93abc26-f380-4185-9b96-31e9fd78b32d
+
+[IMAB] Price=3.82, ATR=0.3101, Raw%=8.12
+[IMAB] Final trail % = 8
+Trailing stop sell for IMAB with a trail percent of 8 submitted. ID: df8cdf84-3084-4674-a4ff-baa072a6191c
+
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$SLND.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$NTRBW: possibly delisted; no price data found  (period=5d)
+
+
+
+
+==================== Buying Process Started: 2025-10-01 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 142 => 21 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: HYG, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: TLT, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: XLF, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 21, 8 passed share and float filter.
+Stocks worth buying are:
+Soluna Holdings And Canaan Announce Strategic Hosting Agreement To Deploy 20 MW Of Avalon A15 XP Bitcoin Miners At Soluna's Project Dorothy In Briscoe County, Texas
+News fetch failed for BITF: list index out of range
+News fetch failed for HIVE: list index out of range
+Lithium Americas, GM And DOE Finalize $435M First Draw From $2.23B Loan As DOE Gains 5% Equity And JV Stake In Thacker Pass Project
+News fetch failed for AES: list index out of range
+Is the Market Bullish or Bearish on Cleanspark Inc?
+News fetch failed for MARA: list index out of range
+News fetch failed for RUN: list index out of range
+CAN, $0.95, 7.62% -- pb_ratio: 1.37, mCap: 424.52M, float_rotation: 0.00
+headline: Soluna Holdings And Canaan Announce Strategic Hosting Agreement To Deploy 20 MW Of Avalon A15 XP Bitcoin Miners At Soluna's Project Dorothy In Briscoe County, Texas
+summary: 0
+other_info: n/a
+BITF, $2.89, 3.80% -- pb_ratio: 2.43, mCap: 1.59B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+HIVE, $4.05, 0.75% -- pb_ratio: 1.48, mCap: 933.93M, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+LAC, $6.73, -12.46% -- pb_ratio: 2.44, mCap: 1.81B, float_rotation: 0.47
+headline: Lithium Americas, GM And DOE Finalize $435M First Draw From $2.23B Loan As DOE Gains 5% Equity And JV Stake In Thacker Pass Project
+summary: 0
+other_info: n/a
+AES, $14.93, 14.06% -- pb_ratio: 3.16, mCap: 10.70B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $15.28, 5.58% -- pb_ratio: 2.00, mCap: 4.29B, float_rotation: 0.03
+headline: Is the Market Bullish or Bearish on Cleanspark Inc?
+summary:  
+other_info: n/a
+MARA, $19.31, 6.60% -- pb_ratio: 1.46, mCap: 7.15B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+RUN, $19.46, 12.81% -- pb_ratio: 1.53, mCap: 4.59B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Crypto miners are rallying, but quality and balance-sheet strength matter. Keep CLSK: it’s a scale leader with solid liquidity (over $550M cash + short-term investments), still near mid-range of its 52-week band, and showing strong momentum above 50/200-DMAs. Keep BITF: under $3.61 with improving trend, solid cash/short-term investments, and favorable momentum vs moving averages—use a wider stop given volatility. Remove CAN: sub-$1 with headline-driven spike and dilution/China risk; the pop could fade. Remove HIVE: lagging momentum versus peers and smaller scale. MARA is liquid and moving, but leverage/dilution risk is higher than CLSK; prefer CLSK/BITF exposure. Keep AES: a defensive utility with a clean breakout above 50/200-DMAs, improving sentiment in renewables/utilities, and manageable valuation; it diversifies crypto beta. Remove RUN: strong move but very high debt in a still-rate-sensitive solar model—risk of reversals. Remove LAC: DOE funding de-risks long-term, but today’s drop and evolving structure create event risk; wait for stabilization. No additional sub-$3.61 names meet a >90% conviction threshold today beyond BITF.
+
+=======   PLACING BUY ORDERS   =======
+CLSK, $15.28, 5.58% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+BITF, $2.89, 3.80% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+AES, $14.93, 14.06% -- pb_ratio: n/a, mCap: n/a, float_rotation: n/a
+headline: n/a
+summary: n/a
+other_info: n/a
+Skipping CLSK: current price (15.3) exceeds buying power (3.61)
+Skipping BITF: 2.89, too risky.
+Skipping AES: current price (15.025) exceeds buying power (3.61)
+========================= Run End =========================
+
+
