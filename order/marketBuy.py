@@ -95,10 +95,6 @@ def place_trailing_stops_from_local_file(trail_percent=4.5):
         symbol = pos["symbol"]
         qty = pos["qty"]
         trail_percent = get_atr(symbol, default_pct=trail_percent)
-        already_sold = worth_selling_now(symbol)
-
-        if already_sold:
-            continue
 
         try:
             trailing_stop_order = TrailingStopOrderRequest(
@@ -122,6 +118,13 @@ def place_trailing_stops_from_local_file(trail_percent=4.5):
             json.dump(remaining_positions, f, indent=2)
     else:
         os.remove(SAVE_FILE)
+
+    all_open_positions = liveTradingClient.get_all_positions()
+    for position in all_open_positions:
+        try:
+            worth_selling_now(position.symbol)
+        except Exception as e:
+            print(f"Error checking if {position.symbol} is worth selling now: {e}")
 
 def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.75):
     try:
@@ -189,18 +192,16 @@ def worth_selling_now(symbol, percent_target=3.5):
         print(f"No open position found for {symbol}.  Skipping")
         return False
         
-    avg_entry = float(position.avg_entry_price)
-    current_price = float(position.current_price)
     qty = float(position.qty)
 
     if qty <= 0:
         print(f"Skipping sell for {symbol}: Position qty is {qty}")
         return False
 
-    percent_gain = ((current_price - avg_entry) / avg_entry) * 100
+    percent_gain = (position.unrealized_plpc) * 100
     print(f"{symbol}: {percent_gain:.2f}% gain")
 
-    if percent_gain >= percent_target:
+    if percent_gain >= percent_target or percent_gain <= -percent_target:
         try:
             open_orders = liveTradingClient.get_orders(status="open")
             for order in open_orders:

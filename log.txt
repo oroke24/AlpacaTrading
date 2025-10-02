@@ -1958,3 +1958,272 @@ Skipping AES: current price (15.025) exceeds buying power (3.61)
 ========================= Run End =========================
 
 
+
+
+==================== Selling Process Started: 2025-10-02 06:40:03 ====================
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$BKKT.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SLND.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-02 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 144 => 24 passed market cap and price filter.
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 24, 10 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+Canopy Growth (CGC) Stock Is Falling Wednesday: What's Going On?
+News fetch failed for BITF: list index out of range
+Algoma Steel Group  Provides Guidance For Q3 2025; Total Steel Shipments For The Quarter Are Expected To Be ~415,000 – 420,000 Net Tons And Adjusted EBITDA Is Expected To Be Negative $80M – Negative $90M
+News fetch failed for HIVE: list index out of range
+Uncle Sam ETF? Trump Quietly Builds A Portfolio In Intel And Lithium Americas
+News fetch failed for CLSK: list index out of range
+10 Information Technology Stocks Whale Activity In Today's Session
+News fetch failed for DOW: list index out of range
+Occidental Analyst Calls Possible OxyChem Sale A 'Big Bang' Move
+CAN, $1.30, 25.00% -- pb_ratio: 1.86, mCap: 575.97M, float_rotation: 0.01
+headline: 0
+summary: 0
+other_info: n/a
+CGC, $1.38, -2.11% -- pb_ratio: 0.58, mCap: 533.84M, float_rotation: 0.03
+headline: Canopy Growth (CGC) Stock Is Falling Wednesday: What's Going On?
+summary: Shares of Canopy Growth are trading lower Wednesday, pulling back from a sharp rally on Monday.
+other_info: n/a
+BITF, $2.95, 5.03% -- pb_ratio: 2.48, mCap: 1.64B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+ASTL, $3.06, -9.85% -- pb_ratio: 0.25, mCap: 388.02M, float_rotation: 0.01
+headline: Algoma Steel Group  Provides Guidance For Q3 2025; Total Steel Shipments For The Quarter Are Expected To Be ~415,000 – 420,000 Net Tons And Adjusted EBITDA Is Expected To Be Negative $80M – Negative $90M
+summary: 0
+other_info: n/a
+HIVE, $4.26, 1.86% -- pb_ratio: 1.55, mCap: 981.80M, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+LAC, $7.05, 1.62% -- pb_ratio: 2.56, mCap: 1.70B, float_rotation: 0.13
+headline: Uncle Sam ETF? Trump Quietly Builds A Portfolio In Intel And Lithium Americas
+summary: Uncle Sam&#39;s unconventional ETF: equity stakes in Intel and Lithium Americas signal a shift in US industrial policy towards front-row ownership.
+other_info: n/a
+CLSK, $14.84, 0.44% -- pb_ratio: 1.94, mCap: 4.25B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $19.02, 1.22% -- pb_ratio: 1.44, mCap: 7.07B, float_rotation: 0.04
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: n/a
+DOW, $23.49, 1.71% -- pb_ratio: 0.97, mCap: 16.65B, float_rotation: 0.01
+headline: 0
+summary: 0
+other_info: n/a
+OXY, $45.28, -5.16% -- pb_ratio: 1.62, mCap: 44.94B, float_rotation: 0.01
+headline: Occidental Analyst Calls Possible OxyChem Sale A 'Big Bang' Move
+summary: JPMorgan analyst weighs in on reports of Occidental Petroleum discussing $10 billion sale of OxyChem to Berkshire Hathaway. Potential tradeoffs and impact on leverage ratio noted.
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.30, 25.00% -- pb_ratio: 1.86, mCap: 575.97M, float_rotation: 0.01
+headline: 0
+summary: 0
+other_info: {'symbol': 'CAN', 'last_price': '1.27', 'open': '1.14', 'analyst_price_target': '1.27', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.76', 'two_hundred_day_average': '1.10', 'ten_day_volume': '53.63M', 'three_month_volume': '42.84M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+CGC, $1.38, -2.11% -- pb_ratio: 0.58, mCap: 533.84M, float_rotation: 0.03
+headline: Canopy Growth (CGC) Stock Is Falling Wednesday: What's Going On?
+summary: Shares of Canopy Growth are trading lower Wednesday, pulling back from a sharp rally on Monday.
+other_info: {'symbol': 'CGC', 'last_price': '1.38', 'open': '1.40', 'analyst_price_target': '1.38', 'year_low': '0.77', 'year_high': '5.80', 'fifty_day_average': '1.34', 'two_hundred_day_average': '1.55', 'ten_day_volume': '30.36M', 'three_month_volume': '20.95M', 'balance_sheet':                                                    2025-03-31  ... 2021-03-31
+Ordinary Shares Number                            183865295.0  ...        NaN
+Share Issued                                      183865295.0  ...        NaN
+Net Debt                                          190258000.0  ...        NaN
+Total Debt                                        348397000.0  ...        NaN
+Tangible Book Value                               353971000.0  ...        NaN
+...                                                       ...  ...        ...
+Cash Cash Equivalents And Short Term Investments  131467000.0  ...        NaN
+Other Short Term Investments                       17656000.0  ...        NaN
+Cash And Cash Equivalents                         113811000.0  ...        NaN
+Cash Equivalents                                     130000.0  ...        NaN
+Cash Financial                                    113681000.0  ...        NaN
+
+[91 rows x 5 columns]}
+BITF, $2.95, 5.03% -- pb_ratio: 2.48, mCap: 1.64B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'BITF', 'last_price': '2.95', 'open': '2.89', 'analyst_price_target': '2.95', 'year_low': '0.67', 'year_high': '3.60', 'fifty_day_average': '1.72', 'two_hundred_day_average': '1.31', 'ten_day_volume': '90.21M', 'three_month_volume': '48.68M', 'balance_sheet':                                                    2024-12-31  ...  2020-12-31
+Ordinary Shares Number                            479332885.0  ...         NaN
+Share Issued                                      479332885.0  ...         NaN
+Net Debt                                                  NaN  ...  11398000.0
+Total Debt                                         23415000.0  ...         NaN
+Tangible Book Value                               603956000.0  ...         NaN
+...                                                       ...  ...         ...
+Gross Accounts Receivable                           1306000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments  146840000.0  ...         NaN
+Other Short Term Investments                       87298000.0  ...         NaN
+Cash And Cash Equivalents                          59542000.0  ...         NaN
+Cash Financial                                     59542000.0  ...         NaN
+
+[79 rows x 5 columns]}
+ASTL, $3.06, -9.85% -- pb_ratio: 0.25, mCap: 388.02M, float_rotation: 0.01
+headline: Algoma Steel Group  Provides Guidance For Q3 2025; Total Steel Shipments For The Quarter Are Expected To Be ~415,000 – 420,000 Net Tons And Adjusted EBITDA Is Expected To Be Negative $80M – Negative $90M
+summary: 0
+other_info: {'symbol': 'ASTL', 'last_price': '3.08', 'open': '3.27', 'analyst_price_target': '3.08', 'year_low': '3.38', 'year_high': '12.14', 'fifty_day_average': '4.78', 'two_hundred_day_average': '6.33', 'ten_day_volume': '1.80M', 'three_month_volume': '1.16M', 'balance_sheet':                                                     2024-03-31  ...   2021-03-31
+Ordinary Shares Number                             104103072.0  ...  112074095.0
+Share Issued                                       104103072.0  ...  112074095.0
+Net Debt                                            46000000.0  ...  594600000.0
+Total Debt                                         146100000.0  ...  629400000.0
+Tangible Book Value                               1501700000.0  ...  172300000.0
+...                                                        ...  ...          ...
+Allowance For Doubtful Accounts Receivable          -3100000.0  ...   -1800000.0
+Gross Accounts Receivable                          238500000.0  ...  259300000.0
+Cash Cash Equivalents And Short Term Investments    97900000.0  ...   21200000.0
+Cash And Cash Equivalents                           97900000.0  ...   21200000.0
+Cash Financial                                      97900000.0  ...   21200000.0
+
+[80 rows x 4 columns]}
+HIVE, $4.26, 1.86% -- pb_ratio: 1.55, mCap: 981.80M, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: {'symbol': 'HIVE', 'last_price': '4.26', 'open': '4.18', 'analyst_price_target': '4.26', 'year_low': '1.26', 'year_high': '5.54', 'fifty_day_average': '2.85', 'two_hundred_day_average': '2.38', 'ten_day_volume': '45.77M', 'three_month_volume': '28.77M', 'balance_sheet':                                                    2025-03-31  ... 2021-03-31
+Treasury Shares Number                                    NaN  ...        NaN
+Ordinary Shares Number                            165615186.0  ...        NaN
+Share Issued                                      165615186.0  ...        NaN
+Net Debt                                           26046000.0  ...        NaN
+Total Debt                                         55161000.0  ...        NaN
+...                                                       ...  ...        ...
+Accounts Receivable                                15343000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   47511000.0  ...        NaN
+Other Short Term Investments                       24136000.0  ...        NaN
+Cash And Cash Equivalents                          23375000.0  ...        NaN
+Cash Financial                                     23375000.0  ...        NaN
+
+[69 rows x 5 columns]}
+LAC, $7.05, 1.62% -- pb_ratio: 2.56, mCap: 1.70B, float_rotation: 0.13
+headline: Uncle Sam ETF? Trump Quietly Builds A Portfolio In Intel And Lithium Americas
+summary: Uncle Sam&#39;s unconventional ETF: equity stakes in Intel and Lithium Americas signal a shift in US industrial policy towards front-row ownership.
+other_info: {'symbol': 'LAC', 'last_price': '7.05', 'open': '6.72', 'analyst_price_target': '7.05', 'year_low': '2.31', 'year_high': '7.55', 'fifty_day_average': '3.31', 'two_hundred_day_average': '3.01', 'ten_day_volume': '101.13M', 'three_month_volume': '22.86M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+CLSK, $14.84, 0.44% -- pb_ratio: 1.94, mCap: 4.25B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: {'symbol': 'CLSK', 'last_price': '14.86', 'open': '14.96', 'analyst_price_target': '14.86', 'year_low': '6.45', 'year_high': '17.97', 'fifty_day_average': '11.03', 'two_hundred_day_average': '10.00', 'ten_day_volume': '40.69M', 'three_month_volume': '24.82M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+MARA, $19.02, 1.22% -- pb_ratio: 1.44, mCap: 7.07B, float_rotation: 0.04
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: {'symbol': 'MARA', 'last_price': '19.02', 'open': '19.17', 'analyst_price_target': '19.04', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.39', 'two_hundred_day_average': '16.04', 'ten_day_volume': '73.38M', 'three_month_volume': '55.22M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+DOW, $23.49, 1.71% -- pb_ratio: 0.97, mCap: 16.65B, float_rotation: 0.01
+headline: 0
+summary: 0
+other_info: {'symbol': 'DOW', 'last_price': '23.50', 'open': '23.13', 'analyst_price_target': '23.50', 'year_low': '20.40', 'year_high': '55.62', 'fifty_day_average': '23.74', 'two_hundred_day_average': '31.24', 'ten_day_volume': '13.81M', 'three_month_volume': '14.92M', 'balance_sheet':                                                      2024-12-31  ... 2020-12-31
+Treasury Shares Number                               80859145.0  ...        NaN
+Ordinary Shares Number                              703612794.0  ...        NaN
+Share Issued                                        784471939.0  ...        NaN
+Net Debt                                          13215000000.0  ...        NaN
+Total Debt                                        17645000000.0  ...        NaN
+...                                                         ...  ...        ...
+Accounts Receivable                                4756000000.0  ...        NaN
+Allowance For Doubtful Accounts Receivable          -95000000.0  ...        NaN
+Gross Accounts Receivable                          4851000000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   2189000000.0  ...        NaN
+Cash And Cash Equivalents                          2189000000.0  ...        NaN
+
+[84 rows x 5 columns]}
+OXY, $45.28, -5.16% -- pb_ratio: 1.62, mCap: 44.94B, float_rotation: 0.01
+headline: Occidental Analyst Calls Possible OxyChem Sale A 'Big Bang' Move
+summary: JPMorgan analyst weighs in on reports of Occidental Petroleum discussing $10 billion sale of OxyChem to Berkshire Hathaway. Potential tradeoffs and impact on leverage ratio noted.
+other_info: {'symbol': 'OXY', 'last_price': '45.38', 'open': '47.86', 'analyst_price_target': '45.37', 'year_low': '34.78', 'year_high': '56.49', 'fifty_day_average': '45.56', 'two_hundred_day_average': '45.39', 'ten_day_volume': '11.15M', 'three_month_volume': '9.79M', 'balance_sheet':                                                      2024-12-31  ... 2020-12-31
+Treasury Shares Number                              228311184.0  ...        NaN
+Ordinary Shares Number                              938457983.0  ...        NaN
+Share Issued                                       1166769167.0  ...        NaN
+Net Debt                                          23191000000.0  ...        NaN
+Total Debt                                        27104000000.0  ...        NaN
+...                                                         ...  ...        ...
+Accounts Receivable                                3526000000.0  ...        NaN
+Allowance For Doubtful Accounts Receivable          -24000000.0  ...        NaN
+Gross Accounts Receivable                          3550000000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   2132000000.0  ...        NaN
+Cash And Cash Equivalents                          2132000000.0  ...        NaN
+
+[77 rows x 5 columns]}
+latest price for CAN: 1.275, so I'm buying 6
+Buy order submitted. ID: 34c6b6e8-2e97-4423-afb9-e38ee222e176
+Waiting for CAN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAN, will attach trailing stop tomorrow.
+latest price for CGC: 1.375, so I'm buying 1
+Buy order submitted. ID: 4c052c5e-ad4f-4582-8c11-696b5c3af306
+Waiting for CGC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CGC, will attach trailing stop tomorrow.
+Skipping BITF: current price (2.95) exceeds buying power (1.22)
+Skipping ASTL: current price (3.08) exceeds buying power (1.22)
+Skipping HIVE: current price (4.24) exceeds buying power (1.22)
+Skipping LAC: current price (7.07) exceeds buying power (1.22)
+Skipping CLSK: current price (14.86) exceeds buying power (1.22)
+Skipping MARA: current price (19.055) exceeds buying power (1.22)
+Skipping DOW: current price (23.52) exceeds buying power (1.22)
+Skipping OXY: current price (45.285) exceeds buying power (1.22)
+========================= Run End =========================
+
+
