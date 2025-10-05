@@ -2227,3 +2227,289 @@ Skipping OXY: current price (45.285) exceeds buying power (1.22)
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-03 06:40:03 ====================
+Selling yesterdays positions.
+[CAN] Price=1.39, ATR=0.1130, Raw%=8.13
+[CAN] Final trail % = 8
+Trailing stop sell for CAN with a trail percent of 8 submitted. ID: 48ea4f0c-386f-4693-902e-e880e535e06f
+
+[CGC] Price=1.37, ATR=0.1164, Raw%=8.50
+[CGC] Final trail % = 8
+Trailing stop sell for CGC with a trail percent of 8 submitted. ID: 35787151-8228-4d1c-a15b-b21e79d4442b
+
+Error checking if CAN is worth selling now: Unknown format code 'f' for object of type 'str'
+Error checking if CGC is worth selling now: Unknown format code 'f' for object of type 'str'
+Error checking if IMAB is worth selling now: Unknown format code 'f' for object of type 'str'
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$NUVB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$FLYX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-03 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 134 => 19 passed market cap and price filter.
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 19, 8 passed share and float filter.
+Stocks worth buying are:
+Crude Oil Down 2%; Aspire Biopharma Shares Spike Higher
+News fetch failed for BLNK: list index out of range
+News fetch failed for BITF: list index out of range
+12 Health Care Stocks Moving In Thursday's After-Market Session
+Lithium Corp Rockets 290% After Rare Earth Discovery—Could It Be Trump's Next Mineral Gambit?
+News fetch failed for TDOC: list index out of range
+News fetch failed for CLSK: list index out of range
+News fetch failed for MARA: list index out of range
+CAN, $1.39, 3.73% -- pb_ratio: 2.01, mCap: 651.91M, float_rotation: 0.01
+headline: Crude Oil Down 2%; Aspire Biopharma Shares Spike Higher
+summary: U.S. stocks traded higher toward the end of trading, with the Dow Jones index gaining around 0.2% on Thursday.
+
+
+
+The Dow traded up 0.20% to 46,532.02 while the NASDAQ rose 0.34% to 22,833.17. The S&amp;P 500 also rose, gaining, 0.07% to 6,715.87.
+other_info: n/a
+BLNK, $2.11, 20.15% -- pb_ratio: 3.08, mCap: 241.53M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $2.95, 0.34% -- pb_ratio: 2.48, mCap: 1.63B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+ANRO, $6.12, 36.00% -- pb_ratio: 1.34, mCap: 165.71M, float_rotation: 1.20
+headline: 12 Health Care Stocks Moving In Thursday's After-Market Session
+summary:  
+other_info: n/a
+LAC, $8.68, 27.25% -- pb_ratio: 3.14, mCap: 2.10B, float_rotation: 0.31
+headline: Lithium Corp Rockets 290% After Rare Earth Discovery—Could It Be Trump's Next Mineral Gambit?
+summary: Lithium Corp&#39;s rare discovery has boosted speculation on its potential as a next LAC with backing from the Trump administration. Stock up 290%.
+other_info: n/a
+TDOC, $9.48, 12.45% -- pb_ratio: 1.18, mCap: 1.68B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $15.76, 3.34% -- pb_ratio: 2.06, mCap: 4.43B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $18.80, -0.16% -- pb_ratio: 1.42, mCap: 6.96B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.39, 3.73% -- pb_ratio: 2.01, mCap: 651.91M, float_rotation: 0.01
+headline: Crude Oil Down 2%; Aspire Biopharma Shares Spike Higher
+summary: U.S. stocks traded higher toward the end of trading, with the Dow Jones index gaining around 0.2% on Thursday.
+
+
+
+The Dow traded up 0.20% to 46,532.02 while the NASDAQ rose 0.34% to 22,833.17. The S&amp;P 500 also rose, gaining, 0.07% to 6,715.87.
+other_info: {'symbol': 'CAN', 'last_price': '1.38', 'open': '1.57', 'analyst_price_target': '1.38', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.76', 'two_hundred_day_average': '1.10', 'ten_day_volume': '63.23M', 'three_month_volume': '44.28M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+BLNK, $2.11, 20.15% -- pb_ratio: 3.08, mCap: 241.53M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'BLNK', 'last_price': '2.10', 'open': '1.83', 'analyst_price_target': '2.10', 'year_low': '0.63', 'year_high': '2.32', 'fifty_day_average': '1.17', 'two_hundred_day_average': '1.06', 'ten_day_volume': '5.14M', 'three_month_volume': '3.39M', 'balance_sheet':                                                    2024-12-31  ...  2020-12-31
+Treasury Shares Number                                    NaN  ...         NaN
+Ordinary Shares Number                            101970907.0  ...         NaN
+Share Issued                                      101970907.0  ...         NaN
+Total Debt                                         10774000.0  ...         NaN
+Tangible Book Value                                90417000.0  ...         NaN
+...                                                       ...  ...         ...
+Gross Accounts Receivable                          51627000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments   55404000.0  ...         NaN
+Other Short Term Investments                       13630000.0  ...         0.0
+Cash And Cash Equivalents                          41774000.0  ...         NaN
+Cash Financial                                            NaN  ...  22342000.0
+
+[74 rows x 5 columns]}
+BITF, $2.95, 0.34% -- pb_ratio: 2.48, mCap: 1.63B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: {'symbol': 'BITF', 'last_price': '2.94', 'open': '2.98', 'analyst_price_target': '2.94', 'year_low': '0.67', 'year_high': '3.60', 'fifty_day_average': '1.76', 'two_hundred_day_average': '1.31', 'ten_day_volume': '77.85M', 'three_month_volume': '48.77M', 'balance_sheet':                                                    2024-12-31  ...  2020-12-31
+Ordinary Shares Number                            479332885.0  ...         NaN
+Share Issued                                      479332885.0  ...         NaN
+Net Debt                                                  NaN  ...  11398000.0
+Total Debt                                         23415000.0  ...         NaN
+Tangible Book Value                               603956000.0  ...         NaN
+...                                                       ...  ...         ...
+Gross Accounts Receivable                           1306000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments  146840000.0  ...         NaN
+Other Short Term Investments                       87298000.0  ...         NaN
+Cash And Cash Equivalents                          59542000.0  ...         NaN
+Cash Financial                                     59542000.0  ...         NaN
+
+[79 rows x 5 columns]}
+ANRO, $6.12, 36.00% -- pb_ratio: 1.34, mCap: 165.71M, float_rotation: 1.20
+headline: 12 Health Care Stocks Moving In Thursday's After-Market Session
+summary:  
+other_info: {'symbol': 'ANRO', 'last_price': '6.14', 'open': '4.76', 'analyst_price_target': '6.14', 'year_low': '1.60', 'year_high': '15.04', 'fifty_day_average': '3.58', 'two_hundred_day_average': '3.15', 'ten_day_volume': '99,060.00', 'three_month_volume': '99,950.00', 'balance_sheet':                                                      2024-12-31  ...  2021-12-31
+Ordinary Shares Number                               26986560.0  ...  25574360.0
+Share Issued                                         26986560.0  ...  25574360.0
+Total Debt                                           16944000.0  ...         0.0
+Tangible Book Value                                 151460000.0  ... -12478000.0
+Invested Capital                                    163018000.0  ... -12478000.0
+Working Capital                                     159329000.0  ...  25874000.0
+Net Tangible Assets                                 151460000.0  ... -12478000.0
+Capital Lease Obligations                             5386000.0  ...         0.0
+Common Stock Equity                                 151460000.0  ... -12478000.0
+Total Capitalization                                163018000.0  ... -12478000.0
+Total Equity Gross Minority Interest                151460000.0  ... -12478000.0
+Stockholders Equity                                 151460000.0  ... -12478000.0
+Gains Losses Not Affecting Retained Earnings          -101000.0  ...    -22000.0
+Other Equity Adjustments                              -101000.0  ...    -22000.0
+Retained Earnings                                  -138396000.0  ... -12950000.0
+Additional Paid In Capital                          289954000.0  ...    494000.0
+Capital Stock                                            3000.0  ...         0.0
+Common Stock                                             3000.0  ...         0.0
+Total Liabilities Net Minority Interest              26082000.0  ...  41272000.0
+Total Non Current Liabilities Net Minority Inte...   16074000.0  ...  39462000.0
+Other Non Current Liabilities                               NaN  ...         NaN
+Preferred Securities Outside Stock Equity                   0.0  ...  38163000.0
+Derivative Product Liabilities                              0.0  ...   1299000.0
+Long Term Debt And Capital Lease Obligation          16074000.0  ...         NaN
+Long Term Capital Lease Obligation                    4516000.0  ...         NaN
+Long Term Debt                                       11558000.0  ...         NaN
+Current Liabilities                                  10008000.0  ...   1810000.0
+Other Current Liabilities                                   NaN  ...    193000.0
+Current Debt And Capital Lease Obligation              870000.0  ...         NaN
+Current Capital Lease Obligation                       870000.0  ...         0.0
+Payables And Accrued Expenses                         9138000.0  ...   1810000.0
+Current Accrued Expenses                              7559000.0  ...   1210000.0
+Interest Payable                                        78000.0  ...         NaN
+Payables                                              1579000.0  ...    600000.0
+Accounts Payable                                      1579000.0  ...    600000.0
+Total Assets                                        177542000.0  ...  28794000.0
+Total Non Current Assets                              8205000.0  ...   1110000.0
+Other Non Current Assets                               504000.0  ...     50000.0
+Net PPE                                               7701000.0  ...   1060000.0
+Accumulated Depreciation                             -1004000.0  ...   -244000.0
+Gross PPE                                             8705000.0  ...   1304000.0
+Leases                                                 246000.0  ...         NaN
+Other Properties                                      7341000.0  ...    818000.0
+Machinery Furniture Equipment                         1118000.0  ...    486000.0
+Buildings And Improvements                            5035000.0  ...         NaN
+Properties                                                  0.0  ...         NaN
+Current Assets                                      169337000.0  ...  27684000.0
+Other Current Assets                                    30000.0  ...         NaN
+Current Deferred Assets                                     0.0  ...         NaN
+Prepaid Assets                                        1078000.0  ...    236000.0
+Receivables                                                 NaN  ...   1743000.0
+Other Receivables                                           NaN  ...    248000.0
+Accounts Receivable                                         NaN  ...   1495000.0
+Cash Cash Equivalents And Short Term Investments    168229000.0  ...  25705000.0
+Cash And Cash Equivalents                           168229000.0  ...  25705000.0
+
+[55 rows x 4 columns]}
+LAC, $8.68, 27.25% -- pb_ratio: 3.14, mCap: 2.10B, float_rotation: 0.31
+headline: Lithium Corp Rockets 290% After Rare Earth Discovery—Could It Be Trump's Next Mineral Gambit?
+summary: Lithium Corp&#39;s rare discovery has boosted speculation on its potential as a next LAC with backing from the Trump administration. Stock up 290%.
+other_info: {'symbol': 'LAC', 'last_price': '8.79', 'open': '6.97', 'analyst_price_target': '8.79', 'year_low': '2.31', 'year_high': '7.55', 'fifty_day_average': '3.39', 'two_hundred_day_average': '3.03', 'ten_day_volume': '108.19M', 'three_month_volume': '23.96M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+TDOC, $9.48, 12.45% -- pb_ratio: 1.18, mCap: 1.68B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'TDOC', 'last_price': '9.48', 'open': '8.61', 'analyst_price_target': '9.48', 'year_low': '6.35', 'year_high': '15.21', 'fifty_day_average': '7.65', 'two_hundred_day_average': '8.43', 'ten_day_volume': '7.17M', 'three_month_volume': '6.24M', 'balance_sheet':                                                     2024-12-31  ...  2020-12-31
+Ordinary Shares Number                             173405016.0  ...         NaN
+Share Issued                                       173405016.0  ...         NaN
+Net Debt                                           243814000.0  ...         NaN
+Total Debt                                        1584613000.0  ...         NaN
+Tangible Book Value                               -223471000.0  ...         NaN
+...                                                        ...  ...         ...
+Allowance For Doubtful Accounts Receivable          -5134000.0  ...         NaN
+Gross Accounts Receivable                          219280000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments  1298327000.0  ...         NaN
+Other Short Term Investments                               NaN  ...  53245000.0
+Cash And Cash Equivalents                         1298327000.0  ...         NaN
+
+[78 rows x 5 columns]}
+CLSK, $15.76, 3.34% -- pb_ratio: 2.06, mCap: 4.43B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'CLSK', 'last_price': '15.77', 'open': '15.61', 'analyst_price_target': '15.77', 'year_low': '6.45', 'year_high': '17.97', 'fifty_day_average': '11.08', 'two_hundred_day_average': '10.01', 'ten_day_volume': '37.28M', 'three_month_volume': '24.66M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+MARA, $18.80, -0.16% -- pb_ratio: 1.42, mCap: 6.96B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'MARA', 'last_price': '18.83', 'open': '19.02', 'analyst_price_target': '18.83', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.42', 'two_hundred_day_average': '16.02', 'ten_day_volume': '70.89M', 'three_month_volume': '54.84M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+latest price for CAN: 1.39, so I'm buying 1
+Buy order submitted. ID: 89e00855-4585-44ff-9c97-a3c4c2bddd9a
+Waiting for CAN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAN, will attach trailing stop tomorrow.
+Skipping BLNK: current price (2.11) exceeds buying power (1.68)
+Skipping BITF: current price (2.945) exceeds buying power (1.68)
+Skipping ANRO: current price (6.25) exceeds buying power (1.68)
+Skipping LAC: current price (8.725) exceeds buying power (1.68)
+Skipping TDOC: current price (9.485) exceeds buying power (1.68)
+Skipping CLSK: current price (15.775) exceeds buying power (1.68)
+Skipping MARA: current price (18.79) exceeds buying power (1.68)
+========================= Run End =========================
+
+

@@ -1,5 +1,5 @@
 from alpaca.data.requests import StockLatestTradeRequest
-from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest 
+from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest, GetOrdersRequest
 from alpaca.trading.enums import OrderSide, TimeInForce, PositionSide
 from auth.connectClient import paperTradingClient, liveTradingClient, dataClient
 import yfinance as yf
@@ -85,6 +85,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
 def place_trailing_stops_from_local_file(trail_percent=4.5):
     if not os.path.exists(SAVE_FILE):
         print("No saved positions from yesterday.")
+        check_all_positions_worth_selling_now()
         return
 
     with open(SAVE_FILE, "r") as f:
@@ -119,6 +120,9 @@ def place_trailing_stops_from_local_file(trail_percent=4.5):
     else:
         os.remove(SAVE_FILE)
 
+    check_all_positions_worth_selling_now()
+
+def check_all_positions_worth_selling_now():
     all_open_positions = liveTradingClient.get_all_positions()
     for position in all_open_positions:
         try:
@@ -126,7 +130,7 @@ def place_trailing_stops_from_local_file(trail_percent=4.5):
         except Exception as e:
             print(f"Error checking if {position.symbol} is worth selling now: {e}")
 
-def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.75):
+def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.25):
     try:
         # Only allocate a fraction of buying power
         effective_bp = buying_power * bp_fraction
@@ -198,16 +202,16 @@ def worth_selling_now(symbol, percent_target=3.5):
         print(f"Skipping sell for {symbol}: Position qty is {qty}")
         return False
 
-    percent_gain = (position.unrealized_plpc) * 100
+    percent_gain = float(position.unrealized_plpc) * 100
     print(f"{symbol}: {percent_gain:.2f}% gain")
 
     if percent_gain >= percent_target or percent_gain <= -percent_target:
         try:
-            open_orders = liveTradingClient.get_orders(status="open")
+            open_orders = liveTradingClient.get_orders(filter=GetOrdersRequest(status="open"))
             for order in open_orders:
                 if order.symbol == symbol:
                     print(f"Canceling existion order for {symbol}: {order.id}")
-                    liveTradingClient.cancel_order(order.id)
+                    liveTradingClient.cancel_order_by_id(order.id)
         except Exception as e:
             print(f"Could not cancel existion orders for {symbol}: {e}")
         
