@@ -2802,3 +2802,314 @@ Skipping FITB: current price (43.475) exceeds buying power (28.12)
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-07 06:40:03 ====================
+Selling yesterdays positions.
+[CAN] Price=1.41, ATR=0.1359, Raw%=9.60
+[CAN] Final trail % = 8
+Trailing stop sell for CAN with a trail percent of 8 submitted. ID: fab2e469-0e04-415d-b3d2-fcff6f9e4bb3
+
+[BITF] Price=3.64, ATR=0.3121, Raw%=8.56
+[BITF] Final trail % = 8
+Trailing stop sell for BITF with a trail percent of 8 submitted. ID: 7969cb9c-c567-4d1f-8e04-443396ccdeb1
+
+[HIVE] Price=5.79, ATR=0.3871, Raw%=6.69
+[HIVE] Final trail % = 6.69
+Trailing stop sell for HIVE with a trail percent of 6.69 submitted. ID: ea63bee6-68d1-413b-9dfb-f932337d1882
+
+BITF: 6.53% gain
+Canceling existion order for BITF: 7969cb9c-c567-4d1f-8e04-443396ccdeb1
+Selling 2.0 shares of BITF (percent_gain: 6.5293101934502, Threshold exceeded)
+CAN: 0.07% gain
+CGC: 4.30% gain
+Canceling existion order for CGC: 35787151-8228-4d1c-a15b-b21e79d4442b
+Selling 6.0 shares of CGC (percent_gain: 4.29582890054661, Threshold exceeded)
+HIVE: 9.75% gain
+Canceling existion order for HIVE: ea63bee6-68d1-413b-9dfb-f932337d1882
+Selling 1.0 shares of HIVE (percent_gain: 9.75378787878788, Threshold exceeded)
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SLND.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$FLYX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SBXD.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-07 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 156 => 16 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 16, 8 passed share and float filter.
+Stocks worth buying are:
+Bitcoin Hits New Highs; Fed Prepares To Speak; Shutdown May Silence Key Jobs Data
+News fetch failed for CGC: list index out of range
+News fetch failed for BITF: list index out of range
+News fetch failed for LAR: list index out of range
+News fetch failed for LXEO: list index out of range
+What's Going On With Lithium Americas (LAC) Stock Monday?
+Cantor Fitzgerald Maintains Overweight on Cleanspark, Raises Price Target to $24
+Cantor Fitzgerald Maintains Overweight on MARA Holdings, Raises Price Target to $30
+CAN, $1.36, 1.12% -- pb_ratio: 1.96, mCap: 635.50M, float_rotation: 0.00
+headline: Bitcoin Hits New Highs; Fed Prepares To Speak; Shutdown May Silence Key Jobs Data
+summary: Bitcoin pushed into uncharted territory, the Fed returns to the spotlight midweek, and the government shutdown threatens to mute key macro signals...
+other_info: n/a
+CGC, $1.47, 6.52% -- pb_ratio: 0.62, mCap: 502.01M, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $3.65, 0.95% -- pb_ratio: 3.08, mCap: 2.02B, float_rotation: 0.08
+headline: 0
+summary: 0
+other_info: n/a
+LAR, $5.21, 17.99% -- pb_ratio: 1.03, mCap: 849.16M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+LXEO, $8.45, 30.60% -- pb_ratio: 3.30, mCap: 455.77M, float_rotation: 0.20
+headline: 0
+summary: 0
+other_info: n/a
+LAC, $9.07, 5.39% -- pb_ratio: 3.29, mCap: 2.19B, float_rotation: 0.15
+headline: What's Going On With Lithium Americas (LAC) Stock Monday?
+summary: Shares of Lithium Americas are trading flat Monday, following a surge last week on news of a landmark agreement with the U.S. Department of Energy and General Motors
+other_info: n/a
+CLSK, $18.45, 5.01% -- pb_ratio: 2.42, mCap: 5.19B, float_rotation: 0.06
+headline: Cantor Fitzgerald Maintains Overweight on Cleanspark, Raises Price Target to $24
+summary: 0
+other_info: n/a
+MARA, $20.25, -1.15% -- pb_ratio: 1.53, mCap: 7.50B, float_rotation: 0.04
+headline: Cantor Fitzgerald Maintains Overweight on MARA Holdings, Raises Price Target to $30
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.36, 1.12% -- pb_ratio: 1.96, mCap: 635.50M, float_rotation: 0.00
+headline: Bitcoin Hits New Highs; Fed Prepares To Speak; Shutdown May Silence Key Jobs Data
+summary: Bitcoin pushed into uncharted territory, the Fed returns to the spotlight midweek, and the government shutdown threatens to mute key macro signals...
+other_info: {'symbol': 'CAN', 'last_price': '1.36', 'open': '1.35', 'analyst_price_target': '1.35', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.78', 'two_hundred_day_average': '1.08', 'ten_day_volume': '74.46M', 'three_month_volume': '46.22M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+CGC, $1.47, 6.52% -- pb_ratio: 0.62, mCap: 502.01M, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: {'symbol': 'CGC', 'last_price': '1.47', 'open': '1.41', 'analyst_price_target': '1.47', 'year_low': '0.77', 'year_high': '5.80', 'fifty_day_average': '1.35', 'two_hundred_day_average': '1.52', 'ten_day_volume': '31.65M', 'three_month_volume': '21.29M', 'balance_sheet':                                                    2025-03-31  ... 2021-03-31
+Ordinary Shares Number                            183865295.0  ...        NaN
+Share Issued                                      183865295.0  ...        NaN
+Net Debt                                          190258000.0  ...        NaN
+Total Debt                                        348397000.0  ...        NaN
+Tangible Book Value                               353971000.0  ...        NaN
+...                                                       ...  ...        ...
+Cash Cash Equivalents And Short Term Investments  131467000.0  ...        NaN
+Other Short Term Investments                       17656000.0  ...        NaN
+Cash And Cash Equivalents                         113811000.0  ...        NaN
+Cash Equivalents                                     130000.0  ...        NaN
+Cash Financial                                    113681000.0  ...        NaN
+
+[91 rows x 5 columns]}
+BITF, $3.65, 0.95% -- pb_ratio: 3.08, mCap: 2.02B, float_rotation: 0.08
+headline: 0
+summary: 0
+other_info: {'symbol': 'BITF', 'last_price': '3.65', 'open': '3.80', 'analyst_price_target': '3.65', 'year_low': '0.67', 'year_high': '3.60', 'fifty_day_average': '1.84', 'two_hundred_day_average': '1.33', 'ten_day_volume': '73.34M', 'three_month_volume': '50.08M', 'balance_sheet':                                                    2024-12-31  ...  2020-12-31
+Ordinary Shares Number                            479332885.0  ...         NaN
+Share Issued                                      479332885.0  ...         NaN
+Net Debt                                                  NaN  ...  11398000.0
+Total Debt                                         23415000.0  ...         NaN
+Tangible Book Value                               603956000.0  ...         NaN
+...                                                       ...  ...         ...
+Gross Accounts Receivable                           1306000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments  146840000.0  ...         NaN
+Other Short Term Investments                       87298000.0  ...         NaN
+Cash And Cash Equivalents                          59542000.0  ...         NaN
+Cash Financial                                     59542000.0  ...         NaN
+
+[79 rows x 5 columns]}
+LAR, $5.21, 17.99% -- pb_ratio: 1.03, mCap: 849.16M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'LAR', 'last_price': '5.22', 'open': '4.81', 'analyst_price_target': '5.22', 'year_low': '1.71', 'year_high': '4.67', 'fifty_day_average': '3.25', 'two_hundred_day_average': '2.56', 'ten_day_volume': '4.53M', 'three_month_volume': '2.14M', 'balance_sheet':                                                    2024-12-31  ... 2020-12-31
+Ordinary Shares Number                            161931734.0  ...        NaN
+Share Issued                                      161931734.0  ...        NaN
+Net Debt                                          125202000.0  ...        NaN
+Total Debt                                        210745000.0  ...        NaN
+Tangible Book Value                               828274000.0  ...        NaN
+...                                                       ...  ...        ...
+Cash Cash Equivalents And Short Term Investments   85543000.0  ...        NaN
+Other Short Term Investments                              0.0  ...        NaN
+Cash And Cash Equivalents                          85543000.0  ...        NaN
+Cash Equivalents                                   74083000.0  ...        NaN
+Cash Financial                                     11460000.0  ...        NaN
+
+[74 rows x 5 columns]}
+LXEO, $8.45, 30.60% -- pb_ratio: 3.30, mCap: 455.77M, float_rotation: 0.20
+headline: 0
+summary: 0
+other_info: {'symbol': 'LXEO', 'last_price': '8.45', 'open': '8.22', 'analyst_price_target': '8.45', 'year_low': '1.45', 'year_high': '11.72', 'fifty_day_average': '5.19', 'two_hundred_day_average': '4.35', 'ten_day_volume': '920,100.00', 'three_month_volume': '510,287.00', 'balance_sheet':                                                      2024-12-31  ...  2020-12-31
+Treasury Shares Number                                   3827.0  ...         NaN
+Ordinary Shares Number                               33075382.0  ...         NaN
+Share Issued                                         33079209.0  ...         NaN
+Total Debt                                            9924000.0  ...         NaN
+Tangible Book Value                                 116842000.0  ...         NaN
+Invested Capital                                    116842000.0  ...         NaN
+Working Capital                                     103275000.0  ...         NaN
+Net Tangible Assets                                 116842000.0  ...         NaN
+Capital Lease Obligations                             9924000.0  ...         NaN
+Common Stock Equity                                 116842000.0  ...         NaN
+Total Capitalization                                116842000.0  ...         NaN
+Total Equity Gross Minority Interest                116842000.0  ...         NaN
+Stockholders Equity                                 116842000.0  ...         NaN
+Gains Losses Not Affecting Retained Earnings          -103000.0  ...         NaN
+Other Equity Adjustments                              -103000.0  ...         NaN
+Treasury Stock                                          17000.0  ...         NaN
+Retained Earnings                                  -280173000.0  ...         NaN
+Additional Paid In Capital                          397132000.0  ...         NaN
+Capital Stock                                            3000.0  ...         NaN
+Common Stock                                             3000.0  ...         NaN
+Preferred Stock                                             0.0  ...         NaN
+Total Liabilities Net Minority Interest              30100000.0  ...         NaN
+Total Non Current Liabilities Net Minority Inte...    7254000.0  ...         NaN
+Preferred Securities Outside Stock Equity                   NaN  ...  34247986.0
+Long Term Debt And Capital Lease Obligation           7254000.0  ...         NaN
+Long Term Capital Lease Obligation                    7254000.0  ...         NaN
+Current Liabilities                                  22846000.0  ...         NaN
+Other Current Liabilities                              939000.0  ...         NaN
+Current Deferred Liabilities                                NaN  ...    140384.0
+Current Deferred Revenue                                    NaN  ...    140384.0
+Current Debt And Capital Lease Obligation             2670000.0  ...         NaN
+Current Capital Lease Obligation                      2670000.0  ...         NaN
+Pensionand Other Post Retirement Benefit Plans ...    3718000.0  ...         NaN
+Payables And Accrued Expenses                        15519000.0  ...         NaN
+Current Accrued Expenses                              9102000.0  ...         NaN
+Payables                                              6417000.0  ...         NaN
+Other Payable                                               NaN  ...    223587.0
+Total Tax Payable                                           NaN  ...     38304.0
+Accounts Payable                                      6417000.0  ...         NaN
+Total Assets                                        146942000.0  ...         NaN
+Total Non Current Assets                             20821000.0  ...         NaN
+Other Non Current Assets                              3252000.0  ...      2500.0
+Non Current Prepaid Assets                                  NaN  ...      2500.0
+Investments And Advances                              7012000.0  ...         NaN
+Investmentin Financial Assets                         7012000.0  ...         NaN
+Available For Sale Securities                         7012000.0  ...         NaN
+Net PPE                                              10557000.0  ...         NaN
+Accumulated Depreciation                              -474000.0  ...         NaN
+Gross PPE                                            11031000.0  ...         NaN
+Leases                                                 272000.0  ...         NaN
+Other Properties                                     10373000.0  ...         NaN
+Machinery Furniture Equipment                          386000.0  ...         NaN
+Properties                                                  0.0  ...         NaN
+Current Assets                                      126121000.0  ...         NaN
+Other Current Assets                                  4603000.0  ...         NaN
+Prepaid Assets                                              NaN  ...         0.0
+Cash Cash Equivalents And Short Term Investments    121518000.0  ...         NaN
+Other Short Term Investments                         86504000.0  ...         NaN
+Cash And Cash Equivalents                            35014000.0  ...         NaN
+Cash Financial                                              NaN  ...  29373209.0
+
+[60 rows x 5 columns]}
+LAC, $9.07, 5.39% -- pb_ratio: 3.29, mCap: 2.19B, float_rotation: 0.15
+headline: What's Going On With Lithium Americas (LAC) Stock Monday?
+summary: Shares of Lithium Americas are trading flat Monday, following a surge last week on news of a landmark agreement with the U.S. Department of Energy and General Motors
+other_info: {'symbol': 'LAC', 'last_price': '9.03', 'open': '8.59', 'analyst_price_target': '9.03', 'year_low': '2.31', 'year_high': '9.48', 'fifty_day_average': '3.61', 'two_hundred_day_average': '3.08', 'ten_day_volume': '134.89M', 'three_month_volume': '27.88M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+CLSK, $18.45, 5.01% -- pb_ratio: 2.42, mCap: 5.19B, float_rotation: 0.06
+headline: Cantor Fitzgerald Maintains Overweight on Cleanspark, Raises Price Target to $24
+summary: 0
+other_info: {'symbol': 'CLSK', 'last_price': '18.48', 'open': '18.00', 'analyst_price_target': '18.48', 'year_low': '6.45', 'year_high': '17.97', 'fifty_day_average': '11.27', 'two_hundred_day_average': '10.05', 'ten_day_volume': '36.73M', 'three_month_volume': '25.13M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+MARA, $20.25, -1.15% -- pb_ratio: 1.53, mCap: 7.50B, float_rotation: 0.04
+headline: Cantor Fitzgerald Maintains Overweight on MARA Holdings, Raises Price Target to $30
+summary: 0
+other_info: {'symbol': 'MARA', 'last_price': '20.25', 'open': '20.70', 'analyst_price_target': '20.25', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.52', 'two_hundred_day_average': '15.98', 'ten_day_volume': '69.51M', 'three_month_volume': '55.57M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+latest price for CAN: 1.35, so I'm buying 6
+Buy order submitted. ID: 19478e5b-4e39-4567-b683-d4c57cca039f
+Waiting for CAN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAN, will attach trailing stop tomorrow.
+latest price for CGC: 1.465, so I'm buying 5
+Buy order submitted. ID: 28fa940e-2fdc-440f-aebe-12c8656d0c21
+Waiting for CGC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CGC, will attach trailing stop tomorrow.
+latest price for BITF: 3.65, so I'm buying 1
+Buy order submitted. ID: 98a5556e-e37e-451e-a4bc-d9b21406f7e7
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+latest price for LAR: 5.21, so I'm buying 1
+Buy order submitted. ID: 8ccf6a55-1204-4404-a206-035c201acc42
+Waiting for LAR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for LAR, will attach trailing stop tomorrow.
+Skipping LXEO: 8.46, too risky.
+Skipping LAC: 9.02, too risky.
+Skipping CLSK: 18.47, too risky.
+Skipping MARA: 20.28, too risky.
+========================= Run End =========================
+
+

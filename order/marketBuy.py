@@ -10,8 +10,26 @@ import os
 import json
 
 SAVE_FILE = "open_positions.json"
+RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
 
 def place_market_order_and_save_to_file(symbol, qty=1):
+
+    """
+    Place a market buy order for `symbol`, save it to SAVE_FILE, 
+    and skip if symbol is in today's restricted list.
+    """
+
+    if os.path.exists(RESTRICTED_POSITIONS_FILE):
+        with open(RESTRICTED_POSITIONS_FILE, "r") as f:
+            restricted = json.load(f)
+    else:
+        restricted = []
+
+    # Skip restricted symbols
+    if symbol in restricted:
+        print(f"Skipping {symbol}: sold today, cannot rebuy until tomorrow.")
+        return
+    
 
     # --- get buying power ---
     buying_power = float(liveTradingClient.get_account().buying_power)
@@ -76,6 +94,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
                 positions = json.load(f)
         else:
             positions = []
+
         positions.append(pos_data)
         with open(SAVE_FILE, "w") as f:
             json.dump(positions, f, indent=2)
@@ -210,7 +229,7 @@ def worth_selling_now(symbol, percent_target=3.5):
             open_orders = liveTradingClient.get_orders(filter=GetOrdersRequest(status="open"))
             for order in open_orders:
                 if order.symbol == symbol:
-                    print(f"Canceling existion order for {symbol}: {order.id}")
+                    print(f"Canceling existing order for {symbol}: {order.id}")
                     liveTradingClient.cancel_order_by_id(order.id)
         except Exception as e:
             print(f"Could not cancel existion orders for {symbol}: {e}")
@@ -223,8 +242,32 @@ def worth_selling_now(symbol, percent_target=3.5):
             time_in_force = TimeInForce.DAY
         )
         liveTradingClient.submit_order(order)
+
+        # Add symbol to restricted list
+        if os.path.exists(RESTRICTED_POSITIONS_FILE):
+            with open(RESTRICTED_POSITIONS_FILE, "r") as f:
+                restricted = json.load(f)
+        else:
+            restricted = []
+
+        if symbol not in restricted:
+            restricted.append(symbol)
+            with open(RESTRICTED_POSITIONS_FILE, "w") as f:
+                json.dump(restricted, f, indent=2)
+            print(f"Added {symbol} to restricted list for today.")
         return True
     return False
+
+def safe_load_json(filename, default=None):
+    if not os.path.exists(filename):
+        return default if default is not None else []
+    try:
+        with open(filename, "r") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        print(f"Warning: {filename} is empty or corrupt. Resetting file.")
+        return default if default is not None else []
+
 '''
 # ----- OLD FUNCTIONS -----
 def place_trailing_stop_buy(symbol, qty=1, trail_percent=5):

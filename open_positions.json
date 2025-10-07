@@ -1,14 +1,18 @@
 [
   {
     "symbol": "CAN",
-    "qty": 9
+    "qty": 6
+  },
+  {
+    "symbol": "CGC",
+    "qty": 5
   },
   {
     "symbol": "BITF",
-    "qty": 2
+    "qty": 1
   },
   {
-    "symbol": "HIVE",
+    "symbol": "LAR",
     "qty": 1
   }
 ]

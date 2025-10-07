@@ -1,4 +1,5 @@
 import sys
+import os
 from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
 from research.aiBot.openAiBot import OpenAiBot
@@ -11,10 +12,17 @@ from order.marketBuy import place_market_order_and_save_to_file, place_trailing_
 from auth.connectClient import paperTradingClient, liveTradingClient
 from datetime import datetime
 
+RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
 
 def main():
     
     print("\n")
+
+      # --- Reset restricted positions for a new day ---
+    if os.path.exists(RESTRICTED_POSITIONS_FILE):
+        os.remove(RESTRICTED_POSITIONS_FILE)
+        print("Cleared restricted positions for a new day.")
+
     if len(sys.argv) > 1 and sys.argv[1] == 'sell': 
         print(f"==================== Selling Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
         # Before buying, check yesterdays buys (if any) and place according sell positions
