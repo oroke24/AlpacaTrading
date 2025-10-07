@@ -208,7 +208,7 @@ def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
     return rounded_trail_percent
 
 
-def worth_selling_now(symbol, percent_target=3.5):
+def worth_selling_now(symbol, percent_target=5.0):
     try:
         position = liveTradingClient.get_open_position(symbol)
     except Exception:
@@ -224,7 +224,7 @@ def worth_selling_now(symbol, percent_target=3.5):
     percent_gain = float(position.unrealized_plpc) * 100
     print(f"{symbol}: {percent_gain:.2f}% gain")
 
-    if percent_gain >= percent_target or percent_gain <= -percent_target:
+    if percent_gain >= percent_target or percent_gain <= -2.0:
         try:
             open_orders = liveTradingClient.get_orders(filter=GetOrdersRequest(status="open"))
             for order in open_orders:
