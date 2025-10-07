@@ -1,5 +1,6 @@
 import sys
 import os
+import time
 from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
 from research.aiBot.openAiBot import OpenAiBot
@@ -87,6 +88,7 @@ def main():
         try:
             stockSymbol = stockInfo["symbol"].upper()
             place_market_order_and_save_to_file(stockSymbol)
+            time.sleep(1)
         except Exception as e:
             print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion

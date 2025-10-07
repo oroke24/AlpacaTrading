@@ -18,6 +18,12 @@ def place_market_order_and_save_to_file(symbol, qty=1):
     Place a market buy order for `symbol`, save it to SAVE_FILE, 
     and skip if symbol is in today's restricted list.
     """
+    live_account = liveTradingClient.get_account()
+    day_trades = int(live_account.daytrade_count)
+
+    if(day_trades >= 3):
+        print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
+        return
 
     if os.path.exists(RESTRICTED_POSITIONS_FILE):
         with open(RESTRICTED_POSITIONS_FILE, "r") as f:
