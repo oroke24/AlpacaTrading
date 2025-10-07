@@ -130,7 +130,7 @@ def check_all_positions_worth_selling_now():
         except Exception as e:
             print(f"Error checking if {position.symbol} is worth selling now: {e}")
 
-def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.25):
+def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
     try:
         # Only allocate a fraction of buying power
         effective_bp = buying_power * bp_fraction

@@ -2513,3 +2513,292 @@ Skipping MARA: current price (18.79) exceeds buying power (1.68)
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-06 06:40:04 ====================
+Selling yesterdays positions.
+[CAN] Price=1.50, ATR=0.1271, Raw%=8.50
+[CAN] Final trail % = 8
+Trailing stop sell for CAN with a trail percent of 8 submitted. ID: 14afd486-2e66-4978-820b-7aabf7971a54
+
+[BITF] Price=3.39, ATR=0.3106, Raw%=9.15
+[BITF] Final trail % = 8
+Trailing stop sell for BITF with a trail percent of 8 submitted. ID: 3ba76190-6d5d-4b23-b98c-64646d21c1a8
+
+BITF: 11.42% gain
+Canceling existion order for BITF: 3ba76190-6d5d-4b23-b98c-64646d21c1a8
+Selling 2.0 shares of BITF (percent_gain: 11.421069904824419, Threshold exceeded)
+CAN: 13.13% gain
+Canceling existion order for CAN: 14afd486-2e66-4978-820b-7aabf7971a54
+Selling 27.0 shares of CAN (percent_gain: 13.134242291925698, Threshold exceeded)
+CGC: 0.40% gain
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$NPWR.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-06 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 152 => 19 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 19, 8 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for BITF: list index out of range
+HIVE Digital September Bitcoin Output Surges 138% Year-Over-Year, Reaching Record 267 BTC As Hashrate Tops 21 EH/s
+News fetch failed for LAC: list index out of range
+News fetch failed for AG: list index out of range
+News fetch failed for CLSK: list index out of range
+News fetch failed for MARA: list index out of range
+News fetch failed for FITB: list index out of range
+CAN, $1.40, 6.05% -- pb_ratio: 2.02, mCap: 654.26M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $3.40, 12.38% -- pb_ratio: 2.87, mCap: 1.88B, float_rotation: 0.07
+headline: 0
+summary: 0
+other_info: n/a
+HIVE, $5.27, 18.43% -- pb_ratio: 1.91, mCap: 1.21B, float_rotation: 0.06
+headline: HIVE Digital September Bitcoin Output Surges 138% Year-Over-Year, Reaching Record 267 BTC As Hashrate Tops 21 EH/s
+summary: 0
+other_info: n/a
+LAC, $8.97, -0.64% -- pb_ratio: 3.25, mCap: 2.17B, float_rotation: 0.19
+headline: 0
+summary: 0
+other_info: n/a
+AG, $13.06, 7.84% -- pb_ratio: 2.55, mCap: 6.39B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $16.47, 3.46% -- pb_ratio: 2.16, mCap: 4.63B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $19.55, 4.04% -- pb_ratio: 1.48, mCap: 7.24B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+FITB, $43.42, -2.23% -- pb_ratio: 1.53, mCap: 28.44B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.40, 6.05% -- pb_ratio: 2.02, mCap: 654.26M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: {'symbol': 'CAN', 'last_price': '1.40', 'open': '1.37', 'analyst_price_target': '1.41', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.77', 'two_hundred_day_average': '1.09', 'ten_day_volume': '70.58M', 'three_month_volume': '45.66M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+BITF, $3.40, 12.38% -- pb_ratio: 2.87, mCap: 1.88B, float_rotation: 0.07
+headline: 0
+summary: 0
+other_info: {'symbol': 'BITF', 'last_price': '3.42', 'open': '3.20', 'analyst_price_target': '3.42', 'year_low': '0.67', 'year_high': '3.60', 'fifty_day_average': '1.79', 'two_hundred_day_average': '1.32', 'ten_day_volume': '74.03M', 'three_month_volume': '49.35M', 'balance_sheet':                                                    2024-12-31  ...  2020-12-31
+Ordinary Shares Number                            479332885.0  ...         NaN
+Share Issued                                      479332885.0  ...         NaN
+Net Debt                                                  NaN  ...  11398000.0
+Total Debt                                         23415000.0  ...         NaN
+Tangible Book Value                               603956000.0  ...         NaN
+...                                                       ...  ...         ...
+Gross Accounts Receivable                           1306000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments  146840000.0  ...         NaN
+Other Short Term Investments                       87298000.0  ...         NaN
+Cash And Cash Equivalents                          59542000.0  ...         NaN
+Cash Financial                                     59542000.0  ...         NaN
+
+[79 rows x 5 columns]}
+HIVE, $5.27, 18.43% -- pb_ratio: 1.91, mCap: 1.21B, float_rotation: 0.06
+headline: HIVE Digital September Bitcoin Output Surges 138% Year-Over-Year, Reaching Record 267 BTC As Hashrate Tops 21 EH/s
+summary: 0
+other_info: {'symbol': 'HIVE', 'last_price': '5.28', 'open': '4.72', 'analyst_price_target': '5.28', 'year_low': '1.26', 'year_high': '5.54', 'fifty_day_average': '2.93', 'two_hundred_day_average': '2.39', 'ten_day_volume': '51.49M', 'three_month_volume': '29.58M', 'balance_sheet':                                                    2025-03-31  ... 2021-03-31
+Treasury Shares Number                                    NaN  ...        NaN
+Ordinary Shares Number                            165615186.0  ...        NaN
+Share Issued                                      165615186.0  ...        NaN
+Net Debt                                           26046000.0  ...        NaN
+Total Debt                                         55161000.0  ...        NaN
+...                                                       ...  ...        ...
+Accounts Receivable                                15343000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   47511000.0  ...        NaN
+Other Short Term Investments                       24136000.0  ...        NaN
+Cash And Cash Equivalents                          23375000.0  ...        NaN
+Cash Financial                                     23375000.0  ...        NaN
+
+[69 rows x 5 columns]}
+LAC, $8.97, -0.64% -- pb_ratio: 3.25, mCap: 2.17B, float_rotation: 0.19
+headline: 0
+summary: 0
+other_info: {'symbol': 'LAC', 'last_price': '8.99', 'open': '9.45', 'analyst_price_target': '8.99', 'year_low': '2.31', 'year_high': '9.33', 'fifty_day_average': '3.50', 'two_hundred_day_average': '3.06', 'ten_day_volume': '126.34M', 'three_month_volume': '26.90M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+AG, $13.06, 7.84% -- pb_ratio: 2.55, mCap: 6.39B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: {'symbol': 'AG', 'last_price': '13.05', 'open': '12.51', 'analyst_price_target': '13.05', 'year_low': '5.09', 'year_high': '13.00', 'fifty_day_average': '9.65', 'two_hundred_day_average': '7.33', 'ten_day_volume': '26.45M', 'three_month_volume': '20.15M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             301863238.0  ...        NaN
+Share Issued                                       301863238.0  ...        NaN
+Net Debt                                             6903000.0  ...        NaN
+Total Debt                                         237017000.0  ...        NaN
+Tangible Book Value                               1351071000.0  ...        NaN
+...                                                        ...  ...        ...
+Taxes Receivable                                    33864000.0  ...        NaN
+Accounts Receivable                                 12303000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   251961000.0  ...        NaN
+Other Short Term Investments                        49781000.0  ...        NaN
+Cash And Cash Equivalents                          202180000.0  ...        NaN
+
+[74 rows x 5 columns]}
+CLSK, $16.47, 3.46% -- pb_ratio: 2.16, mCap: 4.63B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'CLSK', 'last_price': '16.45', 'open': '16.90', 'analyst_price_target': '16.45', 'year_low': '6.45', 'year_high': '17.97', 'fifty_day_average': '11.15', 'two_hundred_day_average': '10.03', 'ten_day_volume': '36.52M', 'three_month_volume': '24.95M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+MARA, $19.55, 4.04% -- pb_ratio: 1.48, mCap: 7.24B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'MARA', 'last_price': '19.57', 'open': '19.65', 'analyst_price_target': '19.57', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.45', 'two_hundred_day_average': '16.00', 'ten_day_volume': '70.67M', 'three_month_volume': '55.29M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+FITB, $43.42, -2.23% -- pb_ratio: 1.53, mCap: 28.44B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: {'symbol': 'FITB', 'last_price': '43.49', 'open': '44.10', 'analyst_price_target': '43.49', 'year_low': '32.25', 'year_high': '49.07', 'fifty_day_average': '44.04', 'two_hundred_day_average': '41.34', 'ten_day_volume': '3.73M', 'three_month_volume': '4.66M', 'balance_sheet':                                                   2024-12-31  ...    2020-12-31
+Treasury Shares Number                           254038751.0  ...           NaN
+Preferred Shares Number                           18000000.0  ...           NaN
+Ordinary Shares Number                           669853830.0  ...           NaN
+Share Issued                                     923892581.0  ...           NaN
+Net Debt                                       15481000000.0  ...           NaN
+Total Debt                                     18495000000.0  ...           NaN
+Tangible Book Value                            10817000000.0  ...           NaN
+Invested Capital                               36024000000.0  ...           NaN
+Net Tangible Assets                            12933000000.0  ...           NaN
+Common Stock Equity                            17529000000.0  ...           NaN
+Preferred Stock Equity                          2116000000.0  ...           NaN
+Total Capitalization                           33982000000.0  ...           NaN
+Total Equity Gross Minority Interest           19645000000.0  ...           NaN
+Stockholders Equity                            19645000000.0  ...           NaN
+Gains Losses Not Affecting Retained Earnings   -4636000000.0  ...           NaN
+Other Equity Adjustments                       -4636000000.0  ...           NaN
+Treasury Stock                                  7840000000.0  ...           NaN
+Retained Earnings                              24150000000.0  ...           NaN
+Additional Paid In Capital                      3804000000.0  ...           NaN
+Capital Stock                                   4167000000.0  ...           NaN
+Common Stock                                    2051000000.0  ...           NaN
+Preferred Stock                                 2116000000.0  ...           NaN
+Total Liabilities Net Minority Interest       193282000000.0  ...           NaN
+Derivative Product Liabilities                    19000000.0  ...           NaN
+Long Term Debt And Capital Lease Obligation    14337000000.0  ...           NaN
+Long Term Debt                                 14337000000.0  ...           NaN
+Current Debt And Capital Lease Obligation       4158000000.0  ...           NaN
+Current Debt                                    4158000000.0  ...           NaN
+Other Current Borrowings                        4158000000.0  ...           NaN
+Current Notes Payable                                    0.0  ...           NaN
+Payables And Accrued Expenses                   2137000000.0  ...           NaN
+Total Assets                                  212927000000.0  ...           NaN
+Investments And Advances                       71213000000.0  ...           NaN
+Held To Maturity Securities                    11241000000.0  ...           NaN
+Available For Sale Securities                   2861000000.0  ...           NaN
+Trading Securities                              1185000000.0  ...           NaN
+Goodwill And Other Intangible Assets            6712000000.0  ...           NaN
+Other Intangible Assets                         1794000000.0  ...           NaN
+Goodwill                                        4918000000.0  ...           NaN
+Net PPE                                         3320000000.0  ...           NaN
+Accumulated Depreciation                       -4007000000.0  ...           NaN
+Gross PPE                                       7327000000.0  ...           NaN
+Leases                                           760000000.0  ...           NaN
+Construction In Progress                         199000000.0  ...           NaN
+Other Properties                                3947000000.0  ...           NaN
+Buildings And Improvements                      1788000000.0  ...           NaN
+Land And Improvements                            633000000.0  ...           NaN
+Prepaid Assets                                   142000000.0  ...           NaN
+Receivables                                     6523000000.0  ...           NaN
+Other Receivables                               3346000000.0  ...           NaN
+Accounts Receivable                             3177000000.0  ...           NaN
+Other Short Term Investments                   55926000000.0  ...           NaN
+Cash And Cash Equivalents                       3014000000.0  ...           NaN
+Cash Financial                                           NaN  ...  3147000000.0
+Cash Cash Equivalents And Federal Funds Sold    3516000000.0  ...           NaN
+
+[55 rows x 5 columns]}
+latest price for CAN: 1.4, so I'm buying 9
+Buy order submitted. ID: 428e11f1-98df-4d94-9eb1-b420fe5764c3
+Waiting for CAN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAN, will attach trailing stop tomorrow.
+latest price for BITF: 3.42, so I'm buying 2
+Buy order submitted. ID: f9e8f697-2263-4118-8b3d-ab4f3cc9a3b9
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+latest price for HIVE: 5.26, so I'm buying 1
+Buy order submitted. ID: 17c35568-20b6-41de-a7ed-ff0d1ca48f0d
+Waiting for HIVE buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for HIVE, will attach trailing stop tomorrow.
+Skipping LAC: 9.005, too risky.
+Skipping AG: 13.075, too risky.
+Skipping CLSK: 16.465, too risky.
+Skipping MARA: 19.56, too risky.
+Skipping FITB: current price (43.475) exceeds buying power (28.12)
+========================= Run End =========================
+
+
