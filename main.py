@@ -19,13 +19,13 @@ def main():
     
     print("\n")
 
-      # --- Reset restricted positions for a new day ---
-    if os.path.exists(RESTRICTED_POSITIONS_FILE):
-        os.remove(RESTRICTED_POSITIONS_FILE)
-        print("Cleared restricted positions for a new day.")
 
     if len(sys.argv) > 1 and sys.argv[1] == 'sell': 
         print(f"==================== Selling Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
+        # --- Reset restricted positions for a new day ---
+        if os.path.exists(RESTRICTED_POSITIONS_FILE):
+            os.remove(RESTRICTED_POSITIONS_FILE)
+            print("Cleared restricted positions for a new day.")
         # Before buying, check yesterdays buys (if any) and place according sell positions
         print("Selling yesterdays positions.")
         place_trailing_stops_from_local_file()

@@ -3113,3 +3113,328 @@ Skipping MARA: 20.28, too risky.
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-08 06:40:05 ====================
+Selling yesterdays positions.
+[CAN] Price=1.29, ATR=0.1485, Raw%=11.51
+[CAN] Final trail % = 8
+Trailing stop sell for CAN with a trail percent of 8 submitted. ID: dd5c8fc5-a31c-4d6e-8495-1883e9003784
+
+[CGC] Price=1.45, ATR=0.1100, Raw%=7.61
+[CGC] Final trail % = 7.61
+Trailing stop sell for CGC with a trail percent of 7.61 submitted. ID: cc24da7e-8949-4b9d-bce9-64447d52e98b
+
+[BITF] Price=3.57, ATR=0.2956, Raw%=8.27
+[BITF] Final trail % = 8
+Trailing stop sell for BITF with a trail percent of 8 submitted. ID: 8f24db11-93ee-4ca4-b85f-5325953981dd
+
+[LAR] Price=4.95, ATR=0.3907, Raw%=7.89
+[LAR] Final trail % = 7.89
+Trailing stop sell for LAR with a trail percent of 7.89 submitted. ID: cbfe4f78-853e-4101-957b-8ea2ff7a3e4d
+
+BITF: -1.92% gain
+CAN: -4.65% gain
+Canceling existing order for CAN: dd5c8fc5-a31c-4d6e-8495-1883e9003784
+Selling 6.0 shares of CAN (percent_gain: -4.65321749374172, Threshold exceeded)
+Added CAN to restricted list for today.
+CGC: -1.60% gain
+LAR: -4.75% gain
+Canceling existing order for LAR: cbfe4f78-853e-4101-957b-8ea2ff7a3e4d
+Selling 1.0 shares of LAR (percent_gain: -4.75100061576355, Threshold exceeded)
+Added LAR to restricted list for today.
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$QSEAR: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: 
+$JOBY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$ACHR.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+Cleared restricted positions for a new day.
+
+
+==================== Buying Process Started: 2025-10-08 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 154 => 20 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: XLF, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 20, 9 passed share and float filter.
+Stocks worth buying are:
+Soluna Unlocks Massive Growth With Strategic Settlements And Funding
+12 Information Technology Stocks Moving In Tuesday's Pre-Market Session
+News fetch failed for IMAB: list index out of range
+News fetch failed for KYTX: list index out of range
+Reported Earlier, Lithium Americas Finalizes $2.23B DOE Loan Amendments, Adds $120M To Reserves And Grants DOE 5% Equity And JV Stake
+News fetch failed for AG: list index out of range
+News fetch failed for CLSK: list index out of range
+News fetch failed for MARA: list index out of range
+AZZ, Joby Aviation And 3 Stocks To Watch Heading Into Wednesday
+CAN, $1.25, -4.21% -- pb_ratio: 1.80, mCap: 583.91M, float_rotation: 0.00
+headline: Soluna Unlocks Massive Growth With Strategic Settlements And Funding
+summary: Soluna Holdings Inc. (NASDAQ:SLNH) shares surge after announcing progress on multiple projects and securing a $100M credit facility.
+other_info: n/a
+BITF, $3.65, 3.95% -- pb_ratio: 3.07, mCap: 2.02B, float_rotation: 0.04
+headline: 12 Information Technology Stocks Moving In Tuesday's Pre-Market Session
+summary:  
+other_info: n/a
+IMAB, $5.32, 21.74% -- pb_ratio: 2.21, mCap: 612.47M, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+KYTX, $7.02, 29.76% -- pb_ratio: 1.65, mCap: 304.45M, float_rotation: 0.10
+headline: 0
+summary: 0
+other_info: n/a
+LAC, $8.40, 0.19% -- pb_ratio: 3.04, mCap: 2.03B, float_rotation: 0.12
+headline: Reported Earlier, Lithium Americas Finalizes $2.23B DOE Loan Amendments, Adds $120M To Reserves And Grants DOE 5% Equity And JV Stake
+summary: 0
+other_info: n/a
+AG, $13.58, 6.52% -- pb_ratio: 2.64, mCap: 6.64B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $19.30, 7.64% -- pb_ratio: 2.53, mCap: 5.42B, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $20.62, 3.12% -- pb_ratio: 1.56, mCap: 7.64B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+PENG, $21.56, -20.15% -- pb_ratio: 1.93, mCap: 1.13B, float_rotation: 0.06
+headline: AZZ, Joby Aviation And 3 Stocks To Watch Heading Into Wednesday
+summary: Stock futures are trading higher on Wednesday. AZZ, JOBY, RELL, PENG, and BSET stocks may grab investor focus.
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.25, -4.21% -- pb_ratio: 1.80, mCap: 583.91M, float_rotation: 0.00
+headline: Soluna Unlocks Massive Growth With Strategic Settlements And Funding
+summary: Soluna Holdings Inc. (NASDAQ:SLNH) shares surge after announcing progress on multiple projects and securing a $100M credit facility.
+other_info: {'symbol': 'CAN', 'last_price': '1.25', 'open': '1.31', 'analyst_price_target': '1.25', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.80', 'two_hundred_day_average': '1.07', 'ten_day_volume': '78.94M', 'three_month_volume': '47.02M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+BITF, $3.65, 3.95% -- pb_ratio: 3.07, mCap: 2.02B, float_rotation: 0.04
+headline: 12 Information Technology Stocks Moving In Tuesday's Pre-Market Session
+summary:  
+other_info: {'symbol': 'BITF', 'last_price': '3.65', 'open': '3.57', 'analyst_price_target': '3.65', 'year_low': '0.67', 'year_high': '3.80', 'fifty_day_average': '1.88', 'two_hundred_day_average': '1.33', 'ten_day_volume': '73.12M', 'three_month_volume': '51.72M', 'balance_sheet':                                                    2024-12-31  ...  2020-12-31
+Ordinary Shares Number                            479332885.0  ...         NaN
+Share Issued                                      479332885.0  ...         NaN
+Net Debt                                                  NaN  ...  11398000.0
+Total Debt                                         23415000.0  ...         NaN
+Tangible Book Value                               603956000.0  ...         NaN
+...                                                       ...  ...         ...
+Gross Accounts Receivable                           1306000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments  146840000.0  ...         NaN
+Other Short Term Investments                       87298000.0  ...         NaN
+Cash And Cash Equivalents                          59542000.0  ...         NaN
+Cash Financial                                     59542000.0  ...         NaN
+
+[79 rows x 5 columns]}
+IMAB, $5.32, 21.74% -- pb_ratio: 2.21, mCap: 612.47M, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: {'symbol': 'IMAB', 'last_price': '5.33', 'open': '4.43', 'analyst_price_target': '5.33', 'year_low': '0.60', 'year_high': '5.90', 'fifty_day_average': '3.95', 'two_hundred_day_average': '1.94', 'ten_day_volume': '1.54M', 'three_month_volume': '2.23M', 'balance_sheet':                                                    2024-12-31  ...      2020-12-31
+Treasury Shares Number                              8873276.0  ...             NaN
+Ordinary Shares Number                            187452495.0  ...             NaN
+Share Issued                                      196325771.0  ...             NaN
+Total Debt                                          3882000.0  ...             NaN
+Tangible Book Value                               201160000.0  ...             NaN
+...                                                       ...  ...             ...
+Allowance For Doubtful Accounts Receivable                NaN  ...             0.0
+Gross Accounts Receivable                                 NaN  ...  19974285.58309
+Cash Cash Equivalents And Short Term Investments  173398000.0  ...             NaN
+Other Short Term Investments                      105135000.0  ...             NaN
+Cash And Cash Equivalents                          68263000.0  ...             NaN
+
+[79 rows x 5 columns]}
+KYTX, $7.02, 29.76% -- pb_ratio: 1.65, mCap: 304.45M, float_rotation: 0.10
+headline: 0
+summary: 0
+other_info: {'symbol': 'KYTX', 'last_price': '6.94', 'open': '5.98', 'analyst_price_target': '6.94', 'year_low': '1.78', 'year_high': '7.20', 'fifty_day_average': '4.30', 'two_hundred_day_average': '3.25', 'ten_day_volume': '390,240.00', 'three_month_volume': '367,286.00', 'balance_sheet':                                                      2024-12-31  ...   2021-12-31
+Ordinary Shares Number                               43214918.0  ...   40822525.0
+Share Issued                                         43214918.0  ...   40822525.0
+Total Debt                                            8242000.0  ...    5555000.0
+Tangible Book Value                                 266587000.0  ...  -46254000.0
+Invested Capital                                    266587000.0  ...  -46254000.0
+Working Capital                                     256845000.0  ...   61159000.0
+Net Tangible Assets                                 266587000.0  ...  -46254000.0
+Capital Lease Obligations                             8242000.0  ...    5555000.0
+Common Stock Equity                                 266587000.0  ...  -46254000.0
+Total Capitalization                                266587000.0  ...  -46254000.0
+Total Equity Gross Minority Interest                266587000.0  ...  -46254000.0
+Stockholders Equity                                 266587000.0  ...  -46254000.0
+Gains Losses Not Affecting Retained Earnings           105000.0  ...          0.0
+Other Equity Adjustments                               105000.0  ...          NaN
+Retained Earnings                                  -263520000.0  ...  -46784000.0
+Additional Paid In Capital                          530002000.0  ...     530000.0
+Capital Stock                                               0.0  ...          0.0
+Common Stock                                                0.0  ...          0.0
+Preferred Stock                                             0.0  ...          NaN
+Total Liabilities Net Minority Interest              38058000.0  ...  131742000.0
+Total Non Current Liabilities Net Minority Inte...    4302000.0  ...  115814000.0
+Other Non Current Liabilities                               NaN  ...      78000.0
+Preferred Securities Outside Stock Equity                   0.0  ...  108720000.0
+Non Current Accrued Expenses                                NaN  ...    1250000.0
+Non Current Deferred Liabilities                            NaN  ...    1025000.0
+Non Current Deferred Revenue                                NaN  ...    1025000.0
+Long Term Debt And Capital Lease Obligation           4302000.0  ...    4741000.0
+Long Term Capital Lease Obligation                    4302000.0  ...    4741000.0
+Current Liabilities                                  33756000.0  ...   15928000.0
+Other Current Liabilities                                   NaN  ...     575000.0
+Current Deferred Liabilities                                NaN  ...    6000000.0
+Current Deferred Revenue                                    NaN  ...    6000000.0
+Current Debt And Capital Lease Obligation             3940000.0  ...     814000.0
+Current Capital Lease Obligation                      3940000.0  ...     814000.0
+Pensionand Other Post Retirement Benefit Plans ...    4883000.0  ...    1141000.0
+Payables And Accrued Expenses                        24933000.0  ...    7398000.0
+Current Accrued Expenses                             20309000.0  ...    6625000.0
+Payables                                              4624000.0  ...     773000.0
+Accounts Payable                                      4624000.0  ...     773000.0
+Total Assets                                        304645000.0  ...   85488000.0
+Total Non Current Assets                             14044000.0  ...    8401000.0
+Other Non Current Assets                              3388000.0  ...     593000.0
+Net PPE                                              10656000.0  ...    7808000.0
+Accumulated Depreciation                             -3672000.0  ...    -842000.0
+Gross PPE                                            14328000.0  ...    8650000.0
+Leases                                                 821000.0  ...      75000.0
+Other Properties                                     11439000.0  ...    8153000.0
+Machinery Furniture Equipment                         2068000.0  ...     422000.0
+Properties                                                  0.0  ...          0.0
+Current Assets                                      290601000.0  ...   77087000.0
+Other Current Assets                                  4622000.0  ...    1020000.0
+Cash Cash Equivalents And Short Term Investments    285979000.0  ...   76067000.0
+Other Short Term Investments                        189358000.0  ...          0.0
+Cash And Cash Equivalents                            96621000.0  ...   76067000.0
+
+[54 rows x 4 columns]}
+LAC, $8.40, 0.19% -- pb_ratio: 3.04, mCap: 2.03B, float_rotation: 0.12
+headline: Reported Earlier, Lithium Americas Finalizes $2.23B DOE Loan Amendments, Adds $120M To Reserves And Grants DOE 5% Equity And JV Stake
+summary: 0
+other_info: {'symbol': 'LAC', 'last_price': '8.40', 'open': '8.31', 'analyst_price_target': '8.40', 'year_low': '2.31', 'year_high': '9.48', 'fifty_day_average': '3.72', 'two_hundred_day_average': '3.11', 'ten_day_volume': '136.52M', 'three_month_volume': '29.00M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+AG, $13.58, 6.52% -- pb_ratio: 2.64, mCap: 6.64B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: {'symbol': 'AG', 'last_price': '13.57', 'open': '13.31', 'analyst_price_target': '13.57', 'year_low': '5.09', 'year_high': '13.55', 'fifty_day_average': '9.82', 'two_hundred_day_average': '7.39', 'ten_day_volume': '24.00M', 'three_month_volume': '20.19M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             301863238.0  ...        NaN
+Share Issued                                       301863238.0  ...        NaN
+Net Debt                                             6903000.0  ...        NaN
+Total Debt                                         237017000.0  ...        NaN
+Tangible Book Value                               1351071000.0  ...        NaN
+...                                                        ...  ...        ...
+Taxes Receivable                                    33864000.0  ...        NaN
+Accounts Receivable                                 12303000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   251961000.0  ...        NaN
+Other Short Term Investments                        49781000.0  ...        NaN
+Cash And Cash Equivalents                          202180000.0  ...        NaN
+
+[74 rows x 5 columns]}
+CLSK, $19.30, 7.64% -- pb_ratio: 2.53, mCap: 5.42B, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: {'symbol': 'CLSK', 'last_price': '19.30', 'open': '18.48', 'analyst_price_target': '19.30', 'year_low': '6.45', 'year_high': '18.87', 'fifty_day_average': '11.38', 'two_hundred_day_average': '10.08', 'ten_day_volume': '36.63M', 'three_month_volume': '25.37M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+MARA, $20.62, 3.12% -- pb_ratio: 1.56, mCap: 7.64B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: {'symbol': 'MARA', 'last_price': '20.62', 'open': '20.41', 'analyst_price_target': '20.62', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.58', 'two_hundred_day_average': '15.96', 'ten_day_volume': '68.45M', 'three_month_volume': '55.78M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+PENG, $21.56, -20.15% -- pb_ratio: 1.93, mCap: 1.13B, float_rotation: 0.06
+headline: AZZ, Joby Aviation And 3 Stocks To Watch Heading Into Wednesday
+summary: Stock futures are trading higher on Wednesday. AZZ, JOBY, RELL, PENG, and BSET stocks may grab investor focus.
+other_info: {'symbol': 'PENG', 'last_price': '21.55', 'open': '22.09', 'analyst_price_target': '21.55', 'year_low': '14.20', 'year_high': '29.80', 'fifty_day_average': '25.14', 'two_hundred_day_average': '20.89', 'ten_day_volume': '1.20M', 'three_month_volume': '1.08M', 'balance_sheet':                                                    2024-08-31  ...   2021-08-31
+Treasury Shares Number                              6949000.0  ...    2804000.0
+Ordinary Shares Number                             53277000.0  ...   48736000.0
+Share Issued                                       60226000.0  ...   51540000.0
+Net Debt                                          274200000.0  ...  142852000.0
+Total Debt                                        717889000.0  ...  398257000.0
+...                                                       ...  ...          ...
+Cash Cash Equivalents And Short Term Investments  389484000.0  ...  222986000.0
+Other Short Term Investments                        6337000.0  ...          NaN
+Cash And Cash Equivalents                         383147000.0  ...  222986000.0
+Cash Equivalents                                   29110000.0  ...          NaN
+Cash Financial                                    354037000.0  ...          NaN
+
+[72 rows x 4 columns]}
+latest price for CAN: 1.245, so I'm buying 7
+Buy order submitted. ID: 717d3846-7aa3-4a5c-bf52-c43cf5d17e96
+Waiting for CAN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAN, will attach trailing stop tomorrow.
+latest price for BITF: 3.65, so I'm buying 2
+Buy order submitted. ID: c5640d41-1b69-4e3a-a897-66af9336370b
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+========================= Run End =========================
+
+
