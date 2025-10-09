@@ -1,6 +1,6 @@
 from alpaca.data.requests import StockLatestTradeRequest
 from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest, GetOrdersRequest
-from alpaca.trading.enums import OrderSide, TimeInForce, PositionSide
+from alpaca.trading.enums import OrderSide, TimeInForce, PositionSide, OrderType
 from auth.connectClient import paperTradingClient, liveTradingClient, dataClient
 import yfinance as yf
 import numpy as np
