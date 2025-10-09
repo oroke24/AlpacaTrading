@@ -3438,3 +3438,366 @@ No trading today: Day Trade Count too high (3), max allowed: 3
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-09 06:40:04 ====================
+Selling yesterdays positions.
+[CAN] Price=1.27, ATR=0.1531, Raw%=12.05
+[CAN] Final trail % = 8
+Trailing stop sell for CAN with a trail percent of 8 submitted. ID: aae553d2-3ca1-4b9c-88fc-e7f39f6c97d0
+
+[BITF] Price=4.23, ATR=0.3249, Raw%=7.68
+[BITF] Final trail % = 7.68
+Trailing stop sell for BITF with a trail percent of 7.68 submitted. ID: dc17a2b3-3ebc-4a1b-9665-e35f2f986d3f
+
+BITF: 16.05% gain
+CAN: 1.75% gain
+Canceling existing order for CAN: aae553d2-3ca1-4b9c-88fc-e7f39f6c97d0
+Selling 7.0 shares of CAN (percent_gain: 1.7465149815734702, Threshold exceeded)
+Added CAN to restricted list for today.
+CGC: 8.95% gain
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-09 07:10:03 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 158 => 21 passed market cap and price filter.
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: HYG, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 21, 12 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for CGC: list index out of range
+News fetch failed for WWR: list index out of range
+News fetch failed for BITF: list index out of range
+What to Expect from Neogen's Earnings
+News fetch failed for LAC: list index out of range
+News fetch failed for AG: list index out of range
+10 Information Technology Stocks Whale Activity In Today's Session
+10 Information Technology Stocks Whale Activity In Today's Session
+A Look at Helen Of Troy's Upcoming Earnings Report
+News fetch failed for WLYB: list index out of range
+Nasdaq Settles At Record High: Investor Sentiment Improves, Fear & Greed Index Remains In 'Neutral' Zone
+CAN, $1.27, -0.02% -- pb_ratio: 1.84, mCap: 595.54M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+CGC, $1.71, 12.35% -- pb_ratio: 0.72, mCap: 573.56M, float_rotation: 0.08
+headline: 0
+summary: 0
+other_info: n/a
+WWR, $1.94, 26.80% -- pb_ratio: 1.13, mCap: 167.28M, float_rotation: 0.09
+headline: 0
+summary: 0
+other_info: n/a
+BITF, $4.11, 1.73% -- pb_ratio: 3.46, mCap: 2.27B, float_rotation: 0.07
+headline: 0
+summary: 0
+other_info: n/a
+NEOG, $6.86, 17.78% -- pb_ratio: 0.72, mCap: 1.50B, float_rotation: 0.01
+headline: What to Expect from Neogen's Earnings
+summary:  
+other_info: n/a
+LAC, $8.18, 2.32% -- pb_ratio: 2.96, mCap: 2.02B, float_rotation: 0.09
+headline: 0
+summary: 0
+other_info: n/a
+AG, $14.44, 2.90% -- pb_ratio: 2.82, mCap: 7.08B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $20.27, 4.86% -- pb_ratio: 2.65, mCap: 5.70B, float_rotation: 0.05
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: n/a
+MARA, $20.49, 0.81% -- pb_ratio: 1.55, mCap: 7.59B, float_rotation: 0.03
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: n/a
+HELE, $21.95, -20.50% -- pb_ratio: 0.41, mCap: 502.72M, float_rotation: 0.05
+headline: A Look at Helen Of Troy's Upcoming Earnings Report
+summary:  
+other_info: n/a
+WLYB, $36.35, -10.67% -- pb_ratio: 2.93, mCap: 2.00B, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+DAL, $60.36, 4.61% -- pb_ratio: 2.24, mCap: 39.41B, float_rotation: 0.02
+headline: Nasdaq Settles At Record High: Investor Sentiment Improves, Fear & Greed Index Remains In 'Neutral' Zone
+summary: The CNN Money Fear &amp; Greed index improved, but remained in Neutral zone on Wed. US stocks rose, led by tech.
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.27, -0.02% -- pb_ratio: 1.84, mCap: 595.54M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: {'symbol': 'CAN', 'last_price': '1.27', 'open': '1.31', 'analyst_price_target': '1.27', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.81', 'two_hundred_day_average': '1.06', 'ten_day_volume': '76.97M', 'three_month_volume': '47.45M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+CGC, $1.71, 12.35% -- pb_ratio: 0.72, mCap: 573.56M, float_rotation: 0.08
+headline: 0
+summary: 0
+other_info: {'symbol': 'CGC', 'last_price': '1.71', 'open': '1.46', 'analyst_price_target': '1.70', 'year_low': '0.77', 'year_high': '5.80', 'fifty_day_average': '1.37', 'two_hundred_day_average': '1.51', 'ten_day_volume': '33.45M', 'three_month_volume': '21.97M', 'balance_sheet':                                                    2025-03-31  ... 2021-03-31
+Ordinary Shares Number                            183865295.0  ...        NaN
+Share Issued                                      183865295.0  ...        NaN
+Net Debt                                          190258000.0  ...        NaN
+Total Debt                                        348397000.0  ...        NaN
+Tangible Book Value                               353971000.0  ...        NaN
+...                                                       ...  ...        ...
+Cash Cash Equivalents And Short Term Investments  131467000.0  ...        NaN
+Other Short Term Investments                       17656000.0  ...        NaN
+Cash And Cash Equivalents                         113811000.0  ...        NaN
+Cash Equivalents                                     130000.0  ...        NaN
+Cash Financial                                    113681000.0  ...        NaN
+
+[91 rows x 5 columns]}
+WWR, $1.94, 26.80% -- pb_ratio: 1.13, mCap: 167.28M, float_rotation: 0.09
+headline: 0
+summary: 0
+other_info: {'symbol': 'WWR', 'last_price': '1.97', 'open': '1.71', 'analyst_price_target': '1.97', 'year_low': '0.45', 'year_high': '1.60', 'fifty_day_average': '0.84', 'two_hundred_day_average': '0.70', 'ten_day_volume': '6.97M', 'three_month_volume': '3.12M', 'balance_sheet':                                                      2024-12-31  ... 2020-12-31
+Treasury Shares Number                                    161.0  ...        NaN
+Ordinary Shares Number                               64829920.0  ...        NaN
+Share Issued                                         64830081.0  ...        NaN
+Total Debt                                             235000.0  ...        NaN
+Tangible Book Value                                 133122000.0  ...        NaN
+Invested Capital                                    133122000.0  ...        NaN
+Working Capital                                      -6899000.0  ...        NaN
+Net Tangible Assets                                 133122000.0  ...        NaN
+Capital Lease Obligations                              235000.0  ...        NaN
+Common Stock Equity                                 133122000.0  ...        NaN
+Total Capitalization                                133122000.0  ...        NaN
+Total Equity Gross Minority Interest                133122000.0  ...        NaN
+Stockholders Equity                                 133122000.0  ...        NaN
+Gains Losses Not Affecting Retained Earnings                NaN  ...        0.0
+Treasury Stock                                         258000.0  ...        NaN
+Retained Earnings                                  -373686000.0  ...        NaN
+Additional Paid In Capital                          507001000.0  ...        NaN
+Capital Stock                                           65000.0  ...        NaN
+Common Stock                                            65000.0  ...        NaN
+Total Liabilities Net Minority Interest              13235000.0  ...        NaN
+Total Non Current Liabilities Net Minority Inte...    1473000.0  ...        NaN
+Other Non Current Liabilities                         1378000.0  ...        NaN
+Liabilities Heldfor Sale Non Current                        NaN  ...        0.0
+Long Term Debt And Capital Lease Obligation             95000.0  ...   214000.0
+Long Term Capital Lease Obligation                      95000.0  ...        NaN
+Current Liabilities                                  11762000.0  ...        NaN
+Current Debt And Capital Lease Obligation              140000.0  ...        NaN
+Current Capital Lease Obligation                       140000.0  ...        NaN
+Pensionand Other Post Retirement Benefit Plans ...    1329000.0  ...        NaN
+Payables And Accrued Expenses                        10293000.0  ...        NaN
+Current Accrued Expenses                               776000.0  ...        NaN
+Payables                                              9517000.0  ...        NaN
+Other Payable                                               NaN  ...  1151000.0
+Accounts Payable                                      9517000.0  ...        NaN
+Total Assets                                        146357000.0  ...        NaN
+Total Non Current Assets                            141494000.0  ...        NaN
+Other Non Current Assets                              3395000.0  ...        NaN
+Net PPE                                             138099000.0  ...        NaN
+Accumulated Depreciation                              -713000.0  ...        NaN
+Gross PPE                                           138812000.0  ...        NaN
+Other Properties                                    138812000.0  ...        NaN
+Current Assets                                        4863000.0  ...        NaN
+Other Current Assets                                    41000.0  ...        NaN
+Prepaid Assets                                          90000.0  ...   754000.0
+Inventory                                              460000.0  ...        NaN
+Raw Materials                                          460000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments      4272000.0  ...        NaN
+Other Short Term Investments                                NaN  ...  1520000.0
+Cash And Cash Equivalents                             4272000.0  ...        NaN
+
+[49 rows x 5 columns]}
+BITF, $4.11, 1.73% -- pb_ratio: 3.46, mCap: 2.27B, float_rotation: 0.07
+headline: 0
+summary: 0
+other_info: {'symbol': 'BITF', 'last_price': '4.11', 'open': '4.12', 'analyst_price_target': '4.11', 'year_low': '0.67', 'year_high': '4.04', 'fifty_day_average': '1.94', 'two_hundred_day_average': '1.34', 'ten_day_volume': '75.60M', 'three_month_volume': '53.18M', 'balance_sheet':                                                    2024-12-31  ...  2020-12-31
+Ordinary Shares Number                            479332885.0  ...         NaN
+Share Issued                                      479332885.0  ...         NaN
+Net Debt                                                  NaN  ...  11398000.0
+Total Debt                                         23415000.0  ...         NaN
+Tangible Book Value                               603956000.0  ...         NaN
+...                                                       ...  ...         ...
+Gross Accounts Receivable                           1306000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments  146840000.0  ...         NaN
+Other Short Term Investments                       87298000.0  ...         NaN
+Cash And Cash Equivalents                          59542000.0  ...         NaN
+Cash Financial                                     59542000.0  ...         NaN
+
+[79 rows x 5 columns]}
+NEOG, $6.86, 17.78% -- pb_ratio: 0.72, mCap: 1.50B, float_rotation: 0.01
+headline: What to Expect from Neogen's Earnings
+summary:  
+other_info: {'symbol': 'NEOG', 'last_price': '6.88', 'open': '5.61', 'analyst_price_target': '6.88', 'year_low': '3.87', 'year_high': '16.79', 'fifty_day_average': '5.48', 'two_hundred_day_average': '7.29', 'ten_day_volume': '7.72M', 'three_month_volume': '6.03M', 'balance_sheet':                                                    2025-05-31  ... 2021-05-31
+Ordinary Shares Number                            217044498.0  ...        NaN
+Share Issued                                      217044498.0  ...        NaN
+Net Debt                                          765107000.0  ...        NaN
+Total Debt                                        894111000.0  ...        NaN
+Tangible Book Value                              -404133000.0  ...        NaN
+...                                                       ...  ...        ...
+Allowance For Doubtful Accounts Receivable         -5397000.0  ...        NaN
+Gross Accounts Receivable                         158781000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments  129004000.0  ...        NaN
+Other Short Term Investments                              0.0  ...        NaN
+Cash And Cash Equivalents                         129004000.0  ...        NaN
+
+[74 rows x 5 columns]}
+LAC, $8.18, 2.32% -- pb_ratio: 2.96, mCap: 2.02B, float_rotation: 0.09
+headline: 0
+summary: 0
+other_info: {'symbol': 'LAC', 'last_price': '8.16', 'open': '8.17', 'analyst_price_target': '8.16', 'year_low': '2.31', 'year_high': '9.48', 'fifty_day_average': '3.82', 'two_hundred_day_average': '3.13', 'ten_day_volume': '114.06M', 'three_month_volume': '29.88M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+AG, $14.44, 2.90% -- pb_ratio: 2.82, mCap: 7.08B, float_rotation: 0.02
+headline: 0
+summary: 0
+other_info: {'symbol': 'AG', 'last_price': '14.44', 'open': '14.55', 'analyst_price_target': '14.44', 'year_low': '5.09', 'year_high': '14.18', 'fifty_day_average': '9.94', 'two_hundred_day_average': '7.44', 'ten_day_volume': '25.57M', 'three_month_volume': '20.29M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             301863238.0  ...        NaN
+Share Issued                                       301863238.0  ...        NaN
+Net Debt                                             6903000.0  ...        NaN
+Total Debt                                         237017000.0  ...        NaN
+Tangible Book Value                               1351071000.0  ...        NaN
+...                                                        ...  ...        ...
+Taxes Receivable                                    33864000.0  ...        NaN
+Accounts Receivable                                 12303000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   251961000.0  ...        NaN
+Other Short Term Investments                        49781000.0  ...        NaN
+Cash And Cash Equivalents                          202180000.0  ...        NaN
+
+[74 rows x 5 columns]}
+CLSK, $20.27, 4.86% -- pb_ratio: 2.65, mCap: 5.70B, float_rotation: 0.05
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: {'symbol': 'CLSK', 'last_price': '20.26', 'open': '18.48', 'analyst_price_target': '20.27', 'year_low': '6.45', 'year_high': '19.69', 'fifty_day_average': '11.53', 'two_hundred_day_average': '10.12', 'ten_day_volume': '36.92M', 'three_month_volume': '25.70M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+MARA, $20.49, 0.81% -- pb_ratio: 1.55, mCap: 7.59B, float_rotation: 0.03
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: {'symbol': 'MARA', 'last_price': '20.49', 'open': '20.42', 'analyst_price_target': '20.49', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.65', 'two_hundred_day_average': '15.95', 'ten_day_volume': '66.33M', 'three_month_volume': '56.03M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+HELE, $21.95, -20.50% -- pb_ratio: 0.41, mCap: 502.72M, float_rotation: 0.05
+headline: A Look at Helen Of Troy's Upcoming Earnings Report
+summary:  
+other_info: {'symbol': 'HELE', 'last_price': '21.82', 'open': '27.22', 'analyst_price_target': '21.82', 'year_low': '20.02', 'year_high': '75.68', 'fifty_day_average': '24.00', 'two_hundred_day_average': '37.84', 'ten_day_volume': '749,570.00', 'three_month_volume': '909,638.00', 'balance_sheet':                                                    2025-02-28  ...  2021-02-28
+Ordinary Shares Number                             22856066.0  ...         NaN
+Share Issued                                       22856066.0  ...         NaN
+Net Debt                                          898027000.0  ...         NaN
+Total Debt                                        956843000.0  ...         NaN
+Tangible Book Value                               -66216000.0  ...         NaN
+...                                                       ...  ...         ...
+Gross Accounts Receivable                         432624000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments   18867000.0  ...         NaN
+Cash And Cash Equivalents                          18867000.0  ...         NaN
+Cash Equivalents                                          NaN  ...   1631000.0
+Cash Financial                                            NaN  ...  43489000.0
+
+[71 rows x 5 columns]}
+WLYB, $36.35, -10.67% -- pb_ratio: 2.93, mCap: 2.00B, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: {'symbol': 'WLYB', 'last_price': '40.33', 'open': '36.76', 'analyst_price_target': '40.34', 'year_low': '37.27', 'year_high': '52.90', 'fifty_day_average': '40.14', 'two_hundred_day_average': '41.79', 'ten_day_volume': '34.00', 'three_month_volume': '295.00', 'balance_sheet':                                                    2025-04-30  ... 2021-04-30
+Treasury Shares Number                             29788000.0  ...        NaN
+Ordinary Shares Number                             53394000.0  ...        NaN
+Share Issued                                       83182000.0  ...        NaN
+Net Debt                                          713553000.0  ...        NaN
+Total Debt                                        899199000.0  ...        NaN
+...                                                       ...  ...        ...
+Accounts Receivable                               228410000.0  ...        NaN
+Allowance For Doubtful Accounts Receivable        -13172000.0  ...        NaN
+Gross Accounts Receivable                         241582000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   85882000.0  ...        NaN
+Cash And Cash Equivalents                          85882000.0  ...        NaN
+
+[82 rows x 5 columns]}
+DAL, $60.36, 4.61% -- pb_ratio: 2.24, mCap: 39.41B, float_rotation: 0.02
+headline: Nasdaq Settles At Record High: Investor Sentiment Improves, Fear & Greed Index Remains In 'Neutral' Zone
+summary: The CNN Money Fear &amp; Greed index improved, but remained in Neutral zone on Wed. US stocks rose, led by tech.
+other_info: {'symbol': 'DAL', 'last_price': '60.43', 'open': '61.90', 'analyst_price_target': '60.43', 'year_low': '34.74', 'year_high': '69.98', 'fifty_day_average': '58.22', 'two_hundred_day_average': '54.44', 'ten_day_volume': '8.13M', 'three_month_volume': '8.75M', 'balance_sheet':                                                      2024-12-31  ... 2020-12-31
+Treasury Shares Number                                8098971.0  ...        NaN
+Ordinary Shares Number                              646472635.0  ...        NaN
+Share Issued                                        654571606.0  ...        NaN
+Net Debt                                          13125000000.0  ...        NaN
+Total Debt                                        22771000000.0  ...        NaN
+...                                                         ...  ...        ...
+Allowance For Doubtful Accounts Receivable          -18000000.0  ...        NaN
+Gross Accounts Receivable                          3242000000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   3069000000.0  ...        NaN
+Other Short Term Investments                                0.0  ...        NaN
+Cash And Cash Equivalents                          3069000000.0  ...        NaN
+
+[73 rows x 5 columns]}
+Skipping CAN: sold today, cannot rebuy until tomorrow.
+latest price for CGC: 1.71, so I'm buying 4
+Buy order submitted. ID: e933c45b-39d7-443d-8f67-2cc5d51e43f5
+Waiting for CGC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CGC, will attach trailing stop tomorrow.
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+No trading today: Day Trade Count too high (3), max allowed: 3
+========================= Run End =========================
+
+

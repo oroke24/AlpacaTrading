@@ -24,6 +24,18 @@ def place_market_order_and_save_to_file(symbol, qty=1):
     if(day_trades >= 3):
         print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
         return
+    
+    order_filter = GetOrdersRequest(
+        status="open",
+        symbols=[symbol.upper()],
+        order_type=OrderType.TRAILING_STOP
+    )
+    open_trailing_orders = liveTradingClient.get_orders(filter=order_filter)
+    if len(open_trailing_orders) > 0:
+        print(f"Open trailing stop order exists for {symbol}, skipping buy to avoid potential day trade.")
+        return
+
+
 
     if os.path.exists(RESTRICTED_POSITIONS_FILE):
         with open(RESTRICTED_POSITIONS_FILE, "r") as f:
@@ -214,7 +226,7 @@ def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
     return rounded_trail_percent
 
 
-def worth_selling_now(symbol, percent_loss_cut=2.0):
+def worth_selling_now(symbol, percent_loss_cut=-2.0):
     try:
         position = liveTradingClient.get_open_position(symbol)
     except Exception:
