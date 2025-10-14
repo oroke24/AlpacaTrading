@@ -131,19 +131,30 @@ def place_trailing_stops_from_local_file(trail_percent=4.5):
     for pos in positions:
         symbol = pos["symbol"]
         qty = pos["qty"]
-        trail_percent = get_atr(symbol, default_pct=trail_percent)
+
+        base_trail = get_atr(symbol, default_pct=trail_percent)
+        try:
+            position = liveTradingClient.get_open_position(symbol)
+            percent_gain = float(position.unrealized_plpc) * 100
+        except Exception:
+            percent_gain = 0 #fallback incase something goes wrong
+        
+        if percent_gain >= 10:
+            final_trail = 4 #Tighten trail if already at 10% gain
+        else:
+            final_trail = base_trail
 
         try:
             trailing_stop_order = TrailingStopOrderRequest(
                 symbol=symbol,
                 qty=qty,
                 side=OrderSide.SELL,
-                trail_percent=float(trail_percent),
+                trail_percent=float(final_trail),
                 time_in_force=TimeInForce.GTC
             )
 
             sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
-            print(f"Trailing stop sell for {symbol} with a trail percent of {trail_percent} submitted. ID: {sell_order.id}\n")
+            print(f"Trailing stop sell for {symbol} with a trail percent of {final_trail} submitted. ID: {sell_order.id}\n")
 
         except Exception as e:
             print(f"Failed to submit trailing stop for {symbol}: {e}")
