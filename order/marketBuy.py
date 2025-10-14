@@ -163,7 +163,7 @@ def place_trailing_stops_from_local_file(trail_percent=6):
             )
 
             sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
-            print(f"Trailing stop sell for {symbol} with a trail percent of {final_trail} submitted. ID: {sell_order.id}\n")
+            print(f"Trailing stop sell for {symbol} with a trail percent of {final_trail} based on percent gain of {percent_gain} submitted. ID: {sell_order.id}\n")
 
         except Exception as e:
             print(f"Failed to submit trailing stop for {symbol}: {e}")
