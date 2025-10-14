@@ -118,7 +118,7 @@ def place_market_order_and_save_to_file(symbol, qty=1):
         print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
 
 
-def place_trailing_stops_from_local_file(trail_percent=4.5):
+def place_trailing_stops_from_local_file(trail_percent=6):
     if not os.path.exists(SAVE_FILE):
         print("No saved positions from yesterday.")
         check_all_positions_worth_selling_now()
@@ -139,10 +139,19 @@ def place_trailing_stops_from_local_file(trail_percent=4.5):
         except Exception:
             percent_gain = 0 #fallback incase something goes wrong
         
-        if percent_gain >= 10:
-            final_trail = 4 #Tighten trail if already at 10% gain
+        if percent_gain >= 30:
+            final_trail = 2 #Tighten trail if already at 30% gain
+        elif percent_gain >= 20:
+            final_trail = 3 #Tighten trail if already at 20% gain
+        elif percent_gain >= 15:
+            final_trail = 4 #Tighten trail if already at 15% gain
+        elif percent_gain >= 10:
+            final_trail = 5 #Tighten trail if already at 10% gain
         else:
             final_trail = base_trail
+
+        #Final check: making sure atr suggestion isn't loosened
+        final_trail = min(final_trail, base_trail)
 
         try:
             trailing_stop_order = TrailingStopOrderRequest(
