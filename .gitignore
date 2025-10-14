@@ -1,2 +1,4 @@
 #.gitignore
 .env
+open_positions.json
+restricted_positions.json

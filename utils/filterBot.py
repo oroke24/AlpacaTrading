@@ -49,12 +49,18 @@ class FilterBot():
         filtered_stocks = []
         for stock in stocks:
             symbol = stock['symbol']
-            percent_change = stock['percent_change']
-            price = stock['price']
 
             try:
                 ticker = yf.Ticker(symbol)
                 info = ticker.info or {}
+
+                if 'price' in stock: price = stock['price']
+                else: price = ticker.fast_info.get('lastPrice', 0)
+                
+                previous_close = ticker.fast_info.get('previousClose', 0)
+                percent_change = 0
+                if 'percent_change' in stock: percent_change = stock['percent_change']
+                elif previous_close: percent_change = ((price - previous_close) / previous_close) * 100
 
                 market_cap = info.get('marketCap')
                 trailing_pe = info.get('trailingPE') or 0

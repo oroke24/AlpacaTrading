@@ -1,14 +1,53 @@
 from alpaca.data.requests import StockLatestTradeRequest
-from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest 
-from alpaca.trading.enums import OrderSide, TimeInForce, PositionSide
+from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest, GetOrdersRequest
+from alpaca.trading.enums import OrderSide, TimeInForce, PositionSide, OrderType
 from auth.connectClient import paperTradingClient, liveTradingClient, dataClient
+import yfinance as yf
+import numpy as np
+import pandas as pd
 import time
 import os
 import json
 
 SAVE_FILE = "open_positions.json"
+RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
 
 def place_market_order_and_save_to_file(symbol, qty=1):
+
+    """
+    Place a market buy order for `symbol`, save it to SAVE_FILE, 
+    and skip if symbol is in today's restricted list.
+    """
+    live_account = liveTradingClient.get_account()
+    day_trades = int(live_account.daytrade_count)
+
+    if(day_trades >= 3):
+        print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
+        return
+    
+    order_filter = GetOrdersRequest(
+        status="open",
+        symbols=[symbol.upper()],
+        order_type=OrderType.TRAILING_STOP
+    )
+    open_trailing_orders = liveTradingClient.get_orders(filter=order_filter)
+    if len(open_trailing_orders) > 0:
+        print(f"Open trailing stop order exists for {symbol}, skipping buy to avoid potential day trade.")
+        return
+
+
+
+    if os.path.exists(RESTRICTED_POSITIONS_FILE):
+        with open(RESTRICTED_POSITIONS_FILE, "r") as f:
+            restricted = json.load(f)
+    else:
+        restricted = []
+
+    # Skip restricted symbols
+    if symbol in restricted:
+        print(f"Skipping {symbol}: sold today, cannot rebuy until tomorrow.")
+        return
+    
 
     # --- get buying power ---
     buying_power = float(liveTradingClient.get_account().buying_power)
@@ -27,7 +66,6 @@ def place_market_order_and_save_to_file(symbol, qty=1):
     if qty == 0:
         print(f"Skipping {symbol}: {current_price}, too risky.")
         return
-
     
     print(f"latest price for {symbol}: {current_price}, so I'm buying {qty}")
 
@@ -73,15 +111,17 @@ def place_market_order_and_save_to_file(symbol, qty=1):
                 positions = json.load(f)
         else:
             positions = []
+
         positions.append(pos_data)
         with open(SAVE_FILE, "w") as f:
             json.dump(positions, f, indent=2)
         print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
 
 
-def place_trailing_stops_from_local_file(trail_percent=8.0):
+def place_trailing_stops_from_local_file(trail_percent=4.5):
     if not os.path.exists(SAVE_FILE):
         print("No saved positions from yesterday.")
+        check_all_positions_worth_selling_now()
         return
 
     with open(SAVE_FILE, "r") as f:
@@ -91,6 +131,7 @@ def place_trailing_stops_from_local_file(trail_percent=8.0):
     for pos in positions:
         symbol = pos["symbol"]
         qty = pos["qty"]
+        trail_percent = get_atr(symbol, default_pct=trail_percent)
 
         try:
             trailing_stop_order = TrailingStopOrderRequest(
@@ -102,7 +143,7 @@ def place_trailing_stops_from_local_file(trail_percent=8.0):
             )
 
             sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
-            print(f"Trailing stop sell for {symbol} submitted. ID: {sell_order.id}")
+            print(f"Trailing stop sell for {symbol} with a trail percent of {trail_percent} submitted. ID: {sell_order.id}\n")
 
         except Exception as e:
             print(f"Failed to submit trailing stop for {symbol}: {e}")
@@ -115,18 +156,134 @@ def place_trailing_stops_from_local_file(trail_percent=8.0):
     else:
         os.remove(SAVE_FILE)
 
-def calculate_position_size(buying_power, share_price, stop_pct=0.08, risk_pct=0.05):
+    check_all_positions_worth_selling_now()
+
+def check_all_positions_worth_selling_now():
+    all_open_positions = liveTradingClient.get_all_positions()
+    for position in all_open_positions:
+        try:
+            worth_selling_now(position.symbol)
+        except Exception as e:
+            print(f"Error checking if {position.symbol} is worth selling now: {e}")
+
+def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
     try:
-        risk_amount = buying_power * risk_pct
+        # Only allocate a fraction of buying power
+        effective_bp = buying_power * bp_fraction
+
+        risk_amount = effective_bp * risk_pct
         stop_distance = share_price * stop_pct
-        shares_to_buy = int(risk_amount // stop_distance)
-        #print(f"buying_power: {buying_power}, risk_amount: {risk_amount}, share_price: {share_price}, stop_distance: {stop_distance} -- shares_to_buy: {shares_to_buy}")
+
+        shares_risk = int(risk_amount // stop_distance) if stop_distance > 0 else 0
+        shares_affordable = int(effective_bp // share_price)
+
+        shares_to_buy = min(shares_risk, shares_affordable)
         return shares_to_buy if shares_to_buy > 0 else 0
 
     except Exception as e:
         print(f"Error calculating position size: {e}")
-        return 1
+        return 0
+    
 
+def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
+    """
+    Returns a safe trailing stop % for Alpaca orders.
+    
+    - Calculates ATR as % of price
+    - Falls back to default if ATR can't be calculated
+    - Clamps the result between min_pct and max_pct
+    """
+    trail_percent = default_pct  # start with fallback
+    
+    try:
+        df = yf.download(symbol, period="3mo", auto_adjust=True)
+        if len(df) > period:
+            df['H-L'] = df['High'] - df['Low']
+            df['H-PC'] = abs(df['High'] - df['Close'].shift(1))
+            df['L-PC'] = abs(df['Low'] - df['Close'].shift(1))
+            df['TR'] = df[['H-L','H-PC','L-PC']].max(axis=1)
+            df['ATR'] = df['TR'].rolling(window=period).mean()
+            
+            latest_atr = df['ATR'].iloc[-1].item()   # force scalar
+            price = df['Close'].iloc[-1].item()      # force scalar
+
+            if not np.isnan(latest_atr) and price > 0:
+                trail_percent = (latest_atr / price) * 100
+
+            # Debug info
+            print(f"[{symbol}] Price={price:.2f}, ATR={latest_atr:.4f}, Raw%={(latest_atr/price)*100:.2f}")
+
+    except Exception as e:
+        print(f"ATR calculation failed for {symbol}, using default {default_pct}%: {e}")
+    
+    # Clamp between min and max
+    trail_percent = max(min_pct, min(max_pct, trail_percent))
+    rounded_trail_percent = round(trail_percent, 2)
+    print(f"[{symbol}] Final trail % = {rounded_trail_percent}")
+    
+    
+    return rounded_trail_percent
+
+
+def worth_selling_now(symbol, percent_loss_cut=-2.0):
+    try:
+        position = liveTradingClient.get_open_position(symbol)
+    except Exception:
+        print(f"No open position found for {symbol}.  Skipping")
+        return False
+        
+    qty = float(position.qty)
+
+    if qty <= 0:
+        print(f"Skipping sell for {symbol}: Position qty is {qty}")
+        return False
+
+    percent_gain = float(position.unrealized_plpc) * 100
+    print(f"{symbol}: {percent_gain:.2f}% gain")
+
+    if percent_gain <= percent_loss_cut:
+        try:
+            open_orders = liveTradingClient.get_orders(filter=GetOrdersRequest(status="open"))
+            for order in open_orders:
+                if order.symbol == symbol:
+                    print(f"Canceling existing order for {symbol}: {order.id}")
+                    liveTradingClient.cancel_order_by_id(order.id)
+        except Exception as e:
+            print(f"Could not cancel existion orders for {symbol}: {e}")
+        
+        print(f"Selling {qty} shares of {position.symbol} (percent_gain: {percent_gain}, Threshold exceeded)")
+        order = MarketOrderRequest(
+            symbol=position.symbol,
+            qty=qty,
+            side=OrderSide.SELL,
+            time_in_force = TimeInForce.DAY
+        )
+        liveTradingClient.submit_order(order)
+
+        # Add symbol to restricted list
+        if os.path.exists(RESTRICTED_POSITIONS_FILE):
+            with open(RESTRICTED_POSITIONS_FILE, "r") as f:
+                restricted = json.load(f)
+        else:
+            restricted = []
+
+        if symbol not in restricted:
+            restricted.append(symbol)
+            with open(RESTRICTED_POSITIONS_FILE, "w") as f:
+                json.dump(restricted, f, indent=2)
+            print(f"Added {symbol} to restricted list for today.")
+        return True
+    return False
+
+def safe_load_json(filename, default=None):
+    if not os.path.exists(filename):
+        return default if default is not None else []
+    try:
+        with open(filename, "r") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        print(f"Warning: {filename} is empty or corrupt. Resetting file.")
+        return default if default is not None else []
 
 '''
 # ----- OLD FUNCTIONS -----

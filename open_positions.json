@@ -1,14 +1,18 @@
 [
   {
-    "symbol": "SITC",
-    "qty": 1
+    "symbol": "CAN",
+    "qty": 6
   },
   {
-    "symbol": "MUX",
-    "qty": 1
-  },
-  {
-    "symbol": "WOOF",
+    "symbol": "WWR",
     "qty": 3
+  },
+  {
+    "symbol": "RCKT",
+    "qty": 1
+  },
+  {
+    "symbol": "OEC",
+    "qty": 1
   }
 ]
