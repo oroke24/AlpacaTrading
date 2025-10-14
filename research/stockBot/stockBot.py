@@ -21,6 +21,14 @@ class StockBot:
         self.ExpensiveDownTrenders = []
         pass
     
+    def add_equity_to_history(self):
+        date = datetime.now().strftime('%Y-%m-%d')
+        HISTORY_FILE = "equity_history.txt"
+        live_account = liveTradingClient.get_account()
+        equity = live_account.equity
+        with open(HISTORY_FILE, "a") as f:
+            f.write(f"{date}: ${equity}\n")
+
     def fill_list(self):
         self.stockList = self.quick_fill()
         print("stock list found:")

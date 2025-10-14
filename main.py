@@ -16,11 +16,17 @@ from datetime import datetime
 RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
 
 def main():
+
+    # Initialize bots 
+    filterBot = FilterBot()
+    stockBot = StockBot()
+    sorterBot = SorterBot()
+    openAiBot = OpenAiBot()
     
     print("\n")
 
-
     if len(sys.argv) > 1 and sys.argv[1] == 'sell': 
+        stockBot.add_equity_to_history()
         print(f"==================== Selling Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
         # --- Reset restricted positions for a new day ---
         if os.path.exists(RESTRICTED_POSITIONS_FILE):
@@ -44,12 +50,6 @@ def main():
     if(day_trades >= 3):
         print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
         return
-
-    # Initialize bots 
-    filterBot = FilterBot()
-    stockBot = StockBot()
-    sorterBot = SorterBot()
-    openAiBot = OpenAiBot()
 
     # --- StockBot Research and Trade Portion
     print(f"--- STOCK PORTION ---")
@@ -105,8 +105,9 @@ def testing():
     stockBot = StockBot()
     sorterBot = SorterBot()
     openAiBot = OpenAiBot()
-    
+
     '''
+    stockBot.add_equity_to_history()
     cryptoBot = CryptoBot()
     symbolBot = SymbolBot()
     printerBot = PrinterBot()

@@ -3801,3 +3801,638 @@ No trading today: Day Trade Count too high (3), max allowed: 3
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-10 06:40:02 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[CGC] Price=1.57, ATR=0.1279, Raw%=8.15
+[CGC] Final trail % = 8
+Trailing stop sell for CGC with a trail percent of 8 submitted. ID: 20074f11-e27d-4e68-9b23-81b8d9abe123
+
+BITF: 34.31% gain
+CGC: -8.44% gain
+Canceling existing order for CGC: 20074f11-e27d-4e68-9b23-81b8d9abe123
+Selling 4.0 shares of CGC (percent_gain: -8.44205230211198, Threshold exceeded)
+Added CGC to restricted list for today.
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$GWH.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$HYAC.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$GCTS.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$BKSY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$EQV.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-10 07:10:03 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Error processing ATYR: '<=' not supported between instances of 'str' and 'int'
+Error processing ALLO: '<=' not supported between instances of 'str' and 'int'
+Screened 155 => 16 passed market cap and price filter.
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: EWZ, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 16, 4 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+China Hands Trump The Next 'America First' Stock—USA Rare Earth Soars On Export Curbs
+Cipher Mining Stock Soars 7% After-Hours On Phase 1 Completion Of Mega Mining Data Center
+News fetch failed for CLSK: list index out of range
+CAN, $1.33, 7.72% -- pb_ratio: 1.92, mCap: 621.43M, float_rotation: 0.01
+headline: 0
+summary: 0
+other_info: n/a
+LAC, $7.96, -2.41% -- pb_ratio: 2.89, mCap: 1.99B, float_rotation: 0.07
+headline: China Hands Trump The Next 'America First' Stock—USA Rare Earth Soars On Export Curbs
+summary: China has a tight grip on rare earth exports, boosting USA Rare Earth stock by 15%. Trump&#39;s mineral gambit could lead to USAR support.
+other_info: n/a
+MARA, $21.30, 5.08% -- pb_ratio: 1.61, mCap: 7.89B, float_rotation: 0.06
+headline: Cipher Mining Stock Soars 7% After-Hours On Phase 1 Completion Of Mega Mining Data Center
+summary: Cipher Mining, Inc. (NASDAQ:CIFR) shares soared in Wednesday&#39;s after-hours trading as the Bitcoin (CRYPTO: BTC) mining firm confirmed the completion of the first phase of its ambitious Black Pearl data center.
+other_info: n/a
+CLSK, $21.74, 4.87% -- pb_ratio: 2.85, mCap: 6.11B, float_rotation: 0.06
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.33, 7.72% -- pb_ratio: 1.92, mCap: 621.43M, float_rotation: 0.01
+headline: 0
+summary: 0
+other_info: {'symbol': 'CAN', 'last_price': '1.33', 'open': '1.27', 'analyst_price_target': '1.33', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.82', 'two_hundred_day_average': '1.06', 'ten_day_volume': '77.11M', 'three_month_volume': '47.68M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+LAC, $7.96, -2.41% -- pb_ratio: 2.89, mCap: 1.99B, float_rotation: 0.07
+headline: China Hands Trump The Next 'America First' Stock—USA Rare Earth Soars On Export Curbs
+summary: China has a tight grip on rare earth exports, boosting USA Rare Earth stock by 15%. Trump&#39;s mineral gambit could lead to USAR support.
+other_info: {'symbol': 'LAC', 'last_price': '7.97', 'open': '8.10', 'analyst_price_target': '7.96', 'year_low': '2.31', 'year_high': '9.48', 'fifty_day_average': '3.93', 'two_hundred_day_average': '3.16', 'ten_day_volume': '98.15M', 'three_month_volume': '30.66M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+MARA, $21.30, 5.08% -- pb_ratio: 1.61, mCap: 7.89B, float_rotation: 0.06
+headline: Cipher Mining Stock Soars 7% After-Hours On Phase 1 Completion Of Mega Mining Data Center
+summary: Cipher Mining, Inc. (NASDAQ:CIFR) shares soared in Wednesday&#39;s after-hours trading as the Bitcoin (CRYPTO: BTC) mining firm confirmed the completion of the first phase of its ambitious Black Pearl data center.
+other_info: {'symbol': 'MARA', 'last_price': '21.26', 'open': '20.42', 'analyst_price_target': '21.26', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.72', 'two_hundred_day_average': '15.95', 'ten_day_volume': '62.76M', 'three_month_volume': '56.14M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+CLSK, $21.74, 4.87% -- pb_ratio: 2.85, mCap: 6.11B, float_rotation: 0.06
+headline: 0
+summary: 0
+other_info: {'symbol': 'CLSK', 'last_price': '21.66', 'open': '19.26', 'analyst_price_target': '21.67', 'year_low': '6.45', 'year_high': '20.58', 'fifty_day_average': '11.70', 'two_hundred_day_average': '10.17', 'ten_day_volume': '38.18M', 'three_month_volume': '26.01M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+latest price for CAN: 1.32, so I'm buying 6
+Buy order submitted. ID: 316e86e7-982e-4295-8fb7-33a2f5b8d86a
+Waiting for CAN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAN, will attach trailing stop tomorrow.
+Skipping LAC: 7.97, too risky.
+Skipping MARA: 21.28, too risky.
+Skipping CLSK: 21.68, too risky.
+========================= Run End =========================
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-13 06:40:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[CAN] Price=1.15, ATR=0.1824, Raw%=15.86
+[CAN] Final trail % = 8
+Trailing stop sell for CAN with a trail percent of 8 submitted. ID: 28a47419-9d2a-455b-851d-feac2093277f
+
+CAN: -12.88% gain
+Canceling existing order for CAN: 28a47419-9d2a-455b-851d-feac2093277f
+Selling 6.0 shares of CAN (percent_gain: -12.8796992481203, Threshold exceeded)
+Added CAN to restricted list for today.
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$GWH.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$IAUX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$RFL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-13 07:10:04 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 155 => 15 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: FXI, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 15, 6 passed share and float filter.
+Stocks worth buying are:
+News fetch failed for CAN: list index out of range
+News fetch failed for WWR: list index out of range
+News fetch failed for LGO: list index out of range
+News fetch failed for LAC: list index out of range
+News fetch failed for MARA: list index out of range
+News fetch failed for CLSK: list index out of range
+CAN, $1.22, 14.62% -- pb_ratio: 1.76, mCap: 569.84M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+WWR, $2.47, 24.75% -- pb_ratio: 1.44, mCap: 212.98M, float_rotation: 0.09
+headline: 0
+summary: 0
+other_info: n/a
+LGO, $2.57, 28.50% -- pb_ratio: 1.01, mCap: 165.59M, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: n/a
+LAC, $8.36, 17.60% -- pb_ratio: 3.03, mCap: 2.07B, float_rotation: 0.17
+headline: 0
+summary: 0
+other_info: n/a
+MARA, $19.55, 5.96% -- pb_ratio: 1.48, mCap: 7.24B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: n/a
+CLSK, $20.00, 6.98% -- pb_ratio: 2.62, mCap: 5.62B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.22, 14.62% -- pb_ratio: 1.76, mCap: 569.84M, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: {'symbol': 'CAN', 'last_price': '1.21', 'open': '1.15', 'analyst_price_target': '1.21', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.83', 'two_hundred_day_average': '1.05', 'ten_day_volume': '85.37M', 'three_month_volume': '48.81M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+WWR, $2.47, 24.75% -- pb_ratio: 1.44, mCap: 212.98M, float_rotation: 0.09
+headline: 0
+summary: 0
+other_info: {'symbol': 'WWR', 'last_price': '2.46', 'open': '2.22', 'analyst_price_target': '2.46', 'year_low': '0.45', 'year_high': '2.28', 'fifty_day_average': '0.89', 'two_hundred_day_average': '0.72', 'ten_day_volume': '10.52M', 'three_month_volume': '3.93M', 'balance_sheet':                                                      2024-12-31  ... 2020-12-31
+Treasury Shares Number                                    161.0  ...        NaN
+Ordinary Shares Number                               64829920.0  ...        NaN
+Share Issued                                         64830081.0  ...        NaN
+Total Debt                                             235000.0  ...        NaN
+Tangible Book Value                                 133122000.0  ...        NaN
+Invested Capital                                    133122000.0  ...        NaN
+Working Capital                                      -6899000.0  ...        NaN
+Net Tangible Assets                                 133122000.0  ...        NaN
+Capital Lease Obligations                              235000.0  ...        NaN
+Common Stock Equity                                 133122000.0  ...        NaN
+Total Capitalization                                133122000.0  ...        NaN
+Total Equity Gross Minority Interest                133122000.0  ...        NaN
+Stockholders Equity                                 133122000.0  ...        NaN
+Gains Losses Not Affecting Retained Earnings                NaN  ...        0.0
+Treasury Stock                                         258000.0  ...        NaN
+Retained Earnings                                  -373686000.0  ...        NaN
+Additional Paid In Capital                          507001000.0  ...        NaN
+Capital Stock                                           65000.0  ...        NaN
+Common Stock                                            65000.0  ...        NaN
+Total Liabilities Net Minority Interest              13235000.0  ...        NaN
+Total Non Current Liabilities Net Minority Inte...    1473000.0  ...        NaN
+Other Non Current Liabilities                         1378000.0  ...        NaN
+Liabilities Heldfor Sale Non Current                        NaN  ...        0.0
+Long Term Debt And Capital Lease Obligation             95000.0  ...   214000.0
+Long Term Capital Lease Obligation                      95000.0  ...        NaN
+Current Liabilities                                  11762000.0  ...        NaN
+Current Debt And Capital Lease Obligation              140000.0  ...        NaN
+Current Capital Lease Obligation                       140000.0  ...        NaN
+Pensionand Other Post Retirement Benefit Plans ...    1329000.0  ...        NaN
+Payables And Accrued Expenses                        10293000.0  ...        NaN
+Current Accrued Expenses                               776000.0  ...        NaN
+Payables                                              9517000.0  ...        NaN
+Other Payable                                               NaN  ...  1151000.0
+Accounts Payable                                      9517000.0  ...        NaN
+Total Assets                                        146357000.0  ...        NaN
+Total Non Current Assets                            141494000.0  ...        NaN
+Other Non Current Assets                              3395000.0  ...        NaN
+Net PPE                                             138099000.0  ...        NaN
+Accumulated Depreciation                              -713000.0  ...        NaN
+Gross PPE                                           138812000.0  ...        NaN
+Other Properties                                    138812000.0  ...        NaN
+Current Assets                                        4863000.0  ...        NaN
+Other Current Assets                                    41000.0  ...        NaN
+Prepaid Assets                                          90000.0  ...   754000.0
+Inventory                                              460000.0  ...        NaN
+Raw Materials                                          460000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments      4272000.0  ...        NaN
+Other Short Term Investments                                NaN  ...  1520000.0
+Cash And Cash Equivalents                             4272000.0  ...        NaN
+
+[49 rows x 5 columns]}
+LGO, $2.57, 28.50% -- pb_ratio: 1.01, mCap: 165.59M, float_rotation: 0.05
+headline: 0
+summary: 0
+other_info: {'symbol': 'LGO', 'last_price': '2.57', 'open': '2.31', 'analyst_price_target': '2.57', 'year_low': '1.12', 'year_high': '2.84', 'fifty_day_average': '1.56', 'two_hundred_day_average': '1.58', 'ten_day_volume': '911,950.00', 'three_month_volume': '316,506.00', 'balance_sheet':                                                    2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             64112297.0  ...        NaN
+Share Issued                                       64112297.0  ...        NaN
+Net Debt                                                  NaN  ...        NaN
+Total Debt                                         92280000.0  ...        NaN
+Tangible Book Value                               162563000.0  ...        NaN
+...                                                       ...  ...        ...
+Taxes Receivable                                    4242000.0  ...        NaN
+Accounts Receivable                                 5471000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   22106000.0  ...        NaN
+Cash And Cash Equivalents                          22106000.0  ...        NaN
+Cash Financial                                     22106000.0  ...        NaN
+
+[71 rows x 5 columns]}
+LAC, $8.36, 17.60% -- pb_ratio: 3.03, mCap: 2.07B, float_rotation: 0.17
+headline: 0
+summary: 0
+other_info: {'symbol': 'LAC', 'last_price': '8.35', 'open': '7.75', 'analyst_price_target': '8.34', 'year_low': '2.31', 'year_high': '9.48', 'fifty_day_average': '4.03', 'two_hundred_day_average': '3.18', 'ten_day_volume': '97.58M', 'three_month_volume': '31.64M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+MARA, $19.55, 5.96% -- pb_ratio: 1.48, mCap: 7.24B, float_rotation: 0.03
+headline: 0
+summary: 0
+other_info: {'symbol': 'MARA', 'last_price': '19.58', 'open': '19.34', 'analyst_price_target': '19.58', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.77', 'two_hundred_day_average': '15.94', 'ten_day_volume': '65.58M', 'three_month_volume': '56.66M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+CLSK, $20.00, 6.98% -- pb_ratio: 2.62, mCap: 5.62B, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'CLSK', 'last_price': '20.07', 'open': '20.27', 'analyst_price_target': '20.07', 'year_low': '6.45', 'year_high': '22.12', 'fifty_day_average': '11.86', 'two_hundred_day_average': '10.21', 'ten_day_volume': '40.89M', 'three_month_volume': '26.59M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+Skipping CAN: sold today, cannot rebuy until tomorrow.
+latest price for WWR: 2.48, so I'm buying 4
+Buy order submitted. ID: 3dfcbb1c-e8e3-4ea1-9bd0-a8bc613af757
+Waiting for WWR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for WWR, will attach trailing stop tomorrow.
+latest price for LGO: 2.41, so I'm buying 3
+Buy order submitted. ID: f88ff78e-ec8c-44d0-aaa7-0140a7da2e90
+Waiting for LGO buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for LGO, will attach trailing stop tomorrow.
+Skipping LAC: 8.345, too risky.
+Skipping MARA: 19.59, too risky.
+Skipping CLSK: 20.05, too risky.
+========================= Run End =========================
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-14 06:40:05 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[WWR] Price=2.58, ATR=0.2736, Raw%=10.60
+[WWR] Final trail % = 8
+Trailing stop sell for WWR with a trail percent of 8 submitted. ID: abc42906-ca0c-4c7a-8205-03fd22ae83c8
+
+[LGO] Price=2.50, ATR=0.2338, Raw%=9.35
+[LGO] Final trail % = 8
+Trailing stop sell for LGO with a trail percent of 8 submitted. ID: cf4e3d85-d777-443e-9023-f2b657dbd412
+
+LGO: -1.86% gain
+WWR: 4.28% gain
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$GWH.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$NE.WSA: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-14 07:10:03 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 151 => 16 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 16, 7 passed share and float filter.
+Stocks worth buying are:
+Rosenblatt Maintains Buy on Canaan, Maintains $4 Price Target
+12 Industrials Stocks Moving In Monday's After-Market Session
+News fetch failed for RCKT: list index out of range
+12 Materials Stocks Moving In Monday's After-Market Session
+Electra, Solidion Lead Battery Stock Boom: Here's Why
+Shiba Inu, Pepe Outgain Bitcoin As Memecoins Usher In Comeback Rally
+Chardan Capital Maintains Buy on Cleanspark, Raises Price Target to $30
+CAN, $1.58, 2.06% -- pb_ratio: 2.30, mCap: 743.37M, float_rotation: 0.01
+headline: Rosenblatt Maintains Buy on Canaan, Maintains $4 Price Target
+summary: 0
+other_info: n/a
+WWR, $2.78, -11.49% -- pb_ratio: 1.62, mCap: 239.65M, float_rotation: 0.21
+headline: 12 Industrials Stocks Moving In Monday's After-Market Session
+summary:  
+other_info: n/a
+RCKT, $4.08, 17.58% -- pb_ratio: 1.24, mCap: 440.79M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+OEC, $5.47, -20.10% -- pb_ratio: 0.66, mCap: 306.30M, float_rotation: 0.01
+headline: 12 Materials Stocks Moving In Monday's After-Market Session
+summary:  
+other_info: n/a
+LAC, $8.14, -5.08% -- pb_ratio: 2.95, mCap: 2.01B, float_rotation: 0.10
+headline: Electra, Solidion Lead Battery Stock Boom: Here's Why
+summary: Lithium and battery stocks surged as investors bet that restrictions on Chinese supply will raise the value of North American producers.
+other_info: n/a
+MARA, $20.22, -0.86% -- pb_ratio: 1.53, mCap: 7.49B, float_rotation: 0.03
+headline: Shiba Inu, Pepe Outgain Bitcoin As Memecoins Usher In Comeback Rally
+summary: Memecoins were trading higher late Monday, as investors regained interest in speculative assets amid a broader crypto rally.
+other_info: n/a
+CLSK, $20.41, 0.59% -- pb_ratio: 2.67, mCap: 5.74B, float_rotation: 0.04
+headline: Chardan Capital Maintains Buy on Cleanspark, Raises Price Target to $30
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.58, 2.06% -- pb_ratio: 2.30, mCap: 743.37M, float_rotation: 0.01
+headline: Rosenblatt Maintains Buy on Canaan, Maintains $4 Price Target
+summary: 0
+other_info: {'symbol': 'CAN', 'last_price': '1.59', 'open': '1.40', 'analyst_price_target': '1.59', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.84', 'two_hundred_day_average': '1.05', 'ten_day_volume': '88.89M', 'three_month_volume': '49.66M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+WWR, $2.78, -11.49% -- pb_ratio: 1.62, mCap: 239.65M, float_rotation: 0.21
+headline: 12 Industrials Stocks Moving In Monday's After-Market Session
+summary:  
+other_info: {'symbol': 'WWR', 'last_price': '2.77', 'open': '2.89', 'analyst_price_target': '2.77', 'year_low': '0.45', 'year_high': '2.64', 'fifty_day_average': '0.92', 'two_hundred_day_average': '0.73', 'ten_day_volume': '12.49M', 'three_month_volume': '4.33M', 'balance_sheet':                                                      2024-12-31  ... 2020-12-31
+Treasury Shares Number                                    161.0  ...        NaN
+Ordinary Shares Number                               64829920.0  ...        NaN
+Share Issued                                         64830081.0  ...        NaN
+Total Debt                                             235000.0  ...        NaN
+Tangible Book Value                                 133122000.0  ...        NaN
+Invested Capital                                    133122000.0  ...        NaN
+Working Capital                                      -6899000.0  ...        NaN
+Net Tangible Assets                                 133122000.0  ...        NaN
+Capital Lease Obligations                              235000.0  ...        NaN
+Common Stock Equity                                 133122000.0  ...        NaN
+Total Capitalization                                133122000.0  ...        NaN
+Total Equity Gross Minority Interest                133122000.0  ...        NaN
+Stockholders Equity                                 133122000.0  ...        NaN
+Gains Losses Not Affecting Retained Earnings                NaN  ...        0.0
+Treasury Stock                                         258000.0  ...        NaN
+Retained Earnings                                  -373686000.0  ...        NaN
+Additional Paid In Capital                          507001000.0  ...        NaN
+Capital Stock                                           65000.0  ...        NaN
+Common Stock                                            65000.0  ...        NaN
+Total Liabilities Net Minority Interest              13235000.0  ...        NaN
+Total Non Current Liabilities Net Minority Inte...    1473000.0  ...        NaN
+Other Non Current Liabilities                         1378000.0  ...        NaN
+Liabilities Heldfor Sale Non Current                        NaN  ...        0.0
+Long Term Debt And Capital Lease Obligation             95000.0  ...   214000.0
+Long Term Capital Lease Obligation                      95000.0  ...        NaN
+Current Liabilities                                  11762000.0  ...        NaN
+Current Debt And Capital Lease Obligation              140000.0  ...        NaN
+Current Capital Lease Obligation                       140000.0  ...        NaN
+Pensionand Other Post Retirement Benefit Plans ...    1329000.0  ...        NaN
+Payables And Accrued Expenses                        10293000.0  ...        NaN
+Current Accrued Expenses                               776000.0  ...        NaN
+Payables                                              9517000.0  ...        NaN
+Other Payable                                               NaN  ...  1151000.0
+Accounts Payable                                      9517000.0  ...        NaN
+Total Assets                                        146357000.0  ...        NaN
+Total Non Current Assets                            141494000.0  ...        NaN
+Other Non Current Assets                              3395000.0  ...        NaN
+Net PPE                                             138099000.0  ...        NaN
+Accumulated Depreciation                              -713000.0  ...        NaN
+Gross PPE                                           138812000.0  ...        NaN
+Other Properties                                    138812000.0  ...        NaN
+Current Assets                                        4863000.0  ...        NaN
+Other Current Assets                                    41000.0  ...        NaN
+Prepaid Assets                                          90000.0  ...   754000.0
+Inventory                                              460000.0  ...        NaN
+Raw Materials                                          460000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments      4272000.0  ...        NaN
+Other Short Term Investments                                NaN  ...  1520000.0
+Cash And Cash Equivalents                             4272000.0  ...        NaN
+
+[49 rows x 5 columns]}
+RCKT, $4.08, 17.58% -- pb_ratio: 1.24, mCap: 440.79M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'RCKT', 'last_price': '4.07', 'open': '3.93', 'analyst_price_target': '4.07', 'year_low': '2.19', 'year_high': '18.89', 'fifty_day_average': '3.23', 'two_hundred_day_average': '5.99', 'ten_day_volume': '2.90M', 'three_month_volume': '3.70M', 'balance_sheet':                                                    2024-12-31  ... 2020-12-31
+Treasury Shares Number                                    NaN  ...        NaN
+Ordinary Shares Number                            106453818.0  ...        NaN
+Share Issued                                      106453818.0  ...        NaN
+Total Debt                                         25498000.0  ...        NaN
+Tangible Book Value                               398930000.0  ...        NaN
+...                                                       ...  ...        ...
+Other Current Assets                                5847000.0  ...        NaN
+Prepaid Assets                                            NaN  ...  4626000.0
+Cash Cash Equivalents And Short Term Investments  372336000.0  ...        NaN
+Other Short Term Investments                      208701000.0  ...        NaN
+Cash And Cash Equivalents                         163635000.0  ...        NaN
+
+[62 rows x 5 columns]}
+OEC, $5.47, -20.10% -- pb_ratio: 0.66, mCap: 306.30M, float_rotation: 0.01
+headline: 12 Materials Stocks Moving In Monday's After-Market Session
+summary:  
+other_info: {'symbol': 'OEC', 'last_price': '5.44', 'open': '5.53', 'analyst_price_target': '5.44', 'year_low': '6.57', 'year_high': '19.48', 'fifty_day_average': '9.20', 'two_hundred_day_average': '11.69', 'ten_day_volume': '566,770.00', 'three_month_volume': '574,886.00', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Treasury Shares Number                               3749887.0  ...        NaN
+Ordinary Shares Number                              57242372.0  ...        NaN
+Share Issued                                        60992259.0  ...        NaN
+Net Debt                                           861600000.0  ...        NaN
+Total Debt                                        1027500000.0  ...        NaN
+...                                                        ...  ...        ...
+Allowance For Doubtful Accounts Receivable          -1200000.0  ...        NaN
+Gross Accounts Receivable                          213100000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments    44200000.0  ...        NaN
+Other Short Term Investments                               NaN  ...  3630000.0
+Cash And Cash Equivalents                           44200000.0  ...        NaN
+
+[87 rows x 5 columns]}
+LAC, $8.14, -5.08% -- pb_ratio: 2.95, mCap: 2.01B, float_rotation: 0.10
+headline: Electra, Solidion Lead Battery Stock Boom: Here's Why
+summary: Lithium and battery stocks surged as investors bet that restrictions on Chinese supply will raise the value of North American producers.
+other_info: {'symbol': 'LAC', 'last_price': '8.17', 'open': '8.10', 'analyst_price_target': '8.13', 'year_low': '2.31', 'year_high': '9.48', 'fifty_day_average': '4.15', 'two_hundred_day_average': '3.21', 'ten_day_volume': '101.50M', 'three_month_volume': '32.89M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+MARA, $20.22, -0.86% -- pb_ratio: 1.53, mCap: 7.49B, float_rotation: 0.03
+headline: Shiba Inu, Pepe Outgain Bitcoin As Memecoins Usher In Comeback Rally
+summary: Memecoins were trading higher late Monday, as investors regained interest in speculative assets amid a broader crypto rally.
+other_info: {'symbol': 'MARA', 'last_price': '20.17', 'open': '19.30', 'analyst_price_target': '20.17', 'year_low': '9.81', 'year_high': '30.28', 'fifty_day_average': '16.87', 'two_hundred_day_average': '15.95', 'ten_day_volume': '59.40M', 'three_month_volume': '56.47M', 'balance_sheet':                                                     2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             340258453.0  ...        NaN
+Share Issued                                       340258453.0  ...        NaN
+Net Debt                                          2054807000.0  ...        NaN
+Total Debt                                        2473671000.0  ...        NaN
+Tangible Book Value                               4043568000.0  ...        NaN
+...                                                        ...  ...        ...
+Other Receivables                                    6345000.0  ...        NaN
+Loans Receivable                                           NaN  ...        0.0
+Cash Cash Equivalents And Short Term Investments   391771000.0  ...        NaN
+Other Short Term Investments                               NaN  ...        0.0
+Cash And Cash Equivalents                          391771000.0  ...        NaN
+
+[75 rows x 5 columns]}
+CLSK, $20.41, 0.59% -- pb_ratio: 2.67, mCap: 5.74B, float_rotation: 0.04
+headline: Chardan Capital Maintains Buy on Cleanspark, Raises Price Target to $30
+summary: 0
+other_info: {'symbol': 'CLSK', 'last_price': '20.37', 'open': '19.17', 'analyst_price_target': '20.38', 'year_low': '6.45', 'year_high': '22.12', 'fifty_day_average': '12.05', 'two_hundred_day_average': '10.26', 'ten_day_volume': '40.38M', 'three_month_volume': '26.62M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+latest price for CAN: 1.605, so I'm buying 6
+Buy order submitted. ID: 50c193f5-e8cb-4b7e-b4e9-fef73780b49e
+Waiting for CAN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAN, will attach trailing stop tomorrow.
+latest price for WWR: 2.76, so I'm buying 3
+Buy order submitted. ID: 8c5ae5e6-8f30-4ec4-afd8-727734622c20
+Waiting for WWR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for WWR, will attach trailing stop tomorrow.
+latest price for RCKT: 4.1, so I'm buying 1
+Buy order submitted. ID: 70456172-3bd6-435b-b38c-e15187da35ea
+Waiting for RCKT buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RCKT, will attach trailing stop tomorrow.
+latest price for OEC: 5.44, so I'm buying 1
+Buy order submitted. ID: 2714f6d5-8ac6-4a82-b344-11f328d90841
+Waiting for OEC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for OEC, will attach trailing stop tomorrow.
+Skipping LAC: 8.17, too risky.
+Skipping MARA: 20.2, too risky.
+Skipping CLSK: 20.36, too risky.
+========================= Run End =========================
+
+

@@ -1,6 +1,18 @@
 [
   {
-    "symbol": "CGC",
-    "qty": 4
+    "symbol": "CAN",
+    "qty": 6
+  },
+  {
+    "symbol": "WWR",
+    "qty": 3
+  },
+  {
+    "symbol": "RCKT",
+    "qty": 1
+  },
+  {
+    "symbol": "OEC",
+    "qty": 1
   }
 ]

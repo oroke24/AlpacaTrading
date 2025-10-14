@@ -66,7 +66,6 @@ def place_market_order_and_save_to_file(symbol, qty=1):
     if qty == 0:
         print(f"Skipping {symbol}: {current_price}, too risky.")
         return
-
     
     print(f"latest price for {symbol}: {current_price}, so I'm buying {qty}")
 
