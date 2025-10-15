@@ -8,6 +8,8 @@ import pandas as pd
 import time
 import os
 import json
+from alpaca.trading.enums import QueryOrderStatus
+from datetime import datetime, timezone
 
 SAVE_FILE = "open_positions.json"
 RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
@@ -25,15 +27,30 @@ def place_market_order_and_save_to_file(symbol, qty=1):
         print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
         return
     
+    
     order_filter = GetOrdersRequest(
         status="open",
-        symbols=[symbol.upper()],
+        symbols=[symbol],
         order_type=OrderType.TRAILING_STOP
     )
     open_trailing_orders = liveTradingClient.get_orders(filter=order_filter)
     if len(open_trailing_orders) > 0:
         print(f"Open trailing stop order exists for {symbol}, skipping buy to avoid potential day trade.")
         return
+    
+    now = datetime.now(timezone.utc)
+    start_of_day = now.replace(hour=0, minute=0, second=0, microsecond=0)
+
+    closed_filter = GetOrdersRequest(
+        status="closed",
+        symbols=[symbol],
+        order_type=OrderType.TRAILING_STOP,
+        after=start_of_day
+    )
+    closed_trailing_orders = liveTradingClient.get_orders(filter=closed_filter)
+    if len(closed_trailing_orders) > 0:
+        print(f"Trailing stop for {symbol} already closed today — skipping buy to avoid PDT.")
+        return True
 
 
 

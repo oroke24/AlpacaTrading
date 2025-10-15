@@ -4436,3 +4436,435 @@ Skipping CLSK: 20.36, too risky.
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-15 06:40:04 ====================
+Selling yesterdays positions.
+[CAN] Price=1.99, ATR=0.2379, Raw%=11.98
+[CAN] Final trail % = 8
+Trailing stop sell for CAN with a trail percent of 3 based on percent gain of 25.22023659702995 submitted. ID: aa18017d-45cc-4367-9809-1bf74da3db9d
+
+[WWR] Price=2.93, ATR=0.3671, Raw%=12.52
+[WWR] Final trail % = 8
+Trailing stop sell for WWR with a trail percent of 8 based on percent gain of 5.867485105614731 submitted. ID: c5b6b07d-3678-44da-9f41-b29418b3b3f7
+
+[RCKT] Price=4.43, ATR=0.2547, Raw%=5.74
+[RCKT] Final trail % = 5.74
+Trailing stop sell for RCKT with a trail percent of 5.74 based on percent gain of 7.66392348214502 submitted. ID: 8234d559-423f-42f4-890a-2ae715ba503b
+
+[OEC] Price=6.04, ATR=0.3885, Raw%=6.44
+[OEC] Final trail % = 6.44
+Trailing stop sell for OEC with a trail percent of 5 based on percent gain of 11.0273153683436 submitted. ID: 79aee927-a91f-4f28-9595-17f89ca69b95
+
+CAN: 25.03% gain
+OEC: 11.03% gain
+RCKT: 7.66% gain
+WWR: 5.80% gain
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$AMPX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-15 07:10:02 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Error processing MOBBW: '<=' not supported between instances of 'str' and 'int'
+Screened 158 => 18 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: HYG, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 18, 9 passed share and float filter.
+Stocks worth buying are:
+Orion, Nio, Alibaba Group And Other Big Stocks Moving Lower In Tuesday's Pre-Market Session
+News fetch failed for TRUE: list index out of range
+New Pacific Metals Reveals C$35.1M Bought Deal Financing
+12 Industrials Stocks Moving In Tuesday's Pre-Market Session
+News fetch failed for FOSL: list index out of range
+News fetch failed for SIFY: list index out of range
+News fetch failed for SOC: list index out of range
+First Horizon Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call
+News fetch failed for HI: list index out of range
+CAN, $1.93, 3.48% -- pb_ratio: 2.80, mCap: 907.52M, float_rotation: 0.01
+headline: Orion, Nio, Alibaba Group And Other Big Stocks Moving Lower In Tuesday's Pre-Market Session
+summary:  
+other_info: n/a
+TRUE, $2.35, 59.12% -- pb_ratio: 1.95, mCap: 207.84M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: n/a
+NEWP, $2.62, -12.37% -- pb_ratio: 3.33, mCap: 448.46M, float_rotation: 0.01
+headline: New Pacific Metals Reveals C$35.1M Bought Deal Financing
+summary: 0
+other_info: n/a
+WWR, $2.90, -16.77% -- pb_ratio: 1.68, mCap: 249.11M, float_rotation: 0.16
+headline: 12 Industrials Stocks Moving In Tuesday's Pre-Market Session
+summary:  
+other_info: n/a
+FOSL, $3.52, 32.64% -- pb_ratio: 1.25, mCap: 187.44M, float_rotation: 0.07
+headline: 0
+summary: 0
+other_info: n/a
+SIFY, $14.59, -14.54% -- pb_ratio: 0.05, mCap: 1.06B, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: n/a
+SOC, $15.50, -12.38% -- pb_ratio: 3.47, mCap: 1.55B, float_rotation: 0.10
+headline: 0
+summary: 0
+other_info: n/a
+FHN, $20.32, -11.58% -- pb_ratio: 1.21, mCap: 10.32B, float_rotation: 0.03
+headline: First Horizon Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call
+summary:  
+other_info: n/a
+HI, $31.34, -2.03% -- pb_ratio: 1.68, mCap: 2.21B, float_rotation: 0.16
+headline: 0
+summary: 0
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.93, 3.48% -- pb_ratio: 2.80, mCap: 907.52M, float_rotation: 0.01
+headline: Orion, Nio, Alibaba Group And Other Big Stocks Moving Lower In Tuesday's Pre-Market Session
+summary:  
+other_info: {'symbol': 'CAN', 'last_price': '1.93', 'open': '2.03', 'analyst_price_target': '1.93', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.87', 'two_hundred_day_average': '1.05', 'ten_day_volume': '95.82M', 'three_month_volume': '48.65M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+TRUE, $2.35, 59.12% -- pb_ratio: 1.95, mCap: 207.84M, float_rotation: 0.04
+headline: 0
+summary: 0
+other_info: {'symbol': 'TRUE', 'last_price': '2.34', 'open': '2.49', 'analyst_price_target': '2.34', 'year_low': '1.05', 'year_high': '4.62', 'fifty_day_average': '1.98', 'two_hundred_day_average': '2.11', 'ten_day_volume': '336,210.00', 'three_month_volume': '391,433.00', 'balance_sheet':                                                      2024-12-31  ...  2020-12-31
+Ordinary Shares Number                               87190136.0  ...         NaN
+Share Issued                                         87190136.0  ...         NaN
+Total Debt                                           11277000.0  ...         NaN
+Tangible Book Value                                 116167000.0  ...         NaN
+Invested Capital                                    118137000.0  ...         NaN
+Working Capital                                     102235000.0  ...         NaN
+Net Tangible Assets                                 116167000.0  ...         NaN
+Capital Lease Obligations                            11277000.0  ...         NaN
+Common Stock Equity                                 118137000.0  ...         NaN
+Total Capitalization                                118137000.0  ...         NaN
+Total Equity Gross Minority Interest                118137000.0  ...         NaN
+Stockholders Equity                                 118137000.0  ...         NaN
+Retained Earnings                                  -593346000.0  ...         NaN
+Additional Paid In Capital                          711474000.0  ...         NaN
+Capital Stock                                            9000.0  ...         NaN
+Common Stock                                             9000.0  ...         NaN
+Preferred Stock                                             0.0  ...         NaN
+Total Liabilities Net Minority Interest              41554000.0  ...         NaN
+Total Non Current Liabilities Net Minority Inte...    8661000.0  ...         NaN
+Other Non Current Liabilities                          348000.0  ...    388000.0
+Non Current Deferred Liabilities                            NaN  ...     40000.0
+Non Current Deferred Taxes Liabilities                      NaN  ...     40000.0
+Long Term Debt And Capital Lease Obligation           8313000.0  ...         NaN
+Long Term Capital Lease Obligation                    8313000.0  ...         NaN
+Current Liabilities                                  32893000.0  ...         NaN
+Current Debt And Capital Lease Obligation             2964000.0  ...         NaN
+Current Capital Lease Obligation                      2964000.0  ...         NaN
+Pensionand Other Post Retirement Benefit Plans ...    4892000.0  ...         NaN
+Payables And Accrued Expenses                        25037000.0  ...         NaN
+Current Accrued Expenses                             17109000.0  ...         NaN
+Payables                                              7928000.0  ...         NaN
+Accounts Payable                                      7928000.0  ...         NaN
+Total Assets                                        159691000.0  ...         NaN
+Total Non Current Assets                             24563000.0  ...         NaN
+Other Non Current Assets                              4507000.0  ...         NaN
+Investments And Advances                                    NaN  ...  19905000.0
+Long Term Equity Investment                                 NaN  ...  19905000.0
+Goodwill And Other Intangible Assets                  1970000.0  ...         NaN
+Other Intangible Assets                               1970000.0  ...         NaN
+Goodwill                                                    NaN  ...  51205000.0
+Net PPE                                              18086000.0  ...         NaN
+Accumulated Depreciation                            -76399000.0  ...         NaN
+Gross PPE                                            94485000.0  ...         NaN
+Leases                                                4917000.0  ...         NaN
+Other Properties                                      2351000.0  ...         NaN
+Machinery Furniture Equipment                        87217000.0  ...         NaN
+Properties                                                  0.0  ...         NaN
+Current Assets                                      135128000.0  ...         NaN
+Other Current Assets                                  3052000.0  ...         NaN
+Assets Held For Sale Current                                NaN  ...         0.0
+Restricted Cash                                             0.0  ...         NaN
+Prepaid Assets                                        4499000.0  ...         NaN
+Receivables                                          15742000.0  ...         NaN
+Accounts Receivable                                  15742000.0  ...         NaN
+Allowance For Doubtful Accounts Receivable            -783000.0  ...         NaN
+Gross Accounts Receivable                            16525000.0  ...         NaN
+Cash Cash Equivalents And Short Term Investments    111835000.0  ...         NaN
+Cash And Cash Equivalents                           111835000.0  ...         NaN
+
+[58 rows x 5 columns]}
+NEWP, $2.62, -12.37% -- pb_ratio: 3.33, mCap: 448.46M, float_rotation: 0.01
+headline: New Pacific Metals Reveals C$35.1M Bought Deal Financing
+summary: 0
+other_info: {'symbol': 'NEWP', 'last_price': '2.55', 'open': '2.80', 'analyst_price_target': '2.55', 'year_low': '0.93', 'year_high': '3.02', 'fifty_day_average': '2.15', 'two_hundred_day_average': '1.50', 'ten_day_volume': '764,440.00', 'three_month_volume': '429,170.00', 'balance_sheet':                                                      2025-06-30  ... 2021-06-30
+Ordinary Shares Number                              171904301.0  ...        NaN
+Share Issued                                        171904301.0  ...        NaN
+Tangible Book Value                                 134287901.0  ...        NaN
+Invested Capital                                    134287901.0  ...        NaN
+Working Capital                                      16166719.0  ...        NaN
+Net Tangible Assets                                 134287901.0  ...        NaN
+Common Stock Equity                                 134287901.0  ...        NaN
+Total Capitalization                                134287901.0  ...        NaN
+Total Equity Gross Minority Interest                134287901.0  ...        NaN
+Minority Interest                                           0.0  ...        NaN
+Stockholders Equity                                 134287901.0  ...        NaN
+Other Equity Interest                                20676968.0  ...        NaN
+Gains Losses Not Affecting Retained Earnings          8697745.0  ...        NaN
+Other Equity Adjustments                              8697745.0  ...        NaN
+Retained Earnings                                   -78402069.0  ...        NaN
+Capital Stock                                       183315257.0  ...        NaN
+Common Stock                                        183315257.0  ...        NaN
+Total Liabilities Net Minority Interest                927450.0  ...        NaN
+Total Non Current Liabilities Net Minority Inte...          0.0  ...        NaN
+Tradeand Other Payables Non Current                         NaN  ...        0.0
+Current Liabilities                                    927450.0  ...        NaN
+Payables And Accrued Expenses                          927450.0  ...        NaN
+Current Accrued Expenses                               593271.0  ...        NaN
+Payables                                               334179.0  ...        NaN
+Dueto Related Parties Current                           91687.0  ...        NaN
+Accounts Payable                                       242492.0  ...        NaN
+Total Assets                                        135215351.0  ...        NaN
+Total Non Current Assets                            118121182.0  ...        NaN
+Non Current Prepaid Assets                                  NaN  ...        0.0
+Non Current Accounts Receivable                             NaN  ...  2216392.0
+Investments And Advances                                54020.0  ...        NaN
+Long Term Equity Investment                             54020.0  ...        NaN
+Net PPE                                             118067162.0  ...        NaN
+Accumulated Depreciation                              -987059.0  ...        NaN
+Gross PPE                                           119054221.0  ...        NaN
+Other Properties                                    117564365.0  ...        NaN
+Machinery Furniture Equipment                         1489856.0  ...        NaN
+Current Assets                                       17094169.0  ...        NaN
+Prepaid Assets                                         232743.0  ...        NaN
+Receivables                                             21467.0  ...        NaN
+Accounts Receivable                                     21467.0  ...        NaN
+Allowance For Doubtful Accounts Receivable                  0.0  ...        NaN
+Gross Accounts Receivable                               21467.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments     16839959.0  ...        NaN
+Other Short Term Investments                                0.0  ...        NaN
+Cash And Cash Equivalents                            16839959.0  ...        NaN
+Cash Equivalents                                      8832950.0  ...        NaN
+Cash Financial                                        8007009.0  ...        NaN
+
+[48 rows x 5 columns]}
+WWR, $2.90, -16.77% -- pb_ratio: 1.68, mCap: 249.11M, float_rotation: 0.16
+headline: 12 Industrials Stocks Moving In Tuesday's Pre-Market Session
+summary:  
+other_info: {'symbol': 'WWR', 'last_price': '2.87', 'open': '3.30', 'analyst_price_target': '2.87', 'year_low': '0.45', 'year_high': '3.75', 'fifty_day_average': '0.98', 'two_hundred_day_average': '0.74', 'ten_day_volume': '16.92M', 'three_month_volume': '5.03M', 'balance_sheet':                                                      2024-12-31  ... 2020-12-31
+Treasury Shares Number                                    161.0  ...        NaN
+Ordinary Shares Number                               64829920.0  ...        NaN
+Share Issued                                         64830081.0  ...        NaN
+Total Debt                                             235000.0  ...        NaN
+Tangible Book Value                                 133122000.0  ...        NaN
+Invested Capital                                    133122000.0  ...        NaN
+Working Capital                                      -6899000.0  ...        NaN
+Net Tangible Assets                                 133122000.0  ...        NaN
+Capital Lease Obligations                              235000.0  ...        NaN
+Common Stock Equity                                 133122000.0  ...        NaN
+Total Capitalization                                133122000.0  ...        NaN
+Total Equity Gross Minority Interest                133122000.0  ...        NaN
+Stockholders Equity                                 133122000.0  ...        NaN
+Gains Losses Not Affecting Retained Earnings                NaN  ...        0.0
+Treasury Stock                                         258000.0  ...        NaN
+Retained Earnings                                  -373686000.0  ...        NaN
+Additional Paid In Capital                          507001000.0  ...        NaN
+Capital Stock                                           65000.0  ...        NaN
+Common Stock                                            65000.0  ...        NaN
+Total Liabilities Net Minority Interest              13235000.0  ...        NaN
+Total Non Current Liabilities Net Minority Inte...    1473000.0  ...        NaN
+Other Non Current Liabilities                         1378000.0  ...        NaN
+Liabilities Heldfor Sale Non Current                        NaN  ...        0.0
+Long Term Debt And Capital Lease Obligation             95000.0  ...   214000.0
+Long Term Capital Lease Obligation                      95000.0  ...        NaN
+Current Liabilities                                  11762000.0  ...        NaN
+Current Debt And Capital Lease Obligation              140000.0  ...        NaN
+Current Capital Lease Obligation                       140000.0  ...        NaN
+Pensionand Other Post Retirement Benefit Plans ...    1329000.0  ...        NaN
+Payables And Accrued Expenses                        10293000.0  ...        NaN
+Current Accrued Expenses                               776000.0  ...        NaN
+Payables                                              9517000.0  ...        NaN
+Other Payable                                               NaN  ...  1151000.0
+Accounts Payable                                      9517000.0  ...        NaN
+Total Assets                                        146357000.0  ...        NaN
+Total Non Current Assets                            141494000.0  ...        NaN
+Other Non Current Assets                              3395000.0  ...        NaN
+Net PPE                                             138099000.0  ...        NaN
+Accumulated Depreciation                              -713000.0  ...        NaN
+Gross PPE                                           138812000.0  ...        NaN
+Other Properties                                    138812000.0  ...        NaN
+Current Assets                                        4863000.0  ...        NaN
+Other Current Assets                                    41000.0  ...        NaN
+Prepaid Assets                                          90000.0  ...   754000.0
+Inventory                                              460000.0  ...        NaN
+Raw Materials                                          460000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments      4272000.0  ...        NaN
+Other Short Term Investments                                NaN  ...  1520000.0
+Cash And Cash Equivalents                             4272000.0  ...        NaN
+
+[49 rows x 5 columns]}
+FOSL, $3.52, 32.64% -- pb_ratio: 1.25, mCap: 187.44M, float_rotation: 0.07
+headline: 0
+summary: 0
+other_info: {'symbol': 'FOSL', 'last_price': '3.51', 'open': '2.81', 'analyst_price_target': '3.51', 'year_low': '0.86', 'year_high': '3.58', 'fifty_day_average': '2.72', 'two_hundred_day_average': '1.78', 'ten_day_volume': '397,970.00', 'three_month_volume': '625,970.00', 'balance_sheet':                                                    2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             53253974.0  ...        NaN
+Share Issued                                       53253974.0  ...        NaN
+Net Debt                                           41246000.0  ...        NaN
+Total Debt                                        315829000.0  ...        NaN
+Tangible Book Value                               147741000.0  ...        NaN
+...                                                       ...  ...        ...
+Other Receivables                                         NaN  ...  8230000.0
+Taxes Receivable                                          0.0  ...        NaN
+Accounts Receivable                               162164000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments  123598000.0  ...        NaN
+Cash And Cash Equivalents                         123598000.0  ...        NaN
+
+[79 rows x 5 columns]}
+SIFY, $14.59, -14.54% -- pb_ratio: 0.05, mCap: 1.06B, float_rotation: 0.00
+headline: 0
+summary: 0
+other_info: {'symbol': 'SIFY', 'last_price': '14.31', 'open': '17.29', 'analyst_price_target': '14.31', 'year_low': '2.61', 'year_high': '17.80', 'fifty_day_average': '11.25', 'two_hundred_day_average': '6.12', 'ten_day_volume': '187,820.00', 'three_month_volume': '162,296.00', 'balance_sheet':                                                      2025-03-31  ... 2021-03-31
+Ordinary Shares Number                              434102399.0  ...        NaN
+Share Issued                                        434102399.0  ...        NaN
+Net Debt                                          30702998000.0  ...        NaN
+Total Debt                                        39510446000.0  ...        NaN
+Tangible Book Value                               19433670000.0  ...        NaN
+...                                                         ...  ...        ...
+Gross Accounts Receivable                         11549909000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments   6304026000.0  ...        NaN
+Other Short Term Investments                       1306816000.0  ...        NaN
+Cash And Cash Equivalents                          4997210000.0  ...        NaN
+Cash Financial                                              NaN  ...        NaN
+
+[83 rows x 5 columns]}
+SOC, $15.50, -12.38% -- pb_ratio: 3.47, mCap: 1.55B, float_rotation: 0.10
+headline: 0
+summary: 0
+other_info: {'symbol': 'SOC', 'last_price': '15.30', 'open': '13.98', 'analyst_price_target': '15.26', 'year_low': '16.26', 'year_high': '35.00', 'fifty_day_average': '23.99', 'two_hundred_day_average': '24.52', 'ten_day_volume': '3.75M', 'three_month_volume': '3.74M', 'balance_sheet':                                                    2024-12-31  ... 2020-12-31
+Treasury Shares Number                                    NaN  ...        NaN
+Ordinary Shares Number                             89310996.0  ...        NaN
+Share Issued                                       89310996.0  ...        NaN
+Net Debt                                          533158000.0  ...        NaN
+Total Debt                                        851448000.0  ...        NaN
+...                                                       ...  ...        ...
+Inventory                                          15337000.0  ...        NaN
+Raw Materials                                      15337000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments  300384000.0  ...        NaN
+Cash And Cash Equivalents                         300384000.0  ...        NaN
+Cash Financial                                            NaN  ...     9014.0
+
+[63 rows x 5 columns]}
+FHN, $20.32, -11.58% -- pb_ratio: 1.21, mCap: 10.32B, float_rotation: 0.03
+headline: First Horizon Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call
+summary:  
+other_info: {'symbol': 'FHN', 'last_price': '20.36', 'open': '23.45', 'analyst_price_target': '20.36', 'year_low': '15.19', 'year_high': '23.63', 'fifty_day_average': '22.43', 'two_hundred_day_average': '20.74', 'ten_day_volume': '15.82M', 'three_month_volume': '11.47M', 'balance_sheet':                                                  2024-12-31  ...  2020-12-31
+Treasury Shares Number                                  NaN  ...         NaN
+Preferred Shares Number                          17500000.0  ...         NaN
+Ordinary Shares Number                          524280000.0  ...         NaN
+Share Issued                                    524280000.0  ...         NaN
+Net Debt                                                NaN  ...         NaN
+Total Debt                                     2240000000.0  ...         NaN
+Tangible Book Value                            6737000000.0  ...         NaN
+Invested Capital                              10630000000.0  ...         NaN
+Net Tangible Assets                            7163000000.0  ...         NaN
+Common Stock Equity                            8390000000.0  ...         NaN
+Preferred Stock Equity                          426000000.0  ...         NaN
+Total Capitalization                          10011000000.0  ...         NaN
+Total Equity Gross Minority Interest           9111000000.0  ...         NaN
+Minority Interest                               295000000.0  ...         NaN
+Stockholders Equity                            8816000000.0  ...         NaN
+Gains Losses Not Affecting Retained Earnings  -1128000000.0  ...         NaN
+Other Equity Adjustments                      -1128000000.0  ...         NaN
+Retained Earnings                              4382000000.0  ...         NaN
+Additional Paid In Capital                     4808000000.0  ...         NaN
+Capital Stock                                   754000000.0  ...         NaN
+Common Stock                                    328000000.0  ...         NaN
+Preferred Stock                                 426000000.0  ...         NaN
+Total Liabilities Net Minority Interest       73041000000.0  ...         NaN
+Long Term Debt And Capital Lease Obligation    1195000000.0  ...         NaN
+Long Term Debt                                 1195000000.0  ...         NaN
+Current Debt And Capital Lease Obligation      1045000000.0  ...         NaN
+Current Debt                                   1045000000.0  ...         NaN
+Other Current Borrowings                       1045000000.0  ...         NaN
+Total Assets                                  82152000000.0  ...         NaN
+Investments And Advances                      10553000000.0  ...         NaN
+Held To Maturity Securities                    1270000000.0  ...         NaN
+Available For Sale Securities                  1403000000.0  ...         NaN
+Trading Securities                             1387000000.0  ...         NaN
+Goodwill And Other Intangible Assets           1653000000.0  ...         NaN
+Other Intangible Assets                         143000000.0  ...         NaN
+Goodwill                                       1510000000.0  ...         NaN
+Net PPE                                         574000000.0  ...         NaN
+Accumulated Depreciation                       -552000000.0  ...         NaN
+Gross PPE                                      1126000000.0  ...         NaN
+Leases                                           88000000.0  ...         NaN
+Other Properties                                  1000000.0  ...  18000000.0
+Machinery Furniture Equipment                   304000000.0  ...         NaN
+Buildings And Improvements                      570000000.0  ...         NaN
+Land And Improvements                           163000000.0  ...         NaN
+Other Short Term Investments                   6493000000.0  ...         NaN
+Cash And Cash Equivalents                      2444000000.0  ...         NaN
+Cash Financial                                  906000000.0  ...         NaN
+Cash Cash Equivalents And Federal Funds Sold   3075000000.0  ...         NaN
+
+[48 rows x 5 columns]}
+HI, $31.34, -2.03% -- pb_ratio: 1.68, mCap: 2.21B, float_rotation: 0.16
+headline: 0
+summary: 0
+other_info: {'symbol': 'HI', 'last_price': '31.35', 'open': '31.41', 'analyst_price_target': '31.35', 'year_low': '18.36', 'year_high': '35.59', 'fifty_day_average': '24.85', 'two_hundred_day_average': '25.01', 'ten_day_volume': '592,600.00', 'three_month_volume': '588,683.00', 'balance_sheet':                                                     2024-09-30  ...    2021-09-30
+Treasury Shares Number                               5600000.0  ...     3100000.0
+Ordinary Shares Number                              70226313.0  ...    72700000.0
+Share Issued                                        75826313.0  ...    75800000.0
+Net Debt                                          1693700000.0  ...   766800000.0
+Total Debt                                        2034100000.0  ...  1318500000.0
+...                                                        ...  ...           ...
+Accounts Receivable                                350100000.0  ...   323500000.0
+Allowance For Doubtful Accounts Receivable         -13600000.0  ...   -26000000.0
+Gross Accounts Receivable                          363700000.0  ...   349500000.0
+Cash Cash Equivalents And Short Term Investments   199300000.0  ...   446100000.0
+Cash And Cash Equivalents                          199300000.0  ...   446100000.0
+
+[72 rows x 4 columns]}
+Trailing stop for CAN already closed today — skipping buy to avoid PDT.
+latest price for TRUE: 2.35, so I'm buying 4
+Buy order submitted. ID: 7287fcac-94f2-47cf-93b9-0e5ea4fc0273
+Waiting for TRUE buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for TRUE, will attach trailing stop tomorrow.
+latest price for NEWP: 2.6, so I'm buying 2
+Buy order submitted. ID: 50e8cb23-d9a7-4ebd-96f3-09a3c2ae0ede
+Waiting for NEWP buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for NEWP, will attach trailing stop tomorrow.
+Trailing stop for WWR already closed today — skipping buy to avoid PDT.
+latest price for FOSL: 3.49, so I'm buying 1
+Buy order submitted. ID: 3d0879c3-0d75-4e02-9f23-ac000f5b6f4a
+Waiting for FOSL buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for FOSL, will attach trailing stop tomorrow.
+Skipping SIFY: 14.55, too risky.
+Skipping SOC: 15.04, too risky.
+Skipping FHN: 20.32, too risky.
+Skipping HI: 31.345, too risky.
+========================= Run End =========================
+
+
