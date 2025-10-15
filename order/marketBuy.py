@@ -1,3 +1,12 @@
+'''
+This is an old file ...
+The functions in here have been moved to the BuyingBot and SellingBot classes.
+This change was made to adhere to the program's Object Oriented Programming(OOP) to 
+maintain a consistent OOP methodology throughout the entire program.
+This file still remains as a fail safe in case it is ever needed for reference.
+'''
+
+'''
 from alpaca.data.requests import StockLatestTradeRequest
 from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest, GetOrdersRequest
 from alpaca.trading.enums import OrderSide, TimeInForce, PositionSide, OrderType
@@ -8,6 +17,8 @@ import pandas as pd
 import time
 import os
 import json
+from alpaca.trading.enums import QueryOrderStatus
+from datetime import datetime, timezone
 
 SAVE_FILE = "open_positions.json"
 RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
@@ -25,15 +36,30 @@ def place_market_order_and_save_to_file(symbol, qty=1):
         print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
         return
     
+    
     order_filter = GetOrdersRequest(
         status="open",
-        symbols=[symbol.upper()],
+        symbols=[symbol],
         order_type=OrderType.TRAILING_STOP
     )
     open_trailing_orders = liveTradingClient.get_orders(filter=order_filter)
     if len(open_trailing_orders) > 0:
         print(f"Open trailing stop order exists for {symbol}, skipping buy to avoid potential day trade.")
         return
+    
+    now = datetime.now(timezone.utc)
+    start_of_day = now.replace(hour=0, minute=0, second=0, microsecond=0)
+
+    closed_filter = GetOrdersRequest(
+        status="closed",
+        symbols=[symbol],
+        order_type=OrderType.TRAILING_STOP,
+        after=start_of_day
+    )
+    closed_trailing_orders = liveTradingClient.get_orders(filter=closed_filter)
+    if len(closed_trailing_orders) > 0:
+        print(f"Trailing stop for {symbol} already closed today — skipping buy to avoid PDT.")
+        return True
 
 
 
@@ -117,8 +143,25 @@ def place_market_order_and_save_to_file(symbol, qty=1):
             json.dump(positions, f, indent=2)
         print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
 
+def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
+    try:
+        # Only allocate a fraction of buying power
+        effective_bp = buying_power * bp_fraction
 
-def place_trailing_stops_from_local_file(trail_percent=4.5):
+        risk_amount = effective_bp * risk_pct
+        stop_distance = share_price * stop_pct
+
+        shares_risk = int(risk_amount // stop_distance) if stop_distance > 0 else 0
+        shares_affordable = int(effective_bp // share_price)
+
+        shares_to_buy = min(shares_risk, shares_affordable)
+        return shares_to_buy if shares_to_buy > 0 else 0
+
+    except Exception as e:
+        print(f"Error calculating position size: {e}")
+        return 0
+
+def place_trailing_stops_from_local_file(trail_percent=6):
     if not os.path.exists(SAVE_FILE):
         print("No saved positions from yesterday.")
         check_all_positions_worth_selling_now()
@@ -131,19 +174,39 @@ def place_trailing_stops_from_local_file(trail_percent=4.5):
     for pos in positions:
         symbol = pos["symbol"]
         qty = pos["qty"]
-        trail_percent = get_atr(symbol, default_pct=trail_percent)
+
+        base_trail = get_atr(symbol, default_pct=trail_percent)
+        try:
+            position = liveTradingClient.get_open_position(symbol)
+            percent_gain = float(position.unrealized_plpc) * 100
+        except Exception:
+            percent_gain = 0 #fallback incase something goes wrong
+        
+        if percent_gain >= 30:
+            final_trail = 2 #Tighten trail if already at 30% gain
+        elif percent_gain >= 20:
+            final_trail = 3 #Tighten trail if already at 20% gain
+        elif percent_gain >= 15:
+            final_trail = 4 #Tighten trail if already at 15% gain
+        elif percent_gain >= 10:
+            final_trail = 5 #Tighten trail if already at 10% gain
+        else:
+            final_trail = base_trail
+
+        #Final check: making sure atr suggestion isn't loosened
+        final_trail = min(final_trail, base_trail)
 
         try:
             trailing_stop_order = TrailingStopOrderRequest(
                 symbol=symbol,
                 qty=qty,
                 side=OrderSide.SELL,
-                trail_percent=float(trail_percent),
+                trail_percent=float(final_trail),
                 time_in_force=TimeInForce.GTC
             )
 
             sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
-            print(f"Trailing stop sell for {symbol} with a trail percent of {trail_percent} submitted. ID: {sell_order.id}\n")
+            print(f"Trailing stop sell for {symbol} with a trail percent of {final_trail} based on percent gain of {percent_gain} submitted. ID: {sell_order.id}\n")
 
         except Exception as e:
             print(f"Failed to submit trailing stop for {symbol}: {e}")
@@ -166,23 +229,6 @@ def check_all_positions_worth_selling_now():
         except Exception as e:
             print(f"Error checking if {position.symbol} is worth selling now: {e}")
 
-def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
-    try:
-        # Only allocate a fraction of buying power
-        effective_bp = buying_power * bp_fraction
-
-        risk_amount = effective_bp * risk_pct
-        stop_distance = share_price * stop_pct
-
-        shares_risk = int(risk_amount // stop_distance) if stop_distance > 0 else 0
-        shares_affordable = int(effective_bp // share_price)
-
-        shares_to_buy = min(shares_risk, shares_affordable)
-        return shares_to_buy if shares_to_buy > 0 else 0
-
-    except Exception as e:
-        print(f"Error calculating position size: {e}")
-        return 0
     
 
 def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
@@ -220,7 +266,6 @@ def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
     trail_percent = max(min_pct, min(max_pct, trail_percent))
     rounded_trail_percent = round(trail_percent, 2)
     print(f"[{symbol}] Final trail % = {rounded_trail_percent}")
-    
     
     return rounded_trail_percent
 
@@ -274,7 +319,7 @@ def worth_selling_now(symbol, percent_loss_cut=-2.0):
             print(f"Added {symbol} to restricted list for today.")
         return True
     return False
-
+'''
 def safe_load_json(filename, default=None):
     if not os.path.exists(filename):
         return default if default is not None else []

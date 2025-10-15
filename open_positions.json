@@ -1,18 +1,14 @@
 [
   {
-    "symbol": "CAN",
-    "qty": 6
+    "symbol": "TRUE",
+    "qty": 4
   },
   {
-    "symbol": "WWR",
-    "qty": 3
+    "symbol": "NEWP",
+    "qty": 2
   },
   {
-    "symbol": "RCKT",
-    "qty": 1
-  },
-  {
-    "symbol": "OEC",
+    "symbol": "FOSL",
     "qty": 1
   }
 ]
