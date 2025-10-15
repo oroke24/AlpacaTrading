@@ -9,7 +9,8 @@ from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
 from utils.filterBot import FilterBot
-from order.marketBuy import place_market_order_and_save_to_file, place_trailing_stops_from_local_file, calculate_position_size
+from order.buyingBot import BuyingBot
+from order.sellingBot import SellingBot
 from auth.connectClient import paperTradingClient, liveTradingClient
 from datetime import datetime
 
@@ -18,6 +19,8 @@ RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
 def main():
 
     # Initialize bots 
+    buyingBot = BuyingBot()
+    sellingBot = SellingBot()
     filterBot = FilterBot()
     stockBot = StockBot()
     sorterBot = SorterBot()
@@ -34,7 +37,7 @@ def main():
             print("Cleared restricted positions for a new day.")
         # Before buying, check yesterdays buys (if any) and place according sell positions
         print("Selling yesterdays positions.")
-        place_trailing_stops_from_local_file()
+        sellingBot.place_trailing_stops_from_local_file()
         print(f"========================= Run End =========================")
         print("\n")
         return
@@ -87,7 +90,7 @@ def main():
     for stockInfo in openAi_opinion:
         try:
             stockSymbol = stockInfo["symbol"].upper()
-            place_market_order_and_save_to_file(stockSymbol)
+            buyingBot.place_market_order_and_save_to_file(stockSymbol)
             time.sleep(1)
         except Exception as e:
             print(f"Error fetching {stockInfo['symbol']} {e}...")

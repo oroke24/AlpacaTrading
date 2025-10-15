@@ -1,3 +1,12 @@
+'''
+This is an old file ...
+The functions in here have been moved to the BuyingBot and SellingBot classes.
+This change was made to adhere to the program's Object Oriented Programming(OOP) to 
+maintain a consistent OOP methodology throughout the entire program.
+This file still remains as a fail safe in case it is ever needed for reference.
+'''
+
+'''
 from alpaca.data.requests import StockLatestTradeRequest
 from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest, GetOrdersRequest
 from alpaca.trading.enums import OrderSide, TimeInForce, PositionSide, OrderType
@@ -134,6 +143,23 @@ def place_market_order_and_save_to_file(symbol, qty=1):
             json.dump(positions, f, indent=2)
         print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
 
+def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
+    try:
+        # Only allocate a fraction of buying power
+        effective_bp = buying_power * bp_fraction
+
+        risk_amount = effective_bp * risk_pct
+        stop_distance = share_price * stop_pct
+
+        shares_risk = int(risk_amount // stop_distance) if stop_distance > 0 else 0
+        shares_affordable = int(effective_bp // share_price)
+
+        shares_to_buy = min(shares_risk, shares_affordable)
+        return shares_to_buy if shares_to_buy > 0 else 0
+
+    except Exception as e:
+        print(f"Error calculating position size: {e}")
+        return 0
 
 def place_trailing_stops_from_local_file(trail_percent=6):
     if not os.path.exists(SAVE_FILE):
@@ -203,23 +229,6 @@ def check_all_positions_worth_selling_now():
         except Exception as e:
             print(f"Error checking if {position.symbol} is worth selling now: {e}")
 
-def calculate_position_size(buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
-    try:
-        # Only allocate a fraction of buying power
-        effective_bp = buying_power * bp_fraction
-
-        risk_amount = effective_bp * risk_pct
-        stop_distance = share_price * stop_pct
-
-        shares_risk = int(risk_amount // stop_distance) if stop_distance > 0 else 0
-        shares_affordable = int(effective_bp // share_price)
-
-        shares_to_buy = min(shares_risk, shares_affordable)
-        return shares_to_buy if shares_to_buy > 0 else 0
-
-    except Exception as e:
-        print(f"Error calculating position size: {e}")
-        return 0
     
 
 def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
@@ -257,7 +266,6 @@ def get_atr(symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
     trail_percent = max(min_pct, min(max_pct, trail_percent))
     rounded_trail_percent = round(trail_percent, 2)
     print(f"[{symbol}] Final trail % = {rounded_trail_percent}")
-    
     
     return rounded_trail_percent
 
@@ -311,7 +319,7 @@ def worth_selling_now(symbol, percent_loss_cut=-2.0):
             print(f"Added {symbol} to restricted list for today.")
         return True
     return False
-
+'''
 def safe_load_json(filename, default=None):
     if not os.path.exists(filename):
         return default if default is not None else []
