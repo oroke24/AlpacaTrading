@@ -4,7 +4,7 @@ import time
 from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
 from research.aiBot.openAiBot import OpenAiBot
-from research.newsBot.newsBot import get_latest_news
+from research.newsBot.newsBot import NewsBot
 from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
@@ -19,11 +19,12 @@ RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
 def main():
 
     # Initialize bots 
+    stockBot = StockBot()
     buyingBot = BuyingBot()
     sellingBot = SellingBot()
     filterBot = FilterBot()
-    stockBot = StockBot()
     sorterBot = SorterBot()
+    newsBot = NewsBot()
     openAiBot = OpenAiBot()
     
     print("\n")
@@ -71,7 +72,7 @@ def main():
     print("Stocks worth buying are:")
     stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
     for stock in stocksToBuy:
-        latest_news = get_latest_news(stock["symbol"])
+        latest_news = newsBot.get_latest_news(stock["symbol"])
         stock["headline"] = latest_news["headline"]
         stock["summary"] = latest_news["summary"]
     stockBot.listStocks(stocksToBuy)
