@@ -22,6 +22,7 @@ class OpenAiBot:
                     - Use double quotes for all keys and string values
                     - Do not include explanations, markdown, or notes outside the JSON
                     - If none qualify, return []
+                    - Do solid research and take your time
 
                     Format strictly as:
                     EXPLANATION:

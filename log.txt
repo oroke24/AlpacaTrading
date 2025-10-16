@@ -4868,3 +4868,271 @@ Skipping HI: 31.345, too risky.
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-16 06:40:05 ====================
+Selling yesterdays positions.
+[TRUE] Price=2.40, ATR=0.1904, Raw%=7.93
+[TRUE] Final trail % = 7.93
+Trailing stop sell for TRUE with a trail percent of 7.93 based on percent gain of 2.52803001236305 submitted. ID: 1a432037-ec4b-4f9f-86af-1bdc9c5ee22d
+
+[NEWP] Price=2.81, ATR=0.2393, Raw%=8.52
+[NEWP] Final trail % = 8
+Trailing stop sell for NEWP with a trail percent of 8 based on percent gain of 7.90676241311778 submitted. ID: d70fec90-4d4b-45d1-86bd-18620364a246
+
+[FOSL] Price=2.61, ATR=0.3621, Raw%=13.88
+[FOSL] Final trail % = 8
+Trailing stop sell for FOSL with a trail percent of 8 based on percent gain of -25.613475076239062 submitted. ID: 6d626b2a-ec15-454c-b13e-77134a07e617
+
+FOSL: -25.61% gain
+Canceling existing order for FOSL: 6d626b2a-ec15-454c-b13e-77134a07e617
+Selling 1.0 shares of FOSL (percent_gain: -25.613475076239062, Threshold exceeded)
+Added FOSL to restricted list for today.
+NEWP: 7.91% gain
+OEC: 16.99% gain
+TRUE: 2.53% gain
+========================= Run End =========================
+
+
+HTTP Error 404: 
+$RFL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$IAUX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$BKT.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$COPL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-16 07:10:04 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Screened 150 => 15 passed market cap and price filter.
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: XLF, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 15, 7 passed share and float filter.
+Stocks worth buying are:
+11 Information Technology Stocks Moving In Wednesday's Pre-Market Session
+12 Industrials Stocks Moving In Wednesday's Intraday Session
+11 Consumer Discretionary Stocks Moving In Wednesday's Intraday Session
+News fetch failed for WHWK: list index out of range
+Trump Likely To Invest In More Rare Earths, Bessent Says
+10 Information Technology Stocks Whale Activity In Today's Session
+A Look at Insteel Indus's Upcoming Earnings Report
+CAN, $1.79, -7.73% -- pb_ratio: 2.59, mCap: 839.52M, float_rotation: 0.00
+headline: 11 Information Technology Stocks Moving In Wednesday's Pre-Market Session
+summary:  
+other_info: n/a
+WWR, $2.12, -14.17% -- pb_ratio: 1.23, mCap: 182.80M, float_rotation: 0.10
+headline: 12 Industrials Stocks Moving In Wednesday's Intraday Session
+summary:  
+other_info: n/a
+FOSL, $2.62, -30.27% -- pb_ratio: 0.93, mCap: 140.49M, float_rotation: 0.13
+headline: 11 Consumer Discretionary Stocks Moving In Wednesday's Intraday Session
+summary:  
+other_info: n/a
+WHWK, $3.25, 55.00% -- pb_ratio: 0.90, mCap: 154.11M, float_rotation: 2.60
+headline: 0
+summary: 0
+other_info: n/a
+LAC, $7.92, -16.05% -- pb_ratio: 2.88, mCap: 1.96B, float_rotation: 0.17
+headline: Trump Likely To Invest In More Rare Earths, Bessent Says
+summary: The Trump administration is likely to take stakes in more companies following China&#39;s latest rare earth export curbs, Bessent says.
+other_info: n/a
+CLSK, $21.40, -7.64% -- pb_ratio: 2.80, mCap: 6.02B, float_rotation: 0.05
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: n/a
+IIIN, $32.12, -14.44% -- pb_ratio: 1.74, mCap: 619.84M, float_rotation: 0.01
+headline: A Look at Insteel Indus's Upcoming Earnings Report
+summary:  
+other_info: n/a
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.79, -7.73% -- pb_ratio: 2.59, mCap: 839.52M, float_rotation: 0.00
+headline: 11 Information Technology Stocks Moving In Wednesday's Pre-Market Session
+summary:  
+other_info: {'symbol': 'CAN', 'last_price': '1.80', 'open': '1.92', 'analyst_price_target': '1.80', 'year_low': '0.54', 'year_high': '3.27', 'fifty_day_average': '0.89', 'two_hundred_day_average': '1.05', 'ten_day_volume': '100.59M', 'three_month_volume': '49.71M', 'balance_sheet':                                                     2024-12-31  ...      2020-12-31
+Treasury Shares Number                             229281465.0  ...             NaN
+Ordinary Shares Number                            5364163022.0  ...             NaN
+Share Issued                                      5593444487.0  ...             NaN
+Total Debt                                          26875000.0  ...             NaN
+Tangible Book Value                                265353000.0  ...             NaN
+...                                                        ...  ...             ...
+Cash Cash Equivalents And Short Term Investments    96488000.0  ...             NaN
+Other Short Term Investments                               NaN  ...  9548926.270032
+Cash And Cash Equivalents                           96488000.0  ...             NaN
+Cash Equivalents                                    96488000.0  ...             NaN
+Cash Financial                                             NaN  ...     391310000.0
+
+[91 rows x 5 columns]}
+WWR, $2.12, -14.17% -- pb_ratio: 1.23, mCap: 182.80M, float_rotation: 0.10
+headline: 12 Industrials Stocks Moving In Wednesday's Intraday Session
+summary:  
+other_info: {'symbol': 'WWR', 'last_price': '2.11', 'open': '2.50', 'analyst_price_target': '2.11', 'year_low': '0.45', 'year_high': '3.75', 'fifty_day_average': '1.01', 'two_hundred_day_average': '0.75', 'ten_day_volume': '20.62M', 'three_month_volume': '5.64M', 'balance_sheet':                                                      2024-12-31  ... 2020-12-31
+Treasury Shares Number                                    161.0  ...        NaN
+Ordinary Shares Number                               64829920.0  ...        NaN
+Share Issued                                         64830081.0  ...        NaN
+Total Debt                                             235000.0  ...        NaN
+Tangible Book Value                                 133122000.0  ...        NaN
+Invested Capital                                    133122000.0  ...        NaN
+Working Capital                                      -6899000.0  ...        NaN
+Net Tangible Assets                                 133122000.0  ...        NaN
+Capital Lease Obligations                              235000.0  ...        NaN
+Common Stock Equity                                 133122000.0  ...        NaN
+Total Capitalization                                133122000.0  ...        NaN
+Total Equity Gross Minority Interest                133122000.0  ...        NaN
+Stockholders Equity                                 133122000.0  ...        NaN
+Gains Losses Not Affecting Retained Earnings                NaN  ...        0.0
+Treasury Stock                                         258000.0  ...        NaN
+Retained Earnings                                  -373686000.0  ...        NaN
+Additional Paid In Capital                          507001000.0  ...        NaN
+Capital Stock                                           65000.0  ...        NaN
+Common Stock                                            65000.0  ...        NaN
+Total Liabilities Net Minority Interest              13235000.0  ...        NaN
+Total Non Current Liabilities Net Minority Inte...    1473000.0  ...        NaN
+Other Non Current Liabilities                         1378000.0  ...        NaN
+Liabilities Heldfor Sale Non Current                        NaN  ...        0.0
+Long Term Debt And Capital Lease Obligation             95000.0  ...   214000.0
+Long Term Capital Lease Obligation                      95000.0  ...        NaN
+Current Liabilities                                  11762000.0  ...        NaN
+Current Debt And Capital Lease Obligation              140000.0  ...        NaN
+Current Capital Lease Obligation                       140000.0  ...        NaN
+Pensionand Other Post Retirement Benefit Plans ...    1329000.0  ...        NaN
+Payables And Accrued Expenses                        10293000.0  ...        NaN
+Current Accrued Expenses                               776000.0  ...        NaN
+Payables                                              9517000.0  ...        NaN
+Other Payable                                               NaN  ...  1151000.0
+Accounts Payable                                      9517000.0  ...        NaN
+Total Assets                                        146357000.0  ...        NaN
+Total Non Current Assets                            141494000.0  ...        NaN
+Other Non Current Assets                              3395000.0  ...        NaN
+Net PPE                                             138099000.0  ...        NaN
+Accumulated Depreciation                              -713000.0  ...        NaN
+Gross PPE                                           138812000.0  ...        NaN
+Other Properties                                    138812000.0  ...        NaN
+Current Assets                                        4863000.0  ...        NaN
+Other Current Assets                                    41000.0  ...        NaN
+Prepaid Assets                                          90000.0  ...   754000.0
+Inventory                                              460000.0  ...        NaN
+Raw Materials                                          460000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments      4272000.0  ...        NaN
+Other Short Term Investments                                NaN  ...  1520000.0
+Cash And Cash Equivalents                             4272000.0  ...        NaN
+
+[49 rows x 5 columns]}
+FOSL, $2.62, -30.27% -- pb_ratio: 0.93, mCap: 140.49M, float_rotation: 0.13
+headline: 11 Consumer Discretionary Stocks Moving In Wednesday's Intraday Session
+summary:  
+other_info: {'symbol': 'FOSL', 'last_price': '2.62', 'open': '2.38', 'analyst_price_target': '2.62', 'year_low': '0.86', 'year_high': '4.40', 'fifty_day_average': '2.76', 'two_hundred_day_average': '1.79', 'ten_day_volume': '1.65M', 'three_month_volume': '822,475.00', 'balance_sheet':                                                    2024-12-31  ... 2020-12-31
+Ordinary Shares Number                             53253974.0  ...        NaN
+Share Issued                                       53253974.0  ...        NaN
+Net Debt                                           41246000.0  ...        NaN
+Total Debt                                        315829000.0  ...        NaN
+Tangible Book Value                               147741000.0  ...        NaN
+...                                                       ...  ...        ...
+Other Receivables                                         NaN  ...  8230000.0
+Taxes Receivable                                          0.0  ...        NaN
+Accounts Receivable                               162164000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments  123598000.0  ...        NaN
+Cash And Cash Equivalents                         123598000.0  ...        NaN
+
+[79 rows x 5 columns]}
+WHWK, $3.25, 55.00% -- pb_ratio: 0.90, mCap: 154.11M, float_rotation: 2.60
+headline: 0
+summary: 0
+other_info: {'symbol': 'WHWK', 'last_price': '3.31', 'open': '3.46', 'analyst_price_target': '3.32', 'year_low': '1.39', 'year_high': '3.81', 'fifty_day_average': '1.86', 'two_hundred_day_average': '2.07', 'ten_day_volume': '153,690.00', 'three_month_volume': '110,941.00', 'balance_sheet':                                                   2024-12-31  ... 2020-12-31
+Ordinary Shares Number                            24680708.0  ...        NaN
+Share Issued                                      24680708.0  ...        NaN
+Net Debt                                                 NaN  ...  5676000.0
+Total Debt                                          833000.0  ...        NaN
+Tangible Book Value                               52478000.0  ...        NaN
+...                                                      ...  ...        ...
+Allowance For Doubtful Accounts Receivable         -100000.0  ...        NaN
+Gross Accounts Receivable                          6003000.0  ...        NaN
+Cash Cash Equivalents And Short Term Investments  47237000.0  ...        NaN
+Other Short Term Investments                      18567000.0  ...        NaN
+Cash And Cash Equivalents                         28670000.0  ...        NaN
+
+[70 rows x 5 columns]}
+LAC, $7.92, -16.05% -- pb_ratio: 2.88, mCap: 1.96B, float_rotation: 0.17
+headline: Trump Likely To Invest In More Rare Earths, Bessent Says
+summary: The Trump administration is likely to take stakes in more companies following China&#39;s latest rare earth export curbs, Bessent says.
+other_info: {'symbol': 'LAC', 'last_price': '7.93', 'open': '8.92', 'analyst_price_target': '7.93', 'year_low': '2.31', 'year_high': '10.52', 'fifty_day_average': '4.43', 'two_hundred_day_average': '3.27', 'ten_day_volume': '94.70M', 'three_month_volume': '36.16M', 'balance_sheet':                                                    2024-12-31  ...   2021-12-31
+Treasury Shares Number                                    NaN  ...          NaN
+Ordinary Shares Number                            218465000.0  ...  160047671.0
+Share Issued                                      218465000.0  ...  160047671.0
+Net Debt                                                  NaN  ...   39067000.0
+Total Debt                                         22637000.0  ...   41755000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                       0.0  ...     124000.0
+Cash Cash Equivalents And Short Term Investments  593885000.0  ...     933000.0
+Cash And Cash Equivalents                         593885000.0  ...     933000.0
+Cash Equivalents                                          0.0  ...          0.0
+Cash Financial                                    593885000.0  ...     933000.0
+
+[67 rows x 4 columns]}
+CLSK, $21.40, -7.64% -- pb_ratio: 2.80, mCap: 6.02B, float_rotation: 0.05
+headline: 10 Information Technology Stocks Whale Activity In Today's Session
+summary:  
+other_info: {'symbol': 'CLSK', 'last_price': '21.39', 'open': '23.05', 'analyst_price_target': '21.39', 'year_low': '6.45', 'year_high': '23.61', 'fifty_day_average': '12.53', 'two_hundred_day_average': '10.38', 'ten_day_volume': '44.24M', 'three_month_volume': '26.99M', 'balance_sheet':                                                    2024-09-30  ...  2021-09-30
+Treasury Shares Number                                    NaN  ...         NaN
+Preferred Shares Number                             1750000.0  ...         NaN
+Ordinary Shares Number                            270897784.0  ...  37395945.0
+Share Issued                                      270897784.0  ...  37395945.0
+Net Debt                                                  NaN  ...         NaN
+...                                                       ...  ...         ...
+Allowance For Doubtful Accounts Receivable                NaN  ...         0.0
+Gross Accounts Receivable                                 NaN  ...    307067.0
+Cash Cash Equivalents And Short Term Investments  553801000.0  ...  38929788.0
+Other Short Term Investments                      432579000.0  ...  24358590.0
+Cash And Cash Equivalents                         121222000.0  ...  14571198.0
+
+[77 rows x 4 columns]}
+IIIN, $32.12, -14.44% -- pb_ratio: 1.74, mCap: 619.84M, float_rotation: 0.01
+headline: A Look at Insteel Indus's Upcoming Earnings Report
+summary:  
+other_info: {'symbol': 'IIIN', 'last_price': '31.96', 'open': '36.00', 'analyst_price_target': '31.96', 'year_low': '22.49', 'year_high': '41.64', 'fifty_day_average': '37.96', 'two_hundred_day_average': '33.26', 'ten_day_volume': '99,400.00', 'three_month_volume': '113,384.00', 'balance_sheet':                                                    2024-09-30  ...   2021-09-30
+Ordinary Shares Number                             19452000.0  ...   19408000.0
+Share Issued                                       19452000.0  ...   19408000.0
+Total Debt                                          1688000.0  ...    1725000.0
+Tangible Book Value                               335769000.0  ...  284625000.0
+Invested Capital                                  350855000.0  ...  302038000.0
+...                                                       ...  ...          ...
+Accounts Receivable                                58308000.0  ...   67917000.0
+Allowance For Doubtful Accounts Receivable          -381000.0  ...    -357000.0
+Gross Accounts Receivable                          58689000.0  ...   68274000.0
+Cash Cash Equivalents And Short Term Investments  111538000.0  ...   89884000.0
+Cash And Cash Equivalents                         111538000.0  ...   89884000.0
+
+[68 rows x 4 columns]}
+latest price for CAN: 1.795, so I'm buying 4
+Buy order submitted. ID: be1da944-c7e6-48e2-aa47-ec46e8909c62
+Waiting for CAN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAN, will attach trailing stop tomorrow.
+latest price for WWR: 2.115, so I'm buying 2
+Buy order submitted. ID: bc457221-caf6-4ca6-9ac4-ab1075c63132
+Waiting for WWR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for WWR, will attach trailing stop tomorrow.
+Trailing stop for FOSL already closed today — skipping buy to avoid PDT.
+latest price for WHWK: 3.52, so I'm buying 1
+Buy order submitted. ID: a919d2e0-5e50-4504-9e8e-163b9046c841
+Waiting for WHWK buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for WHWK, will attach trailing stop tomorrow.
+Skipping LAC: 7.93, too risky.
+Skipping CLSK: 21.32, too risky.
+Skipping IIIN: current price (31.595) exceeds buying power (26.32)
+========================= Run End =========================
+
+

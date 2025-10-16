@@ -3,6 +3,8 @@ from alpaca.trading.requests import MarketOrderRequest, GetOrdersRequest
 from alpaca.trading.enums import OrderSide, TimeInForce, OrderType
 from auth.connectClient import paperTradingClient, liveTradingClient, dataClient
 from datetime import datetime, timezone
+import yfinance as yf
+import numpy as np
 import time
 import os
 import json
@@ -22,9 +24,14 @@ class BuyingBot:
         """
         live_account = liveTradingClient.get_account()
         day_trades = int(live_account.daytrade_count)
+        five_day_atr = self.get_atr(symbol)
 
         if(day_trades >= 3):
             print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
+            return
+        
+        if(five_day_atr > 12.0):
+            print(f"Skipping, 5 day atr threshold exceeded: ({five_day_atr}), max allowed: 12.0%")
             return
     
         order_filter = GetOrdersRequest(
@@ -147,5 +154,44 @@ class BuyingBot:
         except Exception as e:
             print(f"Error calculating position size: {e}")
             return 0
+
+    def get_atr(self, symbol, period=5, default_pct=3.5, min_pct=0, max_pct=25):
+        """
+        Returns a safe trailing stop % for Alpaca orders.
+    
+        - Calculates ATR as % of price
+        - Falls back to default if ATR can't be calculated
+        - Clamps the result between min_pct and max_pct
+        """
+        atr_percent = default_pct  # start with fallback
+    
+        try:
+            df = yf.download(symbol, period="1mo", auto_adjust=True)
+            if len(df) > period:
+                df['H-L'] = df['High'] - df['Low']
+                df['H-PC'] = abs(df['High'] - df['Close'].shift(1))
+                df['L-PC'] = abs(df['Low'] - df['Close'].shift(1))
+                df['TR'] = df[['H-L','H-PC','L-PC']].max(axis=1)
+                df['ATR'] = df['TR'].rolling(window=period).mean()
+            
+                latest_atr = df['ATR'].iloc[-1].item()   # force scalar
+                price = df['Close'].iloc[-1].item()      # force scalar
+
+                if not np.isnan(latest_atr) and price > 0:
+                    atr_percent = (latest_atr / price) * 100
+                # Debug info
+                print(f"[{symbol}] Price={price:.2f}, ATR={latest_atr:.4f}, Raw%={(latest_atr/price)*100:.2f}")
+
+        except Exception as e:
+            print(f"ATR calculation failed for {symbol}, using default {default_pct}%: {e}")
+            pass
+    
+        # Clamp between min and max
+        atr_percent = max(min_pct, min(max_pct, atr_percent))
+        rounded_atr_percent = round(atr_percent, 2)
+        print(f"[{symbol}] Final calculated 5 day atr % (rounded) = {rounded_atr_percent}")
+    
+        return rounded_atr_percent
+
 
     

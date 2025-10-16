@@ -110,6 +110,13 @@ def testing():
     sorterBot = SorterBot()
     openAiBot = OpenAiBot()
 
+
+    '''
+    for position in liveTradingClient.get_all_positions():
+        pct = float(position.unrealized_plpc) * 100
+        print(f"{position.symbol} is currently at {pct:.2f}%")
+    '''
+    
     '''
     stockBot.add_equity_to_history()
     cryptoBot = CryptoBot()
