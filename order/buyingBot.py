@@ -31,7 +31,7 @@ class BuyingBot:
             return
         
         if(five_day_atr > 13.0):
-            print(f"Skipping {symbol}: 5-day ATR threshold exceeded: ({five_day_atr}), max allowed: 13.0%")
+            print(f"Skipping {symbol}: 5-day ATR threshold exceeded: ({five_day_atr}), max allowed: 13.0%\n")
             return
     
         order_filter = GetOrdersRequest(
@@ -41,7 +41,7 @@ class BuyingBot:
         )
         open_trailing_orders = liveTradingClient.get_orders(filter=order_filter)
         if len(open_trailing_orders) > 0:
-            print(f"Open trailing stop order exists for {symbol}, skipping buy to avoid potential day trade.")
+            print(f"Open trailing stop order exists for {symbol}, skipping buy to avoid potential day trade.\n")
             return
     
         now = datetime.now(timezone.utc)
@@ -55,7 +55,7 @@ class BuyingBot:
         )
         closed_trailing_orders = liveTradingClient.get_orders(filter=closed_filter)
         if len(closed_trailing_orders) > 0:
-            print(f"Trailing stop for {symbol} already closed today — skipping buy to avoid PDT.")
+            print(f"Trailing stop for {symbol} already closed today — skipping buy to avoid PDT.\n")
             return
 
         if os.path.exists(self.RESTRICTED_POSITIONS_FILE):
@@ -66,7 +66,7 @@ class BuyingBot:
 
         # Skip restricted symbols
         if symbol in restricted:
-            print(f"Skipping {symbol}: sold today, cannot rebuy until tomorrow.")
+            print(f"Skipping {symbol}: sold today, cannot rebuy until tomorrow.\n")
             return
 
         # --- get buying power ---
@@ -78,16 +78,16 @@ class BuyingBot:
 
         # --- check price to see how many we should order, if any ---
         if current_price >= buying_power:
-            print(f"Skipping {symbol}: current price ({current_price}) exceeds buying power ({buying_power})")
+            print(f"Skipping {symbol}: current price ({current_price}) exceeds buying power ({buying_power})\n")
             return
     
         qty = self.calculate_position_size(buying_power, current_price)
 
         if qty == 0:
-            print(f"Skipping {symbol}: {current_price}, too risky.")
+            print(f"Skipping {symbol}: {current_price}, too risky.\n")
             return
     
-        print(f"latest price for {symbol}: {current_price}, so I'm buying {qty}")
+        print(f"latest price for {symbol}: {current_price}, so I'm buying {qty}\n")
 
         # --- Make order ---
         order = MarketOrderRequest(
