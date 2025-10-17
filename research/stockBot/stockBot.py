@@ -25,9 +25,9 @@ class StockBot:
         date = datetime.now().strftime('%Y-%m-%d')
         HISTORY_FILE = "equity_history.txt"
         live_account = liveTradingClient.get_account()
-        equity = live_account.equity
+        equity = float(live_account.equity)
         with open(HISTORY_FILE, "a") as f:
-            f.write(f"{date}: ${equity}\n")
+            f.write(f"{date}: ${equity:.2f}\n")
 
     def fill_list(self):
         self.stockList = self.quick_fill()
