@@ -5172,3 +5172,35 @@ Added WWR to restricted list for today.
 ========================= Run End =========================
 
 
+HTTP Error 404: 
+$GWH.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$SLND.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: 
+$UWMC.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-17 12:30:04 ====================
+--- STOCK PORTION ---
+length of most_actives: 100
+Error processing ARTV: '<=' not supported between instances of 'str' and 'int'
+Screened 162 => 29 passed market cap and price filter.
+sym: SLV, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: SPY, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: HYG, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: GLD, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IWM, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: XLF, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+sym: IAU, Error: unsupported operand type(s) for /: 'int' and 'NoneType'
+Out of the 29, 0 passed share and float filter.
+Stocks worth buying are:
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+No AI approved stocks for today, rolling on without it
+========================= Run End =========================
+
+

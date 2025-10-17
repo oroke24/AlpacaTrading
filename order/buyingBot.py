@@ -81,10 +81,11 @@ class BuyingBot:
             print(f"Skipping {symbol}: current price ({current_price}) exceeds buying power ({buying_power})\n")
             return
     
+        #qty = self.calculate_position_size(buying_power, current_price)
         qty = self.calculate_position_size(buying_power, current_price)
 
         if qty == 0:
-            print(f"Skipping {symbol}: {current_price}, too risky.\n")
+            print(f"Skipping {symbol}: {current_price}, too risky (qty to buy was 0).\n")
             return
     
         print(f"latest price for {symbol}: {current_price}, so I'm buying {qty}\n")
@@ -138,22 +139,55 @@ class BuyingBot:
             print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.\n")
 
     def calculate_position_size(self, buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
+        """
+        Calculate number of shares to buy based on risk management and capital constraints.
+    
+        Parameters:
+        - buying_power: Total capital available for trading.
+        - share_price: Current price per share.
+        - stop_pct: Stop loss percentage risk per share (e.g., 0.04 for 4%).
+        - risk_pct: Fraction of allocated buying power to risk on this trade (e.g., 0.05 for 5%).
+        - bp_fraction: Fraction of total buying power to use for this trade (e.g., 0.18 for 18%).
+    
+        Returns:
+        - shares_to_buy: Integer number of shares to purchase.
+        """
         try:
-            # Only allocate a fraction of buying power
+            # Validate inputs
+            if share_price <= 0:
+                print("Invalid share price. Must be > 0.")
+                return 0
+            if not (0 < stop_pct < 1) or not (0 < risk_pct < 1) or not (0 < bp_fraction <= 1):
+                print("Percent parameters must be between 0 and 1.")
+                return 0
+
+            # Effective capital allocation for this trade
             effective_bp = buying_power * bp_fraction
-
+        
+            # Maximum dollar amount willing to risk on this trade
             risk_amount = effective_bp * risk_pct
+        
+            # Dollar risk per share based on stop loss distance
             stop_distance = share_price * stop_pct
-
-            shares_risk = int(risk_amount // stop_distance) if stop_distance > 0 else 0
+            if stop_distance == 0:
+                print("Stop loss distance cannot be zero.")
+                return 0
+        
+            # Number of shares constrained by risk per trade
+            shares_risk = int(risk_amount // stop_distance)
+        
+            # Number of shares affordable within allocated buying power
             shares_affordable = int(effective_bp // share_price)
-
+        
+            # Final shares to buy is minimum of risk-based and affordable shares
             shares_to_buy = min(shares_risk, shares_affordable)
+        
             return shares_to_buy if shares_to_buy > 0 else 0
 
         except Exception as e:
             print(f"Error calculating position size: {e}")
             return 0
+
 
     def get_atr(self, symbol, period=5, default_pct=3.5, min_pct=0, max_pct=25):
         """

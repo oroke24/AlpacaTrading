@@ -21,13 +21,15 @@ class FilterBot():
                 float_shares = info.get("floatShares")
                 shares_outstanding = info.get("sharesOutstanding")
                 volume = info.get("volume")
-                float_rotation = volume/float_shares
 
-                if float_shares is None or shares_outstanding is None:
+                if float_shares is None or shares_outstanding is None or volume is None:
                     #print(f"sym: {symbol}, float: {float_shares}, sharesOutstanding: {shares_outstanding} - Skipped")
                     continue
 
-                if float_rotation < 0.3 or float_rotation > 5.0:
+                float_rotation = round(volume/float_shares, 2)
+
+                print(f"float_rotation for {symbol}: {float_rotation}")
+                if float_rotation < 0.12 or float_rotation > 5.0:
                     #skip if too stagnant or speculative pump
                     continue
 
