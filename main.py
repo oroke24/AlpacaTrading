@@ -23,6 +23,7 @@ def main():
     buyingBot = BuyingBot()
     sellingBot = SellingBot()
     filterBot = FilterBot()
+    printerBot = PrinterBot()
     sorterBot = SorterBot()
     newsBot = NewsBot()
     openAiBot = OpenAiBot()
@@ -83,9 +84,9 @@ def main():
     print("\n=======   PLACING BUY ORDERS   =======")
     if not openAi_opinion:
         print("No AI approved stocks for today, rolling on without it")
-        openAi_opinion = stocksToBuy[:2] #if ai fails just pull top two choices
+        openAi_opinion = stocksToBuy #if ai fails just pull from stocks to buy
     else:
-        stockBot.listStocks(openAi_opinion)
+        printerBot.listStocks(openAi_opinion)
     # Then, place orders
 
     for stockInfo in openAi_opinion:

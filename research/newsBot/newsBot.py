@@ -15,7 +15,7 @@ class NewsBot:
             limit=limit
             )
             news_set = newsClient.get_news(request)
-            print(news_set['news'][0].headline)
+            #print(news_set['news'][0].headline)
             headline = news_set['news'][0].headline or ''
             summary = news_set['news'][0].summary or ''
         

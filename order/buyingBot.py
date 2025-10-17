@@ -30,8 +30,8 @@ class BuyingBot:
             print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
             return
         
-        if(five_day_atr > 12.0):
-            print(f"Skipping, 5 day atr threshold exceeded: ({five_day_atr}), max allowed: 12.0%")
+        if(five_day_atr > 13.0):
+            print(f"Skipping {symbol}: 5-day ATR threshold exceeded: ({five_day_atr}), max allowed: 13.0%")
             return
     
         order_filter = GetOrdersRequest(
@@ -111,15 +111,15 @@ class BuyingBot:
                 print(f"order status: {order_status.status}")
                 filled = True
             elif order_status.status in ["cancelled", "rejected", "done_for_day"]:
-                print(f"Order for {symbol} did not fill, status: {order_status.status}")
+                print(f"Order for {symbol} did not fill, status: {order_status.status}\n")
                 break
             timeLimit -= time_interval
             if timeLimit <= 0:
                 if order_status.status in ["accepted", "partially_filled"]:
-                    print(f"Cancelling stuck order for {symbol}, status: {order_status.status}")
+                    print(f"Cancelling stuck order for {symbol}, status: {order_status.status}\n")
                     liveTradingClient.cancel_order_by_id(buy_order.id)
                 else:
-                    print(f"Time limit exceeded, buy order for {symbol} not filled..")
+                    print(f"Time limit exceeded, buy order for {symbol} not filled..\n")
                 break
             time.sleep(time_interval)
         # if filled, save this position to JSON file for tomorrows run
@@ -135,7 +135,7 @@ class BuyingBot:
             positions.append(pos_data)
             with open(self.SAVE_FILE, "w") as f:
                 json.dump(positions, f, indent=2)
-            print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.")
+            print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.\n")
 
     def calculate_position_size(self, buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
         try:

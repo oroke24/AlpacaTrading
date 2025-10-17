@@ -1,10 +1,14 @@
+#This is an old file ...
 '''
-This is an old file ...
 The functions in here have been moved to the BuyingBot and SellingBot classes.
 This change was made to adhere to the program's Object Oriented Programming(OOP) to 
 maintain a consistent OOP methodology throughout the entire program.
 This file still remains as a fail safe in case it is ever needed for reference.
 '''
+
+
+
+
 
 '''
 from alpaca.data.requests import StockLatestTradeRequest
