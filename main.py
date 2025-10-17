@@ -118,8 +118,8 @@ def testing():
         print(f"{position.symbol} is currently at {pct:.2f}%")
     '''
     
-    '''
     stockBot.add_equity_to_history()
+    '''
     cryptoBot = CryptoBot()
     symbolBot = SymbolBot()
     printerBot = PrinterBot()
@@ -287,5 +287,5 @@ def testing():
     print(f"==== Test Run End ====")
 
 if __name__ == "__main__":
-    main()
-    #testing()
+    #main()
+    testing()

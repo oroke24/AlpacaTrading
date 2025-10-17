@@ -22,12 +22,14 @@ class StockBot:
         pass
     
     def add_equity_to_history(self):
-        date = datetime.now().strftime('%Y-%m-%d')
+        now = datetime.now()
+        date = now.strftime('%Y-%m-%d')
+        abbreviated_weekday = now.strftime('%a')
         HISTORY_FILE = "equity_history.txt"
         live_account = liveTradingClient.get_account()
         equity = float(live_account.equity)
         with open(HISTORY_FILE, "a") as f:
-            f.write(f"{date}: ${equity:.2f}\n")
+            f.write(f"{date} ({abbreviated_weekday}): ${equity:.2f}\n")
 
     def fill_list(self):
         self.stockList = self.quick_fill()

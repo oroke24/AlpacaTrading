@@ -5136,3 +5136,39 @@ Skipping IIIN: current price (31.595) exceeds buying power (26.32)
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-17 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[CAN] Price=1.56, ATR=0.2716, Raw%=17.41
+[CAN] Final trail % = 8
+Trailing stop sell for CAN with a trail percent of 8 based on percent gain of -13.244370308590488 submitted. ID: 78f38143-f0c3-4b3a-ad22-4fd9410396f7
+
+[WWR] Price=1.83, ATR=0.4648, Raw%=25.40
+[WWR] Final trail % = 8
+Trailing stop sell for WWR with a trail percent of 8 based on percent gain of -11.78981314616333 submitted. ID: 7758a69c-b299-401b-b89c-1026981771ec
+
+[WHWK] Price=2.46, ATR=0.2628, Raw%=10.68
+[WHWK] Final trail % = 8
+Trailing stop sell for WHWK with a trail percent of 8 based on percent gain of -29.69683115695631 submitted. ID: 7cab6a47-7d6b-469c-a385-047326380992
+
+CAN: -12.91% gain
+Canceling existing order for CAN: 78f38143-f0c3-4b3a-ad22-4fd9410396f7
+Selling 4.0 shares of CAN (percent_gain: -12.910758965804838, Threshold exceeded)
+Added CAN to restricted list for today.
+TRUE: 2.74% gain
+WHWK: -29.70% gain
+Canceling existing order for WHWK: 7cab6a47-7d6b-469c-a385-047326380992
+Selling 1.0 shares of WHWK (percent_gain: -29.69683115695631, Threshold exceeded)
+Added WHWK to restricted list for today.
+WWR: -12.03% gain
+Canceling existing order for WWR: 7758a69c-b299-401b-b89c-1026981771ec
+Selling 2.0 shares of WWR (percent_gain: -12.02693730437257, Threshold exceeded)
+Added WWR to restricted list for today.
+========================= Run End =========================
+
+
