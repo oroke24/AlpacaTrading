@@ -7,13 +7,10 @@ class SymbolBot:
         pass
         
     def stocks_full_list(self):
-        fullList = getLocalSymbols()
-        fullList += getSP500()
+        fullList =[{'symbol' : ticker} for ticker in getLocalSymbols()]
         return fullList
     
     def crypto_full_list(self):
         fullList = get_crypto_tickers()
         return fullList
-
-    
     

@@ -141,16 +141,7 @@ class BuyingBot:
     def calculate_position_size(self, buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
         """
         Calculate number of shares to buy based on risk management and capital constraints.
-    
-        Parameters:
-        - buying_power: Total capital available for trading.
-        - share_price: Current price per share.
-        - stop_pct: Stop loss percentage risk per share (e.g., 0.04 for 4%).
-        - risk_pct: Fraction of allocated buying power to risk on this trade (e.g., 0.05 for 5%).
-        - bp_fraction: Fraction of total buying power to use for this trade (e.g., 0.18 for 18%).
-    
-        Returns:
-        - shares_to_buy: Integer number of shares to purchase.
+        Returns: quantity of shares_to_buy.
         """
         try:
             # Validate inputs

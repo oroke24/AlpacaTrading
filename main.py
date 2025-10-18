@@ -9,6 +9,7 @@ from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
 from utils.filterBot import FilterBot
+from utils.newFilterBot import NewFilterBot
 from order.buyingBot import BuyingBot
 from order.sellingBot import SellingBot
 from auth.connectClient import paperTradingClient, liveTradingClient
@@ -18,15 +19,17 @@ RESTRICTED_POSITIONS_FILE = "restricted_positions.json"
 
 def main():
 
-    # Initialize bots 
+    # Initialize bots  
     stockBot = StockBot()
     buyingBot = BuyingBot()
     sellingBot = SellingBot()
     filterBot = FilterBot()
+    #filterBot = NewFilterBot()
     printerBot = PrinterBot()
     sorterBot = SorterBot()
     newsBot = NewsBot()
     openAiBot = OpenAiBot()
+    symbolBot = SymbolBot()
     
     print("\n")
 
@@ -46,7 +49,9 @@ def main():
 
 
     print("\n")
-    print(f"==================== Buying Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
+    startTime = datetime.now()
+    startTimeFormatted = startTime.strftime('%Y-%m-%d %H:%M:%S')
+    print(f"==================== Buying Process Started: {startTimeFormatted} ====================")
 
     live_account = liveTradingClient.get_account()
     buying_power = float(live_account.buying_power)
@@ -60,9 +65,10 @@ def main():
     print(f"--- STOCK PORTION ---")
 
     # First, grab symbols worth looking at
+    stockBot.stockList = symbolBot.stocks_full_list()
     stockBot.getMovers(buying_power)
     stockBot.getMostActiveVolume(buying_power)
-
+    print(f"list size: {len(stockBot.stockList)}\n")
 
     # Then, filter best stocks to buy, if any.
     high_caps = filterBot.filter_high_market_caps(stockBot.stockList) #change to stockBot.movers if any issues arise
@@ -100,16 +106,23 @@ def main():
     '''
     '''
     print(f"========================= Run End =========================")
+    endTime = datetime.now()
+    timeDiff = endTime - startTime
+    elapsed_seconds = timeDiff.total_seconds()
+    minutes, seconds = divmod(elapsed_seconds, 60)
+    print(f"(Execution time: {int(minutes)}m {seconds:.2f}s)")
     print("\n")
 # ========== TESTING AREA ========== TESTING AREA =========== TESTING AREA ===========
 def testing():
 
     print(f"==== Test Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
 
+    symbolBot = SymbolBot()
     filterBot = FilterBot()
     stockBot = StockBot()
     sorterBot = SorterBot()
     openAiBot = OpenAiBot()
+    printerBot = PrinterBot()
 
 
     '''
@@ -118,18 +131,25 @@ def testing():
         print(f"{position.symbol} is currently at {pct:.2f}%")
     '''
     
-    stockBot.add_equity_to_history()
     '''
+    stockBot.add_equity_to_history()
     cryptoBot = CryptoBot()
     symbolBot = SymbolBot()
     printerBot = PrinterBot()
     '''
 
     # --- StockBot Research and Trade Portion
+    live_account = liveTradingClient.get_account()
+    buying_power = float(live_account.buying_power)
     print(f"--- STOCK PORTION ---")
+    stockBot.stockList = symbolBot.stocks_full_list()
+    stockBot.getMovers(buying_power)
+    stockBot.getMostActiveVolume(buying_power)
+    print(f"list size: {len(stockBot.stockList)}\n")
+    #print(f"{stockBot.stockList}\n")
+    high_caps = filterBot.filter_high_market_caps(stockBot.stockList) #change to stockBot.movers if any issues arise
+
     '''
-    stockBot.getMovers()
-    stockBot.getMostActiveVolume()
     #list1 = stockBot.populate_stockList(stockBot.stockList)
     high_caps = filterBot.filter_high_market_caps(stockBot.stockList)
     print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")

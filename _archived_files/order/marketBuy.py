@@ -8,8 +8,6 @@ This file still remains as a fail safe in case it is ever needed for reference.
 
 
 
-
-
 '''
 from alpaca.data.requests import StockLatestTradeRequest
 from alpaca.trading.requests import MarketOrderRequest, TrailingStopOrderRequest, GetOrdersRequest

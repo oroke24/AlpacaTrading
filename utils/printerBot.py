@@ -9,11 +9,8 @@ class PrinterBot:
                 stock['prevClose'], ", latestClose: $", stock['latestClose'],
                 ", priceChangePercentage: ", stock['priceChangePercentage'], "%" )
 
-    def listStocks(self, list=["empty List.."], limit = 200):
-        index = 0
+    def listStocks(self, list=["empty List.."]):
         for stock in list:
-            if(index == limit): break
-            index += 1
 
             symbol = stock['symbol']
             price = self.format_number(stock['price'])
