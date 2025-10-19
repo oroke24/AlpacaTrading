@@ -9,6 +9,20 @@ class PrinterBot:
                 stock['prevClose'], ", latestClose: $", stock['latestClose'],
                 ", priceChangePercentage: ", stock['priceChangePercentage'], "%" )
 
+    def simpleList(self, list=["empty List.."]):
+        for stock in list:
+            sym = stock['symbol']
+            price = stock['price']
+            pct = stock['percent_change']
+            market_cap = self.format_number(stock['market_cap'])
+            pb_ratio = self.format_number(stock['price_to_book'])
+            volume = self.format_number(stock['volume'])
+            float_shares = self.format_number(stock['float_shares'])
+            float_rotation = self.format_number(stock['float_rotation'])
+            fifty_avg = self.format_number(stock['fifty_day_average'])
+            low = self.format_number(stock['year_low'])
+            print(f"{sym}, ${price}, {pct}% -- mCap: {market_cap}, pb_ratio: {pb_ratio} -- vol: {volume}, float shares: {float_shares}, fr_pct: {float_rotation}% -- 50_avg: {fifty_avg}, yr_low: {low} ") 
+
     def listStocks(self, list=["empty List.."]):
         for stock in list:
 
@@ -16,8 +30,8 @@ class PrinterBot:
             price = self.format_number(stock['price'])
             percent_change = self.format_number(stock['percent_change'])
 
-            if 'pb_ratio' in stock:
-                pb_ratio = self.format_number(stock['pb_ratio'])
+            if 'price_to_book' in stock:
+                pb_ratio = self.format_number(stock['price_to_book'])
             else:
                 pb_ratio = "n/a"
 
@@ -31,15 +45,20 @@ class PrinterBot:
             else:
                 float_rotation = "n/a"
             
-            if 'summary' in stock:
-                summary = stock['summary'] or 0
+            if 'news' in stock:
+                news = stock['news'] or 0
             else:
-                summary = "n/a"
+                news = "n/a"
+            
+            if 'price_target' in stock:
+                price_target = stock['price_target'] or 0
+            else:
+                price_target = "n/a"
 
-            if 'headline' in stock:
-                headline = stock['headline'] or 0
+            if 'earnings_date' in stock:
+                earnings_date = stock['earnings_date'] or 0
             else:
-                headline = "n/a"
+                earnings_date = "n/a"
 
             #Skipping other_info to keep visual info simple
             '''
@@ -48,9 +67,10 @@ class PrinterBot:
             else:
                 other_info = "n/a"
             '''
-            print(f"{symbol}, ${price}, {percent_change}% -- pb_ratio: {pb_ratio}, mCap: {market_cap}, float_rotation: {float_rotation or 0}\n"
-                  f"headline: {headline}\n" 
-                  f"summary: {summary}\n")
+            print(f"{symbol}, ${price}, {percent_change}% -- pb_ratio: {pb_ratio}, mCap: {market_cap}, float_rotation: {float_rotation}%,\n"
+                  f" earnings_date: {earnings_date}\n" 
+                  f" analyst_price_target: {price_target}\n" 
+                  f"news: {news}\n")
 
     def displayCrypto(self, list):
         for crypto in list:

@@ -1,17 +1,17 @@
 import sys
 import os
 import time
-from research.cryptoBot.cryptoBot import CryptoBot
 from research.stockBot.stockBot import StockBot
 from research.aiBot.openAiBot import OpenAiBot
-from research.newsBot.newsBot import NewsBot
+from research.fastInfoBot.fastInfoBot import FastInfoBot
+from research.infoBot.infoBot import InfoBot
 from data.symbolBot import SymbolBot
 from utils.printerBot import PrinterBot
 from utils.sorterBot import SorterBot
 from utils.filterBot import FilterBot
-from utils.newFilterBot import NewFilterBot
 from order.buyingBot import BuyingBot
 from order.sellingBot import SellingBot
+
 from auth.connectClient import paperTradingClient, liveTradingClient
 from datetime import datetime
 
@@ -24,12 +24,12 @@ def main():
     buyingBot = BuyingBot()
     sellingBot = SellingBot()
     filterBot = FilterBot()
-    #filterBot = NewFilterBot()
     printerBot = PrinterBot()
     sorterBot = SorterBot()
-    newsBot = NewsBot()
     openAiBot = OpenAiBot()
     symbolBot = SymbolBot()
+    fastInfoBot = FastInfoBot()
+    infoBot = InfoBot()
     
     print("\n")
 
@@ -47,7 +47,6 @@ def main():
         print("\n")
         return
 
-
     print("\n")
     startTime = datetime.now()
     startTimeFormatted = startTime.strftime('%Y-%m-%d %H:%M:%S')
@@ -64,37 +63,62 @@ def main():
     # --- StockBot Research and Trade Portion
     print(f"--- STOCK PORTION ---")
 
-    # First, grab symbols worth looking at
+    #--- Initialize symbols ---#
+    print(f"Getting symobls..")
     stockBot.stockList = symbolBot.stocks_full_list()
     stockBot.getMovers(buying_power)
     stockBot.getMostActiveVolume(buying_power)
-    print(f"list size: {len(stockBot.stockList)}\n")
 
-    # Then, filter best stocks to buy, if any.
-    high_caps = filterBot.filter_high_market_caps(stockBot.stockList) #change to stockBot.movers if any issues arise
-    print(f"Screened {len(stockBot.stockList)} => {len(high_caps)} passed market cap and price filter.")
-    share_floats = filterBot.filter_shares_and_float(high_caps)
-    print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
+    #--- Get the desired list of symbols ---#
+    stocks = stockBot.stockList[:50] #add '[:number]' to end to shorten list for testing.  EX: stockBot.stockList[:25] 
+    print(f"Got {len(stocks)} symobls..")
+
+    #--- Efficient populate and filter ---#
+    print(f"Getting 'fast_info' for each symbol. Might take a while..")
+    stocks = fastInfoBot.populate_fast_info(stocks)
+
+    #--- First set of filters ---#
+    stocks = filterBot.filter_price_range(stocks, buying_power)
+    stocks = filterBot.filter_out_small_market_caps(stocks)
+    stocks = filterBot.filter_out_small_volume(stocks)
+    stocks = filterBot.filter_by_moving_averages(stocks)
+    stocks = filterBot.filter_above_year_low(stocks)
+
+    print(f"fast_info filters complete.\n"
+          f"{len(stocks)} will now be populated with heavier 'populate_info'.\n")
+
+    #--- Expensive populate and filter ---#
+    stocks = infoBot.populate_info(stocks)
+    stocks = filterBot.filter_price_to_earnings(stocks)
+    stocks = filterBot.filter_price_to_book(stocks)
+    stocks = filterBot.filter_price_to_sales(stocks)
+    stocks = filterBot.filter_float_rotation(stocks)
+    print(f"Heavier filters complete.\n")
 
     print("Stocks worth buying are:")
-    stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
-    for stock in stocksToBuy:
-        latest_news = newsBot.get_latest_news(stock["symbol"])
-        stock["headline"] = latest_news["headline"]
-        stock["summary"] = latest_news["summary"]
-    stockBot.listStocks(stocksToBuy)
-    stocksLoadedInfo = stockBot.populate_stockList(stocksToBuy)
+    stocks = sorterBot.sort_price_low_to_high(stocks)
+    printerBot.simpleList(stocks)
+    print("\n")
+    printerBot.listStocks(stocks)
+    stocks = stockBot.grab_snapshots(stocks)
 
+    '''
+    print("--------RAW STOCK DATA----------")
+    for stock in stocks:
+        print(stock)
+    '''
+
+    #--- Ask Ai ---#
     print("openAi's Stock list:")
-    openAi_opinion = openAiBot.studyStocks(stocksLoadedInfo, buying_power)
+    openAi_opinion = openAiBot.studyStocks(stocks, buying_power)
     print("\n=======   PLACING BUY ORDERS   =======")
     if not openAi_opinion:
         print("No AI approved stocks for today, rolling on without it")
-        openAi_opinion = stocksToBuy #if ai fails just pull from stocks to buy
+        openAi_opinion = stocks #if ai fails just pull from stocks to buy
     else:
         printerBot.listStocks(openAi_opinion)
-    # Then, place orders
 
+    #--- Place orders ---#
     for stockInfo in openAi_opinion:
         try:
             stockSymbol = stockInfo["symbol"].upper()
@@ -117,193 +141,6 @@ def testing():
 
     print(f"==== Test Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
 
-    symbolBot = SymbolBot()
-    filterBot = FilterBot()
-    stockBot = StockBot()
-    sorterBot = SorterBot()
-    openAiBot = OpenAiBot()
-    printerBot = PrinterBot()
-
-
-    '''
-    for position in liveTradingClient.get_all_positions():
-        pct = float(position.unrealized_plpc) * 100
-        print(f"{position.symbol} is currently at {pct:.2f}%")
-    '''
-    
-    '''
-    stockBot.add_equity_to_history()
-    cryptoBot = CryptoBot()
-    symbolBot = SymbolBot()
-    printerBot = PrinterBot()
-    '''
-
-    # --- StockBot Research and Trade Portion
-    live_account = liveTradingClient.get_account()
-    buying_power = float(live_account.buying_power)
-    print(f"--- STOCK PORTION ---")
-    stockBot.stockList = symbolBot.stocks_full_list()
-    stockBot.getMovers(buying_power)
-    stockBot.getMostActiveVolume(buying_power)
-    print(f"list size: {len(stockBot.stockList)}\n")
-    #print(f"{stockBot.stockList}\n")
-    high_caps = filterBot.filter_high_market_caps(stockBot.stockList) #change to stockBot.movers if any issues arise
-
-    '''
-    #list1 = stockBot.populate_stockList(stockBot.stockList)
-    high_caps = filterBot.filter_high_market_caps(stockBot.stockList)
-    print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
-    share_floats = filterBot.filter_shares_and_float(high_caps)
-    print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
-    print("Stocks worth buying are:")
-    stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
-    for stock in stocksToBuy:
-        latest_news = get_latest_news(stock["symbol"])
-        stock["headline"] = latest_news["headline"]
-        stock["summary"] = latest_news["summary"]
-    stockBot.listStocks(stocksToBuy)
-    '''
-    #for symbol in stockBot.stockList:
-    #    print(f"sym: {symbol['symbol']}, price: {symbol['price']}, %change: {symbol['percent_change']}")
-    #stockBot.listStocks(list1[:7])
-    #stockBot.listStocks(stockBot.movers)
-    #print(f"{len(stockBot.movers)}")
-
-    '''
-    stock = stockBot.movers[0]
-    latest_news = get_latest_news(stock["symbol"])
-    print(f"latest_news: {latest_news}")
-    stock["headline"] = latest_news['headline']
-    stock["summary"] = latest_news['summary']
-    print(stock)
-
-    print(f"all movers ({len(stockBot.movers)})")
-    stockBot.listStocks(stockBot.movers)
-
-    positives = sorterBot.get_positives(stockBot.movers)
-    negatives = sorterBot.get_negatives(stockBot.movers)
-
-    listUptrend = sorterBot.sort_stock_by_upward_percent_change(stockBot.movers)
-    listDowntrend = sorterBot.sort_stock_by_downward_percent_change(stockBot.movers)
-
-    listLowToHigh = sorterBot.sort_price_low_to_high(stockBot.movers)
-    listHighToLow = sorterBot.sort_price_high_to_low(stockBot.movers)
-
-    stockBot.CheapUpTrenders = sorterBot.double_placers(positives, listLowToHigh)
-    stockBot.CheapDownTrenders = sorterBot.double_placers(negatives, listLowToHigh)
-
-    stockBot.ExpensiveUpTrenders = sorterBot.double_placers(listUptrend, listHighToLow)
-    stockBot.ExpensiveDownTrenders = sorterBot.double_placers(listDowntrend, listHighToLow)
-
-    '''
-    #Testing Area (last edit 08/19/2025)
-
-    '''
-    print("cheap down trenders")
-    stockBot.listStocks(stockBot.CheapDownTrenders)
-    print("cheap up trenders")
-    stockBot.listStocks(stockBot.CheapUpTrenders)
-    print("expensive up trenders")
-    stockBot.listStocks(stockBot.ExpensiveUpTrenders)
-    print("expensive down trenders")
-    stockBot.listStocks(stockBot.ExpensiveDownTrenders)
-
-    print("Expensive trenders")
-    stockBot.listStocks(listHighToLow, 10)
-    print("Original Movers")
-    stockBot.listStocks(stockBot.movers, 10)
-
-    stockBot.listStocks(list3)
-    print("Double Placers")
-    stockBot.listStocks(stockBot.stockList)
-
-    #End Testing Area -------------------
-
-    # First, check yesterdays buys (if any) and place according sell positions
-    # place_trailing_stops_from_local_file()
-    '''
-
-    '''
-    live_account = liveTradingClient.get_account()
-    buying_power = float(live_account.buying_power)
-
-    #print(f"buying power - 10 = {float(live_account.buying_power) - 10:.2f}")
-
-    #Then, place buy orders for today
-
-    high_caps = filterBot.filter_high_market_caps(stockBot.movers)
-    print(f"Screened {len(stockBot.movers)} => {len(high_caps)} passed market cap and price filter.")
-    stockBot.listStocks(high_caps)
-    share_floats = filterBot.filter_shares_and_float(high_caps)
-    print(f"Out of the {len(high_caps)}, {len(share_floats)} passed share and float filter.")
-
-    stocksToBuy = sorterBot.sort_price_low_to_high(share_floats)
-    print(f"Stocks worth buying are:")
-    stockBot.listStocks(stocksToBuy)
-
-    for stock in stocksToBuy:
-        pos_size = calculate_position_size(buying_power, stock['price'])
-        print(f"Buying {pos_size} of {stock['symbol']}")
-    '''
-
-
-
-    '''
-    openAi_opinion = openAiBot.studyStocks(stocksToBuy)
-    print(f"openAi's Stock list:")
-    stockBot.listStocks(openAi_opinion)
-    for stock in openAi_opinion:
-        pos_size = calculate_position_size(buying_power, stock['price'])
-        print(
-            f"{stock['symbol']}, ${stock['price']}, {stock['percent_change']}% "
-            f"-- pb_ratio: {stock['pb_ratio']}, mCap: {stock['market_cap']}, float_rotation: {stock['float_rotation']}"
-        )
-        print(f"Buying {pos_size} of {stock['symbol']}")
-
-    # This gets the top 5 biggest cheap gainers
-    for stockInfo in stockBot.CheapUpTrenders[:5]:
-        try:
-            stockSymbol = stockInfo["symbol"].upper()
-            place_market_order_and_save_to_file(stockSymbol, 1)
-        except Exception as e:
-            print(f"Error fetching {e}...")
-    # This gets the top 5 biggest losers
-    for stockInfo in stockBot.CheapDownTrenders[:5]:
-        try:
-            stockSymbol = stockInfo["symbol"].upper()
-            place_market_order_and_save_to_file(stockSymbol, 1)
-        except Exception as e:
-            print(f"Error fetching {e}...")
-
-    for stockInfo in high_caps:
-        try:
-            stockSymbol = stockInfo["symbol"].upper()
-            place_market_order_and_save_to_file(stockSymbol, 1)
-        except Exception as e:
-            print(f"Error fetching {e}...")
-
-    '''
-    # --- END StockBot Research and Trade Portion
-    '''
-    # --- CrypoBot Research and Trade Portion
-    print(f"--- CRYPTO PORTION ---")
-    cryptoBot.load_symbols_from_symbolBot()
-
-    list1 = sorterBot.sort_by_price_change_percentage_24h(cryptoBot.symbolList)
-    list2 = sorterBot.sort_current_price_low_to_high(cryptoBot.symbolList)
-
-    cryptoBot.symbolList = sorterBot.crypto_double_placers(list1, list2)
-    cryptoBot.print_symbols_and_price()
-
-    for cryptoInfo in cryptoBot.symbolList:
-        try:
-            cryptoSymbol = cryptoInfo["symbol"].upper() + "/USD"
-            place_market_order_and_save_to_file(cryptoSymbol, 1, 2)
-        except Exception as e:
-            print(f"Error fetching {e}.. ")
-
-    # --- END CrypoBot Research and Trade Portion
-    '''
     print(f"==== Test Run End ====")
 
 if __name__ == "__main__":
