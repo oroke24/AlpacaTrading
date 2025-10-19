@@ -35,6 +35,9 @@ class SorterBot:
     def sort_current_price_low_to_high(self, list):
         return sorted(list, key=lambda s: s['current_price'], reverse=False)
 
+    def sort_fifty_day_ma_momentum_high_to_low(self, stocks_list):
+        return sorted(stocks_list, key=lambda s: ((s['price'] - s['fifty_day_average']) / s['fifty_day_average']), reverse=True)
+
     def sort_by_market_cap(self, list):
         # Sort descending by 'marketCap' if present, else 0
         return sorted(list, key=lambda s: s.get('marketCap', 0), reverse=True)

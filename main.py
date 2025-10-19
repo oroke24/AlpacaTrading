@@ -70,7 +70,7 @@ def main():
     stockBot.getMostActiveVolume(buying_power)
 
     #--- Get the desired list of symbols ---#
-    stocks = stockBot.stockList[:50] #add '[:number]' to end to shorten list for testing.  EX: stockBot.stockList[:25] 
+    stocks = stockBot.stockList #add '[:number]' to end to shorten list for testing.  EX: stockBot.stockList[:25] 
     print(f"Got {len(stocks)} symobls..")
 
     #--- Efficient populate and filter ---#
@@ -96,7 +96,7 @@ def main():
     print(f"Heavier filters complete.\n")
 
     print("Stocks worth buying are:")
-    stocks = sorterBot.sort_price_low_to_high(stocks)
+    stocks = sorterBot.sort_fifty_day_ma_momentum_high_to_low(stocks)
     printerBot.simpleList(stocks)
     print("\n")
     printerBot.listStocks(stocks)

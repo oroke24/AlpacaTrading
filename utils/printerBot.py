@@ -21,7 +21,7 @@ class PrinterBot:
             float_rotation = self.format_number(stock['float_rotation'])
             fifty_avg = self.format_number(stock['fifty_day_average'])
             low = self.format_number(stock['year_low'])
-            print(f"{sym}, ${price}, {pct}% -- mCap: {market_cap}, pb_ratio: {pb_ratio} -- vol: {volume}, float shares: {float_shares}, fr_pct: {float_rotation}% -- 50_avg: {fifty_avg}, yr_low: {low} ") 
+            print(f"{sym}, pct: {pct}%, ${price}, 50_avg: ${fifty_avg}, yr_low: ${low} -- mCap: {market_cap}, pb_ratio: {pb_ratio} -- vol: {volume}, f_shares: {float_shares}, f_r%: {float_rotation}%")
 
     def listStocks(self, list=["empty List.."]):
         for stock in list:
