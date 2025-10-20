@@ -14,6 +14,39 @@ class PrinterBot:
             sym = stock['symbol']
             price = stock['price']
             pct = stock['percent_change']
+            print(f"{sym}, pct: {pct}%, ${price}")
+
+    def simpleListWithNews(self, list=["empty List.."]):
+        for stock in list:
+            sym = stock['symbol']
+            price = stock['price']
+            pct = stock['percent_change']
+            news = stock['news']
+            print(f"{sym}, pct: {pct}%, ${price}\nNews: {news}")
+
+    def moderateListWithNews(self, list=["empty List.."]):
+        for stock in list:
+            sym = stock['symbol']
+            price = stock['price']
+            pct = stock['percent_change']
+            news = stock['news']
+            market_cap = self.format_number(stock['market_cap'])
+            pb_ratio = self.format_number(stock['price_to_book'])
+            volume = self.format_number(stock['volume'])
+            float_shares = self.format_number(stock['float_shares'])
+            float_rotation = self.format_number(stock['float_rotation'])
+            fifty_avg = self.format_number(stock['fifty_day_average'])
+            low = self.format_number(stock['year_low'])
+            print(f"{sym}, pct: {pct}%, ${price}, 50_avg: ${fifty_avg}, yr_low: ${low} -- mCap: {market_cap}--\n"
+                  f" pb_ratio: {pb_ratio} -- vol: {volume}, f_shares: {float_shares}, f_r%: {float_rotation}%--\n"
+                  f"News: {news}")
+
+            
+    def moderateList(self, list=["empty List.."]):
+        for stock in list:
+            sym = stock['symbol']
+            price = stock['price']
+            pct = stock['percent_change']
             market_cap = self.format_number(stock['market_cap'])
             pb_ratio = self.format_number(stock['price_to_book'])
             volume = self.format_number(stock['volume'])

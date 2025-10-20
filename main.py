@@ -99,7 +99,6 @@ def main():
     stocks = sorterBot.sort_fifty_day_ma_momentum_high_to_low(stocks)
     printerBot.simpleList(stocks)
     print("\n")
-    printerBot.listStocks(stocks)
     stocks = stockBot.grab_snapshots(stocks)
 
     '''
@@ -115,8 +114,7 @@ def main():
     if not openAi_opinion:
         print("No AI approved stocks for today, rolling on without it")
         openAi_opinion = stocks #if ai fails just pull from stocks to buy
-    else:
-        printerBot.listStocks(openAi_opinion)
+    printerBot.moderateListWithNews(openAi_opinion)
 
     #--- Place orders ---#
     for stockInfo in openAi_opinion:

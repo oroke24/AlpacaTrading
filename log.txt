@@ -5204,3 +5204,266 @@ No AI approved stocks for today, rolling on without it
 ========================= Run End =========================
 
 
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-20 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[LBRT] Price=15.54, ATR=0.8108, Raw%=5.22
+[LBRT] Final trail % = 5.22
+Trailing stop sell for LBRT with a trail percent of 5.22 based on percent gain of 1.1038961038961 submitted. ID: 9002471d-309c-4e5b-9175-5c72b3c9f431
+
+LBRT: 1.10% gain
+TRUE: 4.87% gain
+========================= Run End =========================
+
+
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: AMPX.WS"}}}
+$AMPX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SLND.WS"}}}
+$SLND.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-20 12:30:05 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 644 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for AMPX.WS: 'currency'
+Error fetching fast_info for SLND.WS: 'currency'
+Skipping NKE in assign_fast_info_details(): might be delisted.
+Skipping CAT in assign_fast_info_details(): might be delisted.
+Skipping CAH in assign_fast_info_details(): might be delisted.
+Skipping CRL in assign_fast_info_details(): might be delisted.
+Skipping AMPX.WS in assign_fast_info_details(): might be delisted.
+Skipping SLND.WS in assign_fast_info_details(): might be delisted.
+Size before price range filter: 638
+filtering...
+Size after price range filter: 162
+
+Size before small cap filter: 162
+filtering...
+Size after small cap filter: 85
+
+Size before volume filter: 85
+filtering...
+Size after volume filter: 84
+
+Size before moving average filter: 84
+filtering...
+Size after moving average filter: 52
+
+Size before 52-week low filter: 52
+filtering...
+Size after 52-week low filter: 52
+
+fast_info filters complete.
+52 will now be populated with heavier 'populate_info'.
+
+Size before price to earnings filter: 52
+filtering...
+Size after price to earnings filter: 47
+
+Size before price to book filter: 47
+filtering...
+Size after price to book filter: 24
+
+Size before price to sales filter: 24
+filtering...
+Size after price to sales filter: 20
+
+Size before float rotation filter: 20
+filtering...
+Size after float rotation filter: 10
+
+Heavier filters complete.
+
+Stocks worth buying are:
+CAN, pct: 23.06%, $1.98, 50_avg: $0.93, yr_low: $0.54 -- mCap: 929.19M, pb_ratio: 2.89 -- vol: 130.38M, f_shares: 6.34B, f_r%: 2.06%
+CLSK, pct: 3.76%, $20.59, 50_avg: $12.88, yr_low: $6.45 -- mCap: 5.79B, pb_ratio: 2.69 -- vol: 39.51M, f_shares: 272.44M, f_r%: 14.50%
+LAC, pct: -0.99%, $6.97, 50_avg: $4.61, yr_low: $2.31 -- mCap: 1.88B, pb_ratio: 2.52 -- vol: 25.16M, f_shares: 198.10M, f_r%: 12.70%
+PLUG, pct: -2.32%, $3.36, 50_avg: $2.25, yr_low: $0.69 -- mCap: 3.91B, pb_ratio: 2.30 -- vol: 101.23M, f_shares: 1.09B, f_r%: 9.26%
+CLF, pct: 21.15%, $16.08, 50_avg: $11.62, yr_low: $5.63 -- mCap: 7.96B, pb_ratio: 1.37 -- vol: 67.30M, f_shares: 485.41M, f_r%: 13.87%
+BTG, pct: 0.98%, $5.68, 50_avg: $4.51, yr_low: $2.20 -- mCap: 7.52B, pb_ratio: 2.30 -- vol: 49.25M, f_shares: 1.31B, f_r%: 3.75%
+MARA, pct: 5.48%, $20.8, 50_avg: $17.30, yr_low: $9.81 -- mCap: 7.71B, pb_ratio: 1.57 -- vol: 42.87M, f_shares: 364.59M, f_r%: 11.76%
+TLRY, pct: 0.64%, $1.58, 50_avg: $1.33, yr_low: $0.35 -- mCap: 1.77B, pb_ratio: 1.15 -- vol: 49.82M, f_shares: 1.11B, f_r%: 4.49%
+RIG, pct: 0.78%, $3.28, 50_avg: $3.18, yr_low: $1.97 -- mCap: 3.61B, pb_ratio: 0.32 -- vol: 44.66M, f_shares: 770.96M, f_r%: 5.79%
+F, pct: 0.46%, $11.98, 50_avg: $11.71, yr_low: $8.44 -- mCap: 47.70B, pb_ratio: 1.06 -- vol: 65.53M, f_shares: 3.87B, f_r%: 1.69%
+
+
+CAN, $1.98, 23.06% -- pb_ratio: 2.89, mCap: 929.19M, float_rotation: 2.06%,
+ earnings_date: {'Earnings Date': [datetime.date(2025, 11, 19)], 'Earnings High': 0.01, 'Earnings Low': 0.01, 'Earnings Average': 0.01, 'Revenue High': 139200000, 'Revenue Low': 122100000, 'Revenue Average': 131160000}
+ analyst_price_target: {'current': 1.995, 'high': 4.0, 'low': 1.75, 'mean': 2.475, 'median': 2.05}
+news: Asian equities traded in the US as American depositary receipts tracked higher Friday morning, risin
+
+CLSK, $20.59, 3.76% -- pb_ratio: 2.69, mCap: 5.79B, float_rotation: 14.50%,
+ earnings_date: {'Dividend Date': datetime.date(2019, 12, 10), 'Earnings Date': [datetime.date(2025, 11, 26)], 'Earnings High': 0.93, 'Earnings Low': 0.14, 'Earnings Average': 0.535, 'Revenue High': 273229210, 'Revenue Low': 215300000, 'Revenue Average': 237148110}
+ analyst_price_target: {'current': 20.575, 'high': 30.0, 'low': 14.0, 'mean': 22.34091, 'median': 23.0}
+news: CleanSpark (CLSK) has seen its stock attract a fresh wave of attention following recent industry developments and insights from company leadership. The company is benefiting as institutional interest in Bitcoin continues to accelerate, particularly through ETF inflows and the expanding credit market. See our latest analysis for CleanSpark. Momentum has clearly been building for CleanSpark, as excitement around institutional adoption of Bitcoin and surging industry activity has powered the...
+
+LAC, $6.97, -0.99% -- pb_ratio: 2.52, mCap: 1.88B, float_rotation: 12.70%,
+ earnings_date: {'Dividend Date': datetime.date(2017, 11, 7), 'Earnings Date': [datetime.date(2025, 11, 6)], 'Earnings High': -0.02521, 'Earnings Low': -0.1, 'Earnings Average': -0.0513, 'Revenue High': 0, 'Revenue Low': 0, 'Revenue Average': 0}
+ analyst_price_target: {'current': 6.96, 'high': 8.0, 'low': 3.0, 'mean': 5.775, 'median': 5.5}
+news: As investors enters shutdown week three, a US-China trade war, credit gesticulation, and an incoming oil glut are weighing on the market.
+
+PLUG, $3.36, -2.32% -- pb_ratio: 2.30, mCap: 3.91B, float_rotation: 9.26%,
+ earnings_date: {'Earnings Date': [datetime.date(2025, 11, 10)], 'Earnings High': -0.0936, 'Earnings Low': -0.16, 'Earnings Average': -0.1317, 'Revenue High': 227229730, 'Revenue Low': 161400000, 'Revenue Average': 183620830}
+ analyst_price_target: {'current': 3.37, 'high': 7.0, 'low': 0.75, 'mean': 2.77647, 'median': 1.75}
+news: While some companies burn cash to fuel expansion, others struggle to turn spending into sustainable growth. A high cash burn rate without a strong balance sheet can leave investors exposed to significant downside.
+
+CLF, $16.08, 21.15% -- pb_ratio: 1.37, mCap: 7.96B, float_rotation: 13.87%,
+ earnings_date: {'Dividend Date': datetime.date(2020, 4, 14), 'Ex-Dividend Date': datetime.date(2020, 4, 1), 'Earnings Date': [datetime.date(2025, 10, 20)], 'Earnings High': -0.3, 'Earnings Low': -0.44, 'Earnings Average': -0.355, 'Revenue High': 4985000000, 'Revenue Low': 4638179800, 'Revenue Average': 4794390830}
+ analyst_price_target: {'current': 16.1, 'high': 14.5, 'low': 7.8, 'mean': 12.17273, 'median': 12.5}
+news: Shares in steel giant Cleveland-Cliffs rallied Monday morning after the company said it would explore a deeper push into rare earths.
+
+BTG, $5.68, 0.98% -- pb_ratio: 2.30, mCap: 7.52B, float_rotation: 3.75%,
+ earnings_date: {'Dividend Date': datetime.date(2025, 9, 22), 'Ex-Dividend Date': datetime.date(2025, 9, 9), 'Earnings Date': [datetime.date(2025, 11, 5)], 'Earnings High': 0.17, 'Earnings Low': 0.08, 'Earnings Average': 0.14472, 'Revenue High': 954000000, 'Revenue Low': 910150610, 'Revenue Average': 932075300}
+ analyst_price_target: {'current': 5.685, 'high': 7.0, 'low': 4.45, 'mean': 5.79, 'median': 6.0}
+news: In the latest trading session, B2Gold (BTG) closed at $5.55, marking a -6.57% move from the previous day.
+
+MARA, $20.80, 5.48% -- pb_ratio: 1.57, mCap: 7.71B, float_rotation: 11.76%,
+ earnings_date: {'Dividend Date': datetime.date(2019, 4, 7), 'Earnings Date': [datetime.date(2025, 11, 10)], 'Earnings High': 0.78, 'Earnings Low': -0.23, 'Earnings Average': 0.35333, 'Revenue High': 273000000, 'Revenue Low': 241520000, 'Revenue Average': 253241970}
+ analyst_price_target: {'current': 20.79, 'high': 30.0, 'low': 18.0, 'mean': 23.86818, 'median': 25.0}
+news: In recent months, MARA Holdings removed CTO Ashu Swami from its management team and confirmed his departure, amid ongoing scrutiny of its operational efficiency and technological performance relative to peers. At the same time, MARA Holdings intensified its expansion beyond bitcoin mining by acquiring a majority stake in Exaion and progressing into AI and high-performance computing infrastructure, signaling a shift toward broader technology markets. We will now assess how MARA's push into AI...
+
+TLRY, $1.58, 0.64% -- pb_ratio: 1.15, mCap: 1.77B, float_rotation: 4.49%,
+ earnings_date: {'Earnings Date': [datetime.date(2026, 1, 8)], 'Earnings High': 0.0, 'Earnings Low': 0.0, 'Earnings Average': 0.0, 'Revenue High': 214300000, 'Revenue Low': 207736000, 'Revenue Average': 211148000}
+ analyst_price_target: {'current': 1.585, 'high': 2.5, 'low': 0.85, 'mean': 1.78333, 'median': 2.0}
+news: Key Takeaways; Cannabis Sector Ayr Wellness Advanced Debt Restructuring While Expanding Operations with New Florida Facility Vireo Growth Acquired Schwazze Debt in $62 Million Deal Tilray Expanded into Panama Through Joint Venture, Strengthening its Global Cannabis Footprint Key Takeaways; Psychedelic Sector Enveric Biosciences Expanded Neuroplastogenic Patent Estate and Strengthened IP Defense Amid Strategic Initiatives Algernon […]
+
+RIG, $3.28, 0.78% -- pb_ratio: 0.32, mCap: 3.61B, float_rotation: 5.79%,
+ earnings_date: {'Dividend Date': datetime.date(2015, 9, 22), 'Ex-Dividend Date': datetime.date(2015, 8, 20), 'Earnings Date': [datetime.date(2025, 10, 29)], 'Earnings High': 0.04, 'Earnings Low': 0.02, 'Earnings Average': 0.03146, 'Revenue High': 1022434100, 'Revenue Low': 1000000000, 'Revenue Average': 1011596960}
+ analyst_price_target: {'current': 3.2748, 'high': 5.5, 'low': 3.0, 'mean': 3.91538, 'median': 3.9}
+news: Transocean Ltd. recently increased its cash tender offer for senior notes from US$50 million to US$100 million, accepting a large portion of the notes tendered as of the early deadline on October 14, 2025, and completing payment to noteholders on October 16, 2025. This substantial move to repurchase outstanding debt coincided with the company's announcement of new contract extensions for its ultra-deepwater rigs, highlighting a dual focus on financial improvement and operational...
+
+F, $11.98, 0.46% -- pb_ratio: 1.06, mCap: 47.70B, float_rotation: 1.69%,
+ earnings_date: {'Dividend Date': datetime.date(2025, 9, 1), 'Ex-Dividend Date': datetime.date(2025, 8, 10), 'Earnings Date': [datetime.date(2025, 10, 23)], 'Earnings High': 0.45092, 'Earnings Low': 0.23, 'Earnings Average': 0.35653, 'Revenue High': 48401000000, 'Revenue Low': 37746000000, 'Revenue Average': 43713979050}
+ analyst_price_target: {'current': 11.985, 'high': 16.0, 'low': 9.5, 'mean': 11.45, 'median': 11.0}
+news: Third quarter earnings season is ramping up, and analysts expect S&P 500 companies grew their profits by 8% during the quarter.
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+CAN, $1.98, 23.06% -- pb_ratio: 2.89, mCap: 929.19M, float_rotation: 2.06%,
+ earnings_date: {'Earnings Date': [datetime.date(2025, 11, 19)], 'Earnings High': 0.01, 'Earnings Low': 0.01, 'Earnings Average': 0.01, 'Revenue High': 139200000, 'Revenue Low': 122100000, 'Revenue Average': 131160000}
+ analyst_price_target: {'current': 1.995, 'high': 4.0, 'low': 1.75, 'mean': 2.475, 'median': 2.05}
+news: Asian equities traded in the US as American depositary receipts tracked higher Friday morning, risin
+
+CLSK, $20.59, 3.76% -- pb_ratio: 2.69, mCap: 5.79B, float_rotation: 14.50%,
+ earnings_date: {'Dividend Date': datetime.date(2019, 12, 10), 'Earnings Date': [datetime.date(2025, 11, 26)], 'Earnings High': 0.93, 'Earnings Low': 0.14, 'Earnings Average': 0.535, 'Revenue High': 273229210, 'Revenue Low': 215300000, 'Revenue Average': 237148110}
+ analyst_price_target: {'current': 20.575, 'high': 30.0, 'low': 14.0, 'mean': 22.34091, 'median': 23.0}
+news: CleanSpark (CLSK) has seen its stock attract a fresh wave of attention following recent industry developments and insights from company leadership. The company is benefiting as institutional interest in Bitcoin continues to accelerate, particularly through ETF inflows and the expanding credit market. See our latest analysis for CleanSpark. Momentum has clearly been building for CleanSpark, as excitement around institutional adoption of Bitcoin and surging industry activity has powered the...
+
+LAC, $6.97, -0.99% -- pb_ratio: 2.52, mCap: 1.88B, float_rotation: 12.70%,
+ earnings_date: {'Dividend Date': datetime.date(2017, 11, 7), 'Earnings Date': [datetime.date(2025, 11, 6)], 'Earnings High': -0.02521, 'Earnings Low': -0.1, 'Earnings Average': -0.0513, 'Revenue High': 0, 'Revenue Low': 0, 'Revenue Average': 0}
+ analyst_price_target: {'current': 6.96, 'high': 8.0, 'low': 3.0, 'mean': 5.775, 'median': 5.5}
+news: As investors enters shutdown week three, a US-China trade war, credit gesticulation, and an incoming oil glut are weighing on the market.
+
+PLUG, $3.36, -2.32% -- pb_ratio: 2.30, mCap: 3.91B, float_rotation: 9.26%,
+ earnings_date: {'Earnings Date': [datetime.date(2025, 11, 10)], 'Earnings High': -0.0936, 'Earnings Low': -0.16, 'Earnings Average': -0.1317, 'Revenue High': 227229730, 'Revenue Low': 161400000, 'Revenue Average': 183620830}
+ analyst_price_target: {'current': 3.37, 'high': 7.0, 'low': 0.75, 'mean': 2.77647, 'median': 1.75}
+news: While some companies burn cash to fuel expansion, others struggle to turn spending into sustainable growth. A high cash burn rate without a strong balance sheet can leave investors exposed to significant downside.
+
+CLF, $16.08, 21.15% -- pb_ratio: 1.37, mCap: 7.96B, float_rotation: 13.87%,
+ earnings_date: {'Dividend Date': datetime.date(2020, 4, 14), 'Ex-Dividend Date': datetime.date(2020, 4, 1), 'Earnings Date': [datetime.date(2025, 10, 20)], 'Earnings High': -0.3, 'Earnings Low': -0.44, 'Earnings Average': -0.355, 'Revenue High': 4985000000, 'Revenue Low': 4638179800, 'Revenue Average': 4794390830}
+ analyst_price_target: {'current': 16.1, 'high': 14.5, 'low': 7.8, 'mean': 12.17273, 'median': 12.5}
+news: Shares in steel giant Cleveland-Cliffs rallied Monday morning after the company said it would explore a deeper push into rare earths.
+
+BTG, $5.68, 0.98% -- pb_ratio: 2.30, mCap: 7.52B, float_rotation: 3.75%,
+ earnings_date: {'Dividend Date': datetime.date(2025, 9, 22), 'Ex-Dividend Date': datetime.date(2025, 9, 9), 'Earnings Date': [datetime.date(2025, 11, 5)], 'Earnings High': 0.17, 'Earnings Low': 0.08, 'Earnings Average': 0.14472, 'Revenue High': 954000000, 'Revenue Low': 910150610, 'Revenue Average': 932075300}
+ analyst_price_target: {'current': 5.685, 'high': 7.0, 'low': 4.45, 'mean': 5.79, 'median': 6.0}
+news: In the latest trading session, B2Gold (BTG) closed at $5.55, marking a -6.57% move from the previous day.
+
+MARA, $20.80, 5.48% -- pb_ratio: 1.57, mCap: 7.71B, float_rotation: 11.76%,
+ earnings_date: {'Dividend Date': datetime.date(2019, 4, 7), 'Earnings Date': [datetime.date(2025, 11, 10)], 'Earnings High': 0.78, 'Earnings Low': -0.23, 'Earnings Average': 0.35333, 'Revenue High': 273000000, 'Revenue Low': 241520000, 'Revenue Average': 253241970}
+ analyst_price_target: {'current': 20.79, 'high': 30.0, 'low': 18.0, 'mean': 23.86818, 'median': 25.0}
+news: In recent months, MARA Holdings removed CTO Ashu Swami from its management team and confirmed his departure, amid ongoing scrutiny of its operational efficiency and technological performance relative to peers. At the same time, MARA Holdings intensified its expansion beyond bitcoin mining by acquiring a majority stake in Exaion and progressing into AI and high-performance computing infrastructure, signaling a shift toward broader technology markets. We will now assess how MARA's push into AI...
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+TLRY, $1.58, 0.64% -- pb_ratio: 1.15, mCap: 1.77B, float_rotation: 4.49%,
+ earnings_date: {'Earnings Date': [datetime.date(2026, 1, 8)], 'Earnings High': 0.0, 'Earnings Low': 0.0, 'Earnings Average': 0.0, 'Revenue High': 214300000, 'Revenue Low': 207736000, 'Revenue Average': 211148000}
+ analyst_price_target: {'current': 1.585, 'high': 2.5, 'low': 0.85, 'mean': 1.78333, 'median': 2.0}
+news: Key Takeaways; Cannabis Sector Ayr Wellness Advanced Debt Restructuring While Expanding Operations with New Florida Facility Vireo Growth Acquired Schwazze Debt in $62 Million Deal Tilray Expanded into Panama Through Joint Venture, Strengthening its Global Cannabis Footprint Key Takeaways; Psychedelic Sector Enveric Biosciences Expanded Neuroplastogenic Patent Estate and Strengthened IP Defense Amid Strategic Initiatives Algernon […]
+
+RIG, $3.28, 0.78% -- pb_ratio: 0.32, mCap: 3.61B, float_rotation: 5.79%,
+ earnings_date: {'Dividend Date': datetime.date(2015, 9, 22), 'Ex-Dividend Date': datetime.date(2015, 8, 20), 'Earnings Date': [datetime.date(2025, 10, 29)], 'Earnings High': 0.04, 'Earnings Low': 0.02, 'Earnings Average': 0.03146, 'Revenue High': 1022434100, 'Revenue Low': 1000000000, 'Revenue Average': 1011596960}
+ analyst_price_target: {'current': 3.2748, 'high': 5.5, 'low': 3.0, 'mean': 3.91538, 'median': 3.9}
+news: Transocean Ltd. recently increased its cash tender offer for senior notes from US$50 million to US$100 million, accepting a large portion of the notes tendered as of the early deadline on October 14, 2025, and completing payment to noteholders on October 16, 2025. This substantial move to repurchase outstanding debt coincided with the company's announcement of new contract extensions for its ultra-deepwater rigs, highlighting a dual focus on financial improvement and operational...
+
+F, $11.98, 0.46% -- pb_ratio: 1.06, mCap: 47.70B, float_rotation: 1.69%,
+ earnings_date: {'Dividend Date': datetime.date(2025, 9, 1), 'Ex-Dividend Date': datetime.date(2025, 8, 10), 'Earnings Date': [datetime.date(2025, 10, 23)], 'Earnings High': 0.45092, 'Earnings Low': 0.23, 'Earnings Average': 0.35653, 'Revenue High': 48401000000, 'Revenue Low': 37746000000, 'Revenue Average': 43713979050}
+ analyst_price_target: {'current': 11.985, 'high': 16.0, 'low': 9.5, 'mean': 11.45, 'median': 11.0}
+news: Third quarter earnings season is ramping up, and analysts expect S&P 500 companies grew their profits by 8% during the quarter.
+
+[CAN] Price=1.99, ATR=0.4220, Raw%=21.19
+[CAN] Final calculated 5 day atr % (rounded) = 21.19
+Skipping CAN: 5-day ATR threshold exceeded: (21.19), max allowed: 13.0%
+
+[CLSK] Price=20.58, ATR=2.7800, Raw%=13.50
+[CLSK] Final calculated 5 day atr % (rounded) = 13.5
+Skipping CLSK: 5-day ATR threshold exceeded: (13.5), max allowed: 13.0%
+
+[LAC] Price=6.97, ATR=1.4220, Raw%=20.42
+[LAC] Final calculated 5 day atr % (rounded) = 20.42
+Skipping LAC: 5-day ATR threshold exceeded: (20.42), max allowed: 13.0%
+
+[PLUG] Price=3.37, ATR=0.5040, Raw%=14.98
+[PLUG] Final calculated 5 day atr % (rounded) = 14.98
+Skipping PLUG: 5-day ATR threshold exceeded: (14.98), max allowed: 13.0%
+
+[CLF] Price=16.10, ATR=1.2480, Raw%=7.75
+[CLF] Final calculated 5 day atr % (rounded) = 7.75
+Skipping CLF: 16.09, too risky (qty to buy was 0).
+
+[BTG] Price=5.69, ATR=0.3160, Raw%=5.55
+[BTG] Final calculated 5 day atr % (rounded) = 5.55
+latest price for BTG: 5.685, so I'm buying 1
+
+Buy order submitted. ID: a5042d98-d8e9-4df4-819a-43354f06db4f
+Waiting for BTG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTG, will attach trailing stop tomorrow.
+
+[MARA] Price=20.81, ATR=2.4520, Raw%=11.78
+[MARA] Final calculated 5 day atr % (rounded) = 11.78
+Skipping MARA: 20.81, too risky (qty to buy was 0).
+
+[TLRY] Price=1.59, ATR=0.1419, Raw%=8.95
+[TLRY] Final calculated 5 day atr % (rounded) = 8.95
+latest price for TLRY: 1.585, so I'm buying 5
+
+Buy order submitted. ID: 4c72110d-7bff-45d5-b7cc-c232c65777d2
+Waiting for TLRY buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for TLRY, will attach trailing stop tomorrow.
+
+[RIG] Price=3.28, ATR=0.1500, Raw%=4.58
+[RIG] Final calculated 5 day atr % (rounded) = 4.58
+latest price for RIG: 3.275, so I'm buying 2
+
+Buy order submitted. ID: 4338112c-50d4-4a4a-a863-93c32c44e0f2
+Waiting for RIG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RIG, will attach trailing stop tomorrow.
+
+[F] Price=11.98, ATR=0.2340, Raw%=1.95
+[F] Final calculated 5 day atr % (rounded) = 1.95
+Skipping F: 11.985, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 6m 3.73s)
+
+
