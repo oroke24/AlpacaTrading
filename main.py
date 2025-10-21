@@ -138,9 +138,10 @@ def main():
 def testing():
 
     print(f"==== Test Run Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
-
+    stockBot = StockBot()
+    stockBot.add_equity_to_history()
     print(f"==== Test Run End ====")
 
 if __name__ == "__main__":
-    main()
-    #testing()
+    #main()
+    testing()

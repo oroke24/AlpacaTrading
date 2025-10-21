@@ -1,12 +1,14 @@
 import warnings
 import requests
 import config
+import os
 import yfinance as yf
 from time import sleep
 from auth.connectClient import dataClient, liveTradingClient
 from alpaca.data.requests import StockLatestQuoteRequest
 from data.symbolBot import SymbolBot
 from datetime import datetime, timedelta
+
 
 warnings.simplefilter(action='ignore', category=UserWarning)
 
@@ -27,10 +29,33 @@ class StockBot:
         date = now.strftime('%Y-%m-%d')
         abbreviated_weekday = now.strftime('%a')
         HISTORY_FILE = "equity_history.txt"
+
         live_account = liveTradingClient.get_account()
         equity = float(live_account.equity)
+
+        # Get previous equity if available
+        last_equity = None
+        if os.path.exists(HISTORY_FILE):
+            with open(HISTORY_FILE, "r") as f:
+                lines = f.readlines()
+                if lines:
+                    last_line = lines[-1].strip()
+                    try:
+                        # extract last recorded value, assuming format: YYYY-MM-DD (Mon): $12345.67
+                        last_equity = float(last_line.split('$')[-1])
+                    except (IndexError, ValueError):
+                        last_equity = None
+
+        # Calculate percent change if possible
+        if last_equity and last_equity > 0:
+            pct_change = ((equity - last_equity) / last_equity) * 100
+            entry = f"{date} ({abbreviated_weekday}):({pct_change:+.2f}%) ${equity:.2f}\n"
+        else:
+            entry = f"{date} ({abbreviated_weekday}): ${equity:.2f}\n"
+
+        # Append entry to file
         with open(HISTORY_FILE, "a") as f:
-            f.write(f"{date} ({abbreviated_weekday}): ${equity:.2f}\n")
+            f.write(entry)
 
     def getMovers(self, max_price=20, min_price=.10):
         #print("Inside getMovers()")
@@ -114,6 +139,7 @@ class StockBot:
                 'float_rotation': stock['float_rotation'],
                 'fifty_day_average': stock['fifty_day_average'],
                 'two_hundred_day_average': stock['two_hundred_day_average'],
+                'year_low' : stock['year_low'],
                 'price_target': stock['price_target'],
                 'earnings_date': stock['earnings_date'],
                 'news': stock['news']

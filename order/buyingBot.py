@@ -30,7 +30,7 @@ class BuyingBot:
             print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
             return
         
-        if(five_day_atr > 13.0):
+        if(five_day_atr > 22.0):
             print(f"Skipping {symbol}: 5-day ATR threshold exceeded: ({five_day_atr}), max allowed: 13.0%\n")
             return
     
@@ -191,7 +191,7 @@ class BuyingBot:
                 if not np.isnan(latest_atr) and price > 0:
                     atr_percent = (latest_atr / price) * 100
                 # Debug info
-                print(f"[{symbol}] Price={price:.2f}, ATR={latest_atr:.4f}, Raw%={(latest_atr/price)*100:.2f}")
+                #print(f"[{symbol}] Price={price:.2f}, ATR={latest_atr:.4f}, Raw%={(latest_atr/price)*100:.2f}")
 
         except Exception as e:
             print(f"ATR calculation failed for {symbol}, using default {default_pct}%: {e}")
@@ -200,7 +200,7 @@ class BuyingBot:
         # Clamp between min and max
         atr_percent = max(min_pct, min(max_pct, atr_percent))
         rounded_atr_percent = round(atr_percent, 2)
-        print(f"[{symbol}] Final calculated 5 day atr % (rounded) = {rounded_atr_percent}")
+        print(f"[{symbol}] Final calculated 5 day atr (rounded) = {rounded_atr_percent}%")
     
         return rounded_atr_percent
 

@@ -14,7 +14,7 @@ class PrinterBot:
             sym = stock['symbol']
             price = stock['price']
             pct = stock['percent_change']
-            print(f"{sym}, pct: {pct}%, ${price}")
+            print(f"{sym}, ${price}, {pct}%")
 
     def simpleListWithNews(self, list=["empty List.."]):
         for stock in list:
@@ -22,7 +22,7 @@ class PrinterBot:
             price = stock['price']
             pct = stock['percent_change']
             news = stock['news']
-            print(f"{sym}, pct: {pct}%, ${price}\nNews: {news}")
+            print(f"{sym}, ${price}, {pct}%\nNews: {news}")
 
     def moderateListWithNews(self, list=["empty List.."]):
         for stock in list:
@@ -36,8 +36,7 @@ class PrinterBot:
             float_shares = self.format_number(stock['float_shares'])
             float_rotation = self.format_number(stock['float_rotation'])
             fifty_avg = self.format_number(stock['fifty_day_average'])
-            low = self.format_number(stock['year_low'])
-            print(f"{sym}, pct: {pct}%, ${price}, 50_avg: ${fifty_avg}, yr_low: ${low} -- mCap: {market_cap}--\n"
+            print(f"{sym}, ${price}, {pct}%, 50_avg: ${fifty_avg}, -- mCap: {market_cap}--\n"
                   f" pb_ratio: {pb_ratio} -- vol: {volume}, f_shares: {float_shares}, f_r%: {float_rotation}%--\n"
                   f"News: {news}")
 
@@ -54,7 +53,7 @@ class PrinterBot:
             float_rotation = self.format_number(stock['float_rotation'])
             fifty_avg = self.format_number(stock['fifty_day_average'])
             low = self.format_number(stock['year_low'])
-            print(f"{sym}, pct: {pct}%, ${price}, 50_avg: ${fifty_avg}, yr_low: ${low} -- mCap: {market_cap}, pb_ratio: {pb_ratio} -- vol: {volume}, f_shares: {float_shares}, f_r%: {float_rotation}%")
+            print(f"{sym}, ${price}, {pct}%, 50_avg: ${fifty_avg}, yr_low: ${low} -- mCap: {market_cap}, pb_ratio: {pb_ratio} -- vol: {volume}, f_shares: {float_shares}, f_r%: {float_rotation}%")
 
     def listStocks(self, list=["empty List.."]):
         for stock in list:

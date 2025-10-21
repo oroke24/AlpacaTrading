@@ -5467,3 +5467,133 @@ Skipping F: 11.985, too risky (qty to buy was 0).
 (Execution time: 6m 3.73s)
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-21 06:31:05 ====================
+Selling yesterdays positions.
+[BTG] Price=5.28, ATR=0.2714, Raw%=5.14
+[BTG] Final trail % = 5.14
+Trailing stop sell for BTG with a trail percent of 5.14 based on percent gain of -7.124771416514281 submitted. ID: 8243c5dc-6158-4f89-b01f-86cf512952ad
+
+[TLRY] Price=1.52, ATR=0.1993, Raw%=13.08
+[TLRY] Final trail % = 8
+Trailing stop sell for TLRY with a trail percent of 8 based on percent gain of -3.91885080645161 submitted. ID: 5b211109-7ea2-4ee4-bfd7-8346f3fe59eb
+
+[RIG] Price=3.31, ATR=0.1443, Raw%=4.37
+[RIG] Final trail % = 4.37
+Trailing stop sell for RIG with a trail percent of 4.37 based on percent gain of 0.9160305343511499 submitted. ID: 20d5fbef-e57e-46ad-b298-386c2825cfd1
+
+BTG: -7.16% gain
+Canceling existing order for BTG: 8243c5dc-6158-4f89-b01f-86cf512952ad
+Selling 1.0 shares of BTG (percent_gain: -7.1599381066254, Threshold exceeded)
+Added BTG to restricted list for today.
+RIG: 0.92% gain
+TLRY: -3.92% gain
+Canceling existing order for TLRY: 5b211109-7ea2-4ee4-bfd7-8346f3fe59eb
+Selling 5.0 shares of TLRY (percent_gain: -3.91885080645161, Threshold exceeded)
+Added TLRY to restricted list for today.
+TRUE: 4.66% gain
+========================= Run End =========================
+
+
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: NUVB.WS"}}}
+$NUVB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ATMVU: possibly delisted; no price data found  (period=5d)
+$ATMVU: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: DC.WS"}}}
+$DC.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$BKSY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-10-21 12:30:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 643 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for NUVB.WS: 'currency'
+Error fetching fast_info for DC.WS: 'currency'
+Error fetching fast_info for BKSY.WS: 'currency'
+Skipping NKE in assign_fast_info_details(): might be delisted.
+Skipping CAT in assign_fast_info_details(): might be delisted.
+Skipping CAH in assign_fast_info_details(): might be delisted.
+Skipping CRL in assign_fast_info_details(): might be delisted.
+Skipping NUVB.WS in assign_fast_info_details(): might be delisted.
+Skipping DC.WS in assign_fast_info_details(): might be delisted.
+Skipping BKSY.WS in assign_fast_info_details(): might be delisted.
+Size before price range filter: 636
+filtering...
+Size after price range filter: 151
+
+Size before small cap filter: 151
+filtering...
+Size after small cap filter: 81
+
+Size before volume filter: 81
+filtering...
+Size after volume filter: 79
+
+Size before moving average filter: 79
+filtering...
+Size after moving average filter: 56
+
+Size before 52-week low filter: 56
+filtering...
+Size after 52-week low filter: 56
+
+fast_info filters complete.
+56 will now be populated with heavier 'populate_info'.
+
+Size before price to earnings filter: 56
+filtering...
+Size after price to earnings filter: 50
+
+Size before price to book filter: 50
+filtering...
+Size after price to book filter: 26
+
+Size before price to sales filter: 26
+filtering...
+Size after price to sales filter: 23
+
+Size before float rotation filter: 23
+filtering...
+Size after float rotation filter: 15
+
+Heavier filters complete.
+
+Stocks worth buying are:
+NAUT, pct: 14.49%, $1.35
+LAC, pct: -7.85%, $6.9
+CLSK, pct: -10.98%, $18.6
+BALY, pct: 20.86%, $15.47
+HIVE, pct: -2.76%, $5.47
+PLUG, pct: -9.62%, $3.1
+CLF, pct: -20.59%, $13.46
+M, pct: 2.31%, $18.38
+BTG, pct: -8.96%, $5.18
+MEC, pct: 21.94%, $15.86
+MARA, pct: -6.1%, $19.71
+TLRY, pct: -4.05%, $1.5
+GGB, pct: -1.02%, $3.38
+F, pct: 4.71%, $12.56
+RIG, pct: 0.45%, $3.32
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 145, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 117, in main
+    printerBot.moderateListWithNews(openAi_opinion)
+  File "/home/orokejamie/vsCode/AlpacaTrading/utils/printerBot.py", line 39, in moderateListWithNews
+    low = self.format_number(stock['year_low'])
+                             ~~~~~^^^^^^^^^^^^
+KeyError: 'year_low'
