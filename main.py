@@ -143,5 +143,5 @@ def testing():
     print(f"==== Test Run End ====")
 
 if __name__ == "__main__":
-    #main()
-    testing()
+    main()
+    #testing()

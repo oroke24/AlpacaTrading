@@ -136,6 +136,35 @@ class SellingBot:
         percent_gain = float(position.unrealized_plpc) * 100
         print(f"{symbol}: {percent_gain:.2f}% gain")
 
+        if percent_gain >= 10:
+            try:
+                open_orders = liveTradingClient.get_orders(filter=GetOrdersRequest(status="open"))
+                for order in open_orders:
+                    if order.symbol == symbol:
+                        print(f"Canceling existing order for {symbol}: {order.id}")
+                        liveTradingClient.cancel_order_by_id(order.id)
+                final_trail = 3.5 #Tighten trail if already at 10% gain
+                if percent_gain >= 30:
+                    final_trail = 2 #Tighten trail if already at 30% gain
+                elif percent_gain >= 20:
+                    final_trail = 2.5 #Tighten trail if already at 20% gain
+                elif percent_gain >= 15:
+                    final_trail = 3 #Tighten trail if already at 15% gain
+
+                trailing_stop_order = TrailingStopOrderRequest(
+                    symbol=symbol,
+                    qty=qty,
+                    side=OrderSide.SELL,
+                    trail_percent=float(final_trail),
+                    time_in_force=TimeInForce.GTC
+                )
+                sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
+                print(f"Trailing stop sell for {symbol} with a trail percent of {final_trail} based on percent gain of {percent_gain} submitted. ID: {sell_order.id}\n")
+            except Exception as e:
+                print(f"Error tightening trailing stop for {symbol}: {e}")
+                        
+
+
         if percent_gain <= percent_loss_cut:
             try:
                 open_orders = liveTradingClient.get_orders(filter=GetOrdersRequest(status="open"))
