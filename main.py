@@ -47,6 +47,15 @@ def main():
         print("\n")
         return
 
+    if len(sys.argv) > 1 and sys.argv[1] == 'recheck': 
+        print(f"==================== Selling Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
+        # --- Checking for sells again ---
+        print("Rechecking yesterdays positions.")
+        sellingBot.check_all_positions_worth_selling_now()
+        print(f"========================= Run End =========================")
+        print("\n")
+        return
+
     print("\n")
     startTime = datetime.now()
     startTimeFormatted = startTime.strftime('%Y-%m-%d %H:%M:%S')

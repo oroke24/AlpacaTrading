@@ -82,7 +82,7 @@ class SellingBot:
             except Exception as e:
                 print(f"Error checking if {position.symbol} is worth selling now: {e}")
     
-    def get_atr(self, symbol, period=14, default_pct=3.5, min_pct=2, max_pct=8):
+    def get_atr(self, symbol, period=14, default_pct=3.5, min_pct=2, max_pct=7):
         """
         Returns a safe trailing stop % for Alpaca orders.
     
@@ -120,7 +120,7 @@ class SellingBot:
     
         return rounded_trail_percent
 
-    def worth_selling_now(self, symbol, percent_loss_cut=-2.0):
+    def worth_selling_now(self, symbol, percent_loss_cut=3):
         try:
             position = liveTradingClient.get_open_position(symbol)
         except Exception:
@@ -160,12 +160,21 @@ class SellingBot:
                 )
                 sell_order = liveTradingClient.submit_order(order_data=trailing_stop_order)
                 print(f"Trailing stop sell for {symbol} with a trail percent of {final_trail} based on percent gain of {percent_gain} submitted. ID: {sell_order.id}\n")
+                if os.path.exists(self.RESTRICTED_POSITIONS_FILE):
+                    with open(self.RESTRICTED_POSITIONS_FILE, "r") as f:
+                        restricted = json.load(f)
+                else:
+                    restricted = []
+
+                if symbol not in restricted:
+                    restricted.append(symbol)
+                    with open(self.RESTRICTED_POSITIONS_FILE, "w") as f:
+                        json.dump(restricted, f, indent=2)
+                    print(f"Added {symbol} to restricted list for today.")
             except Exception as e:
                 print(f"Error tightening trailing stop for {symbol}: {e}")
-                        
 
-
-        if percent_gain <= percent_loss_cut:
+        elif percent_gain <= percent_loss_cut:
             try:
                 open_orders = liveTradingClient.get_orders(filter=GetOrdersRequest(status="open"))
                 for order in open_orders:
@@ -196,5 +205,3 @@ class SellingBot:
                 with open(self.RESTRICTED_POSITIONS_FILE, "w") as f:
                     json.dump(restricted, f, indent=2)
                 print(f"Added {symbol} to restricted list for today.")
-            return True
-        return False

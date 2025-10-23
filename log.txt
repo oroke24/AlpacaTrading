@@ -5601,3 +5601,47 @@ KeyError: 'year_low'
 ==== Test Run End ====
 ==== Test Run Started: 2025-10-22 12:30:05 ====
 ==== Test Run End ====
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-23 06:31:05 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[BITF] Price=3.97, ATR=0.7473, Raw%=18.82
+[BITF] Final trail % = 8
+Trailing stop sell for BITF with a trail percent of 8 based on percent gain of 0.12610340479193002 submitted. ID: 5e60a515-6252-4c3c-ac5a-00e3515bc1f5
+
+[PLUG] Price=2.99, ATR=0.4829, Raw%=16.17
+[PLUG] Final trail % = 8
+Trailing stop sell for PLUG with a trail percent of 8 based on percent gain of 2.18736115383301 submitted. ID: 6fba6099-85da-419d-8290-1bb3f2462f27
+
+[NNDM] Price=1.71, ATR=0.1300, Raw%=7.60
+[NNDM] Final trail % = 7.6
+Trailing stop sell for NNDM with a trail percent of 7.6 based on percent gain of 0.76605774896877 submitted. ID: 26f47669-5786-4ef7-b064-66ab139553f9
+
+BITF: -0.13% gain
+NNDM: 0.77% gain
+PLUG: 2.19% gain
+RIG: 8.39% gain
+TRUE: 3.17% gain
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-23 08:00:02 ====================
+Rechecking yesterdays positions.
+RIG: 9.77% gain
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-23 08:10:03 ====================
+Rechecking yesterdays positions.
+RIG: 9.62% gain
+========================= Run End =========================
+
+
