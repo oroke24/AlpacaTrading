@@ -124,7 +124,7 @@ class BuyingBot:
                 json.dump(positions, f, indent=2)
             print(f"Saved positions for {symbol}, will attach trailing stop tomorrow.\n")
 
-    def calculate_position_size(self, buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.18):
+    def calculate_position_size(self, buying_power, share_price, stop_pct=0.04, risk_pct=0.05, bp_fraction=0.25):
         """
         Calculate number of shares to buy based on risk management and capital constraints.
         Returns: quantity of shares_to_buy.

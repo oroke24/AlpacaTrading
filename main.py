@@ -145,6 +145,7 @@ def main():
     for stock in stocks:
         print(stock)
     '''
+    '''
 
     #--- Ask Ai ---#
     print("openAi's Stock list:")
@@ -164,7 +165,6 @@ def main():
         except Exception as e:
             print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion
-    '''
     '''
     print(f"========================= Run End =========================")
     endTime = datetime.now()
