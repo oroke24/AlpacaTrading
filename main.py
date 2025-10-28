@@ -123,7 +123,7 @@ def main():
     if not openAi_opinion:
         print("No AI approved stocks for today, rolling on without it")
         openAi_opinion = stocks #if ai fails just pull from stocks to buy
-    printerBot.moderateListWithNews(openAi_opinion)
+    #printerBot.moderateListWithNews(openAi_opinion)
 
     #--- Place orders ---#
     for stockInfo in openAi_opinion:

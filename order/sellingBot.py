@@ -121,6 +121,16 @@ class SellingBot:
         return rounded_trail_percent
 
     def worth_selling_now(self, symbol, percent_loss_cut=3):
+        # Skip if already restricted list
+        if os.path.exists(self.RESTRICTED_POSITIONS_FILE):
+            with open(self.RESTRICTED_POSITIONS_FILE, "r") as f:
+                restricted = json.load(f)
+        else:
+            restricted = []
+
+        if symbol in restricted:
+            print(f"{symbol} already on restricted list for today.")
+            return False
         try:
             position = liveTradingClient.get_open_position(symbol)
         except Exception:
