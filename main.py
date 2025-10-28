@@ -92,16 +92,19 @@ def main():
     stocks = filterBot.filter_out_small_volume(stocks)
     stocks = filterBot.filter_by_moving_averages(stocks)
     stocks = filterBot.filter_above_year_low(stocks)
+    stocks = filterBot.filter_relative_strength(stocks)
 
     print(f"fast_info filters complete.\n"
           f"{len(stocks)} will now be populated with heavier 'populate_info'.\n")
 
     #--- Expensive populate and filter ---#
     stocks = infoBot.populate_info(stocks)
+    stocks = filterBot.filter_float_rotation(stocks)
+    '''
     stocks = filterBot.filter_price_to_earnings(stocks)
     stocks = filterBot.filter_price_to_book(stocks)
     stocks = filterBot.filter_price_to_sales(stocks)
-    stocks = filterBot.filter_float_rotation(stocks)
+    '''
     print(f"Heavier filters complete.\n")
 
     print("Stocks worth buying are:")
