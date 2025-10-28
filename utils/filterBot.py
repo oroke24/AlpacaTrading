@@ -43,6 +43,7 @@ class FilterBot():
         """
         #print(f"Size before relative strength filter: {len(stocks)}")
         filtered = []
+        print("filtering...")
         for stock in stocks:
             pct_change = stock.get('percent_change', 0)
             if pct_change > change_min:

@@ -101,6 +101,7 @@ def main():
     stocks = infoBot.populate_info(stocks)
     stocks = filterBot.filter_float_rotation(stocks)
     '''
+    # Heavier filters - uncomment as needed
     stocks = filterBot.filter_price_to_earnings(stocks)
     stocks = filterBot.filter_price_to_book(stocks)
     stocks = filterBot.filter_price_to_sales(stocks)

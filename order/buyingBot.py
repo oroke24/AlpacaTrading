@@ -30,8 +30,8 @@ class BuyingBot:
             print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
             return
         
-        if(five_day_atr > 22.0):
-            print(f"Skipping {symbol}: 5-day ATR threshold exceeded: ({five_day_atr}), max allowed: 13.0%\n")
+        if(five_day_atr > 15.0):
+            print(f"Skipping {symbol}: 5-day ATR threshold exceeded: ({five_day_atr}), max allowed: 15.0%\n")
             return
     
         order_filter = GetOrdersRequest(
