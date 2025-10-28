@@ -32,6 +32,11 @@ def main():
     infoBot = InfoBot()
     
     print("\n")
+    '''
+    -----------------------------------------------------------------------------
+    First, check if we are in 'sell' mode
+    -----------------------------------------------------------------------------
+    '''
 
     if len(sys.argv) > 1 and sys.argv[1] == 'sell': 
         stockBot.add_equity_to_history()
@@ -46,6 +51,11 @@ def main():
         print(f"========================= Run End =========================")
         print("\n")
         return
+    '''
+    -----------------------------------------------------------------------------
+    Next, check if we are in 'recheck' mode
+    -----------------------------------------------------------------------------
+    '''
 
     if len(sys.argv) > 1 and sys.argv[1] == 'recheck': 
         print(f"==================== Selling Process Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====================")
@@ -55,6 +65,22 @@ def main():
         print(f"========================= Run End =========================")
         print("\n")
         return
+
+    '''
+    -----------------------------------------------------------------------------
+    Next, check if we are in 'review' mode
+    -----------------------------------------------------------------------------
+    '''
+    if len(sys.argv) > 1 and sys.argv[1] == 'review': 
+        print("past week's equity history:")
+        printerBot.print_weekly_summary_from_equity_history()
+        return
+
+    '''
+    -----------------------------------------------------------------------------
+    Otherwise, proceed with normal 'buy' mode
+    -----------------------------------------------------------------------------
+    '''
 
     print("\n")
     startTime = datetime.now()

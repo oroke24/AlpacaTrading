@@ -1,3 +1,5 @@
+import os
+
 class PrinterBot:
 
     def __init__(self):
@@ -122,3 +124,20 @@ class PrinterBot:
             return f"{float(value):,.2f}"
         except (ValueError, TypeError):
             return str(value) #return as string if not a valid number
+    
+    def print_weekly_summary_from_equity_history(self):
+
+        EQUITY_HISTORY_FILE = "equity_history.txt"
+
+        if not os.path.exists(EQUITY_HISTORY_FILE):
+            print("Equity history file not found.")
+            return
+
+        with open(EQUITY_HISTORY_FILE, "r") as f:
+            lines = f.readlines()
+        print("Weekly Equity Summary (past 5 trading days):")
+        print("Date\t\tEquity")
+        print("-------------------------")
+        for line in lines[-5:]:  # Get last 5 entries for the past week
+            print(line.strip())
+
