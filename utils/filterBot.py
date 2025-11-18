@@ -32,7 +32,7 @@ class FilterBot():
                     filtered.append(stock)
             except Exception:
                 continue
-        print(f"Size after small cap filter: {len(filtered)}\n")
+        print(f"Size after market cap filter: {len(filtered)}\n")
         return filtered 
 
     def filter_out_small_volume(self, stocks, vol_min=500_000):
@@ -49,9 +49,9 @@ class FilterBot():
         print(f"Size after volume filter: {len(filtered)}\n")
         return filtered 
     
-    def filter_relative_strength(self, stocks, change_min=5.0):
+    def filter_relative_strength(self, stocks, change_max=8.0):
         """
-        Keep stocks with at least -15% daily change.
+        Keep stocks with at most 8% daily change.
         Helps catch late-day runners that often gap up.
         """
         #print(f"Size before relative strength filter: {len(stocks)}")
@@ -60,7 +60,7 @@ class FilterBot():
         for stock in stocks:
             pct_change = stock.get('percent_change', 0)
             try:
-                if pct_change and (pct_change < change_min):
+                if pct_change and (pct_change < change_max):
                     filtered.append(stock)
             except Exception:
                 continue
