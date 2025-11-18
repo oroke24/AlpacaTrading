@@ -64,8 +64,25 @@ FALLBACK_SP500 = [
     "WFC", "WELL", "WST", "WDC", "WY", "WHR", "WMB", "WTW", "WYNN",
     "XEL", "XYL", "YUM", "ZBRA", "ZBH", "ZION", "ZTS"
 ]
+ADDITIONAL_TICKERS = [ 
+    "ABG", "ACLS", "AEIS", "AGCO", "AGO", "AKR", "ALKS",
+    "ALLY", "ALRM", "AMKR", "AMWD", "ANET", "AOS", "APA",
+    "APD", "APTV", "ARCC", "ARLO", "ARRY", "ASGN", "ASML", "ASX",
+    "ATI", "AVGO", "AVT", "BDX", "BEAM", "BFAM",
+    "BHVN", "BIOA", "BLDP", "BOH", "BR", "BRO", "BSX", "BTU", "BUG",
+    "BWA", "BZUN", "CA", "CAH", "CBRE", "CCK", "CDNA", "CE",
+    "CELH", "CGNX", "CHD", "CHE", "CHKP", "CHTR",
+    "CLPT", "CLX", "CME", "CNC", "CNP", "CNX", "CORT", "COST",
+    "CRNX", "CRWD", "CSGP", "CSX", "CTVA", "CVNA", "CYBR",
+    "CZR", "DNOW", "DOCS", "DT", "DXCM", "EA", "EBAY",
+    "ECL", "EIX", "ELF", "ENPH", "EOG", "EPAM", "EQS", "ESPR", "ETSY",
+    "EXAS", "EXPD", "FAT", "FB", "FCEL" ]
 # NEXT_LIST_HERE = [
 #   "ABC", "DEF"
 # ]
 
-LOCAL_ARCHIVE = MASONS_LIST + MIDNIGHT6 + FALLBACK_SP500
+# Combine all watchlists into LOCAL_ARCHIVE without duplicates
+LOCAL_ARCHIVE = list(set(MASONS_LIST + MIDNIGHT6 + FALLBACK_SP500 + ADDITIONAL_TICKERS))
+
+# Old way of defining LOCAL_ARCHIVE
+#LOCAL_ARCHIVE = MASONS_LIST + MIDNIGHT6 + FALLBACK_SP500 + ADDITIONAL_TICKERS

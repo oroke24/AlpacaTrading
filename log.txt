@@ -128,3 +128,2909 @@ Saved positions for TLRY, will attach trailing stop tomorrow.
 (Execution time: 6m 10.48s)
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-29 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[CAN] Price=1.50, ATR=0.3096, Raw%=20.71
+[CAN] Final trail % = 7
+Trailing stop sell for CAN with a trail percent of 7 based on percent gain of 2.26343059721843 submitted. ID: 7162e9ac-b0e5-4d48-ba62-0bacd73e158a
+
+[RIG] Price=3.77, ATR=0.1807, Raw%=4.79
+[RIG] Final trail % = 4.79
+Trailing stop sell for RIG with a trail percent of 4.79 based on percent gain of 0.0 submitted. ID: 7648c51d-6bb7-440d-9eb0-15119c4ed408
+
+[BTG] Price=5.01, ATR=0.2861, Raw%=5.70
+[BTG] Final trail % = 5.7
+Trailing stop sell for BTG with a trail percent of 5.7 based on percent gain of 1.7258883248731 submitted. ID: 94aa5f23-9076-4f05-9a1e-4f517635ed87
+
+[TLRY] Price=1.38, ATR=0.1299, Raw%=9.41
+[TLRY] Final trail % = 7
+Trailing stop sell for TLRY with a trail percent of 7 based on percent gain of -1.53024911032028 submitted. ID: 8ad199ce-0c0a-4038-b0da-5094391460ea
+
+BTG: 1.62% gain
+Canceling existing order for BTG: 94aa5f23-9076-4f05-9a1e-4f517635ed87
+Selling 1.0 shares of BTG (percent_gain: 1.6243654822334999, Threshold exceeded)
+Added BTG to restricted list for today.
+CAN: 2.26% gain
+RIG: 0.00% gain
+Canceling existing order for RIG: 7648c51d-6bb7-440d-9eb0-15119c4ed408
+Selling 2.0 shares of RIG (percent_gain: 0.0, Threshold exceeded)
+Added RIG to restricted list for today.
+TLRY: -1.78% gain
+Canceling existing order for TLRY: 8ad199ce-0c0a-4038-b0da-5094391460ea
+Selling 4.0 shares of TLRY (percent_gain: -1.77935943060498, Threshold exceeded)
+Added TLRY to restricted list for today.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 06:40:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 06:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 07:00:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 07:10:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 07:20:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 07:30:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 07:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 07:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 08:00:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 08:10:02 ====================
+Rechecking yesterdays positions.
+BITF: 0.05% gain
+Selling 2.0 shares of BITF (percent_gain: 0.04935169814707, Threshold exceeded)
+Added BITF to restricted list for today.
+DNN: 0.22% gain
+Selling 3.0 shares of DNN (percent_gain: 0.22483295861174002, Threshold exceeded)
+Added DNN to restricted list for today.
+NVTS: 0.85% gain
+Selling 1.0 shares of NVTS (percent_gain: 0.84513643753753, Threshold exceeded)
+Added NVTS to restricted list for today.
+PLUG: -0.22% gain
+Selling 2.0 shares of PLUG (percent_gain: -0.22328437358267, Threshold exceeded)
+Error checking if PLUG is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+TYGO: -2.15% gain
+Selling 2.0 shares of TYGO (percent_gain: -2.15311004784689, Threshold exceeded)
+Error checking if TYGO is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 08:20:02 ====================
+Rechecking yesterdays positions.
+PLUG: -0.22% gain
+Selling 2.0 shares of PLUG (percent_gain: -0.21979555524544, Threshold exceeded)
+Error checking if PLUG is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+TYGO: -2.39% gain
+Selling 2.0 shares of TYGO (percent_gain: -2.39234449760766, Threshold exceeded)
+Error checking if TYGO is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 08:30:03 ====================
+Rechecking yesterdays positions.
+PLUG: -0.27% gain
+Selling 2.0 shares of PLUG (percent_gain: -0.26515019362942, Threshold exceeded)
+Error checking if PLUG is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+TYGO: -2.87% gain
+Selling 2.0 shares of TYGO (percent_gain: -2.87081339712919, Threshold exceeded)
+Error checking if TYGO is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 08:40:02 ====================
+Rechecking yesterdays positions.
+PLUG: 0.67% gain
+Selling 2.0 shares of PLUG (percent_gain: 0.669853120748, Threshold exceeded)
+Error checking if PLUG is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+TYGO: -3.83% gain
+Selling 2.0 shares of TYGO (percent_gain: -3.82775119617225, Threshold exceeded)
+Error checking if TYGO is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-29 08:50:02 ====================
+Rechecking yesterdays positions.
+PLUG: 0.30% gain
+Selling 2.0 shares of PLUG (percent_gain: 0.30352719533894, Threshold exceeded)
+Error checking if PLUG is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+TYGO: -4.30% gain
+Selling 2.0 shares of TYGO (percent_gain: -4.30143540669856, Threshold exceeded)
+Error checking if TYGO is worth selling now: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+========================= Run End =========================
+
+
+
+
+
+
+==================== Buying Process Started: 2025-10-29 12:10:02 ====================
+No trading today: Day Trade Count too high (3), max allowed: 3
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-10-30 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[NVTS] Price=13.00, ATR=1.9854, Raw%=15.27
+[NVTS] Final trail % = 7
+Failed to submit trailing stop for NVTS: {"code":40310000,"message":"account is not allowed to short"}
+[BITF] Price=4.05, ATR=0.7110, Raw%=17.56
+[BITF] Final trail % = 7
+Failed to submit trailing stop for BITF: {"code":40310000,"message":"account is not allowed to short"}
+[DNN] Price=3.15, ATR=0.2307, Raw%=7.33
+[DNN] Final trail % = 7
+Failed to submit trailing stop for DNN: {"code":40310000,"message":"account is not allowed to short"}
+[PLUG] Price=2.67, ATR=0.3679, Raw%=13.78
+[PLUG] Final trail % = 7
+Trailing stop sell for PLUG with a trail percent of 7 based on percent gain of -5.27858214422775 submitted. ID: d87bf206-664d-4a64-a72f-3c5ad6878160
+
+[TYGO] Price=2.18, ATR=0.2221, Raw%=10.18
+[TYGO] Final trail % = 7
+Trailing stop sell for TYGO with a trail percent of 7 based on percent gain of 5.72248803827751 submitted. ID: 34b78a3f-1530-4462-b75b-3ea036ee0975
+
+PLUG: -5.15% gain
+Canceling existing order for PLUG: d87bf206-664d-4a64-a72f-3c5ad6878160
+Selling 2.0 shares of PLUG (percent_gain: -5.14600704741304, Threshold exceeded)
+Added PLUG to restricted list for today.
+TYGO: 5.72% gain
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 06:40:02 ====================
+Rechecking yesterdays positions.
+TYGO: 2.63% gain
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 06:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 07:00:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 07:10:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 07:20:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 07:30:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 07:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 07:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 08:00:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 08:10:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 08:20:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 08:30:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 08:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-10-30 08:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+
+
+==================== Buying Process Started: 2025-10-30 12:10:04 ====================
+No trading today: Day Trade Count too high (3), max allowed: 3
+
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7efda456bb90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7efda456bb90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 42, in main
+    stockBot.add_equity_to_history()
+  File "/home/orokejamie/vsCode/AlpacaTrading/research/stockBot/stockBot.py", line 33, in add_equity_to_history
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7efda456bb90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2025-10-24 (Fri):(+1.06%) $61.06
+2025-10-27 (Mon):(+1.06%) $61.71
+2025-10-28 (Tue):(-0.79%) $61.22
+2025-10-29 (Wed):(+0.57%) $61.57
+2025-10-30 (Thu):(-1.09%) $60.90
+
+
+==================== Selling Process Started: 2025-10-31 06:40:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f97cb767b90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f97cb767b90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f97cb767b90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 06:50:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f6605073b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f6605073b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f6605073b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 07:00:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fd1f9477b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd1f9477b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd1f9477b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 07:10:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7ff467e77b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ff467e77b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ff467e77b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 07:20:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fe61e677b10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe61e677b10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe61e677b10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 07:30:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f380486fb90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f380486fb90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f380486fb90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 07:40:03 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f53e1d5fbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f53e1d5fbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f53e1d5fbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 07:50:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fbc0a17bbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbc0a17bbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbc0a17bbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 08:00:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f33bbd63b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f33bbd63b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f33bbd63b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 08:10:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f05a7f5fc50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f05a7f5fc50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f05a7f5fc50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 08:20:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f4207277b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f4207277b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f4207277b50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 08:30:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f4f30767b90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f4f30767b90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f4f30767b90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 08:40:03 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fbb8c367bd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbb8c367bd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbb8c367bd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-10-31 08:50:02 ====================
+Rechecking yesterdays positions.
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f2ff476bbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2ff476bbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 64, in main
+    sellingBot.check_all_positions_worth_selling_now()
+  File "/home/orokejamie/vsCode/AlpacaTrading/order/sellingBot.py", line 78, in check_all_positions_worth_selling_now
+    all_open_positions = liveTradingClient.get_all_positions()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 244, in get_all_positions
+    response = self.get("/positions")
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2ff476bbd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+
+
+==================== Buying Process Started: 2025-10-31 12:10:02 ====================
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f89d2477b10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f89d2477b10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 184, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 90, in main
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f89d2477b10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-04 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[ESLA] Price=3.07, ATR=0.3503, Raw%=11.41
+[ESLA] Final trail % = 7
+Trailing stop sell for ESLA with a trail percent of 7 based on percent gain of 2.3095623987033997 submitted. ID: 9f286792-5f70-4258-b7b6-d1add6baf055
+
+[BITF] Price=3.82, ATR=0.5528, Raw%=14.47
+[BITF] Final trail % = 7
+Trailing stop sell for BITF with a trail percent of 7 based on percent gain of -4.44927147145681 submitted. ID: 688ec4e4-570e-4e78-a6f7-4c0ca2f255ef
+
+[AREC] Price=3.62, ATR=0.6550, Raw%=18.12
+[AREC] Final trail % = 7
+Trailing stop sell for AREC with a trail percent of 7 based on percent gain of -9.26386653007464 submitted. ID: 2565e9f5-b26a-4bec-8edf-7d378d11d486
+
+[RIG] Price=3.81, ATR=0.2064, Raw%=5.41
+[RIG] Final trail % = 5.41
+Trailing stop sell for RIG with a trail percent of 5.41 based on percent gain of -2.8673287496816897 submitted. ID: fb88d8ed-81fe-44c6-a45c-62301b58a463
+
+AREC: -9.26% gain
+Canceling existing order for AREC: 2565e9f5-b26a-4bec-8edf-7d378d11d486
+Selling 2.0 shares of AREC (percent_gain: -9.26386653007464, Threshold exceeded)
+Added AREC to restricted list for today.
+BITF: -4.45% gain
+Canceling existing order for BITF: 688ec4e4-570e-4e78-a6f7-4c0ca2f255ef
+Selling 2.0 shares of BITF (percent_gain: -4.44927147145681, Threshold exceeded)
+Added BITF to restricted list for today.
+ESLA: 2.31% gain
+RIG: -2.85% gain
+Canceling existing order for RIG: fb88d8ed-81fe-44c6-a45c-62301b58a463
+Selling 1.0 shares of RIG (percent_gain: -2.8520499108734403, Threshold exceeded)
+Added RIG to restricted list for today.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 06:40:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 06:50:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 07:00:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 07:10:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 07:20:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 07:30:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 07:40:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 07:50:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 08:00:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 08:10:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 08:20:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 08:30:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 08:40:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-04 08:50:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+$BBOX: possibly delisted; no price data found  (period=5d)
+$BBOX: possibly delisted; no price data found  (period=1y)
+$BBOX: possibly delisted; no price data found  (period=5d)
+$ABMD: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$DWAC: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ANSS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CXO: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ATH: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CATM: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CKPT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CERN: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$EV: possibly delisted; no price data found  (period=5d)
+$EV: possibly delisted; no price data found  (period=5d)
+$DISH: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$AAM.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$DSX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ESLAW: possibly delisted; no price data found  (period=5d)
+$ESLAW: possibly delisted; no price data found  (period=5d)
+$ESLAW: possibly delisted; no price data found  (period=5d)
+$LZM.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-11-04 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 702 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for ABMD: 'currency'
+Error fetching fast_info for DWAC: 'currency'
+Error fetching fast_info for ANSS: 'currency'
+Error fetching fast_info for CXO: 'currency'
+Error fetching fast_info for ATH: 'currency'
+Error fetching fast_info for CATM: 'currency'
+Error fetching fast_info for CKPT: 'currency'
+Error fetching fast_info for CPG: 'currency'
+Error fetching fast_info for CERN: 'currency'
+Error fetching fast_info for DISH: 'currency'
+Error fetching fast_info for AAM.WS: 'currency'
+Error fetching fast_info for DSX.WS: 'currency'
+Error fetching fast_info for ESLAW: 'Index' object has no attribute 'date'
+Error fetching fast_info for LZM.WS: 'currency'
+Skipping ABMD in assign_fast_info_details(): might be delisted.
+Skipping DWAC in assign_fast_info_details(): might be delisted.
+Skipping ANSS in assign_fast_info_details(): might be delisted.
+Skipping CXO in assign_fast_info_details(): might be delisted.
+Skipping ATH in assign_fast_info_details(): might be delisted.
+Skipping CATM in assign_fast_info_details(): might be delisted.
+Skipping CKPT in assign_fast_info_details(): might be delisted.
+Skipping CPG in assign_fast_info_details(): might be delisted.
+Skipping CERN in assign_fast_info_details(): might be delisted.
+Skipping DISH in assign_fast_info_details(): might be delisted.
+Skipping AAM.WS in assign_fast_info_details(): might be delisted.
+Skipping DSX.WS in assign_fast_info_details(): might be delisted.
+Skipping ESLAW in assign_fast_info_details(): might be delisted.
+Skipping LZM.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 206
+
+filtering...
+Size after small cap filter: 133
+
+filtering...
+Size after volume filter: 122
+
+filtering...
+Size after moving average filter: 34
+
+filtering...
+Size after 52-week low filter: 34
+
+filtering...
+Size after relative strength filter: 8
+
+fast_info filters complete.
+8 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 6
+
+Heavier filters complete.
+
+Stocks worth buying are:
+MAMK, $7.07, 29.44%
+TERN, $17.99, 25.37%
+TCMD, $22.36, 13.85%
+RLMD, $2.69, 22.84%
+DENN, $6.18, 2.57%
+HTZ, $6.76, 36.02%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[MAMK] Final calculated 5 day atr (rounded) = 21.22%
+Skipping MAMK: 5-day ATR threshold exceeded: (21.22), max allowed: 15.0%
+
+[TERN] Final calculated 5 day atr (rounded) = 16.06%
+Skipping TERN: 5-day ATR threshold exceeded: (16.06), max allowed: 15.0%
+
+[TCMD] Final calculated 5 day atr (rounded) = 9.79%
+Skipping TCMD: 21.8, too risky (qty to buy was 0).
+
+[RLMD] Final calculated 5 day atr (rounded) = 9.49%
+latest price for RLMD: 2.68, so I'm buying 5
+
+Buy order submitted. ID: 67aab42e-c2df-45ba-9be9-4545abf88e8a
+Waiting for RLMD buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RLMD, will attach trailing stop tomorrow.
+
+[DENN] Final calculated 5 day atr (rounded) = 10.26%
+latest price for DENN: 6.175, so I'm buying 1
+
+Buy order submitted. ID: d00ebce9-b8f9-4a01-bebd-79cfdf27aac6
+Waiting for DENN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DENN, will attach trailing stop tomorrow.
+
+[HTZ] Final calculated 5 day atr (rounded) = 10.57%
+latest price for HTZ: 6.78, so I'm buying 1
+
+Buy order submitted. ID: e007f04b-5ada-4473-ae38-cc8e46060434
+Waiting for HTZ buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for HTZ, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 5m 13.04s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-05 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[RLMD] Price=2.52, ATR=0.2278, Raw%=9.04
+[RLMD] Final trail % = 7
+Trailing stop sell for RLMD with a trail percent of 7 based on percent gain of 0.9331201903416501 submitted. ID: 476f79f9-8136-41c8-9b80-8fe2fd787f46
+
+[DENN] Price=6.16, ATR=0.4129, Raw%=6.70
+[DENN] Final trail % = 6.7
+Trailing stop sell for DENN with a trail percent of 6.7 based on percent gain of -0.06150061500615 submitted. ID: f9db0c76-6354-48d2-87cf-6513e6b6355e
+
+[HTZ] Price=6.43, ATR=0.4767, Raw%=7.41
+[HTZ] Final trail % = 7
+Trailing stop sell for HTZ with a trail percent of 7 based on percent gain of -6.27306273062731 submitted. ID: 245c7a2b-0e56-41df-ab75-57624d3fdec5
+
+DENN: -0.06% gain
+Canceling existing order for DENN: f9db0c76-6354-48d2-87cf-6513e6b6355e
+Selling 1.0 shares of DENN (percent_gain: -0.06150061500615, Threshold exceeded)
+Added DENN to restricted list for today.
+HTZ: -6.31% gain
+Canceling existing order for HTZ: 245c7a2b-0e56-41df-ab75-57624d3fdec5
+Selling 1.0 shares of HTZ (percent_gain: -6.31143911439114, Threshold exceeded)
+Added HTZ to restricted list for today.
+RLMD: 0.93% gain
+Canceling existing order for RLMD: 476f79f9-8136-41c8-9b80-8fe2fd787f46
+Selling 5.0 shares of RLMD (percent_gain: 0.9331201903416501, Threshold exceeded)
+Added RLMD to restricted list for today.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 06:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 06:50:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 07:00:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 07:10:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 07:20:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 07:30:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 07:40:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 07:50:04 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 08:00:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 08:10:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 08:20:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 08:30:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 08:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-05 08:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+$EV: possibly delisted; no price data found  (period=5d)
+$EV: possibly delisted; no price data found  (period=5d)
+$CPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$DISH: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CATM: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CKPT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CERN: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$DWAC: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$BBOX: possibly delisted; no price data found  (period=5d)
+$BBOX: possibly delisted; no price data found  (period=1y)
+$BBOX: possibly delisted; no price data found  (period=5d)
+$ATH: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ABMD: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ANSS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CXO: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$LEGT.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FLYX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IAUX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-11-05 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 711 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for CPG: 'currency'
+Error fetching fast_info for DISH: 'currency'
+Error fetching fast_info for CATM: 'currency'
+Error fetching fast_info for CKPT: 'currency'
+Error fetching fast_info for CERN: 'currency'
+Error fetching fast_info for DWAC: 'currency'
+Error fetching fast_info for ATH: 'currency'
+Error fetching fast_info for ABMD: 'currency'
+Error fetching fast_info for ANSS: 'currency'
+Error fetching fast_info for CXO: 'currency'
+Error fetching fast_info for LEGT.WS: 'currency'
+Error fetching fast_info for TE.WS: 'currency'
+Error fetching fast_info for SES.WS: 'currency'
+Error fetching fast_info for FLYX.WS: 'currency'
+Error fetching fast_info for IAUX.WS: 'currency'
+Error fetching fast_info for MPTI.WS: 'currency'
+Skipping CPG in assign_fast_info_details(): might be delisted.
+Skipping DISH in assign_fast_info_details(): might be delisted.
+Skipping SEDG in assign_fast_info_details(): might be delisted.
+Skipping SLNO in assign_fast_info_details(): might be delisted.
+Skipping CATM in assign_fast_info_details(): might be delisted.
+Skipping BHVN in assign_fast_info_details(): might be delisted.
+Skipping CKPT in assign_fast_info_details(): might be delisted.
+Skipping CERN in assign_fast_info_details(): might be delisted.
+Skipping DWAC in assign_fast_info_details(): might be delisted.
+Skipping ATH in assign_fast_info_details(): might be delisted.
+Skipping ABMD in assign_fast_info_details(): might be delisted.
+Skipping ANSS in assign_fast_info_details(): might be delisted.
+Skipping CXO in assign_fast_info_details(): might be delisted.
+Skipping LEGT.WS in assign_fast_info_details(): might be delisted.
+Skipping TE.WS in assign_fast_info_details(): might be delisted.
+Skipping SES.WS in assign_fast_info_details(): might be delisted.
+Skipping FLYX.WS in assign_fast_info_details(): might be delisted.
+Skipping IAUX.WS in assign_fast_info_details(): might be delisted.
+Skipping MPTI.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 200
+
+filtering...
+Size after small cap filter: 127
+
+filtering...
+Size after volume filter: 116
+
+filtering...
+Size after moving average filter: 39
+
+filtering...
+Size after 52-week low filter: 39
+
+filtering...
+Size after relative strength filter: 30
+
+fast_info filters complete.
+30 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 22
+
+Heavier filters complete.
+
+Stocks worth buying are:
+SLDP, $8.56, 53.77%
+CIFR, $24.28, 8.42%
+BW, $5.15, 4.46%
+GWH, $4.6, 30.31%
+AIP, $15.47, 16.58%
+QS, $17.1, 12.04%
+EVC, $2.95, 20.55%
+BLDP, $3.68, 10.18%
+TEVA, $24.69, 22.41%
+BITF, $4.08, 7.19%
+WULF, $15.27, 2.17%
+M, $21.22, 9.19%
+KW, $9.79, 2.51%
+RIVN, $15.74, 21.56%
+FCEL, $8.43, 14.23%
+F, $13.23, 3.56%
+ESPR, $2.94, 3.7%
+AAL, $13.49, 6.85%
+NIO, $7.36, 3.23%
+FUBO, $4.09, 12.19%
+PLUG, $2.61, 4.82%
+BTBT, $3.32, 4.45%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[SLDP] Final calculated 5 day atr (rounded) = 12.43%
+latest price for SLDP: 8.52, so I'm buying 1
+
+Buy order submitted. ID: 85f9d7f9-2a9a-41a8-b06f-a9e6c74ba76e
+Waiting for SLDP buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for SLDP, will attach trailing stop tomorrow.
+
+[CIFR] Final calculated 5 day atr (rounded) = 12.04%
+Skipping CIFR: 24.325, too risky (qty to buy was 0).
+
+[BW] Final calculated 5 day atr (rounded) = 11.52%
+latest price for BW: 5.18, so I'm buying 2
+
+Buy order submitted. ID: 301b1941-40de-49f4-b843-f9e3eacb7480
+Waiting for BW buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BW, will attach trailing stop tomorrow.
+
+[GWH] Final calculated 5 day atr (rounded) = 11.92%
+latest price for GWH: 4.59, so I'm buying 2
+
+Buy order submitted. ID: 93088380-bebc-4be8-81ed-93d26224e262
+Waiting for GWH buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for GWH, will attach trailing stop tomorrow.
+
+[AIP] Final calculated 5 day atr (rounded) = 6.91%
+Skipping AIP: 15.46, too risky (qty to buy was 0).
+
+[QS] Final calculated 5 day atr (rounded) = 11.07%
+Skipping QS: 17.06, too risky (qty to buy was 0).
+
+[EVC] Final calculated 5 day atr (rounded) = 11.08%
+latest price for EVC: 2.955, so I'm buying 2
+
+Buy order submitted. ID: 5159f99e-336c-4cf0-a7c0-a342fa556af6
+Waiting for EVC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for EVC, will attach trailing stop tomorrow.
+
+[BLDP] Final calculated 5 day atr (rounded) = 6.99%
+latest price for BLDP: 3.68, so I'm buying 1
+
+Buy order submitted. ID: 8ba3c300-1b66-4908-92b3-b3d350cb2925
+Waiting for BLDP buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BLDP, will attach trailing stop tomorrow.
+
+[TEVA] Final calculated 5 day atr (rounded) = 5.55%
+Skipping TEVA: current price (24.76) exceeds buying power (20.68)
+
+[BITF] Final calculated 5 day atr (rounded) = 9.67%
+latest price for BITF: 4.085, so I'm buying 1
+
+Buy order submitted. ID: 796331d0-dc70-4ac5-b7d9-154189ab1d72
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+
+[WULF] Final calculated 5 day atr (rounded) = 9.51%
+Skipping WULF: 15.24, too risky (qty to buy was 0).
+
+[M] Final calculated 5 day atr (rounded) = 3.99%
+Skipping M: current price (21.23) exceeds buying power (16.59)
+
+[KW] Final calculated 5 day atr (rounded) = 7.24%
+Skipping KW: 9.79, too risky (qty to buy was 0).
+
+[RIVN] Final calculated 5 day atr (rounded) = 6.25%
+Skipping RIVN: 15.81, too risky (qty to buy was 0).
+
+[FCEL] Final calculated 5 day atr (rounded) = 11.65%
+Skipping FCEL: 8.425, too risky (qty to buy was 0).
+
+[F] Final calculated 5 day atr (rounded) = 2.09%
+Skipping F: 13.23, too risky (qty to buy was 0).
+
+[ESPR] Final calculated 5 day atr (rounded) = 6.38%
+latest price for ESPR: 2.94, so I'm buying 1
+
+Buy order submitted. ID: 69d104b4-7423-439e-9949-23cc48313a4f
+Waiting for ESPR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ESPR, will attach trailing stop tomorrow.
+
+[AAL] Final calculated 5 day atr (rounded) = 3.89%
+Skipping AAL: 13.515, too risky (qty to buy was 0).
+
+[NIO] Final calculated 5 day atr (rounded) = 3.99%
+Skipping NIO: 7.365, too risky (qty to buy was 0).
+
+[FUBO] Final calculated 5 day atr (rounded) = 13.45%
+Skipping FUBO: 4.095, too risky (qty to buy was 0).
+
+[PLUG] Final calculated 5 day atr (rounded) = 8.41%
+latest price for PLUG: 2.62, so I'm buying 1
+
+Buy order submitted. ID: 9a5db758-f5ad-4659-87b0-1aa7809dd005
+Waiting for PLUG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for PLUG, will attach trailing stop tomorrow.
+
+[BTBT] Final calculated 5 day atr (rounded) = 7.57%
+Skipping BTBT: 3.32, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 6m 27.16s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-06 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[SLDP] Price=7.93, ATR=0.7283, Raw%=9.18
+[SLDP] Final trail % = 7
+Trailing stop sell for SLDP with a trail percent of 7 based on percent gain of -5.929729539619459 submitted. ID: bf7209fe-d589-4697-990f-10034157dca2
+
+[BW] Price=4.99, ATR=0.4146, Raw%=8.31
+[BW] Final trail % = 7
+Trailing stop sell for BW with a trail percent of 7 based on percent gain of -4.96950228493853 submitted. ID: d20dd6f4-da42-4c30-978d-2f95f30fddcf
+
+[GWH] Price=4.46, ATR=0.7242, Raw%=16.24
+[GWH] Final trail % = 7
+Trailing stop sell for GWH with a trail percent of 7 based on percent gain of -3.4318501678034 submitted. ID: baa641b0-6e57-494b-822a-a69d86e4c1c3
+
+[EVC] Price=2.94, ATR=0.1421, Raw%=4.83
+[EVC] Final trail % = 4.83
+Trailing stop sell for EVC with a trail percent of 4.83 based on percent gain of -0.57154452298015 submitted. ID: 7680e288-ebfc-4cb0-bd58-475905495e7c
+
+[BLDP] Price=3.62, ATR=0.2307, Raw%=6.37
+[BLDP] Final trail % = 6.37
+Trailing stop sell for BLDP with a trail percent of 6.37 based on percent gain of -1.7687074829932 submitted. ID: 537485fe-e857-4485-aaf0-38bdff699cf0
+
+[BITF] Price=3.96, ATR=0.4864, Raw%=12.28
+[BITF] Final trail % = 7
+Trailing stop sell for BITF with a trail percent of 7 based on percent gain of -3.12706452323277 submitted. ID: 8bd57638-e91e-48d2-8753-1fda7f2897ab
+
+[ESPR] Price=2.61, ATR=0.1743, Raw%=6.68
+[ESPR] Final trail % = 6.68
+Trailing stop sell for ESPR with a trail percent of 6.68 based on percent gain of -10.50544086240212 submitted. ID: 9cd40da6-c096-41a2-b389-7de32c108646
+
+[PLUG] Price=2.63, ATR=0.2343, Raw%=8.89
+[PLUG] Final trail % = 7
+Trailing stop sell for PLUG with a trail percent of 7 based on percent gain of -0.07260499063777999 submitted. ID: e7cb302b-12ca-4cc8-a27e-b5c6270c766e
+
+BITF: -3.26% gain
+Canceling existing order for BITF: 8bd57638-e91e-48d2-8753-1fda7f2897ab
+Selling 1.0 shares of BITF (percent_gain: -3.2567471677799804, Threshold exceeded)
+Added BITF to restricted list for today.
+BLDP: -1.77% gain
+Canceling existing order for BLDP: 537485fe-e857-4485-aaf0-38bdff699cf0
+Selling 1.0 shares of BLDP (percent_gain: -1.7687074829932, Threshold exceeded)
+Added BLDP to restricted list for today.
+BW: -4.97% gain
+Canceling existing order for BW: d20dd6f4-da42-4c30-978d-2f95f30fddcf
+Selling 2.0 shares of BW (percent_gain: -4.96950228493853, Threshold exceeded)
+Added BW to restricted list for today.
+ESPR: -11.01% gain
+Canceling existing order for ESPR: 9cd40da6-c096-41a2-b389-7de32c108646
+Selling 1.0 shares of ESPR (percent_gain: -11.01393267568392, Threshold exceeded)
+Added ESPR to restricted list for today.
+EVC: -0.57% gain
+Canceling existing order for EVC: 7680e288-ebfc-4cb0-bd58-475905495e7c
+Selling 2.0 shares of EVC (percent_gain: -0.57154452298015, Threshold exceeded)
+Added EVC to restricted list for today.
+GWH: -3.22% gain
+Canceling existing order for GWH: baa641b0-6e57-494b-822a-a69d86e4c1c3
+Selling 2.0 shares of GWH (percent_gain: -3.21532965248457, Threshold exceeded)
+Added GWH to restricted list for today.
+PLUG: 0.11% gain
+Canceling existing order for PLUG: e7cb302b-12ca-4cc8-a27e-b5c6270c766e
+Selling 1.0 shares of PLUG (percent_gain: 0.11463945890175, Threshold exceeded)
+Added PLUG to restricted list for today.
+SLDP: -6.51% gain
+Canceling existing order for SLDP: bf7209fe-d589-4697-990f-10034157dca2
+Selling 1.0 shares of SLDP (percent_gain: -6.50535176262324, Threshold exceeded)
+Added SLDP to restricted list for today.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 06:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 06:50:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 07:00:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 07:10:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 07:20:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 07:30:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 07:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 07:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 08:00:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 08:10:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 08:20:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 08:30:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 08:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-06 08:50:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+$EV: possibly delisted; no price data found  (period=5d)
+$EV: possibly delisted; no price data found  (period=5d)
+$CERN: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ANSS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: CKPT"}}}
+$CKPT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ATH: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CATM: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$DWAC: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$DISH: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$BBOX: possibly delisted; no price data found  (period=5d)
+$BBOX: possibly delisted; no price data found  (period=1y)
+$BBOX: possibly delisted; no price data found  (period=5d)
+$CXO: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ABMD: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$LEGT.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$LGL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ODVWZ: possibly delisted; no price data found  (period=5d)
+$ODVWZ: possibly delisted; no price data found  (period=5d)
+$ODVWZ: possibly delisted; no price data found  (period=5d)
+
+
+
+
+==================== Buying Process Started: 2025-11-06 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 708 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for CERN: 'currency'
+Error fetching fast_info for ANSS: 'currency'
+Error fetching fast_info for CKPT: 'currency'
+Error fetching fast_info for ATH: 'currency'
+Error fetching fast_info for CATM: 'currency'
+Error fetching fast_info for CPG: 'currency'
+Error fetching fast_info for DWAC: 'currency'
+Error fetching fast_info for DISH: 'currency'
+Error fetching fast_info for CXO: 'currency'
+Error fetching fast_info for ABMD: 'currency'
+Error fetching fast_info for LEGT.WS: 'currency'
+Error fetching fast_info for LGL.WS: 'currency'
+Error fetching fast_info for ODVWZ: 'Index' object has no attribute 'date'
+Skipping CERN in assign_fast_info_details(): might be delisted.
+Skipping ANSS in assign_fast_info_details(): might be delisted.
+Skipping CKPT in assign_fast_info_details(): might be delisted.
+Skipping ATH in assign_fast_info_details(): might be delisted.
+Skipping CATM in assign_fast_info_details(): might be delisted.
+Skipping CPG in assign_fast_info_details(): might be delisted.
+Skipping DWAC in assign_fast_info_details(): might be delisted.
+Skipping DISH in assign_fast_info_details(): might be delisted.
+Skipping CELH in assign_fast_info_details(): might be delisted.
+Skipping CXO in assign_fast_info_details(): might be delisted.
+Skipping ABMD in assign_fast_info_details(): might be delisted.
+Skipping LEGT.WS in assign_fast_info_details(): might be delisted.
+Skipping LGL.WS in assign_fast_info_details(): might be delisted.
+Skipping ODVWZ in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 201
+
+filtering...
+Size after small cap filter: 138
+
+filtering...
+Size after volume filter: 127
+
+filtering...
+Size after moving average filter: 33
+
+filtering...
+Size after 52-week low filter: 33
+
+filtering...
+Size after relative strength filter: 10
+
+fast_info filters complete.
+10 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 8
+
+Heavier filters complete.
+
+Selected 3 top candidates by simple_score.
+Stocks worth buying are:
+FSLY, $11.02, 15.63%
+XPEV, $24.36, 10.8%
+CCLD, $3.56, 20.51%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+========================= Run End =========================
+(Execution time: 5m 1.26s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-07 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[FSLY] Price=10.84, ATR=0.4714, Raw%=4.35
+[FSLY] Final trail % = 4.35
+Trailing stop sell for FSLY with a trail percent of 4.35 based on percent gain of -2.34146253569852 submitted. ID: 570ef017-8403-4440-b662-ec2fbd575654
+
+[CCLD] Price=3.34, ATR=0.1861, Raw%=5.57
+[CCLD] Final trail % = 5.57
+Trailing stop sell for CCLD with a trail percent of 5.57 based on percent gain of -5.438707089231469 submitted. ID: 3b198d52-dc95-4938-991d-32b570bfa18b
+
+CCLD: -5.44% gain
+Canceling existing order for CCLD: 3b198d52-dc95-4938-991d-32b570bfa18b
+Selling 3.0 shares of CCLD (percent_gain: -5.438707089231469, Threshold exceeded)
+Added CCLD to restricted list for today.
+FSLY: -2.34% gain
+Canceling existing order for FSLY: 570ef017-8403-4440-b662-ec2fbd575654
+Selling 1.0 shares of FSLY (percent_gain: -2.34146253569852, Threshold exceeded)
+Added FSLY to restricted list for today.
+========================= Run End =========================
+
+
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2025-10-30 (Thu):(-1.09%) $60.90
+2025-11-04 (Tue):(-1.92%) $59.73
+2025-11-05 (Wed):(-1.67%) $58.73
+2025-11-06 (Thu):(-3.63%) $56.60
+2025-11-07 (Fri):(-1.73%) $55.62
+
+
+==================== Selling Process Started: 2025-11-07 06:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 06:50:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 07:00:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 07:10:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 07:20:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 07:30:03 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 07:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 07:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 08:00:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 08:10:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 08:20:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 08:30:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 08:40:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2025-11-07 08:50:02 ====================
+Rechecking yesterdays positions.
+========================= Run End =========================
+
+
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: GWH.WS"}}}
+$GWH.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-11-07 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 702 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for GWH.WS: 'currency'
+Skipping GWH.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 214
+
+filtering...
+Size after small cap filter: 133
+
+filtering...
+Size after volume filter: 124
+
+filtering...
+Size after moving average filter: 32
+
+filtering...
+Size after 52-week low filter: 32
+
+filtering...
+Size after relative strength filter: 0
+
+fast_info filters complete.
+0 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 0
+
+Heavier filters complete.
+
+Selected 0 top candidates by simple_score.
+Stocks worth buying are:
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+No AI approved stocks for today, rolling on without it
+========================= Run End =========================
+(Execution time: 4m 22.72s)
+
+
+
+
+==================== Selling Process Started: 2025-11-12 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: PTN"}}}
+$PTN: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LGL.WS"}}}
+$LGL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$HYAC.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$LEGT.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+
+
+
+
+==================== Buying Process Started: 2025-11-12 12:10:04 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 700 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for PTN: 'currency'
+Error fetching fast_info for LGL.WS: 'currency'
+Error fetching fast_info for HYAC.WS: 'currency'
+Error fetching fast_info for LEGT.WS: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Skipping PTN in assign_fast_info_details(): might be delisted.
+Skipping LGL.WS in assign_fast_info_details(): might be delisted.
+Skipping HYAC.WS in assign_fast_info_details(): might be delisted.
+Skipping LEGT.WS in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 203
+
+filtering...
+Size after small cap filter: 119
+
+filtering...
+Size after volume filter: 109
+
+filtering...
+Size after moving average filter: 38
+
+filtering...
+Size after 52-week low filter: 38
+
+filtering...
+Size after relative strength filter: 2
+
+fast_info filters complete.
+2 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 2
+
+Heavier filters complete.
+
+Selected 2 top candidates by simple_score.
+Stocks worth buying are:
+ESLA, $1.98, -20.04%
+NRGV, $3.38, -21.58%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+========================= Run End =========================
+(Execution time: 7m 26.77s)
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: AAM.WS"}}}
+$AAM.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: MPTI.WS"}}}
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-11-17 12:10:04 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 693 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for AAM.WS: 'currency'
+Error fetching fast_info for MPTI.WS: 'currency'
+Skipping AAM.WS in assign_fast_info_details(): might be delisted.
+Skipping MPTI.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 149
+
+filtering...
+Size after small cap filter: 74
+
+filtering...
+Size after volume filter: 65
+
+filtering...
+Size after moving average filter: 16
+
+filtering...
+Size after 52-week low filter: 16
+
+filtering...
+Size after relative strength filter: 10
+
+fast_info filters complete.
+10 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 4
+
+Heavier filters complete.
+
+Selected 4 top candidates by simple_score.
+Stocks worth buying are:
+BTE, $3.01, -4.45%
+RPTX, $2.12, -0.47%
+SHMD, $4.07, -23.26%
+RIG, $4.02, -0.77%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[BTE] Final calculated 5 day atr (rounded) = 7.31%
+latest price for BTE: 3.0, so I'm buying 2
+
+Buy order submitted. ID: 38643e1f-6169-40ee-b2b5-1bbdca4d4cf5
+Waiting for BTE buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTE, will attach trailing stop tomorrow.
+
+[RPTX] Final calculated 5 day atr (rounded) = 7.35%
+latest price for RPTX: 2.125, so I'm buying 2
+
+Buy order submitted. ID: 414faafb-4c32-4a8c-a02e-f607a599e6f0
+Waiting for RPTX buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RPTX, will attach trailing stop tomorrow.
+
+[SHMD] Final calculated 5 day atr (rounded) = 25%
+Skipping SHMD: 5-day ATR threshold exceeded: (25), max allowed: 15.0%
+
+[RIG] Final calculated 5 day atr (rounded) = 4.99%
+latest price for RIG: 4.015, so I'm buying 1
+
+Buy order submitted. ID: afa79a05-e1c0-443b-b006-518fa1ddc4fd
+Waiting for RIG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RIG, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 9m 55.37s)
+
+

@@ -120,7 +120,7 @@ class SellingBot:
     
         return rounded_trail_percent
 
-    def worth_selling_now(self, symbol, percent_loss_cut=2):
+    def worth_selling_now(self, symbol, percent_loss_cut=-2.0):
         # Skip if already restricted list
         if os.path.exists(self.RESTRICTED_POSITIONS_FILE):
             with open(self.RESTRICTED_POSITIONS_FILE, "r") as f:

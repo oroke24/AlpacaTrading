@@ -34,12 +34,12 @@ class BuyingBot:
             print(f"Skipping {symbol}: 5-day ATR threshold exceeded: ({five_day_atr}), max allowed: 15.0%\n")
             return
     
-        order_filter = GetOrdersRequest(
+        open_order_filter = GetOrdersRequest(
             status="open",
             symbols=[symbol],
             order_type=OrderType.TRAILING_STOP
         )
-        open_trailing_orders = liveTradingClient.get_orders(filter=order_filter)
+        open_trailing_orders = liveTradingClient.get_orders(filter=open_order_filter)
         if len(open_trailing_orders) > 0:
             print(f"Open trailing stop order exists for {symbol}, skipping buy to avoid potential day trade.\n")
             return

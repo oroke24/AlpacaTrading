@@ -94,7 +94,8 @@ def main():
     if(day_trades >= 3):
         print(f"No trading today: Day Trade Count too high ({day_trades}), max allowed: 3")
         return
-
+    '''
+   '''     
     # --- StockBot Research and Trade Portion
     print(f"--- STOCK PORTION ---")
 
@@ -133,6 +134,15 @@ def main():
     stocks = filterBot.filter_price_to_sales(stocks)
     '''
     print(f"Heavier filters complete.\n")
+    # --- Lightweight scoring / pick top candidates 
+    try:
+        # pick top 10 by the simple_score (percent change + dollar volume)
+        picked = filterBot.pick_top(stocks, top_n=5)
+        print(f"Selected {len(picked)} top candidates by simple_score.")
+        # carry forward the picked list (they include '_simple_score')
+        stocks = picked
+    except Exception as e:
+        print(f"Error during simple scoring/pick: {e}")
 
     print("Stocks worth buying are:")
     stocks = sorterBot.sort_fifty_day_ma_momentum_high_to_low(stocks)
@@ -144,7 +154,6 @@ def main():
     print("--------RAW STOCK DATA----------")
     for stock in stocks:
         print(stock)
-    '''
     '''
 
     #--- Ask Ai ---#
@@ -165,6 +174,7 @@ def main():
         except Exception as e:
             print(f"Error fetching {stockInfo['symbol']} {e}...")
     # --- END StockBot Research and Trade Portion
+    '''
     '''
     print(f"========================= Run End =========================")
     endTime = datetime.now()
