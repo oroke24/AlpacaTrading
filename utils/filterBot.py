@@ -35,7 +35,7 @@ class FilterBot():
         print(f"Size after market cap filter: {len(filtered)}\n")
         return filtered 
 
-    def filter_out_small_volume(self, stocks, vol_min=500_000):
+    def filter_out_small_volume(self, stocks, vol_min=350_000):
         #print(f"Size before volume filter: {len(stocks)}")
         filtered = []
         print("filtering...")
@@ -112,7 +112,7 @@ class FilterBot():
         return filtered
     
 
-    def filter_float_rotation(self, stocks, rotation_pct_min=1.5, rotation_pct_max=100):
+    def filter_float_rotation(self, stocks, rotation_pct_min=1.5, rotation_pct_max=150):
         #print(f"Size before float rotation filter: {len(stocks)}")
         filtered = []
         print("filtering...")

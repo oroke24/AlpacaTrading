@@ -44,7 +44,7 @@ class SellingBot:
             elif percent_gain >= 10:
                 final_trail = 5 #Tighten trail if already at 10% gain
             else:
-                final_trail = base_trail
+                final_trail = base_trail * .5 #half the recommended trail to minimize loss
 
             #Final check: making sure atr suggestion isn't loosened
             final_trail = min(final_trail, base_trail)
@@ -120,7 +120,7 @@ class SellingBot:
     
         return rounded_trail_percent
 
-    def worth_selling_now(self, symbol, percent_loss_cut=-2.0):
+    def worth_selling_now(self, symbol, percent_gain_cut=2.0):
         # Skip if already restricted list
         if os.path.exists(self.RESTRICTED_POSITIONS_FILE):
             with open(self.RESTRICTED_POSITIONS_FILE, "r") as f:
@@ -154,12 +154,12 @@ class SellingBot:
                         print(f"Canceling existing order for {symbol}: {order.id}")
                         liveTradingClient.cancel_order_by_id(order.id)
                 final_trail = 3.5 #Tighten trail if already at 10% gain
-                if percent_gain >= 30:
-                    final_trail = 2 #Tighten trail if already at 30% gain
-                elif percent_gain >= 20:
-                    final_trail = 2.5 #Tighten trail if already at 20% gain
-                elif percent_gain >= 15:
-                    final_trail = 3 #Tighten trail if already at 15% gain
+                if percent_gain >= 10:
+                    final_trail = 4 #Tighten trail if already at 10% gain
+                elif percent_gain >= 8:
+                    final_trail = 3 #Tighten trail if already at 8% gain
+                elif percent_gain >= 5:
+                    final_trail = 2.5 #Tighten trail if already at 5% gain
 
                 trailing_stop_order = TrailingStopOrderRequest(
                     symbol=symbol,
@@ -184,7 +184,7 @@ class SellingBot:
             except Exception as e:
                 print(f"Error tightening trailing stop for {symbol}: {e}")
 
-        elif percent_gain <= percent_loss_cut:
+        elif percent_gain >= percent_gain_cut:
             try:
                 open_orders = liveTradingClient.get_orders(filter=GetOrdersRequest(status="open"))
                 for order in open_orders:

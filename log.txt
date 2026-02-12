@@ -3034,3 +3034,3834 @@ Saved positions for RIG, will attach trailing stop tomorrow.
 (Execution time: 9m 55.37s)
 
 
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-18 06:31:04 ====================
+Selling yesterdays positions.
+[ESPR] Price=2.82, ATR=0.2100, Raw%=7.46
+[ESPR] Final trail % = 7
+Trailing stop sell for ESPR with a trail percent of 7 based on percent gain of -10.46698872785829 submitted. ID: b1ca9f6b-a585-4fa8-8e90-dff117094cb4
+
+[NGD] Price=7.05, ATR=0.3871, Raw%=5.49
+[NGD] Final trail % = 5.49
+Trailing stop sell for NGD with a trail percent of 5.49 based on percent gain of -7.32951259267049 submitted. ID: 68572a0a-e195-4f49-bef9-3bce6d7e3220
+
+[OMER] Price=9.08, ATR=0.5471, Raw%=6.03
+[OMER] Final trail % = 6.03
+Trailing stop sell for OMER with a trail percent of 4 based on percent gain of 17.74103466638958 submitted. ID: f15d459d-d376-472f-bba2-302593c1f330
+
+[BTE] Price=3.04, ATR=0.1486, Raw%=4.89
+[BTE] Final trail % = 4.89
+Trailing stop sell for BTE with a trail percent of 4.89 based on percent gain of 1.0302426055167802 submitted. ID: 34a70417-1115-4839-8448-6aa02e535c9b
+
+[RPTX] Price=2.21, ATR=0.1076, Raw%=4.86
+[RPTX] Final trail % = 4.86
+Trailing stop sell for RPTX with a trail percent of 4.86 based on percent gain of 4.22535211267606 submitted. ID: 40bd17ce-7bd5-4e34-b609-3895fbf28e90
+
+[RIG] Price=4.02, ATR=0.2029, Raw%=5.05
+[RIG] Final trail % = 5.05
+Trailing stop sell for RIG with a trail percent of 5.05 based on percent gain of 0.07966540529775 submitted. ID: 4ff16313-db00-4b9f-b8d1-a7d576cfbeed
+
+BTE: 1.03% gain
+ESPR: -10.47% gain
+Canceling existing order for ESPR: b1ca9f6b-a585-4fa8-8e90-dff117094cb4
+Selling 4.0 shares of ESPR (percent_gain: -10.46698872785829, Threshold exceeded)
+Added ESPR to restricted list for today.
+NGD: -7.13% gain
+Canceling existing order for NGD: 68572a0a-e195-4f49-bef9-3bce6d7e3220
+Selling 1.0 shares of NGD (percent_gain: -7.13234134286766, Threshold exceeded)
+Added NGD to restricted list for today.
+OMER: 18.20% gain
+Canceling existing order for OMER: f15d459d-d376-472f-bba2-302593c1f330
+Trailing stop sell for OMER with a trail percent of 3 based on percent gain of 18.1956332558351 submitted. ID: f25c34d8-1e01-42ec-b082-4bcca7eec6b2
+
+Added OMER to restricted list for today.
+RIG: -0.04% gain
+RPTX: 4.23% gain
+========================= Run End =========================
+
+
+
+
+
+
+==================== Buying Process Started: 2025-11-18 12:10:02 ====================
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f743bc80d10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f743bc80d10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 194, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 90, in main
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f743bc80d10>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-19 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[MIST] Price=2.42, ATR=0.1486, Raw%=6.13
+[MIST] Final trail % = 6.13
+Trailing stop sell for MIST with a trail percent of 6.13 based on percent gain of 1.1265020026702302 submitted. ID: c3bc2eb9-c1fc-4f04-b1cd-3fd0ccea8497
+
+BTE: 0.97% gain
+MIST: 1.13% gain
+RPTX: 4.69% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: NUVB.WS"}}}
+$NUVB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: COPL.WS"}}}
+$COPL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CUBWW: possibly delisted; no price data found  (period=5d)
+$CUBWW: possibly delisted; no price data found  (period=5d)
+$CUBWW: possibly delisted; no price data found  (period=5d)
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-11-19 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 695 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for NUVB.WS: 'currency'
+Error fetching fast_info for COPL.WS: 'currency'
+Error fetching fast_info for MPTI.WS: 'currency'
+Error fetching fast_info for CUBWW: 'Index' object has no attribute 'date'
+Error fetching fast_info for TGE.WS: 'currency'
+Skipping NUVB.WS in assign_fast_info_details(): might be delisted.
+Skipping COPL.WS in assign_fast_info_details(): might be delisted.
+Skipping MPTI.WS in assign_fast_info_details(): might be delisted.
+Skipping CUBWW in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 185
+
+filtering...
+Size after market cap filter: 98
+
+filtering...
+Size after volume filter: 90
+
+filtering...
+Size after moving average filter: 22
+
+filtering...
+Size after 52-week low filter: 22
+
+filtering...
+Size after relative strength filter: 16
+
+fast_info filters complete.
+16 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 7
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+SPRU, $4.31, -30.48%
+BTE, $3.19, 2.26%
+MIST, $2.32, -3.14%
+WBD, $23.05, -4.22%
+ONDS, $7.7, -0.39%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[SPRU] Final calculated 5 day atr (rounded) = 24.77%
+Skipping SPRU: 5-day ATR threshold exceeded: (24.77), max allowed: 15.0%
+
+[BTE] Final calculated 5 day atr (rounded) = 5.51%
+Open trailing stop order exists for BTE, skipping buy to avoid potential day trade.
+
+[MIST] Final calculated 5 day atr (rounded) = 9.94%
+latest price for MIST: 2.315, so I'm buying 5
+
+Buy order submitted. ID: 7446973c-ac09-421a-8c0d-b7e412bd8566
+Waiting for MIST buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for MIST, will attach trailing stop tomorrow.
+
+[WBD] Final calculated 5 day atr (rounded) = 4.61%
+Skipping WBD: 23.1, too risky (qty to buy was 0).
+
+[ONDS] Final calculated 5 day atr (rounded) = 19.86%
+Skipping ONDS: 5-day ATR threshold exceeded: (19.86), max allowed: 15.0%
+
+========================= Run End =========================
+(Execution time: 9m 34.14s)
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-20 06:31:04 ====================
+Selling yesterdays positions.
+[MIST] Price=2.39, ATR=0.1558, Raw%=6.52
+[MIST] Final trail % = 6.52
+Trailing stop sell for MIST with a trail percent of 6.52 based on percent gain of 2.59062890641838 submitted. ID: 561fff38-9637-48f7-a563-edf3402f91bf
+
+BTE: 8.67% gain
+MIST: 2.59% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: GFR.RTWI"}}}
+$GFR.RTWI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBCWW: possibly delisted; no price data found  (period=5d)
+$SBCWW: possibly delisted; no price data found  (period=5d)
+$SBCWW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SRV.RT"}}}
+$SRV.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-11-20 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 697 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for GFR.RTWI: 'currency'
+Error fetching fast_info for SBCWW: 'Index' object has no attribute 'date'
+Error fetching fast_info for SRV.RT: 'currency'
+Error fetching fast_info for TE.WS: 'currency'
+Skipping BBWI in assign_fast_info_details(): might be delisted.
+Skipping GFR.RTWI in assign_fast_info_details(): might be delisted.
+Skipping SBCWW in assign_fast_info_details(): might be delisted.
+Skipping SRV.RT in assign_fast_info_details(): might be delisted.
+Skipping TE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 201
+
+filtering...
+Size after market cap filter: 117
+
+filtering...
+Size after volume filter: 108
+
+filtering...
+Size after moving average filter: 18
+
+filtering...
+Size after 52-week low filter: 18
+
+filtering...
+Size after relative strength filter: 16
+
+fast_info filters complete.
+16 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 8
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+CYPH, $3.27, 4.81%
+PACS, $26.05, 6.01%
+MIST, $2.35, 1.05%
+ESPR, $2.96, 5.52%
+RIVN, $14.98, 0.85%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[CYPH] Final calculated 5 day atr (rounded) = 25%
+Skipping CYPH: 5-day ATR threshold exceeded: (25), max allowed: 15.0%
+
+[PACS] Final calculated 5 day atr (rounded) = 17.38%
+Skipping PACS: 5-day ATR threshold exceeded: (17.38), max allowed: 15.0%
+
+[MIST] Final calculated 5 day atr (rounded) = 10.62%
+latest price for MIST: 2.35, so I'm buying 5
+
+Buy order submitted. ID: 5dd05293-041c-41ea-8c61-43c645dab993
+Waiting for MIST buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for MIST, will attach trailing stop tomorrow.
+
+[ESPR] Final calculated 5 day atr (rounded) = 6.4%
+latest price for ESPR: 2.975, so I'm buying 3
+
+Buy order submitted. ID: fd0a6506-27e2-4f44-b862-28c671776dfc
+Waiting for ESPR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ESPR, will attach trailing stop tomorrow.
+
+[RIVN] Final calculated 5 day atr (rounded) = 6.04%
+Skipping RIVN: 15.0, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 9m 14.80s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-25 06:31:03 ====================
+Selling yesterdays positions.
+[MIST] Price=2.40, ATR=0.1756, Raw%=7.32
+[MIST] Final trail % = 7
+Trailing stop sell for MIST with a trail percent of 7 based on percent gain of 1.69851380042463 submitted. ID: 16330908-4485-4867-b0ac-7025f4cd98c6
+
+[ESPR] Price=3.33, ATR=0.2200, Raw%=6.61
+[ESPR] Final trail % = 6.61
+Trailing stop sell for ESPR with a trail percent of 5 based on percent gain of 11.70122198792419 submitted. ID: 2c1a113f-836b-412b-9d51-64c0538d4206
+
+[ESPR] Price=3.33, ATR=0.2200, Raw%=6.61
+[ESPR] Final trail % = 6.61
+Trailing stop sell for ESPR with a trail percent of 5 based on percent gain of 11.70122198792419 submitted. ID: 9406a5f2-3751-43e9-812e-db7703feea05
+
+[RIG] Price=4.00, ATR=0.2114, Raw%=5.29
+[RIG] Final trail % = 5.29
+Trailing stop sell for RIG with a trail percent of 5.29 based on percent gain of -0.49503718997984997 submitted. ID: 70814f7b-2554-4c4a-a413-e8421a282e70
+
+ESPR: 11.66% gain
+Canceling existing order for ESPR: 9406a5f2-3751-43e9-812e-db7703feea05
+Canceling existing order for ESPR: 2c1a113f-836b-412b-9d51-64c0538d4206
+Trailing stop sell for ESPR with a trail percent of 3.5 based on percent gain of 11.65538106901023 submitted. ID: 12b8dac8-bf86-4963-9190-1b38ecb6a69d
+
+Added ESPR to restricted list for today.
+MIST: 1.91% gain
+RIG: -0.50% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: MPTI.WS"}}}
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: YCY.WS"}}}
+$YCY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SKYH.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-11-25 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 682 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for MPTI.WS: 'currency'
+Error fetching fast_info for YCY.WS: 'currency'
+Error fetching fast_info for SKYH.WS: 'currency'
+Skipping MPTI.WS in assign_fast_info_details(): might be delisted.
+Skipping YCY.WS in assign_fast_info_details(): might be delisted.
+Skipping SKYH.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 157
+
+filtering...
+Size after market cap filter: 83
+
+filtering...
+Size after volume filter: 68
+
+filtering...
+Size after moving average filter: 24
+
+filtering...
+Size after 52-week low filter: 24
+
+filtering...
+Size after relative strength filter: 21
+
+fast_info filters complete.
+21 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 10
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+RIG, $4.05, 0.62%
+RKT, $19.62, 7.8%
+AAL, $13.53, 3.32%
+RIVN, $15.59, 2.86%
+CIFR, $17.33, 1.23%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[RIG] Final calculated 5 day atr (rounded) = 5.88%
+Open trailing stop order exists for RIG, skipping buy to avoid potential day trade.
+
+[RKT] Final calculated 5 day atr (rounded) = 6.4%
+Skipping RKT: 19.625, too risky (qty to buy was 0).
+
+[AAL] Final calculated 5 day atr (rounded) = 4.44%
+Skipping AAL: 13.53, too risky (qty to buy was 0).
+
+[RIVN] Final calculated 5 day atr (rounded) = 5.4%
+Skipping RIVN: 15.585, too risky (qty to buy was 0).
+
+[CIFR] Final calculated 5 day atr (rounded) = 12.6%
+Skipping CIFR: 17.295, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 5m 14.12s)
+
+
+
+
+==================== Selling Process Started: 2025-11-26 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+MIST: 4.46% gain
+RIG: 1.62% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$RSVRW: possibly delisted; no price data found  (period=5d)
+$RSVRW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: GFR.RT"}}}
+$GFR.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LGL.WS"}}}
+$LGL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$KRSP.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-11-26 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 684 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for GFR.RT: 'currency'
+Error fetching fast_info for LGL.WS: 'currency'
+Error fetching fast_info for KRSP.WS: 'currency'
+Skipping GFR.RT in assign_fast_info_details(): might be delisted.
+Skipping LGL.WS in assign_fast_info_details(): might be delisted.
+Skipping KRSP.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 155
+
+filtering...
+Size after market cap filter: 81
+
+filtering...
+Size after volume filter: 70
+
+filtering...
+Size after moving average filter: 28
+
+filtering...
+Size after 52-week low filter: 28
+
+filtering...
+Size after relative strength filter: 24
+
+fast_info filters complete.
+24 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 11
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ESPR, $3.97, 6.93%
+MIST, $2.62, 7.38%
+RIG, $4.34, 4.7%
+WULF, $14.84, 6.69%
+RIVN, $16.43, 5.54%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ESPR] Final calculated 5 day atr (rounded) = 7.86%
+latest price for ESPR: 3.965, so I'm buying 2
+
+Buy order submitted. ID: 5bcaf2cd-39ed-440b-bd90-3e4740353449
+Waiting for ESPR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ESPR, will attach trailing stop tomorrow.
+
+[MIST] Final calculated 5 day atr (rounded) = 7.09%
+Open trailing stop order exists for MIST, skipping buy to avoid potential day trade.
+
+[RIG] Final calculated 5 day atr (rounded) = 6.23%
+Open trailing stop order exists for RIG, skipping buy to avoid potential day trade.
+
+[WULF] Final calculated 5 day atr (rounded) = 12.97%
+Skipping WULF: 14.85, too risky (qty to buy was 0).
+
+[RIVN] Final calculated 5 day atr (rounded) = 5.5%
+Skipping RIVN: 16.435, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 4m 57.13s)
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-11-27 06:31:04 ====================
+Selling yesterdays positions.
+[ESPR] Price=3.95, ATR=0.2414, Raw%=6.11
+[ESPR] Final trail % = 6.11
+Trailing stop sell for ESPR with a trail percent of 6.11 based on percent gain of -0.4862318292898 submitted. ID: d84b86b8-bc55-4e14-8b87-787ae29cac4e
+
+ESPR: -0.49% gain
+MIST: 10.83% gain
+Canceling existing order for MIST: 16330908-4485-4867-b0ac-7025f4cd98c6
+Trailing stop sell for MIST with a trail percent of 3.5 based on percent gain of 10.82802547770701 submitted. ID: 2275c228-da29-4474-a8fe-2eb81b4ebc80
+
+Added MIST to restricted list for today.
+RIG: 6.97% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SRV.RT"}}}
+$SRV.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$RSVRW: possibly delisted; no price data found  (period=5d)
+$RSVRW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SOUL.RT"}}}
+$SOUL.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$GFR.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$LGL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$KRSP.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-11-27 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 684 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for SRV.RT: 'currency'
+Error fetching fast_info for SOUL.RT: 'currency'
+Error fetching fast_info for GFR.RT: 'currency'
+Error fetching fast_info for LGL.WS: 'currency'
+Error fetching fast_info for KRSP.WS: 'currency'
+Skipping SRV.RT in assign_fast_info_details(): might be delisted.
+Skipping SOUL.RT in assign_fast_info_details(): might be delisted.
+Skipping GFR.RT in assign_fast_info_details(): might be delisted.
+Skipping LGL.WS in assign_fast_info_details(): might be delisted.
+Skipping KRSP.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 137
+
+filtering...
+Size after market cap filter: 67
+
+filtering...
+Size after volume filter: 59
+
+filtering...
+Size after moving average filter: 19
+
+filtering...
+Size after 52-week low filter: 19
+
+filtering...
+Size after relative strength filter: 16
+
+fast_info filters complete.
+16 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 9
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ESPR, $3.95, 6.47%
+MIST, $2.61, 6.97%
+RIG, $4.3, 3.61%
+WULF, $14.84, 6.69%
+RIVN, $16.18, 3.9%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ESPR] Final calculated 5 day atr (rounded) = 7.9%
+Open trailing stop order exists for ESPR, skipping buy to avoid potential day trade.
+
+[MIST] Final calculated 5 day atr (rounded) = 7.13%
+Open trailing stop order exists for MIST, skipping buy to avoid potential day trade.
+
+[RIG] Final calculated 5 day atr (rounded) = 6.33%
+Open trailing stop order exists for RIG, skipping buy to avoid potential day trade.
+
+[WULF] Final calculated 5 day atr (rounded) = 12.96%
+Skipping WULF: 14.83, too risky (qty to buy was 0).
+
+[RIVN] Final calculated 5 day atr (rounded) = 5.59%
+Skipping RIVN: 16.19, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 4m 44.89s)
+
+
+
+
+==================== Selling Process Started: 2025-12-08 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$RSVRW: possibly delisted; no price data found  (period=5d)
+$RSVRW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LZM.WS"}}}
+$LZM.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: FLYX.WS"}}}
+$FLYX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$BKSY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-08 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 687 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for LZM.WS: 'currency'
+Error fetching fast_info for FLYX.WS: 'currency'
+Error fetching fast_info for BKSY.WS: 'currency'
+Skipping LZM.WS in assign_fast_info_details(): might be delisted.
+Skipping FLYX.WS in assign_fast_info_details(): might be delisted.
+Skipping BKSY.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 202
+
+filtering...
+Size after market cap filter: 124
+
+filtering...
+Size after volume filter: 110
+
+filtering...
+Size after moving average filter: 39
+
+filtering...
+Size after 52-week low filter: 39
+
+filtering...
+Size after relative strength filter: 34
+
+fast_info filters complete.
+34 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 11
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ESPR, $3.98, 6.84%
+WBD, $27.46, 5.8%
+PATH, $19.12, 2.11%
+WULF, $14.86, 2.78%
+CIFR, $19.64, 2.03%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ESPR] Final calculated 5 day atr (rounded) = 5.64%
+latest price for ESPR: 3.975, so I'm buying 3
+
+Buy order submitted. ID: 889f3ee3-b5fd-4e9e-87df-96b16cbc3f5a
+Waiting for ESPR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ESPR, will attach trailing stop tomorrow.
+
+[WBD] Final calculated 5 day atr (rounded) = 4.16%
+Skipping WBD: 27.4, too risky (qty to buy was 0).
+
+[PATH] Final calculated 5 day atr (rounded) = 7.61%
+Skipping PATH: 19.125, too risky (qty to buy was 0).
+
+[WULF] Final calculated 5 day atr (rounded) = 7.97%
+Skipping WULF: 14.84, too risky (qty to buy was 0).
+
+[CIFR] Final calculated 5 day atr (rounded) = 9.2%
+Skipping CIFR: 19.645, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 5m 3.75s)
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-12-09 06:31:03 ====================
+Selling yesterdays positions.
+[ESPR] Price=3.91, ATR=0.2386, Raw%=6.09
+[ESPR] Final trail % = 6.09
+Trailing stop sell for ESPR with a trail percent of 6.09 based on percent gain of -1.5342052313883299 submitted. ID: d221f234-a13d-4458-86c4-986ae1d980f7
+
+ESPR: -1.53% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TE.WS"}}}
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LZM.WS"}}}
+$LZM.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$NPWR.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBFMW: possibly delisted; no price data found  (period=5d)
+$SBFMW: possibly delisted; no price data found  (period=5d)
+$SBFMW: possibly delisted; no price data found  (period=5d)
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$GFR.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-09 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 685 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for TE.WS: 'currency'
+Error fetching fast_info for LZM.WS: 'currency'
+Error fetching fast_info for NPWR.WS: 'currency'
+Error fetching fast_info for SBFMW: 'Index' object has no attribute 'date'
+Error fetching fast_info for MPTI.WS: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Error fetching fast_info for GFR.RT: 'currency'
+Skipping TE.WS in assign_fast_info_details(): might be delisted.
+Skipping LZM.WS in assign_fast_info_details(): might be delisted.
+Skipping NPWR.WS in assign_fast_info_details(): might be delisted.
+Skipping SBFMW in assign_fast_info_details(): might be delisted.
+Skipping MPTI.WS in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+Skipping GFR.RT in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 160
+
+filtering...
+Size after market cap filter: 95
+
+filtering...
+Size after volume filter: 78
+
+filtering...
+Size after moving average filter: 28
+
+filtering...
+Size after 52-week low filter: 28
+
+filtering...
+Size after relative strength filter: 23
+
+fast_info filters complete.
+23 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 10
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ONDS, $9.48, 4.69%
+RIG, $4.49, 2.16%
+WULF, $15.89, 5.76%
+KEY, $20.03, 2.48%
+CIFR, $20.02, 2.48%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ONDS] Final calculated 5 day atr (rounded) = 11.04%
+latest price for ONDS: 9.44, so I'm buying 1
+
+Buy order submitted. ID: 3d7eb259-e33d-4275-a5dd-1489d2021b17
+Waiting for ONDS buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ONDS, will attach trailing stop tomorrow.
+
+[RIG] Final calculated 5 day atr (rounded) = 3.2%
+latest price for RIG: 4.495, so I'm buying 2
+
+Buy order submitted. ID: 33e79853-1b6e-4b6e-bf2e-ec055edc6658
+Waiting for RIG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RIG, will attach trailing stop tomorrow.
+
+[WULF] Final calculated 5 day atr (rounded) = 7.3%
+Skipping WULF: 15.895, too risky (qty to buy was 0).
+
+[KEY] Final calculated 5 day atr (rounded) = 2.74%
+Skipping KEY: 20.025, too risky (qty to buy was 0).
+
+[CIFR] Final calculated 5 day atr (rounded) = 8.42%
+Skipping CIFR: 20.0, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 4m 43.72s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-12-10 06:31:03 ====================
+Selling yesterdays positions.
+[ONDS] Price=9.03, ATR=1.0378, Raw%=11.50
+[ONDS] Final trail % = 7
+Trailing stop sell for ONDS with a trail percent of 7 based on percent gain of -5.146039106086111 submitted. ID: 40490621-f29e-4697-a9a0-e20f729f79ce
+
+[RIG] Price=4.34, ATR=0.1939, Raw%=4.46
+[RIG] Final trail % = 4.46
+Trailing stop sell for RIG with a trail percent of 4.46 based on percent gain of -3.3606903761037303 submitted. ID: b70f01be-bb52-4186-a495-27c00cb75ab9
+
+ESPR: -4.43% gain
+Canceling existing order for ESPR: d221f234-a13d-4458-86c4-986ae1d980f7
+Selling 3.0 shares of ESPR (percent_gain: -4.42655935613682, Threshold exceeded)
+Added ESPR to restricted list for today.
+ONDS: -4.88% gain
+Canceling existing order for ONDS: 40490621-f29e-4697-a9a0-e20f729f79ce
+Selling 1.0 shares of ONDS (percent_gain: -4.88137961698479, Threshold exceeded)
+Added ONDS to restricted list for today.
+RIG: -3.36% gain
+Canceling existing order for RIG: b70f01be-bb52-4186-a495-27c00cb75ab9
+Selling 2.0 shares of RIG (percent_gain: -3.3606903761037303, Threshold exceeded)
+Added RIG to restricted list for today.
+========================= Run End =========================
+
+
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: MPTI.WS"}}}
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-10 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 681 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for MPTI.WS: 'currency'
+Skipping BBGI in assign_fast_info_details(): might be delisted.
+Skipping MPTI.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 187
+
+filtering...
+Size after market cap filter: 113
+
+filtering...
+Size after volume filter: 104
+
+filtering...
+Size after moving average filter: 35
+
+filtering...
+Size after 52-week low filter: 35
+
+filtering...
+Size after relative strength filter: 32
+
+fast_info filters complete.
+32 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 12
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+RIVN, $18.03, 1.78%
+M, $23.44, 3.95%
+WULF, $16.19, 4.35%
+HPE, $25.23, 2.08%
+FCEL, $8.49, 2.29%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[RIVN] Final calculated 5 day atr (rounded) = 4.13%
+Skipping RIVN: 18.045, too risky (qty to buy was 0).
+
+[M] Final calculated 5 day atr (rounded) = 4.0%
+Skipping M: 23.485, too risky (qty to buy was 0).
+
+[WULF] Final calculated 5 day atr (rounded) = 7.18%
+Skipping WULF: 16.24, too risky (qty to buy was 0).
+
+[HPE] Final calculated 5 day atr (rounded) = 5.48%
+Skipping HPE: 25.24, too risky (qty to buy was 0).
+
+[FCEL] Final calculated 5 day atr (rounded) = 8.83%
+latest price for FCEL: 8.49, so I'm buying 1
+
+Buy order submitted. ID: aa6a93d3-fa06-418a-a492-05d7d793ceb2
+Waiting for FCEL buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for FCEL, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 4m 52.53s)
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-12-11 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[FCEL] Price=8.35, ATR=0.5550, Raw%=6.65
+[FCEL] Final trail % = 6.65
+Trailing stop sell for FCEL with a trail percent of 6.65 based on percent gain of -1.9953051643192499 submitted. ID: b3fc49a8-2e4f-40a5-95b7-91f501476db1
+
+FCEL: -2.00% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: PL.WS"}}}
+$PL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: MPTI.WS"}}}
+$MPTI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$NTWOW: possibly delisted; no price data found  (period=5d)
+$NTWOW: possibly delisted; no price data found  (period=5d)
+$NTWOW: possibly delisted; no price data found  (period=5d)
+$LGL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SLND.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FTW.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-11 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 692 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for PL.WS: 'currency'
+Error fetching fast_info for MPTI.WS: 'currency'
+Error fetching fast_info for NTWOW: 'Index' object has no attribute 'date'
+Error fetching fast_info for LGL.WS: 'currency'
+Error fetching fast_info for SLND.WS: 'currency'
+Error fetching fast_info for FTW.WS: 'currency'
+Skipping BBGI in assign_fast_info_details(): might be delisted.
+Skipping EFOI in assign_fast_info_details(): might be delisted.
+Skipping PL.WS in assign_fast_info_details(): might be delisted.
+Skipping MPTI.WS in assign_fast_info_details(): might be delisted.
+Skipping NTWOW in assign_fast_info_details(): might be delisted.
+Skipping LGL.WS in assign_fast_info_details(): might be delisted.
+Skipping SLND.WS in assign_fast_info_details(): might be delisted.
+Skipping FTW.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 167
+
+filtering...
+Size after market cap filter: 100
+
+filtering...
+Size after volume filter: 87
+
+filtering...
+Size after moving average filter: 40
+
+filtering...
+Size after 52-week low filter: 40
+
+filtering...
+Size after relative strength filter: 31
+
+fast_info filters complete.
+31 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 15
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ESPR, $3.99, 4.3%
+AG, $16.92, 7.37%
+M, $23.92, 2.84%
+ONDS, $8.94, 6.5%
+FCEL, $8.8, 4.27%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ESPR] Final calculated 5 day atr (rounded) = 5.53%
+latest price for ESPR: 4.0, so I'm buying 3
+
+Buy order submitted. ID: 623a3911-e902-49fb-8932-9b405236c927
+Waiting for ESPR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ESPR, will attach trailing stop tomorrow.
+
+[AG] Final calculated 5 day atr (rounded) = 6.43%
+Skipping AG: 16.935, too risky (qty to buy was 0).
+
+[M] Final calculated 5 day atr (rounded) = 3.91%
+Skipping M: 23.92, too risky (qty to buy was 0).
+
+[ONDS] Final calculated 5 day atr (rounded) = 10.39%
+latest price for ONDS: 8.93, so I'm buying 1
+
+Buy order submitted. ID: b274e610-7602-4a5c-8dbb-bcc022603a12
+Waiting for ONDS buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ONDS, will attach trailing stop tomorrow.
+
+[FCEL] Final calculated 5 day atr (rounded) = 7.2%
+Open trailing stop order exists for FCEL, skipping buy to avoid potential day trade.
+
+========================= Run End =========================
+(Execution time: 5m 1.80s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-12-12 06:31:03 ====================
+Selling yesterdays positions.
+[ESPR] Price=4.09, ATR=0.2486, Raw%=6.08
+[ESPR] Final trail % = 6.08
+Trailing stop sell for ESPR with a trail percent of 6.08 based on percent gain of 1.75254381359534 submitted. ID: 6d281b54-61cc-40d6-9efc-69b53963dbcf
+
+[ONDS] Price=8.93, ATR=0.9824, Raw%=11.00
+[ONDS] Final trail % = 7
+Trailing stop sell for ONDS with a trail percent of 7 based on percent gain of -0.74052497731372 submitted. ID: 1623db75-2094-4165-93a1-b490a97eb9f1
+
+ESPR: 1.38% gain
+FCEL: 1.35% gain
+ONDS: -0.85% gain
+========================= Run End =========================
+
+
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2025-12-08 (Mon):(-0.99%) $58.15
+2025-12-09 (Tue):(-0.33%) $57.96
+2025-12-10 (Wed):(-1.95%) $56.83
+2025-12-11 (Thu):(-0.40%) $56.60
+2025-12-12 (Fri):(+0.72%) $57.01
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$NTRBW: possibly delisted; no price data found  (period=5d)
+$NTRBW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LZM.WS"}}}
+$LZM.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TGE.WS"}}}
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$GFR.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-12 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 691 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for LZM.WS: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Error fetching fast_info for GFR.RT: 'currency'
+Skipping LZM.WS in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+Skipping GFR.RT in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 147
+
+filtering...
+Size after market cap filter: 75
+
+filtering...
+Size after volume filter: 66
+
+filtering...
+Size after moving average filter: 22
+
+filtering...
+Size after 52-week low filter: 22
+
+filtering...
+Size after relative strength filter: 19
+
+fast_info filters complete.
+19 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 9
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ESPR, $3.89, -5.12%
+AAL, $15.12, 1.35%
+ONDS, $9.05, 1.4%
+OGI, $1.89, 5.28%
+FCEL, $8.89, 1.62%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ESPR] Final calculated 5 day atr (rounded) = 6.22%
+Open trailing stop order exists for ESPR, skipping buy to avoid potential day trade.
+
+[AAL] Final calculated 5 day atr (rounded) = 3.21%
+Skipping AAL: 15.125, too risky (qty to buy was 0).
+
+[ONDS] Final calculated 5 day atr (rounded) = 11.27%
+Skipping ONDS: 9.015, too risky (qty to buy was 0).
+
+[OGI] Final calculated 5 day atr (rounded) = 5.27%
+latest price for OGI: 1.9, so I'm buying 4
+
+Buy order submitted. ID: 19e201ce-7ce5-479b-bf0a-f8039fd86d0d
+Waiting for OGI buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for OGI, will attach trailing stop tomorrow.
+
+[FCEL] Final calculated 5 day atr (rounded) = 6.17%
+Open trailing stop order exists for FCEL, skipping buy to avoid potential day trade.
+
+========================= Run End =========================
+(Execution time: 4m 35.08s)
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-12-18 06:31:04 ====================
+Selling yesterdays positions.
+[OGI] Price=2.12, ATR=0.1304, Raw%=6.15
+[OGI] Final trail % = 6.15
+Trailing stop sell for OGI with a trail percent of 5 based on percent gain of 10.03840963355133 submitted. ID: 3089e41b-3b4d-471c-b22b-28cb8ba56492
+
+OGI: 10.04% gain
+Canceling existing order for OGI: 3089e41b-3b4d-471c-b22b-28cb8ba56492
+Trailing stop sell for OGI with a trail percent of 4 based on percent gain of 10.03840963355133 submitted. ID: 8399719f-7feb-49a3-a635-ca409cef959f
+
+Added OGI to restricted list for today.
+========================= Run End =========================
+
+
+
+
+
+
+==================== Buying Process Started: 2025-12-18 12:10:02 ====================
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f072d688d50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f072d688d50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 194, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 90, in main
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f072d688d50>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+==================== Selling Process Started: 2025-12-19 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2025-12-10 (Wed):(-1.95%) $56.83
+2025-12-11 (Thu):(-0.40%) $56.60
+2025-12-12 (Fri):(+0.72%) $57.01
+2025-12-18 (Thu):(-0.54%) $56.70
+2025-12-19 (Fri):(+0.21%) $56.82
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SLND.WS"}}}
+$SLND.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-19 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 687 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for SLND.WS: 'currency'
+Skipping LW in assign_fast_info_details(): might be delisted.
+Skipping SLND.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 195
+
+filtering...
+Size after market cap filter: 116
+
+filtering...
+Size after volume filter: 105
+
+filtering...
+Size after moving average filter: 35
+
+filtering...
+Size after 52-week low filter: 34
+
+filtering...
+Size after relative strength filter: 27
+
+fast_info filters complete.
+27 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 5
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+OGI, $2.03, -3.08%
+AAL, $15.8, 1.25%
+ARRY, $9.42, 5.27%
+FCEL, $8.52, -11.21%
+DNN, $2.76, 7.62%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[OGI] Final calculated 5 day atr (rounded) = 12.63%
+latest price for OGI: 2.04, so I'm buying 6
+
+Buy order submitted. ID: 91a58130-b11f-432b-9435-73356b1f8ed0
+Waiting for OGI buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for OGI, will attach trailing stop tomorrow.
+
+[AAL] Final calculated 5 day atr (rounded) = 3.3%
+Skipping AAL: 15.785, too risky (qty to buy was 0).
+
+[ARRY] Final calculated 5 day atr (rounded) = 4.76%
+latest price for ARRY: 9.415, so I'm buying 1
+
+Buy order submitted. ID: 1d03bde0-6066-46b2-b842-104cbedd6149
+Waiting for ARRY buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ARRY, will attach trailing stop tomorrow.
+
+[FCEL] Final calculated 5 day atr (rounded) = 17.66%
+Skipping FCEL: 5-day ATR threshold exceeded: (17.66), max allowed: 15.0%
+
+[DNN] Final calculated 5 day atr (rounded) = 5.74%
+latest price for DNN: 2.75, so I'm buying 3
+
+Buy order submitted. ID: d5874627-046d-460c-a276-6810ea15729a
+Waiting for DNN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DNN, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 4m 51.90s)
+
+
+
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f6fa8474d90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f6fa8474d90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 194, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 42, in main
+    stockBot.add_equity_to_history()
+  File "/home/orokejamie/vsCode/AlpacaTrading/research/stockBot/stockBot.py", line 33, in add_equity_to_history
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f6fa8474d90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+
+
+
+==================== Buying Process Started: 2025-12-23 12:10:02 ====================
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7efeed27ccd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7efeed27ccd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 194, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 90, in main
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7efeed27ccd0>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-12-24 06:31:03 ====================
+Selling yesterdays positions.
+[OGI] Price=1.75, ATR=0.1726, Raw%=9.86
+[OGI] Final trail % = 7
+Trailing stop sell for OGI with a trail percent of 7 based on percent gain of -14.08091123330715 submitted. ID: 82dd4de1-804f-44e3-a1ae-4e51ace62765
+
+[ARRY] Price=10.02, ATR=0.5556, Raw%=5.54
+[ARRY] Final trail % = 5.54
+Trailing stop sell for ARRY with a trail percent of 5.54 based on percent gain of 6.51176620508028 submitted. ID: 47104736-31b8-498b-861e-03826c934443
+
+[DNN] Price=2.75, ATR=0.1428, Raw%=5.19
+[DNN] Final trail % = 5.19
+Trailing stop sell for DNN with a trail percent of 5.19 based on percent gain of -0.27560197272991 submitted. ID: 60d8fab6-a6b2-41bf-88fe-89bb5a24ab30
+
+ARRY: 6.51% gain
+DNN: -0.28% gain
+OGI: -14.08% gain
+Canceling existing order for OGI: 82dd4de1-804f-44e3-a1ae-4e51ace62765
+Selling 6.0 shares of OGI (percent_gain: -14.08091123330715, Threshold exceeded)
+Added OGI to restricted list for today.
+========================= Run End =========================
+
+
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$IVDAW: possibly delisted; no price data found  (period=5d)
+$IVDAW: possibly delisted; no price data found  (period=5d)
+$IVDAW: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-24 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 674 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for IVDAW: 'Index' object has no attribute 'date'
+Skipping IVDAW in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 145
+
+filtering...
+Size after market cap filter: 77
+
+filtering...
+Size after volume filter: 66
+
+filtering...
+Size after moving average filter: 20
+
+filtering...
+Size after 52-week low filter: 20
+
+filtering...
+Size after relative strength filter: 16
+
+fast_info filters complete.
+16 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 7
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ARRY, $10.19, 6.81%
+ONDS, $9.13, 0.89%
+AAL, $15.68, 0.45%
+FCEL, $8.77, -0.9%
+PATH, $17.16, 1.36%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ARRY] Final calculated 5 day atr (rounded) = 6.17%
+Open trailing stop order exists for ARRY, skipping buy to avoid potential day trade.
+
+[ONDS] Final calculated 5 day atr (rounded) = 9.71%
+latest price for ONDS: 9.115, so I'm buying 1
+
+Buy order submitted. ID: a682dbfe-1c12-46fa-80ca-97c1f65aed8c
+Waiting for ONDS buy order to fill...
+Cancelling stuck order for ONDS, status: OrderStatus.ACCEPTED
+
+[AAL] Final calculated 5 day atr (rounded) = 2.91%
+Skipping AAL: 15.67, too risky (qty to buy was 0).
+
+[FCEL] Final calculated 5 day atr (rounded) = 15.78%
+Skipping FCEL: 5-day ATR threshold exceeded: (15.78), max allowed: 15.0%
+
+[PATH] Final calculated 5 day atr (rounded) = 4.58%
+Skipping PATH: 17.145, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 4m 32.19s)
+
+
+
+
+==================== Selling Process Started: 2025-12-25 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+ARRY: 8.21% gain
+DNN: 0.45% gain
+========================= Run End =========================
+
+
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$IVDAW: possibly delisted; no price data found  (period=5d)
+$IVDAW: possibly delisted; no price data found  (period=5d)
+$IVDAW: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-25 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 674 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for IVDAW: 'Index' object has no attribute 'date'
+Skipping IVDAW in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 145
+
+filtering...
+Size after market cap filter: 77
+
+filtering...
+Size after volume filter: 66
+
+filtering...
+Size after moving average filter: 22
+
+filtering...
+Size after 52-week low filter: 22
+
+filtering...
+Size after relative strength filter: 17
+
+fast_info filters complete.
+17 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 7
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ARRY, $10.19, 6.81%
+ONDS, $9.13, 0.89%
+AAL, $15.68, 0.45%
+FCEL, $8.77, -0.9%
+PATH, $17.16, 1.36%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ARRY] Final calculated 5 day atr (rounded) = 6.17%
+Open trailing stop order exists for ARRY, skipping buy to avoid potential day trade.
+
+[ONDS] Final calculated 5 day atr (rounded) = 9.71%
+latest price for ONDS: 9.115, so I'm buying 1
+
+Buy order submitted. ID: 1d1cfb9e-96af-4fc6-8652-1586af2eb05f
+Waiting for ONDS buy order to fill...
+Cancelling stuck order for ONDS, status: OrderStatus.ACCEPTED
+
+[AAL] Final calculated 5 day atr (rounded) = 2.91%
+Skipping AAL: 15.67, too risky (qty to buy was 0).
+
+[FCEL] Final calculated 5 day atr (rounded) = 15.78%
+Skipping FCEL: 5-day ATR threshold exceeded: (15.78), max allowed: 15.0%
+
+[PATH] Final calculated 5 day atr (rounded) = 4.58%
+Skipping PATH: 17.145, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 4m 48.03s)
+
+
+
+
+==================== Selling Process Started: 2025-12-26 06:31:02 ====================
+Selling yesterdays positions.
+No saved positions from yesterday.
+ARRY: 6.88% gain
+DNN: -0.28% gain
+========================= Run End =========================
+
+
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2025-12-18 (Thu):(-0.54%) $56.70
+2025-12-19 (Fri):(+0.21%) $56.82
+2025-12-24 (Wed):(-2.06%) $55.65
+2025-12-25 (Thu):(+0.52%) $55.94
+2025-12-26 (Fri):(-0.34%) $55.75
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TGE.WS"}}}
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: HLLY.WS"}}}
+$HLLY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBCWW: possibly delisted; no price data found  (period=5d)
+$SBCWW: possibly delisted; no price data found  (period=5d)
+$SBCWW: possibly delisted; no price data found  (period=5d)
+$NUVB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-26 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 682 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for TGE.WS: 'currency'
+Error fetching fast_info for HLLY.WS: 'currency'
+Error fetching fast_info for SBCWW: 'Index' object has no attribute 'date'
+Error fetching fast_info for NUVB.WS: 'currency'
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+Skipping HLLY.WS in assign_fast_info_details(): might be delisted.
+Skipping SBCWW in assign_fast_info_details(): might be delisted.
+Skipping NUVB.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 143
+
+filtering...
+Size after market cap filter: 68
+
+filtering...
+Size after volume filter: 58
+
+filtering...
+Size after moving average filter: 19
+
+filtering...
+Size after 52-week low filter: 19
+
+filtering...
+Size after relative strength filter: 17
+
+fast_info filters complete.
+17 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 6
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+AG, $17.44, 1.53%
+AAL, $15.5, -0.77%
+ONDS, $8.53, -6.0%
+FCEL, $8.45, -3.43%
+RIG, $4.03, 0.25%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[AG] Final calculated 5 day atr (rounded) = 5.42%
+Skipping AG: 17.45, too risky (qty to buy was 0).
+
+[AAL] Final calculated 5 day atr (rounded) = 2.9%
+Skipping AAL: 15.495, too risky (qty to buy was 0).
+
+[ONDS] Final calculated 5 day atr (rounded) = 9.79%
+latest price for ONDS: 8.545, so I'm buying 1
+
+Buy order submitted. ID: ba679af8-a8c4-4a18-8df3-bcc2e4b85c20
+Waiting for ONDS buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ONDS, will attach trailing stop tomorrow.
+
+[FCEL] Final calculated 5 day atr (rounded) = 10.41%
+Skipping FCEL: 8.45, too risky (qty to buy was 0).
+
+[RIG] Final calculated 5 day atr (rounded) = 2.83%
+latest price for RIG: 4.03, so I'm buying 1
+
+Buy order submitted. ID: 3e9069a5-d61d-48cc-a54c-3f0688608fee
+Waiting for RIG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RIG, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 4m 33.05s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-12-29 06:31:03 ====================
+Selling yesterdays positions.
+[ONDS] Price=8.33, ATR=0.9106, Raw%=10.93
+[ONDS] Final trail % = 7
+Trailing stop sell for ONDS with a trail percent of 7 based on percent gain of -2.77370550636252 submitted. ID: 4e9e9d37-6a8a-438d-9b93-03cffda4c9df
+
+[RIG] Price=4.02, ATR=0.1523, Raw%=3.79
+[RIG] Final trail % = 3.79
+Trailing stop sell for RIG with a trail percent of 3.79 based on percent gain of -0.12159110647907 submitted. ID: 969ade60-1e54-4b80-8605-2e99a35f46ac
+
+ARRY: 5.77% gain
+ONDS: -2.66% gain
+RIG: -0.12% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: HLLY.WS"}}}
+$HLLY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FOXXW: possibly delisted; no price data found  (period=5d)
+$FOXXW: possibly delisted; no price data found  (period=5d)
+$FOXXW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: FLYX.WS"}}}
+$FLYX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$WLDSW: possibly delisted; no price data found  (period=5d)
+$WLDSW: possibly delisted; no price data found  (period=5d)
+$WLDSW: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-29 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 691 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for HLLY.WS: 'currency'
+Error fetching fast_info for FOXXW: 'Index' object has no attribute 'date'
+Error fetching fast_info for FLYX.WS: 'currency'
+Error fetching fast_info for WLDSW: 'Index' object has no attribute 'date'
+Skipping HLLY.WS in assign_fast_info_details(): might be delisted.
+Skipping FOXXW in assign_fast_info_details(): might be delisted.
+Skipping FLYX.WS in assign_fast_info_details(): might be delisted.
+Skipping WLDSW in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 146
+
+filtering...
+Size after market cap filter: 71
+
+filtering...
+Size after volume filter: 61
+
+filtering...
+Size after moving average filter: 19
+
+filtering...
+Size after 52-week low filter: 19
+
+filtering...
+Size after relative strength filter: 15
+
+fast_info filters complete.
+15 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 6
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ONDS, $8.46, -0.35%
+AAL, $15.17, -1.69%
+FCEL, $8.24, -2.14%
+RIG, $4.1, 2.76%
+DNN, $2.7, 0.01%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ONDS] Final calculated 5 day atr (rounded) = 7.61%
+Open trailing stop order exists for ONDS, skipping buy to avoid potential day trade.
+
+[AAL] Final calculated 5 day atr (rounded) = 3.04%
+Skipping AAL: 15.165, too risky (qty to buy was 0).
+
+[FCEL] Final calculated 5 day atr (rounded) = 6.83%
+Skipping FCEL: 8.225, too risky (qty to buy was 0).
+
+[RIG] Final calculated 5 day atr (rounded) = 2.99%
+Open trailing stop order exists for RIG, skipping buy to avoid potential day trade.
+
+[DNN] Final calculated 5 day atr (rounded) = 4.56%
+latest price for DNN: 2.71, so I'm buying 3
+
+Buy order submitted. ID: d9c277ef-6d2b-4783-be4a-a274e8323eb5
+Waiting for DNN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DNN, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 4m 51.73s)
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2025-12-30 06:31:02 ====================
+Selling yesterdays positions.
+[DNN] Price=2.73, ATR=0.1443, Raw%=5.29
+[DNN] Final trail % = 5.29
+Trailing stop sell for DNN with a trail percent of 5.29 based on percent gain of 0.86082683710792 submitted. ID: 55f352de-e70b-4fdd-a2ce-0814776de55a
+
+ARRY: 5.03% gain
+DNN: 0.86% gain
+ONDS: -1.60% gain
+RIG: 2.86% gain
+========================= Run End =========================
+
+
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d)
+$WLDSW: possibly delisted; no price data found  (period=5d)
+$WLDSW: possibly delisted; no price data found  (period=5d)
+$WLDSW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TE.WS"}}}
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TGE.WS"}}}
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2025-12-30 12:10:04 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 699 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for WLDSW: 'Index' object has no attribute 'date'
+Error fetching fast_info for TE.WS: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Skipping WLDSW in assign_fast_info_details(): might be delisted.
+Skipping TE.WS in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 157
+
+filtering...
+Size after market cap filter: 72
+
+filtering...
+Size after volume filter: 61
+
+filtering...
+Size after moving average filter: 22
+
+filtering...
+Size after 52-week low filter: 22
+
+filtering...
+Size after relative strength filter: 19
+
+fast_info filters complete.
+19 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 8
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+SLS, $3.4, 2.25%
+AG, $17.03, 2.07%
+ONDS, $8.92, 5.4%
+AAL, $15.24, 0.73%
+RIG, $4.13, 1.38%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[SLS] Final calculated 5 day atr (rounded) = 14.36%
+latest price for SLS: 3.395, so I'm buying 2
+
+Buy order submitted. ID: 5cd2b104-3de5-4e77-a0d4-d49b484e172f
+Waiting for SLS buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for SLS, will attach trailing stop tomorrow.
+
+[AG] Final calculated 5 day atr (rounded) = 5.23%
+Skipping AG: 17.07, too risky (qty to buy was 0).
+
+[ONDS] Final calculated 5 day atr (rounded) = 8.3%
+Open trailing stop order exists for ONDS, skipping buy to avoid potential day trade.
+
+[AAL] Final calculated 5 day atr (rounded) = 2.7%
+Skipping AAL: 15.255, too risky (qty to buy was 0).
+
+[RIG] Final calculated 5 day atr (rounded) = 2.42%
+Open trailing stop order exists for RIG, skipping buy to avoid potential day trade.
+
+========================= Run End =========================
+(Execution time: 7m 1.94s)
+
+
+
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1108, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1379, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 194, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 42, in main
+    stockBot.add_equity_to_history()
+  File "/home/orokejamie/vsCode/AlpacaTrading/research/stockBot/stockBot.py", line 33, in add_equity_to_history
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)")))
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$ALCYW: possibly delisted; no price data found  (period=5d)
+$ALCYW: possibly delisted; no price data found  (period=5d)
+$ALCYW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SLND.WS"}}}
+$SLND.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TGE.WS"}}}
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$NUVB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$AHT.PRD: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FLYX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$AHT.PRH: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$AHT.PRF: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$AHT.PRI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$AHT.PRG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$RAC.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$KRSP.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CELG.RT: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MACIW: possibly delisted; no price data found  (period=5d)
+$MACIW: possibly delisted; no price data found  (period=5d)
+$MACIW: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-01-13 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 691 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for ALCYW: 'Index' object has no attribute 'date'
+Error fetching fast_info for SLND.WS: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Error fetching fast_info for TE.WS: 'currency'
+Error fetching fast_info for NUVB.WS: 'currency'
+Error fetching fast_info for AHT.PRD: 'currency'
+Error fetching fast_info for FLYX.WS: 'currency'
+Error fetching fast_info for AHT.PRH: 'currency'
+Error fetching fast_info for AHT.PRF: 'currency'
+Error fetching fast_info for AHT.PRI: 'currency'
+Error fetching fast_info for AHT.PRG: 'currency'
+Error fetching fast_info for RAC.WS: 'currency'
+Error fetching fast_info for KRSP.WS: 'currency'
+Error fetching fast_info for CELG.RT: 'currency'
+Error fetching fast_info for MACIW: 'Index' object has no attribute 'date'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping XAIR in assign_fast_info_details(): might be delisted.
+Skipping ALCYW in assign_fast_info_details(): might be delisted.
+Skipping SLND.WS in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+Skipping TE.WS in assign_fast_info_details(): might be delisted.
+Skipping NUVB.WS in assign_fast_info_details(): might be delisted.
+Skipping AHT.PRD in assign_fast_info_details(): might be delisted.
+Skipping FLYX.WS in assign_fast_info_details(): might be delisted.
+Skipping AHT.PRH in assign_fast_info_details(): might be delisted.
+Skipping AHT.PRF in assign_fast_info_details(): might be delisted.
+Skipping AHT.PRI in assign_fast_info_details(): might be delisted.
+Skipping AHT.PRG in assign_fast_info_details(): might be delisted.
+Skipping RAC.WS in assign_fast_info_details(): might be delisted.
+Skipping KRSP.WS in assign_fast_info_details(): might be delisted.
+Skipping CELG.RT in assign_fast_info_details(): might be delisted.
+Skipping MACIW in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 117
+
+filtering...
+Size after market cap filter: 48
+
+filtering...
+Size after volume filter: 43
+
+filtering...
+Size after moving average filter: 13
+
+filtering...
+Size after 52-week low filter: 13
+
+filtering...
+Size after relative strength filter: 13
+
+fast_info filters complete.
+13 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 11
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ARRY, $9.99, -0.05%
+RR, $4.01, 1.01%
+BITF, $3.15, 4.65%
+RIG, $4.31, 0.81%
+PLUG, $2.32, 2.19%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ARRY] Final calculated 5 day atr (rounded) = 6.68%
+Skipping ARRY: 9.99, too risky (qty to buy was 0).
+
+[RR] Final calculated 5 day atr (rounded) = 10.54%
+latest price for RR: 4.03, so I'm buying 1
+
+Buy order submitted. ID: 9ab5a89a-2830-4273-9778-02b4e0e88410
+Waiting for RR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RR, will attach trailing stop tomorrow.
+
+[BITF] Final calculated 5 day atr (rounded) = 7.33%
+latest price for BITF: 3.16, so I'm buying 1
+
+Buy order submitted. ID: f759d608-95c5-45d1-87a9-843f08c38267
+Waiting for BITF buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BITF, will attach trailing stop tomorrow.
+
+[RIG] Final calculated 5 day atr (rounded) = 3.7%
+Skipping RIG: 4.315, too risky (qty to buy was 0).
+
+[PLUG] Final calculated 5 day atr (rounded) = 7.99%
+latest price for PLUG: 2.32, so I'm buying 1
+
+Buy order submitted. ID: e35f16e8-173f-47eb-83a4-c3446aa7e9a7
+Waiting for PLUG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for PLUG, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 3m 58.01s)
+
+
+
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1108, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1379, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 194, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 42, in main
+    stockBot.add_equity_to_history()
+  File "/home/orokejamie/vsCode/AlpacaTrading/research/stockBot/stockBot.py", line 33, in add_equity_to_history
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)")))
+
+
+
+
+==================== Buying Process Started: 2026-01-14 12:10:03 ====================
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1108, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1379, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 194, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 90, in main
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.alpaca.markets'. (_ssl.c:992)")))
+
+
+==================== Selling Process Started: 2026-01-15 06:31:05 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+BITF: -6.47% gain
+Canceling existing order for BITF: 53b8b370-ccad-4365-8eb1-ef642a802d4d
+Canceling existing order for BITF: 86522361-7ff7-4a34-8403-5641a5f9abdb
+Selling 3.0 shares of BITF (percent_gain: -6.474589322381929, Threshold exceeded)
+Added BITF to restricted list for today.
+PLUG: -0.13% gain
+RR: -0.98% gain
+SLS: 20.07% gain
+Canceling existing order for SLS: 7d063b8c-072f-4736-bcba-1d90d719fccb
+Trailing stop sell for SLS with a trail percent of 4 based on percent gain of 20.069622680473202 submitted. ID: b4ad1728-a00b-4eb0-86b1-c6a3843f241e
+
+Added SLS to restricted list for today.
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-01-20 12:10:04 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 695 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Skipping XAIR in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 140
+
+filtering...
+Size after market cap filter: 61
+
+filtering...
+Size after volume filter: 52
+
+filtering...
+Size after moving average filter: 17
+
+filtering...
+Size after 52-week low filter: 17
+
+filtering...
+Size after relative strength filter: 12
+
+fast_info filters complete.
+12 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 9
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ROLR, $12.17, -23.31%
+NBY, $6.72, -51.2%
+ONDS, $13.15, 6.43%
+BTG, $4.89, 5.58%
+ARRY, $9.52, -1.81%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ROLR] Final calculated 5 day atr (rounded) = 25%
+Skipping ROLR: 5-day ATR threshold exceeded: (25), max allowed: 15.0%
+
+[NBY] Final calculated 5 day atr (rounded) = 25%
+Skipping NBY: 5-day ATR threshold exceeded: (25), max allowed: 15.0%
+
+[ONDS] Final calculated 5 day atr (rounded) = 12.65%
+Skipping ONDS: 13.145, too risky (qty to buy was 0).
+
+[BTG] Final calculated 5 day atr (rounded) = 3.81%
+latest price for BTG: 4.89, so I'm buying 1
+
+Buy order submitted. ID: 5fd72a1e-363d-4cf8-bfe3-cd901d5c2d01
+Waiting for BTG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTG, will attach trailing stop tomorrow.
+
+[ARRY] Final calculated 5 day atr (rounded) = 7.02%
+Skipping ARRY: 9.515, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 3m 34.00s)
+
+
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TGE.WS"}}}
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-01-21 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 694 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 147
+
+filtering...
+Size after market cap filter: 62
+
+filtering...
+Size after volume filter: 54
+
+filtering...
+Size after moving average filter: 25
+
+filtering...
+Size after 52-week low filter: 25
+
+filtering...
+Size after relative strength filter: 21
+
+fast_info filters complete.
+21 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 12
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+DNN, $3.74, 1.59%
+FCEL, $9.39, 5.7%
+RIG, $4.67, 7.71%
+AAL, $15.13, 1.2%
+CLSK, $12.83, 1.74%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[DNN] Final calculated 5 day atr (rounded) = 5.36%
+latest price for DNN: 3.74, so I'm buying 2
+
+Buy order submitted. ID: f60f467c-bbd0-4443-984d-e02dec546db0
+Waiting for DNN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DNN, will attach trailing stop tomorrow.
+
+[FCEL] Final calculated 5 day atr (rounded) = 7.5%
+Skipping FCEL: 9.4, too risky (qty to buy was 0).
+
+[RIG] Final calculated 5 day atr (rounded) = 4.28%
+latest price for RIG: 4.675, so I'm buying 1
+
+Buy order submitted. ID: abe8081d-1ba7-4e09-88fb-d66ff74cfac1
+Waiting for RIG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RIG, will attach trailing stop tomorrow.
+
+[AAL] Final calculated 5 day atr (rounded) = 3.71%
+Skipping AAL: 15.12, too risky (qty to buy was 0).
+
+[CLSK] Final calculated 5 day atr (rounded) = 9.83%
+Skipping CLSK: 12.8, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 4m 53.01s)
+
+
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MACIW: possibly delisted; no price data found  (period=5d)
+$MACIW: possibly delisted; no price data found  (period=5d)
+$MACIW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: EVAC.WS"}}}
+$EVAC.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-01-23 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 689 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for MACIW: 'Index' object has no attribute 'date'
+Error fetching fast_info for EVAC.WS: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping MACIW in assign_fast_info_details(): might be delisted.
+Skipping EVAC.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 135
+
+filtering...
+Size after market cap filter: 58
+
+filtering...
+Size after volume filter: 50
+
+filtering...
+Size after moving average filter: 21
+
+filtering...
+Size after 52-week low filter: 21
+
+filtering...
+Size after relative strength filter: 18
+
+fast_info filters complete.
+18 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 11
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+OPTX, $4.57, -15.22%
+FCEL, $9.95, 0.52%
+LAC, $6.4, 3.88%
+ARRY, $10.62, -3.45%
+RIG, $4.95, 5.11%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[OPTX] Final calculated 5 day atr (rounded) = 21.94%
+Skipping OPTX: 5-day ATR threshold exceeded: (21.94), max allowed: 15.0%
+
+[FCEL] Final calculated 5 day atr (rounded) = 9.69%
+Skipping FCEL: 9.96, too risky (qty to buy was 0).
+
+[LAC] Final calculated 5 day atr (rounded) = 8.46%
+latest price for LAC: 6.395, so I'm buying 1
+
+Buy order submitted. ID: 7797591e-fe24-4e56-889a-a896f34c15d7
+Waiting for LAC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for LAC, will attach trailing stop tomorrow.
+
+[ARRY] Final calculated 5 day atr (rounded) = 6.8%
+Skipping ARRY: 10.635, too risky (qty to buy was 0).
+
+[RIG] Final calculated 5 day atr (rounded) = 4.77%
+latest price for RIG: 4.945, so I'm buying 1
+
+Buy order submitted. ID: b18febfd-c9ae-477b-a2da-59e17395e325
+Waiting for RIG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RIG, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 3m 37.26s)
+
+
+
+
+==================== Selling Process Started: 2026-01-26 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+BTG: 12.36% gain
+Canceling existing order for BTG: 1ca00f99-e513-4427-9ced-34d59d78840e
+Trailing stop sell for BTG with a trail percent of 4 based on percent gain of 12.36187132087163 submitted. ID: 378d6dd3-b4de-4d2d-a2a1-6a729560e5e2
+
+Added BTG to restricted list for today.
+DNN: 5.43% gain
+LAC: 4.70% gain
+PLUG: -4.58% gain
+RIG: 3.57% gain
+========================= Run End =========================
+
+
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$NXPLW: possibly delisted; no price data found  (period=5d)
+$NXPLW: possibly delisted; no price data found  (period=5d)
+$NXPLW: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-01-26 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 701 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for NXPLW: 'Index' object has no attribute 'date'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping NXPLW in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 175
+
+filtering...
+Size after market cap filter: 96
+
+filtering...
+Size after volume filter: 81
+
+filtering...
+Size after moving average filter: 32
+
+filtering...
+Size after 52-week low filter: 32
+
+filtering...
+Size after relative strength filter: 28
+
+fast_info filters complete.
+28 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 13
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ARRY, $11.05, 4.89%
+BTG, $5.39, 1.22%
+RIG, $4.95, 1.64%
+FCEL, $9.17, -8.85%
+TMC, $7.68, -18.0%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ARRY] Final calculated 5 day atr (rounded) = 7.56%
+latest price for ARRY: 11.045, so I'm buying 1
+
+Buy order submitted. ID: d2984202-5bba-44f2-8f4d-158a1c94f091
+Waiting for ARRY buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ARRY, will attach trailing stop tomorrow.
+
+[BTG] Final calculated 5 day atr (rounded) = 5.31%
+Open trailing stop order exists for BTG, skipping buy to avoid potential day trade.
+
+[RIG] Final calculated 5 day atr (rounded) = 5.05%
+latest price for RIG: 4.955, so I'm buying 1
+
+Buy order submitted. ID: acd9d25d-5ac3-4b86-997d-68acc1fc8645
+Waiting for RIG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RIG, will attach trailing stop tomorrow.
+
+[FCEL] Final calculated 5 day atr (rounded) = 10.67%
+Skipping FCEL: 9.165, too risky (qty to buy was 0).
+
+[TMC] Final calculated 5 day atr (rounded) = 18.31%
+Skipping TMC: 5-day ATR threshold exceeded: (18.31), max allowed: 15.0%
+
+========================= Run End =========================
+(Execution time: 3m 47.10s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2026-01-27 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[ARRY] Price=11.06, ATR=0.6981, Raw%=6.31
+[ARRY] Final trail % = 6.31
+Trailing stop sell for ARRY with a trail percent of 6.31 based on percent gain of 0.09123840323761 submitted. ID: ea7988ac-2daf-48f6-be4e-375ea154f7a2
+
+[RIG] Price=4.94, ATR=0.1807, Raw%=3.66
+[RIG] Final trail % = 3.66
+Trailing stop sell for RIG with a trail percent of 3.66 based on percent gain of -0.30241935483871 submitted. ID: 447d4dc6-dba9-4f4e-8b6b-57fdbb9d6043
+
+ARRY: 0.09% gain
+RIG: -0.10% gain
+========================= Run End =========================
+
+
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: HLLY.WS"}}}
+$HLLY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SBXE.WS"}}}
+$SBXE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-01-27 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 696 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for HLLY.WS: 'currency'
+Error fetching fast_info for SBXE.WS: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping FAT in assign_fast_info_details(): might be delisted.
+Skipping HLLY.WS in assign_fast_info_details(): might be delisted.
+Skipping SBXE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 173
+
+filtering...
+Size after market cap filter: 98
+
+filtering...
+Size after volume filter: 89
+
+filtering...
+Size after moving average filter: 35
+
+filtering...
+Size after 52-week low filter: 35
+
+filtering...
+Size after relative strength filter: 29
+
+fast_info filters complete.
+29 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 14
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+BIOA, $19.56, 7.06%
+DNN, $3.92, 6.11%
+PLUG, $2.42, 4.98%
+CLSK, $13.35, 6.46%
+BBAI, $6.14, 7.43%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[BIOA] Final calculated 5 day atr (rounded) = 6.8%
+Skipping BIOA: 19.6, too risky (qty to buy was 0).
+
+[DNN] Final calculated 5 day atr (rounded) = 5.92%
+latest price for DNN: 3.93, so I'm buying 2
+
+Buy order submitted. ID: 95584c62-d669-4259-8943-53867c9bfd26
+Waiting for DNN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DNN, will attach trailing stop tomorrow.
+
+[PLUG] Final calculated 5 day atr (rounded) = 11.68%
+latest price for PLUG: 2.43, so I'm buying 3
+
+Buy order submitted. ID: e5821124-58ce-4b60-a461-b677325010b3
+Waiting for PLUG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for PLUG, will attach trailing stop tomorrow.
+
+[CLSK] Final calculated 5 day atr (rounded) = 10.51%
+Skipping CLSK: 13.34, too risky (qty to buy was 0).
+
+[BBAI] Final calculated 5 day atr (rounded) = 7.47%
+latest price for BBAI: 6.15, so I'm buying 1
+
+Buy order submitted. ID: e2fafcca-9d84-4044-9551-df3354ed73db
+Waiting for BBAI buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BBAI, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 4m 4.37s)
+
+
+
+
+==================== Selling Process Started: 2026-01-28 06:31:03 ====================
+Selling yesterdays positions.
+No saved positions from yesterday.
+ARRY: 4.70% gain
+BBAI: 2.84% gain
+DNN: 1.02% gain
+NNDM: -0.26% gain
+PLUG: 2.46% gain
+RIG: 2.22% gain
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$QTI: possibly delisted; no price data found  (period=5d)
+$QTI: possibly delisted; no price data found  (period=5d)
+$QTI: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: DSX.WS"}}}
+$DSX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$ADSEW: possibly delisted; no price data found  (period=5d)
+$ADSEW: possibly delisted; no price data found  (period=5d)
+$ADSEW: possibly delisted; no price data found  (period=5d)
+$HPAIW: possibly delisted; no price data found  (period=5d)
+$HPAIW: possibly delisted; no price data found  (period=5d)
+$HPAIW: possibly delisted; no price data found  (period=5d)
+$MACIW: possibly delisted; no price data found  (period=5d)
+$MACIW: possibly delisted; no price data found  (period=5d)
+$MACIW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: AAM.WS"}}}
+$AAM.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-01-28 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 695 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for QTI: 'Index' object has no attribute 'date'
+Error fetching fast_info for DSX.WS: 'currency'
+Error fetching fast_info for ADSEW: 'Index' object has no attribute 'date'
+Error fetching fast_info for HPAIW: 'Index' object has no attribute 'date'
+Error fetching fast_info for MACIW: 'Index' object has no attribute 'date'
+Error fetching fast_info for AAM.WS: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping QTI in assign_fast_info_details(): might be delisted.
+Skipping DSX.WS in assign_fast_info_details(): might be delisted.
+Skipping ADSEW in assign_fast_info_details(): might be delisted.
+Skipping HPAIW in assign_fast_info_details(): might be delisted.
+Skipping MACIW in assign_fast_info_details(): might be delisted.
+Skipping AAM.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 165
+
+filtering...
+Size after market cap filter: 89
+
+filtering...
+Size after volume filter: 79
+
+filtering...
+Size after moving average filter: 30
+
+filtering...
+Size after 52-week low filter: 30
+
+filtering...
+Size after relative strength filter: 27
+
+fast_info filters complete.
+27 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 13
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+DNN, $4.28, 7.95%
+BTG, $5.7, 2.52%
+FCEL, $9.71, 1.46%
+PLUG, $2.51, 3.94%
+CIFR, $19.07, 2.25%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[DNN] Final calculated 5 day atr (rounded) = 6.61%
+Open trailing stop order exists for DNN, skipping buy to avoid potential day trade.
+
+[BTG] Final calculated 5 day atr (rounded) = 4.81%
+latest price for BTG: 5.7, so I'm buying 2
+
+Buy order submitted. ID: 52a4dca6-6b20-4ad4-b064-baaf9e85fc96
+Waiting for BTG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTG, will attach trailing stop tomorrow.
+
+[FCEL] Final calculated 5 day atr (rounded) = 8.84%
+Skipping FCEL: 9.67, too risky (qty to buy was 0).
+
+[PLUG] Final calculated 5 day atr (rounded) = 10.0%
+latest price for PLUG: 2.5, so I'm buying 3
+
+Buy order submitted. ID: 92b82537-9a53-4a78-a8b9-41672f7a7109
+Waiting for PLUG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for PLUG, will attach trailing stop tomorrow.
+
+[CIFR] Final calculated 5 day atr (rounded) = 8.95%
+Skipping CIFR: 19.03, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 3m 53.08s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2026-01-29 06:31:03 ====================
+Selling yesterdays positions.
+[BTG] Price=5.82, ATR=0.2186, Raw%=3.75
+[BTG] Final trail % = 3.75
+Trailing stop sell for BTG with a trail percent of 3.75 based on percent gain of 1.4302009300693201 submitted. ID: dec7cd5b-aaac-4909-a32f-c57efd14eaeb
+
+[PLUG] Price=2.41, ATR=0.2089, Raw%=8.65
+[PLUG] Final trail % = 7
+Trailing stop sell for PLUG with a trail percent of 7 based on percent gain of -3.7210418917296804 submitted. ID: 7788a6af-d7bf-44fa-900c-672da775a9d2
+
+BTG: 1.43% gain
+DNN: 10.56% gain
+Canceling existing order for DNN: eb26a175-3818-4d4d-9e06-494bee6dda1a
+Trailing stop sell for DNN with a trail percent of 4 based on percent gain of 10.56260973561668 submitted. ID: c074dc9e-560e-4f56-a6a3-ebc76c7f94c7
+
+Added DNN to restricted list for today.
+NNDM: -1.54% gain
+PLUG: -3.72% gain
+========================= Run End =========================
+
+
+
+
+==================== Selling Process Started: 2026-01-30 06:31:08 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+NNDM: -5.63% gain
+PLUG: -8.37% gain
+Canceling existing order for PLUG: 7788a6af-d7bf-44fa-900c-672da775a9d2
+Selling 3.0 shares of PLUG (percent_gain: -8.37434481654863, Threshold exceeded)
+Added PLUG to restricted list for today.
+========================= Run End =========================
+
+
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2026-01-27 (Tue):(-2.23%) $60.38
+2026-01-28 (Wed):(+0.94%) $60.95
+2026-01-28 (Wed):(+0.75%) $61.41
+2026-01-29 (Thu):(-0.72%) $60.97
+2026-01-30 (Fri):(-1.56%) $60.02
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$FBYDW: possibly delisted; no price data found  (period=5d)
+$FBYDW: possibly delisted; no price data found  (period=5d)
+$FBYDW: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: DSX.WS"}}}
+$DSX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SBXE.WS"}}}
+$SBXE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-01-30 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 698 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for FBYDW: 'Index' object has no attribute 'date'
+Error fetching fast_info for DSX.WS: 'currency'
+Error fetching fast_info for SBXE.WS: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping FAT in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping RHI in assign_fast_info_details(): might be delisted.
+Skipping FBYDW in assign_fast_info_details(): might be delisted.
+Skipping DSX.WS in assign_fast_info_details(): might be delisted.
+Skipping SBXE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 192
+
+filtering...
+Size after market cap filter: 104
+
+filtering...
+Size after volume filter: 94
+
+filtering...
+Size after moving average filter: 38
+
+filtering...
+Size after 52-week low filter: 38
+
+filtering...
+Size after relative strength filter: 38
+
+fast_info filters complete.
+38 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 16
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ANL, $9.69, -10.28%
+ARRY, $11.23, -4.14%
+BEN, $26.57, 1.2%
+FCEL, $8.16, -9.73%
+HBAN, $17.33, 0.35%
+
+
+openAi's Stock list:
+Error talking to AI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}... Returning original list of stocks
+
+=======   PLACING BUY ORDERS   =======
+[ANL] Final calculated 5 day atr (rounded) = 18.17%
+Skipping ANL: 5-day ATR threshold exceeded: (18.17), max allowed: 15.0%
+
+[ARRY] Final calculated 5 day atr (rounded) = 8.57%
+latest price for ARRY: 11.2, so I'm buying 1
+
+Buy order submitted. ID: 66383b11-ffde-45f9-a95a-637ecb31ccff
+Waiting for ARRY buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ARRY, will attach trailing stop tomorrow.
+
+[BEN] Final calculated 5 day atr (rounded) = 3.07%
+Skipping BEN: 26.515, too risky (qty to buy was 0).
+
+[FCEL] Final calculated 5 day atr (rounded) = 10.55%
+latest price for FCEL: 8.16, so I'm buying 1
+
+Buy order submitted. ID: 8e298ca0-64e3-41f4-ac7f-4fb8603d2c31
+Waiting for FCEL buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for FCEL, will attach trailing stop tomorrow.
+
+[HBAN] Final calculated 5 day atr (rounded) = 2.29%
+Skipping HBAN: 17.355, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 5m 33.96s)
+
+
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OPFI.WS"}}}
+$OPFI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SES.WS"}}}
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$DSX.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-02-02 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 693 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for OPFI.WS: 'currency'
+Error fetching fast_info for SES.WS: 'currency'
+Error fetching fast_info for DSX.WS: 'currency'
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping FAT in assign_fast_info_details(): might be delisted.
+Skipping OPFI.WS in assign_fast_info_details(): might be delisted.
+Skipping SES.WS in assign_fast_info_details(): might be delisted.
+Skipping DSX.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 169
+
+filtering...
+Size after market cap filter: 85
+
+filtering...
+Size after volume filter: 74
+
+filtering...
+Size after moving average filter: 25
+
+filtering...
+Size after 52-week low filter: 25
+
+filtering...
+Size after relative strength filter: 22
+
+fast_info filters complete.
+22 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 10
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+BIOA, $20.32, 5.83%
+ARRY, $11.06, -3.03%
+ONDS, $11.02, 5.6%
+JBLU, $5.2, 6.34%
+HBAN, $17.9, 3.86%
+
+
+openAi's Stock list:
+- BIOA ($20.32, +5.83%): Remove. Despite momentum, price-to-sales ~144 and speculative pipeline risk are red flags. Price already above consensus; downside asymmetry.
+- ARRY ($11.06, -3.03%): Remove for now. Solar demand cyclical, negative equity (P/B -36) adds balance-sheet risk. Near fair value vs targets; prefer clearer inflection.
+- ONDS ($11.02, +5.6%): Remove. P/S ~189 and float rotation ~21x signal hype-driven move with poor fundamentals; high drawdown risk.
+- JBLU ($5.20, +6.34%): Keep/Buy (speculative). Deep value metrics (P/S ~0.21, P/B ~0.83) and improving 2026 profitability outlook. Momentum above 50/200DMA; use tight risk controls.
+- HBAN ($17.90, +3.86%): Keep/Buy. Solid regional bank with reasonable P/E (~12.9), P/B (~1.3), dividend support, and accretive Cadence merger. Trading above key MAs with upside to ~$20–21 targets.
+
+No additional >90% conviction buys under $44.56 today.
+
+=======   PLACING BUY ORDERS   =======
+[HBAN] Final calculated 5 day atr (rounded) = 2.8%
+Skipping HBAN: 17.86, too risky (qty to buy was 0).
+
+[JBLU] Final calculated 5 day atr (rounded) = 7.26%
+latest price for JBLU: 5.21, so I'm buying 2
+
+Buy order submitted. ID: 95231d77-4175-4640-a5aa-1bede7021729
+Waiting for JBLU buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for JBLU, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 9m 13.36s)
+
+
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: JOBY.WS"}}}
+$JOBY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-02-05 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 704 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for JOBY.WS: 'currency'
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping JOBY.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 288
+
+filtering...
+Size after market cap filter: 188
+
+filtering...
+Size after volume filter: 179
+
+filtering...
+Size after moving average filter: 57
+
+filtering...
+Size after 52-week low filter: 57
+
+filtering...
+Size after relative strength filter: 56
+
+fast_info filters complete.
+56 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 16
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+BIOA, $20.39, 1.17%
+PAHC, $49.17, 2.93%
+INTC, $48.81, 0.15%
+DVN, $43.34, 0.18%
+SEDG, $33.22, -5.49%
+
+
+openAi's Stock list:
+- Keep/buy DVN: Devon Energy shows improving momentum (price above 50- and 200-day averages) with a reasonable valuation (P/E ~10, P/B ~1.8) and upside to the mean target (~9% to $47.11). Volume/liquidity are solid, and energy fundamentals remain supportive. Use a 6–7% trailing stop to respect volatility.
+- Keep/buy INTC: Intel’s trend is strong (well above 50-/200-day averages) with reasonable P/B (~2.1) and substantial scale. While the mean target is near current, the high target ($71.5) leaves asymmetrical upside if foundry/PC/server catalysts progress. Use a 6–8% trailing stop given beta and headline risk.
+- Remove/avoid BIOA: Momentum is hot, but P/S ~144 and targets below current signal overextension; earnings are far out and likely negative—speculative risk outweighs reward.
+- Remove/avoid SEDG: Negative earnings outlook, high volatility, and recent downside move despite fair P/S—risk of further estimate cuts.
+- Trim/avoid PAHC: Strong recent run and volume, but valuation is rich vs history and price already near/above targets; risk of mean reversion for a small-cap with limited moat expansion.
+
+No additional names included: none meet the >90% conviction and sub-$120.75 constraint with sufficient certainty.
+
+=======   PLACING BUY ORDERS   =======
+[DVN] Final calculated 5 day atr (rounded) = 4.12%
+Skipping DVN: 43.3, too risky (qty to buy was 0).
+
+[INTC] Final calculated 5 day atr (rounded) = 7.33%
+Skipping INTC: 48.56, too risky (qty to buy was 0).
+
+========================= Run End =========================
+(Execution time: 5m 52.19s)
+
+
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-02-06 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 711 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping MOH in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 390
+
+filtering...
+Size after market cap filter: 271
+
+filtering...
+Size after volume filter: 252
+
+filtering...
+Size after moving average filter: 89
+
+filtering...
+Size after 52-week low filter: 89
+
+filtering...
+Size after relative strength filter: 76
+
+fast_info filters complete.
+76 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 10
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+ARRY, $11.75, 6.24%
+INTC, $50.49, 6.71%
+ON, $65.34, 4.73%
+MCHP, $76.12, 4.29%
+AAL, $15.18, 7.58%
+
+
+openAi's Stock list:
+Keep MCHP: It just beat and raised guidance; price is above 50/200-day averages with mean target (~84) still implying upside. Quality cash generation and diversified end-markets support a durable rebound; use a 6% trailing stop.
+Keep INTC: Powerful momentum (50.49, +6.7%) with heavy volume and a decisive move above the 50/200-day averages. AI/foundry catalysts and improving sentiment support trend continuation, though it’s near/above mean targets—manage risk with a 6% trailing stop.
+Keep ON: Back above key averages with room to the high target (80). Execution in power/auto and potential SiC normalization favor upside; valuation is richer (P/E ~89), so use a 6% trailing stop.
+Tactical keep ARRY (smaller size): Strong multi-timeframe momentum and above 50/200-day averages. However, negative P/B and price near current analyst targets elevate risk; use an 8% trailing stop.
+Remove/Avoid AAL: Despite the pop, negative P/B, high leverage, and thin, cyclical margins make the risk/reward unattractive relative to semis.
+
+Additional strong buys under 187.11: None meet >90% conviction today.
+
+=======   PLACING BUY ORDERS   =======
+[MCHP] Final calculated 5 day atr (rounded) = 5.21%
+Skipping MCHP: 76.255, too risky (qty to buy was 0).
+
+[INTC] Final calculated 5 day atr (rounded) = 6.8%
+Skipping INTC: 50.625, too risky (qty to buy was 0).
+
+[ON] Final calculated 5 day atr (rounded) = 4.68%
+Skipping ON: 65.34, too risky (qty to buy was 0).
+
+[ARRY] Final calculated 5 day atr (rounded) = 8.04%
+latest price for ARRY: 11.735, so I'm buying 3
+
+Buy order submitted. ID: 1660bd11-0393-4f62-82eb-ed6e20fb6d7b
+Waiting for ARRY buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for ARRY, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 5m 24.76s)
+
+
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$K: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: VAL.WS"}}}
+$VAL.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SBXD.WS"}}}
+$SBXD.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$HVT.A: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SKYH.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-02-11 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 695 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for VAL.WS: 'currency'
+Error fetching fast_info for SBXD.WS: 'currency'
+Error fetching fast_info for SES.WS: 'currency'
+Error fetching fast_info for HVT.A: 'currency'
+Error fetching fast_info for SKYH.WS: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping BWA in assign_fast_info_details(): might be delisted.
+Skipping VAL.WS in assign_fast_info_details(): might be delisted.
+Skipping SBXD.WS in assign_fast_info_details(): might be delisted.
+Skipping SES.WS in assign_fast_info_details(): might be delisted.
+Skipping HVT.A in assign_fast_info_details(): might be delisted.
+Skipping SKYH.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 414
+
+filtering...
+Size after market cap filter: 322
+
+filtering...
+Size after volume filter: 304
+
+filtering...
+Size after moving average filter: 117
+
+filtering...
+Size after 52-week low filter: 117
+
+filtering...
+Size after relative strength filter: 109
+
+fast_info filters complete.
+109 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 19
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+AMKR, $56.52, 6.64%
+ON, $70.74, 4.51%
+DD, $51.22, 3.3%
+MRNA, $40.1, 4.19%
+GGB, $4.37, 2.84%
+
+
+openAi's Stock list:
+- Keep/Buy AMKR: Strong breakout (+6.6%) above 50/200DMAs, upside tied to AI/advanced packaging. Q4 beat, solid Q1’26 guide, and 2026 capex for Arizona campus support durable growth. Valuation (P/S ~2.1) reasonable for cycle; room toward PT high (65). Use 6% trailing stop.
+- Keep/Buy DD: Operational turnaround with EBITDA margin at 24% and new 2026 guide; trading near book (P/B ~0.94) suggests rerating potential. Momentum strong (above 50/200DMAs). Upside toward high PT (59). Use 6% trailing stop.
+- Speculative Buy GGB: Value setup (P/E ~15, P/B ~0.83, P/S ~0.12) with improving momentum and heavy volume. Cyclical and Brazil risk justify wider stop; still attractive risk/reward. Use 7% trailing stop.
+- Hold/Trim ON: Momentum is solid but valuation stretched (headline P/E high) and price already near/above mean PT; EV/SiC visibility mixed. Not a fresh buy.
+- Avoid/Remove MRNA: Negative EPS outlook, high uncertainty, and price above median PT; event risk high.
+- No additional sub-$235 names meet >90% conviction threshold today.
+
+=======   PLACING BUY ORDERS   =======
+[AMKR] Final calculated 5 day atr (rounded) = 7.58%
+latest price for AMKR: 56.63, so I'm buying 1
+
+Buy order submitted. ID: b69e526a-da65-4b81-aa88-f990567ba8e5
+Waiting for AMKR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for AMKR, will attach trailing stop tomorrow.
+
+[DD] Final calculated 5 day atr (rounded) = 3.74%
+Skipping DD: 51.21, too risky (qty to buy was 0).
+
+[GGB] Final calculated 5 day atr (rounded) = 2.43%
+latest price for GGB: 4.375, so I'm buying 10
+
+Buy order submitted. ID: 58a398d2-c014-4de3-8913-6b4c37e96e4a
+Waiting for GGB buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for GGB, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 5m 6.93s)
+
+
