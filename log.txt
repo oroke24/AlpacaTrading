@@ -6865,3 +6865,1185 @@ Saved positions for GGB, will attach trailing stop tomorrow.
 (Execution time: 5m 6.93s)
 
 
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2026-02-02 (Mon):(-0.92%) $59.47
+2026-02-05 (Thu):(+169.88%) $160.50
+2026-02-09 (Mon):(+127.71%) $365.47
+2026-02-11 (Wed):(+0.39%) $366.89
+2026-02-12 (Thu):(-1.98%) $359.62
+
+
+==================== Selling Process Started: 2026-02-18 06:31:34 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$AMMJ: possibly delisted; no price data found  (period=5d)
+$AMMJ: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TGE.WS"}}}
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SCLXW: possibly delisted; no price data found  (period=5d)
+$SCLXW: possibly delisted; no price data found  (period=5d)
+$SCLXW: possibly delisted; no price data found  (period=5d)
+$ASPSZ: possibly delisted; no price data found  (period=5d)
+$ASPSZ: possibly delisted; no price data found  (period=5d)
+$ASPSZ: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-02-19 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 700 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Error fetching fast_info for SCLXW: 'Index' object has no attribute 'date'
+Error fetching fast_info for ASPSZ: 'Index' object has no attribute 'date'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping EPAM in assign_fast_info_details(): might be delisted.
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping CORT in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+Skipping SCLXW in assign_fast_info_details(): might be delisted.
+Skipping ASPSZ in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 493
+
+filtering...
+Size after market cap filter: 396
+
+filtering...
+Size after volume filter: 368
+
+filtering...
+Size after moving average filter: 153
+
+filtering...
+Size after 52-week low filter: 153
+
+filtering...
+Size after relative strength filter: 146
+
+fast_info filters complete.
+146 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 22
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+VAL, $92.71, 4.34%
+MRNA, $50.17, 7.27%
+DNN, $4.09, 3.93%
+CDE, $23.82, 6.58%
+BTE, $3.81, 5.11%
+
+
+openAi's Stock list:
+- VAL: Massive run well above 50/200-DMAs and now exceeding the analyst target range; deal-related uncertainty and potential mean reversion. I’d trim/remove and wait for a pullback toward support.
+- MRNA: FDA review reversal is a positive catalyst, but losses persist and P/S is elevated. Treat as speculative; hold/watch rather than add on a 6–7% pop.
+- DNN: Uranium momentum is strong and volume robust, but this is a pre-revenue, high-multiple miner. Suitable as a tactical, high-risk position only with a tight stop.
+- CDE: Strong fundamental inflection (record production, EBITDA, FCF) plus positive momentum; still below consensus high target. Favorable risk/reward into next earnings; buy with a disciplined stop.
+- BTE: Attractive value (P/B ~0.95, P/S <1), improving trend above 50/200-DMAs, and oil tailwinds. Solid cash-flow leverage; buy with a tight stop.
+
+Additional strong buys under 338.45 (high confidence): AAPL (durable cash flows, services growth, balance sheet strength) and XLE (diversified energy exposure benefiting from commodity strength). Not included in JSON due to missing real-time fields.
+
+=======   PLACING BUY ORDERS   =======
+[CDE] Final calculated 5 day atr (rounded) = 7.75%
+latest price for CDE: 23.85, so I'm buying 3
+
+Buy order submitted. ID: 42911b84-0a74-400c-810a-bef9e270150f
+Waiting for CDE buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CDE, will attach trailing stop tomorrow.
+
+[BTE] Final calculated 5 day atr (rounded) = 5.56%
+latest price for BTE: 3.81, so I'm buying 17
+
+Buy order submitted. ID: 97dbe5bf-a424-4cb1-8060-ed7a0c228484
+Waiting for BTE buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTE, will attach trailing stop tomorrow.
+
+[DNN] Final calculated 5 day atr (rounded) = 5.53%
+latest price for DNN: 4.095, so I'm buying 12
+
+Buy order submitted. ID: 7fe97bf3-6e4e-407d-9125-1aca0ea9b032
+Waiting for DNN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DNN, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 5m 37.44s)
+
+
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2026-02-11 (Wed):(+0.39%) $366.89
+2026-02-12 (Thu):(-1.98%) $359.62
+2026-02-17 (Tue):(-3.80%) $345.97
+2026-02-18 (Wed):(+0.38%) $347.29
+2026-02-19 (Thu):(-2.93%) $337.13
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$AMMJ: possibly delisted; no price data found  (period=5d)
+$AMMJ: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$HUMAW: possibly delisted; no price data found  (period=5d)
+$HUMAW: possibly delisted; no price data found  (period=5d)
+$HUMAW: possibly delisted; no price data found  (period=5d)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-02-20 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 694 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for HUMAW: 'Index' object has no attribute 'date'
+Skipping DNOW in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping HUMAW in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 488
+
+filtering...
+Size after market cap filter: 387
+
+filtering...
+Size after volume filter: 370
+
+filtering...
+Size after moving average filter: 154
+
+filtering...
+Size after 52-week low filter: 154
+
+filtering...
+Size after relative strength filter: 147
+
+fast_info filters complete.
+147 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 20
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+IBRX, $8.85, 4.05%
+ENPH, $45.87, 3.2%
+BTG, $5.36, 4.48%
+NCLH, $24.25, 2.0%
+OMC, $83.05, 3.17%
+
+
+openAi's Stock list:
+- IBRX: Massive run (price >2x 50D MA and >3x 200D MA) with extreme P/S (~106) and no earnings. Momentum-heavy, thin float, and near median target. High downside risk if sentiment turns. Remove/avoid new buys.
+- ENPH: Back above 50D/200D with improving earnings outlook, but price sits near consensus target and volumes are lighter than recent averages. Quality name, but risk/reward is balanced here. Hold, not an add.
+- BTG: Uptrend above 50D/200D, positive analyst stance, and double-digit upside to target mean (~6.36). Gold beta can help if macro risk persists. Reasonable entry with a tight stop. Keep/add.
+- NCLH: Trend intact above key MAs, activist catalyst (Elliott), improving earnings trajectory, and ~12% upside to target mean with potential multiple expansion. Keep/add.
+- OMC: Strong cash returns (dividend + $5B buyback), reasonable valuation (P/E ~12), and still ~20% upside to target mean even after a pop. Defensive agency exposure with improving sentiment. Keep/add.
+No additional >90% conviction sub-$336.85 ideas to add right now.
+
+=======   PLACING BUY ORDERS   =======
+[OMC] Final calculated 5 day atr (rounded) = 5.1%
+latest price for OMC: 82.98, so I'm buying 1
+
+Buy order submitted. ID: 8f560ec4-bb6b-461e-bfdb-af6e2b8fe5cc
+Waiting for OMC buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for OMC, will attach trailing stop tomorrow.
+
+[NCLH] Final calculated 5 day atr (rounded) = 6.87%
+latest price for NCLH: 24.235, so I'm buying 2
+
+Buy order submitted. ID: 8e7f4049-f6b6-4fcc-a199-5677135e1248
+Waiting for NCLH buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for NCLH, will attach trailing stop tomorrow.
+
+[BTG] Final calculated 5 day atr (rounded) = 6.92%
+latest price for BTG: 5.365, so I'm buying 9
+
+Buy order submitted. ID: 348e0e1d-6ff2-481d-827b-f4dd2341a3fc
+Waiting for BTG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTG, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 5m 32.23s)
+
+
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OPFI.WS"}}}
+$OPFI.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TGE.WS"}}}
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IRAB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-02-25 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 706 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for OPFI.WS: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Error fetching fast_info for IRAB.WS: 'currency'
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping OPFI.WS in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+Skipping IRAB.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 502
+
+filtering...
+Size after market cap filter: 392
+
+filtering...
+Size after volume filter: 375
+
+filtering...
+Size after moving average filter: 153
+
+filtering...
+Size after 52-week low filter: 153
+
+filtering...
+Size after relative strength filter: 148
+
+fast_info filters complete.
+148 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 19
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+GLW, $160.3, 4.33%
+MRNA, $52.7, 3.86%
+CAKE, $65.77, 3.57%
+AMKR, $50.63, 3.97%
+ONDS, $10.65, 3.0%
+
+
+openAi's Stock list:
+- GLW at 160.30 (+4.33%): Extended far above 50/200-DMAs and even the Street high target (P/E 87.6, P/S 8.8). Likely overbought; remove/avoid chasing.
+- MRNA at 52.70 (+3.86%): Negative EPS outlook, revenue uncertainty, and price above mean target; momentum is better than fundamentals. Remove/avoid.
+- CAKE at 65.77 (+3.57%): Reasonable valuation (P/E ~20, P/S 0.87), above 50/200-DMAs with improving operations. Near analyst mean target but still room on execution; keep/buy with tight risk control.
+- AMKR at 50.63 (+3.97%): Healthy trend above 50/200-DMAs, acceptable P/B (2.8) and P/S (1.9), secular tailwinds in semis/advanced packaging; mean PT 56.25 implies upside. Keep/buy.
+- ONDS at 10.65 (+3.00%): Extremely high P/S (~194) and persistent losses; speculative pump-risk. Remove/avoid.
+
+Net: Prefer AMKR (momentum + fundamentals + upside) and CAKE (steady, cash-generative). Others are stretched or speculative. No additional “>90% sure” picks added due to lack of up-to-date pricing/percent-change data for names outside the list.
+
+=======   PLACING BUY ORDERS   =======
+[AMKR] Final calculated 5 day atr (rounded) = 4.43%
+latest price for AMKR: 50.66, so I'm buying 1
+
+Buy order submitted. ID: 6a0c1175-1aa9-4698-bf16-3e616537dd3b
+Waiting for AMKR buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for AMKR, will attach trailing stop tomorrow.
+
+[CAKE] Final calculated 5 day atr (rounded) = 4.12%
+latest price for CAKE: 65.75, so I'm buying 1
+
+Buy order submitted. ID: e4ee7f0d-fdcd-4362-8db6-b7be9c838f25
+Waiting for CAKE buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CAKE, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 10m 3.47s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2026-02-26 06:31:04 ====================
+Selling yesterdays positions.
+[AMKR] Price=50.39, ATR=3.4436, Raw%=6.83
+[AMKR] Final trail % = 6.83
+Trailing stop sell for AMKR with a trail percent of 3.415 based on percent gain of -0.54 submitted. ID: f1731871-9886-49b9-955a-5badd8686519
+
+[CAKE] Price=66.18, ATR=2.5643, Raw%=3.87
+[CAKE] Final trail % = 3.87
+Trailing stop sell for CAKE with a trail percent of 1.935 based on percent gain of 0.631 submitted. ID: 12a4c477-0189-4344-b2dd-1adafe4ed641
+
+AMKR: -0.54% gain
+CAKE: 0.63% gain
+========================= Run End =========================
+
+
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LEGT.WS"}}}
+$LEGT.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: IONQ.WS"}}}
+$IONQ.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IRAB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-02-26 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 701 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for LEGT.WS: 'currency'
+Error fetching fast_info for IONQ.WS: 'currency'
+Error fetching fast_info for IRAB.WS: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping ARRY in assign_fast_info_details(): might be delisted.
+Skipping LEGT.WS in assign_fast_info_details(): might be delisted.
+Skipping IONQ.WS in assign_fast_info_details(): might be delisted.
+Skipping IRAB.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 448
+
+filtering...
+Size after market cap filter: 352
+
+filtering...
+Size after volume filter: 339
+
+filtering...
+Size after moving average filter: 140
+
+filtering...
+Size after 52-week low filter: 140
+
+filtering...
+Size after relative strength filter: 136
+
+fast_info filters complete.
+136 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 14
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+APA, $29.19, 3.55%
+LUV, $50.78, 1.77%
+FCEL, $8.98, 4.25%
+NCLH, $24.83, 4.33%
+CNX, $39.6, 1.92%
+
+
+openAi's Stock list:
+- APA (29.19, +3.55%): Momentum above 50/200-day averages with a low P/E (~7) and a fresh EPS/revenue beat. Reasonable valuation and improving sentiment in energy. Keep/accumulate.
+- LUV (50.78, +1.77%): Strong rebound and product refresh, but P/E ~64 and price now at/above mean target. Execution improving, yet risk/reward less compelling here. Hold, not add.
+- FCEL (8.98, +4.25%): Still loss-making with an imminent earnings event and high volatility; sector hype spillover (from peers) doesn’t fix fundamentals. Remove/avoid.
+- NCLH (24.83, +4.33%): Positive trend above moving averages, recovering earnings, and targets above current price. Still levered, but demand tailwinds support upside. Keep/accumulate.
+- CNX (39.60, +1.92%): Solid value metrics, but trading above mean target; gas macro helps, yet upside looks limited near term. Hold, not add.
+
+No additional high-conviction sub-269.89 picks today meet my >90% threshold without real-time validation; I prefer discipline over reach.
+
+=======   PLACING BUY ORDERS   =======
+[APA] Final calculated 5 day atr (rounded) = 4.16%
+latest price for APA: 29.28, so I'm buying 2
+
+Buy order submitted. ID: a13e8a77-ebd3-4cc1-9ab6-07dd067ab4e5
+Waiting for APA buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for APA, will attach trailing stop tomorrow.
+
+[NCLH] Final calculated 5 day atr (rounded) = 4.69%
+latest price for NCLH: 24.885, so I'm buying 2
+
+Buy order submitted. ID: cd16370e-1265-4901-be30-ea94af4ef77f
+Waiting for NCLH buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for NCLH, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 5m 50.33s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2026-02-27 06:31:06 ====================
+Selling yesterdays positions.
+[APA] Price=29.97, ATR=1.2264, Raw%=4.09
+[APA] Final trail % = 4.09
+Trailing stop sell for APA with a trail percent of 2.045 based on percent gain of 2.231 submitted. ID: d5e280f7-e9df-42b5-92e3-5e473ff2c8b7
+
+[NCLH] Price=24.31, ATR=1.3057, Raw%=5.37
+[NCLH] Final trail % = 5.37
+Trailing stop sell for NCLH with a trail percent of 2.685 based on percent gain of -2.311 submitted. ID: db6ff396-a77b-4bd5-8147-ea3fcf289675
+
+APA: 2.24% gain
+Canceling existing order for APA: d5e280f7-e9df-42b5-92e3-5e473ff2c8b7
+Selling 2.0 shares of APA (percent_gain: 2.2399999999999998, Threshold exceeded)
+Added APA to restricted list for today.
+NCLH: -2.39% gain
+========================= Run End =========================
+
+
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2026-02-20 (Fri):(+0.47%) $338.73
+2026-02-24 (Tue):(-0.36%) $337.51
+2026-02-25 (Wed):(-0.09%) $337.19
+2026-02-26 (Thu):(+0.03%) $337.28
+2026-02-27 (Fri):(-0.52%) $335.51
+
+
+==================== Selling Process Started: 2026-03-02 06:31:04 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+No saved positions from yesterday.
+========================= Run End =========================
+
+
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: BEBE.WS"}}}
+$BEBE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SES.WS"}}}
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CMIIW: possibly delisted; no price data found  (period=5d)
+$CMIIW: possibly delisted; no price data found  (period=1y)
+$CMIIW: possibly delisted; no price data found  (period=5d)
+$HIMZ: possibly delisted; no price data found  (period=1y)
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-03-03 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 701 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for BEBE.WS: 'currency'
+Error fetching fast_info for SES.WS: 'currency'
+Error fetching fast_info for HIMZ: 'currentTradingPeriod'
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping BEBE.WS in assign_fast_info_details(): might be delisted.
+Skipping SES.WS in assign_fast_info_details(): might be delisted.
+Skipping HIMZ in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 442
+
+filtering...
+Size after market cap filter: 338
+
+filtering...
+Size after volume filter: 324
+
+filtering...
+Size after moving average filter: 122
+
+filtering...
+Size after 52-week low filter: 122
+
+filtering...
+Size after relative strength filter: 115
+
+fast_info filters complete.
+115 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 20
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+RCAT, $14.58, 5.88%
+TGT, $121.56, 7.56%
+AKAM, $102.96, 6.63%
+CE, $51.5, 3.02%
+BTU, $34.67, 3.08%
+
+
+openAi's Stock list:
+- Keep/buy TGT: Strong momentum (+7.6%) on heavy volume above 10-day and 3-month averages, trading well above 50/200-DMAs. Valuation remains reasonable (P/E ~14.7, P/S ~0.53) for a quality retailer heading into earnings with supportive macro for discretionary. Despite a conservative consensus PT mean, price action implies improving expectations. Good core hold with a 6–7% trailing stop.
+- Keep/buy AKAM: Reclaimed uptrend (above 50/200-DMAs) with price still below the PT mean (~$108.6). While guidance cited cost pressure, secular tailwinds in security/edge/compute plus resilient top line support a rebound. Use a slightly wider stop given volatility.
+- Keep/buy BTU: Uptrend intact (well above 200-DMA) with solid cash generation and reasonable valuation (P/B ~1.2, P/S ~1.1). Macro backdrop favors coal amid energy dislocations; dividend/capital returns add support. Commodity risk warrants disciplined risk management.
+- Hold/watch CE: Value screens attractive (P/B ~1.39, P/S ~0.59) and improving trend vs 50/200-DMAs, but unclear earnings power (P/E 0) and May earnings risk argue for patience or smaller sizing on confirmed breakouts.
+- Remove/avoid RCAT: Extreme P/S (~234), heavy float rotation, and event risk into earnings suggest fragile momentum and high drawdown risk; not a favorable risk/reward for anything but short-term trading.
+
+No additional names meet a >90% conviction threshold under $262.65 today.
+
+=======   PLACING BUY ORDERS   =======
+[TGT] Final calculated 5 day atr (rounded) = 3.73%
+Skipping TGT: 121.56, too risky (qty to buy was 0).
+
+[AKAM] Final calculated 5 day atr (rounded) = 3.78%
+Skipping AKAM: 103.06, too risky (qty to buy was 0).
+
+[BTU] Final calculated 5 day atr (rounded) = 5.84%
+latest price for BTU: 34.795, so I'm buying 1
+
+Buy order submitted. ID: e7b10a1d-5cda-4494-a20d-59647f844f08
+Waiting for BTU buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for BTU, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 6m 10.07s)
+
+
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: HYAC.WS"}}}
+$HYAC.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-03-04 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 701 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for HYAC.WS: 'currency'
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping HYAC.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 498
+
+filtering...
+Size after market cap filter: 375
+
+filtering...
+Size after volume filter: 350
+
+filtering...
+Size after moving average filter: 137
+
+filtering...
+Size after 52-week low filter: 137
+
+filtering...
+Size after relative strength filter: 130
+
+fast_info filters complete.
+130 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 8
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+RIG, $6.38, 4.42%
+CRGY, $11.49, 3.05%
+SEDG, $37.88, 0.92%
+FCEL, $8.57, 7.12%
+BTU, $35.54, 0.21%
+
+
+openAi's Stock list:
+- CRGY (11.49, +3.05%): Strong volume-led breakout (today’s volume >4x 3M avg), trading above 50/200DMAs, and refinancing 9.25% notes with 2.75% converts lowers interest cost. Valuation is attractive (P/B 0.73, P/S 1.06) with a double-digit upside to consensus targets. Keep/add with a tight risk control.
+- BTU (35.54, +0.21%): Uptrend intact (above 50/200DMAs), low multiples (P/B 1.22, P/S 1.12), and supportive coal pricing as a relative beneficiary amid energy/geopolitical volatility. Modest upside to targets and strong cash generation history. Keep/add.
+- RIG (6.38, +4.42%): Momentum positive and P/B <1, but mean PT sits below price and offshore is leverage/cycle sensitive. Hold/watch rather than add.
+- SEDG (37.88, +0.92%): Negative EPS, premium P/B, and mean target below price; solar macro still challenged. Remove/avoid.
+- FCEL (8.57, +7.12%): High beta pop on light relative volume; persistent losses and dilution risk. Remove/avoid.
+Additional ideas: None meet a >90% conviction threshold today under 342.65.
+
+=======   PLACING BUY ORDERS   =======
+[CRGY] Final calculated 5 day atr (rounded) = 8.26%
+latest price for CRGY: 11.525, so I'm buying 7
+
+Buy order submitted. ID: ec1a94f7-7c45-4ef5-9768-60cdf508ef85
+Waiting for CRGY buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CRGY, will attach trailing stop tomorrow.
+
+[BTU] Final calculated 5 day atr (rounded) = 6.36%
+Skipping BTU: sold today, cannot rebuy until tomorrow.
+
+========================= Run End =========================
+(Execution time: 5m 59.44s)
+
+
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2026-03-05 06:31:03 ====================
+Cleared restricted positions for a new day.
+Selling yesterdays positions.
+[CRGY] Price=11.62, ATR=0.6244, Raw%=5.37
+[CRGY] Final trail % = 5.37
+Trailing stop sell for CRGY with a trail percent of 2.685 based on percent gain of 1.027 submitted. ID: 81b2dd3a-2de1-41f0-b8bf-308de1141989
+
+CRGY: 0.90% gain
+========================= Run End =========================
+
+
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: HLLY.WS"}}}
+$HLLY.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SES.WS"}}}
+$SES.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBXD.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$GRAF.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-03-05 12:10:03 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 697 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for HLLY.WS: 'currency'
+Error fetching fast_info for SES.WS: 'currency'
+Error fetching fast_info for SBXD.WS: 'currency'
+Error fetching fast_info for GRAF.WS: 'currency'
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping HLLY.WS in assign_fast_info_details(): might be delisted.
+Skipping SES.WS in assign_fast_info_details(): might be delisted.
+Skipping SBXD.WS in assign_fast_info_details(): might be delisted.
+Skipping GRAF.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 492
+
+filtering...
+Size after market cap filter: 386
+
+filtering...
+Size after volume filter: 366
+
+filtering...
+Size after moving average filter: 124
+
+filtering...
+Size after 52-week low filter: 123
+
+filtering...
+Size after relative strength filter: 117
+
+fast_info filters complete.
+117 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 17
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+CF, $111.63, 6.94%
+APA, $32.41, 5.5%
+DOW, $33.65, 3.62%
+DVN, $44.46, 2.09%
+CE, $52.63, 2.39%
+
+
+openAi's Stock list:
+- Keep/buy DVN: Devon has constructive momentum (above 50/200-day averages), reasonable valuation (P/E ~10.6), and a mean price target above the current price. The Coterra merger plus firmer oil prices are catalysts for cash flow, while today’s volume outpaced the 3-month average—supporting follow-through. Use a 6–7% trailing stop to guard merger/commodity risks into earnings.
+- Keep/buy CE: Celanese trades at a low sales multiple (~0.6x) with upside to the analyst mean target (~+18%). Volume strength and improving chemicals cycle setup argue for mean reversion and operating leverage. Use a 6–8% trailing stop given cyclicality and earnings sensitivity.
+- Hold/trim CF: Momentum is strong, but shares trade above most price targets after a steep run and elevated float rotation. Consider partial profit-taking or a tight 4–6% trailing stop if held; not an add here.
+- Hold DOW: Upgrade-driven pop and cycle tailwinds help, but price is above the mean target and earnings are still negative—prefer a pullback to add.
+- Remove APA: Despite a beat and momentum, shares are above the mean target with decelerating near-term volume versus 10-day and high commodity beta—risk/reward less attractive than DVN.
+
+Additional strong buys under 342.87 (high conviction): AAPL, GOOGL—dominant moats, robust balance sheets, AI/ads/services tailwinds.
+
+=======   PLACING BUY ORDERS   =======
+[DVN] Final calculated 5 day atr (rounded) = 3.48%
+latest price for DVN: 44.2, so I'm buying 1
+
+Buy order submitted. ID: bb48c93b-50e4-4977-978b-cd837ffcb5e9
+Waiting for DVN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DVN, will attach trailing stop tomorrow.
+
+[CE] Final calculated 5 day atr (rounded) = 6.83%
+latest price for CE: 52.03, so I'm buying 1
+
+Buy order submitted. ID: 8bbc29b6-f1bc-408a-818b-cb2d6028fa89
+Waiting for CE buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for CE, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 6m 51.08s)
+
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+==================== Selling Process Started: 2026-03-06 06:31:02 ====================
+Selling yesterdays positions.
+[DVN] Price=44.85, ATR=1.4186, Raw%=3.16
+[DVN] Final trail % = 3.16
+Trailing stop sell for DVN with a trail percent of 1.58 based on percent gain of 1.473 submitted. ID: 6c981b44-fcdb-4db1-a945-1a8c3cf16987
+
+[CE] Price=52.50, ATR=3.0551, Raw%=5.82
+[CE] Final trail % = 5.82
+Trailing stop sell for CE with a trail percent of 2.91 based on percent gain of 0.903 submitted. ID: 5c65a2e0-a396-4b67-a20b-3e4ca161e48e
+
+CE: 0.90% gain
+DVN: 1.45% gain
+========================= Run End =========================
+
+
+
+
+past week's equity history:
+Weekly Equity Summary (past 5 trading days):
+Date		Equity
+-------------------------
+2026-03-02 (Mon):(-0.02%) $335.43
+2026-03-03 (Tue):(+0.00%) $335.43
+2026-03-04 (Wed):(+2.15%) $342.65
+2026-03-05 (Thu):(+0.24%) $343.48
+2026-03-06 (Fri):(+0.15%) $343.99
+
+
+
+
+==================== Buying Process Started: 2026-03-06 12:10:02 ====================
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fe894d74d90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe894d74d90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 194, in <module>
+    main()
+  File "/home/orokejamie/vsCode/AlpacaTrading/main.py", line 90, in main
+    live_account = liveTradingClient.get_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/alpaca/common/rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orokejamie/vsCode/AlpacaTrading/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe894d74d90>: Failed to resolve 'api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)"))
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: FTW.WS"}}}
+$FTW.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: EONR.WS"}}}
+$EONR.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$GRAF.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-03-09 12:10:02 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 694 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for FTW.WS: 'currency'
+Error fetching fast_info for EONR.WS: 'currency'
+Error fetching fast_info for GRAF.WS: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping FTW.WS in assign_fast_info_details(): might be delisted.
+Skipping EONR.WS in assign_fast_info_details(): might be delisted.
+Skipping GRAF.WS in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 405
+
+filtering...
+Size after market cap filter: 301
+
+filtering...
+Size after volume filter: 286
+
+filtering...
+Size after moving average filter: 79
+
+filtering...
+Size after 52-week low filter: 78
+
+filtering...
+Size after relative strength filter: 70
+
+fast_info filters complete.
+70 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 13
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+BNAI, $42.45, 3.94%
+DOW, $35.4, 7.27%
+OXY, $55.51, 2.03%
+RIG, $6.16, 3.79%
+DNN, $3.77, 1.86%
+
+
+openAi's Stock list:
+- Keep DOW: Strong breakout above 50/200-DMAs, attractive value (P/B 1.59, P/S 0.64), improving momentum, and upcoming dividend provide support. While near the current target, the risk/reward is favorable for a cyclical upturn; use a tight trailing stop.
+- Keep RIG: Offshore drilling leverage to higher oil capex; P/B 0.84 and rising EPS expectations indicate operating recovery. Momentum above 50/200-DMAs with room to the high target (10). Higher volatility warrants a wider trailing stop.
+- Hold/Trim OXY: Solid momentum, but P/E ~41 and price above mean target limit upside. Prefer on pullbacks or via covered strategies, not a fresh buy here.
+- Avoid BNAI: Extreme valuation (P/B ~55, P/S >3,000) and tiny float with heavy rotation signals event-driven squeeze risk over sustainable fundamentals.
+- Watch DNN: Uranium tailwind, but very high multiples and recent drawdown raise risk; consider only after constructive base or catalysts confirm.
+
+No additional high-conviction buys under 215.85 today.
+
+=======   PLACING BUY ORDERS   =======
+[DOW] Final calculated 5 day atr (rounded) = 5.75%
+latest price for DOW: 35.425, so I'm buying 1
+
+Buy order submitted. ID: a322749a-1ab8-4539-9105-ca49cde39b6a
+Waiting for DOW buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DOW, will attach trailing stop tomorrow.
+
+[RIG] Final calculated 5 day atr (rounded) = 5.42%
+latest price for RIG: 6.165, so I'm buying 7
+
+Buy order submitted. ID: c2aa79ba-5657-469e-84dc-099b68f217a6
+Waiting for RIG buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for RIG, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 4m 53.32s)
+
+
+$SBNY: possibly delisted; no price data found  (period=5d)
+$SBNY: possibly delisted; no price data found  (period=5d)
+$FI: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CYBR: possibly delisted; no price data found  (period=5d)
+$CYBR: possibly delisted; no price data found  (period=5d)
+$IPG: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$CMA: possibly delisted; no price data found  (period=5d)
+$CMA: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$MMC: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$FAT: possibly delisted; no price data found  (period=5d)
+$K: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: IRAB.WS"}}}
+$IRAB.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TE.WS"}}}
+$TE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$GRAF.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+$TGE.WS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+
+
+
+
+==================== Buying Process Started: 2026-03-10 12:10:04 ====================
+--- STOCK PORTION ---
+Getting symobls..
+Got 703 symobls..
+Getting 'fast_info' for each symbol. Might take a while..
+Error fetching fast_info for FI: 'currency'
+Error fetching fast_info for IPG: 'currency'
+Error fetching fast_info for K: 'currency'
+Error fetching fast_info for IRAB.WS: 'currency'
+Error fetching fast_info for TE.WS: 'currency'
+Error fetching fast_info for GRAF.WS: 'currency'
+Error fetching fast_info for TGE.WS: 'currency'
+Skipping FI in assign_fast_info_details(): might be delisted.
+Skipping IPG in assign_fast_info_details(): might be delisted.
+Skipping K in assign_fast_info_details(): might be delisted.
+Skipping IRAB.WS in assign_fast_info_details(): might be delisted.
+Skipping TE.WS in assign_fast_info_details(): might be delisted.
+Skipping GRAF.WS in assign_fast_info_details(): might be delisted.
+Skipping TGE.WS in assign_fast_info_details(): might be delisted.
+filtering...
+Size after price range filter: 288
+
+filtering...
+Size after market cap filter: 184
+
+filtering...
+Size after volume filter: 174
+
+filtering...
+Size after moving average filter: 48
+
+filtering...
+Size after 52-week low filter: 48
+
+filtering...
+Size after relative strength filter: 44
+
+fast_info filters complete.
+44 will now be populated with heavier 'populate_info'.
+
+filtering...
+Size after float rotation filter: 11
+
+Heavier filters complete.
+
+Selected 5 top candidates by simple_score.
+Stocks worth buying are:
+BIOA, $20.7, 4.7%
+DNN, $4.03, 5.63%
+ENPH, $43.49, 7.07%
+HAL, $35.19, 2.61%
+RIVN, $16.78, 6.0%
+
+
+openAi's Stock list:
+Keep ENPH and DNN. ENPH shows improving momentum (above 50- and 200-day averages), solid profitability (reasonable P/E and P/S), and supportive news/partnerships. Its average price target implies moderate upside with manageable risk; use a tighter 5% trailing stop given quality and liquidity. DNN benefits from strong uranium sentiment, heavy volume versus float (rotation >4), and analyst target implying meaningful upside. As a pre-revenue developer, risk is higher; pair it with a wider 7% trailing stop.
+
+Remove HAL: while fundamentals are solid and the trend is up, the average target suggests limited near-term upside from here, and oil-price softness introduces cyclical headline risk; not compelling versus alternatives. Remove RIVN: still loss-making with dilution/production risks; the upgrade helps, but risk/reward isn’t attractive vs. modest target upside. Remove BIOA: extreme P/S (~147), negative expected EPS, and event-driven volatility make it speculative; momentum is strong but downside risk into earnings is elevated.
+
+Additional ideas under 116.28: None I’m >90% confident on today; prefer to focus capital on ENPH and DNN until setups with clearer asymmetry appear.
+
+=======   PLACING BUY ORDERS   =======
+[ENPH] Final calculated 5 day atr (rounded) = 5.29%
+Skipping ENPH: 43.38, too risky (qty to buy was 0).
+
+[DNN] Final calculated 5 day atr (rounded) = 7.22%
+latest price for DNN: 4.045, so I'm buying 7
+
+Buy order submitted. ID: d6999a66-d20b-4657-9abf-a9b6a06e16a6
+Waiting for DNN buy order to fill...
+order status: OrderStatus.FILLED
+Saved positions for DNN, will attach trailing stop tomorrow.
+
+========================= Run End =========================
+(Execution time: 5m 11.90s)
+
+

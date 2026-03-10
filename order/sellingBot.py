@@ -72,7 +72,7 @@ class SellingBot:
         else:
             os.remove(self.SAVE_FILE)
 
-        self.check_all_positions_worth_selling_now()
+        # self.check_all_positions_worth_selling_now()
 
     def check_all_positions_worth_selling_now(self):
         all_open_positions = liveTradingClient.get_all_positions()
